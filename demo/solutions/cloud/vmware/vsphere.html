@@ -1,0 +1,278 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'SOLUTIONS';
+	$_category2 = 'CLOUD / INFRA';
+	$_category3 = 'VMware';
+	$_category4 = 'vSphere';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../../../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/solutions.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_solutions.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/solutions.js"></script>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			M_main_navbar();
+			M_sidenav_accordion();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+	<!-- Head Navigator Start -->
+	<?php include_once '../../../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background Start -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="background_text1">SOLUTIONS</p>
+			<p class="background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>SOLUTIONS</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/solution.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background End -->
+	
+	<!-- Contents Start -->
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../../../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+
+			<!-- pc버전 시작 -->
+			<div class="Solution_container">
+				<div class="Solution_top_box">
+					<div class="Solution_top_left">
+						<div class="Solution_top_img" data-aos="fade-right"
+							data-aos-duration="1000">
+							<img src="../../../image/common/vsimg1" />
+						</div>
+					</div>
+					<div class="Solution_top_rigth">
+						<p class="Solution_top_title1">서버가상화 인프라 솔루션</p>
+						<p class="Solution_top_title2"> vSphere</p>
+					</div>
+				</div>
+
+
+				<div class="color_box">
+					<div class="color_box_left"></div>
+					<div class="color_box_rigth" data-aos="fade-left"
+						data-aos-duration="1000">
+						<p>vSphere는 기존에 운영하던 물리적인 인프라를 가상화 솔루션으로 통합하여</p>
+						<p>유연하고 안정적인 IT 서비스를 제공합니다.</p>
+						<div class="Solution_down_box">
+							<span class="Solution_down"><a href="<?php echo URL; ?>/pdf/vSphere.pdf" download>자료다운로드</a><span>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white"> vSphere</div>
+					<div class="Solution_center_black">기대효과</div>
+				</div>
+
+				<div class="vsphere_center_img_box">
+					<div class="vsphere_center_item" data-aos="fade-up"
+						data-aos-delay="300" data-aos-duration="1000">
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/vsimg2" />
+						</div>
+						<p class="vsphere_center_text1">복잡성 감소</p>
+						<p class="vsphere_center_text2">운영/관리 및</p>
+						<p class="vsphere_center_text2">유지보수에 대한 단순화</p>
+					</div>
+
+					<div class="vsphere_center_item" data-aos="fade-up"
+						data-aos-delay="600" data-aos-duration="1000">
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/vsimg3" />
+						</div>
+						<p class="vsphere_center_text1">비용 절감</p>
+						<p class="vsphere_center_text2">리소스풀링을 통한</p>
+						<p class="vsphere_center_text2">자원 최적화</p>
+					</div>
+
+					<div class="vsphere_center_item" data-aos="fade-up"
+						data-aos-delay="900" data-aos-duration="1000">
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/vsimg4" />
+						</div>
+						<p class="vsphere_center_text1">유연성 & 민첩성 증가</p>
+						<p class="vsphere_center_text2">비즈니스 요구에 따른</p>
+						<p class="vsphere_center_text2">빠른 대응</p>
+					</div>
+				</div>
+
+
+				<div class="vsphere_center_box2_container">
+					<span class="vsphere_center_box2">기존 물리 인프라를 가상화로 전환하여 운영 가능</span>
+				</div>
+
+				<div class="vsphere_center_img_box2" data-aos="fade-up"
+					data-aos-duration="1000">
+					<div class="vsphere_center_img2">
+						<img src="../../../image/common/vsimg5" />
+					</div>
+				</div>
+
+				<div class="vsphere_bottom_container">
+
+					<div class="vsphere_bottom_img_box" data-aos="fade-right" data-aos-duration="1000">
+						<p class="vsphere_bottom_img_box_text">서버 가상화 기술의 특징</p>
+						<img src="../../../image/common/vsimg6" />
+					</div>
+					<div class="vsphere_bottom_text_box" data-aos="fade-left"
+						data-aos-duration="1000">
+						<ul>
+							<li><img src="../../../image/common/vsimg7" /> VMware HA를 통한 고가용성 제공</li>
+							<li><img src="../../../image/common/vsimg7" /> 가상머신 online중에 다른 host로 마이그레이션 기능 제공</li>
+							<li><img src="../../../image/common/vsimg7" /> 가상머신 online중에 다른 Shard Storage로 마이그레이션 기능 제공</li>
+							<li><img src="../../../image/common/vsimg7" /> 가상머신 성능 데이터 관리 기능 제공</li>
+							<li><img src="../../../image/common/vsimg7" /> 직관적인 UI 기능 제공</li>
+							<li><img src="../../../image/common/vsimg7" /> 통합서버, 네트워크, 스토리지, 가상머신 관리기능 게공</li>
+							<li><img src="../../../image/common/vsimg7" /> 온라인 중에 가상머신의 disk, network card 추가 기능제공</li>
+							<li><img src="../../../image/common/vsimg7" /> 가성머신에 암호화 기능 제공</li>
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="Solution_ask_box">
+					<p class="Solution_ask_text1">더 알고 싶으시다면</p>
+					<p class="Solution_ask_text2">지금 바로 문의주세요. 최대한 빠르고 성실하게 답변해
+						드리겠습니다.</p>
+					<div class="Solution_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+
+			</div>
+			<!-- pc버전 끝 -->
+
+			<!-- 모바일 버전 시작 -->
+			<div class="M_Solution_container">
+
+				<div class="M_Solution_title_box">
+					<p class="M_Solution_title_text1">서버가상화 인프라 솔루션</p>
+					<p class="M_Solution_title_text2"> vSphere</p>
+				</div>
+				<div class="M_Solution_title_img_box" >
+					<img src="../../../image/common/vsimg1" />
+				</div>
+
+				<div class="M_Solution_black_box">
+					<p>vSphere는 기존에 운영하던 물리적인 인프라를 가상화 솔루션으로 통합하여 유연하고 안정적인 IT서비스를
+						제공합니다.
+					<p>
+				</div>
+
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white"> vSphere</div>
+					<div class="Solution_center_black">기대효과</div>
+				</div>
+
+
+				<div class="vsphere_center_img_box">
+					<div class="vsphere_center_item">
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/vsimg2" />
+						</div>
+						<p class="vsphere_center_text1">복잡성 감소</p>
+						<p class="vsphere_center_text2">운영/관리 및</p>
+						<p class="vsphere_center_text2">유지보수에 대한 단순화</p>
+					</div>
+
+					<div class="vsphere_center_item">
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/vsimg3" />
+						</div>
+						<p class="vsphere_center_text1">비용 절감</p>
+						<p class="vsphere_center_text2">리소스풀링을 통한</p>
+						<p class="vsphere_center_text2">자원 최적화</p>
+					</div>
+
+					<div class="vsphere_center_item">
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/vsimg4" />
+						</div>
+						<p class="vsphere_center_text1">유연성 및 민첩성 증가</p>
+						<p class="vsphere_center_text2">비즈니스 요구에 따른</p>
+						<p class="vsphere_center_text2">빠른 대응</p>
+					</div>
+				</div>
+
+
+				<div class="vsphere_center_box2_container">
+				<span class="vsphere_center_box2" >기존 물리 인프라를 가상화로 전환하여 운영 가능</span>
+				</div>
+				<div class="vsphere_center_img_box2" >
+					<div class="vsphere_center_img2">
+						<img src="../../../image/common/vsimg5" />
+					</div>
+				</div>
+
+				<div class="vsphere_bottom_img_box">
+					<p class="vsphere_bottom_img_box_text">서버 가상화 기술의 특징</p>
+					<img src="../../../image/common/vsimg6" />
+					
+					<div class="vsphere_bottom_text_box">
+						<ul>
+							<li><img src="../../../image/common/vsimg7" />VMware HA를 통한 고가용성 제공</li>
+							<li><img src="../../../image/common/vsimg7" />가상머신 online중에 다른 host로 마이그레이션 기능 제공</li>
+							<li><img src="../../../image/common/vsimg7" />가상머신 online중에 다른 Shard Storage로 마이그레이션 기능 제공</li>
+							<li><img src="../../../image/common/vsimg7" />가상머신 성능 데이터 관리 기능 제공</li>
+							<li><img src="../../../image/common/vsimg7" />직관적인 UI 기능 제공</li>
+							<li><img src="../../../image/common/vsimg7" />통합서버, 네트워크, 스토리지, 가상머신 관리기능 게공</li>
+							<li><img src="../../../image/common/vsimg7" />온라인 중에 가상머신의 disk, network card 추가 기능제공</li>
+							<li><img src="../../../image/common/vsimg7" />가성머신에 암호화 기능 제공</li>
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="vsphere_ask_box">
+					<p class="vsphere_ask_text1">더 알고 싶으시다면</p>
+					<p class="vsphere_ask_text2">지금 바로 문의주세요.</p>
+					<p class="vsphere_ask_text2">빠르고 성실하게 답변해 드리겠습니다.</p>
+					<div class="vsphere_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+
+
+			</div>
+
+			<!-- 모바일 버전 끝 -->
+
+		</div>
+	</div>
+
+
+	<!-- Side Navigator Start -->
+	<?php include_once '../../../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+
+</body>
+</html>

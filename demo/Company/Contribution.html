@@ -1,0 +1,190 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'COMPANY';
+	$_category2 = '사회공헌활동';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/company.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_company.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/company.js"></script>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+	<!-- Head Navigator Start -->
+	<?php include_once '../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background 시작 -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="company_background_text1">COMPANY</p>
+			<p class="company_background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>COMPANY</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/company.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background 끝 -->
+
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+		
+			<div class='Contribution_container'>
+				<p class="Company_top_text">
+					<span>COMPANY</span>
+				</p>
+				
+				<div class="Contribution_top_box">
+					<div class="Contribution_top">
+						<div class="Contribution_top_txt1">굿모닝아이텍㈜ 사회공헌 발자취</div>
+						<div class="Contribution_top_txt2">
+							굿모닝아이텍㈜이라는 회사 이름처럼 더 많은 사람들이 매일 매일 좋은 아침을 맞이할 수 있도록<br /> 후원,
+							모금, 봉사활동과 같은 지속적인 사회공헌 활동을 펼쳐 나가고 있습니다.
+						</div>
+					</div>
+				</div>
+				
+				<div class="Contribution_btn_box">
+					<div class="Contribution_btn1" onclick="contributonbtn1()">후원</div>
+					<div class="Contribution_btn2" onclick="contributonbtn2()">모금</div>
+					<div class="Contribution_btn3" onclick="contributonbtn3()">봉사활동</div>
+				</div>
+
+				<div class="tab_content1 active1">
+					<div class="list">
+						<div class="part">
+							<div class="category">한국법무보호복지공단 후원</div>
+							<div class="news">
+								<div class="image">
+									<img
+										src="../image/common/social_img_1_1.jpg"
+										alt="" />
+								</div>
+								<div class="caption">한국법무보호복지공단에 매년 일정 금액의 보호복지 사업기금을 후원하고
+									있습니다. 이를 통해, 빈곤으로 법률 사각지대에 놓인 보호 대상자와 저소득층 가정에 학자금·생활비·병원비 등을
+									지원하면서 한국 법무보호복지공단의 기업가치 실현을 함께하고 있습니다.</div>
+							</div>
+						</div>
+						<div class="part">
+							<div class="category">사랑의 쌀 나눔 후원</div>
+							<div class="news">
+								<div class="image"></div>
+								<div class="image">
+									<a
+										href="http://www.goodmit.co.kr/wp-content/uploads/2019/06/KakaoTalk_Photo_2021-01-04-14-12-11.jpeg"><img
+										class="alignleft wp-image-20406 size-full"
+										src="../image/common/social_img_1_2.jpeg"
+										alt="" width="900" height="600" /></a>
+								</div>
+								<div class="caption">따뜻한 손길이 필요한 이웃에게 더 많은 도움을 줄 수 있도록 노숙인
+									보호시설, 보육원, 노인의료 복지시설, 노인정과 같은 시설에 사랑나눔 쌀 화환으로 모은 쌀을 후원하고 있습니다.</div>
+							</div>
+						</div>
+						<div class="part">
+							<div class="category">보육원·노인의료 복지시설 후원</div>
+							<div class="news">
+								<div class="image">
+									<img
+										src="../image/common/social_img_1_3.jpg"
+										alt="" />
+								</div>
+								<div class="caption">아동청소년들의 생활과 교육을 지원하여 그들 스스로 자립할 수 있도록
+									다양한 프로그램을 진행하는 의정부 이삭의 집(보육원), 은평구 은평열린학교(보육원), 무의탁 노인과 함께
+									거주하면서 그들의 손과 발이 되어 주는 경기도 양평의 성 요셉의 집(노인의료 복지시설)에 후원하고 있습니다.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="tab_content2 active2">
+					<div class="list">
+						<div class="part">
+							<div class="category">희망나눔 마라톤 모금</div>
+							<div class="news">
+								<div class="image">
+									<img
+										src="../image/common/social_img_1_4.jpg"
+										alt="" />
+								</div>
+								<div class="caption">굿모닝아이텍(주) 임직원들을 비롯해 고객사·협력사 등 마라톤
+									완주자들이 달린 1㎞당 1000원씩 적립금을 모금하여 어린이와 청소년들에게 장학금으로 전달합니다.</div>
+							</div>
+						</div>
+						<div class="part">
+							<div class="category">가족동반 현장체험 모금</div>
+							<div class="news">
+								<div class="image">
+									<img
+										src="../image/common/social_img_1_5.jpg"
+										alt="" />
+								</div>
+								<div class="caption">가족들과 함께 특별한 추억을 만들 수 있는 현장체험을 참가함과
+									동시에 참가비를 모금하여 지역 단체 및 도움이 필요한 시설에 전달합니다.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab_content3 activ3">
+					<div class="list">
+						<div class="part">
+							<div class="category">희망나눔 자원봉사</div>
+							<div class="news">
+								<div class="image">
+									<img
+										src="../image/common/social_img_1_6.jpg"
+										alt="" />
+								</div>
+								<div class="caption">브레인네트워크와 함께 영농철 과수농업단지 농촌봉사, 서울역에 위치한
+									노숙인을 위한 ‘따스한 채움터’에서 무료급식 밥차 배식봉사를 참여하고 있습니다.</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+	
+	
+	<!-- footer Start -->
+	<?php include_once '../_inc/footer.html'; ?>
+	<!-- footer End -->
+	
+	<!-- Side Navigator Start -->
+	<?php include_once '../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+	
+</body>
+</html>

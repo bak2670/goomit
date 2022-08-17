@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_container{
+    width: 100%;
+}
+
+
+.top_contaier{
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+/* nav시작 */
+.navbar_position{
+    width: 100%;
+    position: absolute;
+    /* bottom: 46.9vw; */
+    background:white;
+}
+
+.nav_container{
+    width: 100%;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    text-align: center;
+    /* color: white; */
+    font-size: 1.0vw;
+}
+
+.nav_center{
+    flex:3;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.nav_rigth{
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: white; */
+    font-size: 1vw;
+    color: black;
+}
+
+.nav_center_menu{
+    width:80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+.nav_item{
+    font-size: 0.8vw;
+    color: black;
+    /* color: black; */
+    font-weight: bold;
+    height: 1vw;
+}
+/* nav끝 */
+
+/* 사이드 nav 시작 */
+
+.container_sidenav{
+    width: 100vw;
+    position: absolute;
+    z-index: 3;
+    transition-duration: 1s;
+    transform: translateY(-9999px);
+    
+    
+}
+
+.sidenav{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    background:white;
+    display: flex;
+    justify-content: center;
+}
+.sidenav_closebtn{
+    width: 10px;
+    height: 10px;
+    font-size: 1vw;
+    position: absolute;
+    right: 20vw;
+    top: 3vw;
+}
+
+.nav_item_box{
+    width: 15%;
+    border:1px solid red;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.nav_item_title{
+    width: 80%;
+    font-size: 1vw;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(206, 196, 196);
+    padding-bottom: 10px;
+    margin-top: 8vw;
+}
+.nav_list_box{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7vw;
+    margin-top:10px;
+    margin-left: 10px;
+    height: 100vh
+}
+.nav_list_item{
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+}
+
+.nav_soultion_box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 7vw;
+    color: white;
+    position: absolute;
+    right:0.5vw;
+    background-color: black;
+    padding: 10px;
+    font-size: 0.7vw;
+    transition-duration: 1s;
+    transform: translateY(-999px);
+}
+
+.nav_soultion_list{
+    padding: 5px;
+}
+
+/* 사이드 nav 끝 */
+
+
+
+
+/* 메인 탑 백그라운드 시작 */
+.main_top_background{
+    width: 100%;
+    height: 100vh;
+    background: url("../image/common/img1.jpg");
+}
+
+/* 메인 탑 백그라운드 끝 */

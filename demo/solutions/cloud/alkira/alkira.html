@@ -1,0 +1,282 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'SOLUTIONS';
+	$_category2 = 'CLOUD / INFRA';
+	$_category3 = 'Alkira';
+	$_category4 = 'Alkira';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../../../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/solutions.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/test.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_solutions.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/solutions.js"></script>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			M_main_navbar();
+			M_sidenav_accordion();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+
+	<!-- Head Navigator Start -->
+	<?php include_once '../../../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background Start -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="background_text1">SOLUTIONS</p>
+			<p class="background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>SOLUTIONS</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/solution.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background End -->
+
+	<!-- Contents Start -->
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../../../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+			
+			<!-- pc버전 시작 -->
+			<div class="Solution_container">
+				<div class="Solution_top_box">
+					<div class="Solution_top_left">
+						<div class="Solution_top_img" data-aos="fade-right"
+							data-aos-duration="1000">
+							<img src="../../../image/common/alkiralogo.png" />
+						</div>
+					</div>
+					<div class="Solution_top_rigth">
+						<p class="Solution_top_title1">멀티 클라우드 네트워킹 플랫폼</p>
+						<p class="Solution_top_title2">Cloud Networking as a
+							Service(CNaaS)</p>
+					</div>
+				</div>
+
+				<div class="color_box" style="background-color: #0066cc">
+					<div class="color_box_left"></div>
+					<div class="color_box_rigth" data-aos="fade-left"
+						data-aos-duration="1000">
+						<p>
+							멀티 클라우드로 업무 환경이 빠르게 진화되고 있으며<br>다양한 네트워킹 환경(홈 오피스, 지점, 본사,
+							코 로케이션)을 유연하게 연결하고,<br>연결된 요소 간의 논리적 구분 및 그룹화를 통하여 일관된 정책 적용
+							및<br>네트워크 서비스를 구현할 수 있는 멀티 클라우드 네트워킹 플랫폼입니다.
+						</p>
+						<div class="Solution_down_box">
+							<span class="Solution_down">자료다운로드</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="Eaa_title">Cloud Networking as a Service 특징</div>
+
+				<div class="alkira_section_container">
+					<div class="alkira_section_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<div class="alkira_title">
+							Multi Cloud 환경과 기업 내 Branch,<br>Home Office 및 Data Center 간
+							기업 전용
+						</div>
+						<div class="alkira_text">
+							&#9312; Global Cloud Backbone Service를 표방하며<br> 다양한 Branch 환경
+							(IPsec, SD-WAN, Remote Access VPN)을<br> Multi Cloud (AWS,
+							Azure, GCP, OCI 등)와<br> 상호 연결하는 기업 전용 Backbone Network망 구성
+							지원<br> &#9313; 해당 Branch 및 Cloud 자원의 위치 기준으로<br> 인접 서비스
+							PoP(Regional Cloud Hub)을 선정하고<br> Branch 및 Cloud 연결을
+							Dashboard의 단순한 Click으로 몇 분 내 구성 가능
+						</div>
+					</div>
+					<div class="alkira_section_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+						<div class="alkira_title">
+							사설 Backbone을 이용한<br>일관된 정책 적용
+						</div>
+						<div class="alkira_text">
+							&#9312; 구성된 사설망은 논리적(Macro-Segmentation)으로<br> Network 구분 및
+							자원에 대한 그룹화 (Micro-Segmentation)를 통하여<br> 다양한 정책 적용
+							가능(Traffic, Routing, NAT 정책)<br> &#9313; Branch 및 Cloud 내 보안
+							정책을 개별 단위에서 하지 않고<br> Backbone 단위에서 중앙 집중적으로 적용 가능
+							<br>&#9314; 방화벽 서비스 등 고급 보안 적용이 필요시<br> Backbone내 방화벽 서비스를 활성화하여
+							방화벽으로 경유될 Traffic만<br> 선별적으로 처리 가능
+						</div>
+					</div>
+					<div class="alkira_section_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+						<div class="alkira_title">
+							3rd Party Vendors 서비스<br> Alkira Marketplace
+						</div>
+						<div class="alkira_text">
+							&#9312; 네트워킹, 네트워크 서비스의 복잡성과 연동 간 제약사항을<br> 최소화하도록 다양한
+							Solution 연동 및 Cloud 간 API 통합<br> &#9313; Backbone 내 연동 가능
+							Solution: SD-WAN (Cisco, VMware, Aruba),<br>
+							Firewall(Paloalto, Checkpoint, Fortinet, Akamai Prolexic, Cisco),<br>
+							Cloud Security (Zscaler) 등<br> &#9314; 기업 전용의 Private
+							Backbone Network Cloud 관리를 위한<br> 통합된 Dashboard 제공
+						</div>
+					</div>
+				</div>
+
+
+				<div class="vsphere_bottom_container">
+
+					<div class="vsphere_bottom_img_box" data-aos="fade-up" data-aos-duration="1000">
+						<p class="vsphere_bottom_img_box_text2">이런 기업에게<br>CNaaS가 필요합니다.</p>
+						<img src="../../../image/common/aic-layer.png" />
+					</div>
+					<div class="vsphere_bottom_text_box" data-aos="fade-left"
+						data-aos-duration="1000">
+						<ul>
+							<li><img src="../../../image/common/aic-checkbox.png" />
+								멀티 클라우드(ex.aws, azure, gcp 등)를 이용하거나, 멀티 리전을 이용 중인 기업</li>
+							<li><img src="../../../image/common/aic-checkbox.png" />
+								일부 데이터 센터만 클라우드로 이전하여 하이브리드 형태로 인프라를 운영 중인 기업</li>
+							<li><img src="../../../image/common/aic-checkbox.png" />
+								클라우드 데이터 센터와 On-Premise 데이터 센터 간의 전용선을 이용하거나 SSL VPN을 이용 중인 기업</li>
+
+						</ul>
+					</div>
+				</div>
+
+				<div class="Solution_ask_box">
+					<p class="Solution_ask_text1">더 알고 싶으시다면</p>
+					<p class="Solution_ask_text2">지금 바로 문의주세요. 최대한 빠르고 성실하게 답변해
+						드리겠습니다.</p>
+					<div class="Solution_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+
+			</div>
+			<!-- pc버전 끝 -->
+
+			<!-- 모바일 버전 시작 -->
+			<div class="M_Solution_container">
+
+				<div class="M_Solution_title_box">
+					<p class="M_Solution_title_text1">멀티 클라우드 네트워킹 플랫폼</p>
+					<p class="M_Solution_title_text2">Cloud Networking as a Service(CNaaS)</p>
+				</div>
+				<div class="M_Solution_title_img_box">
+					<img src="../../../image/common/alkiralogo.png" />
+				</div>
+
+				<div class="M_Solution_black_box" style="background-color: #0066cc">
+					<p>
+						멀티 클라우드로 업무 환경이 빠르게 진화되고 있으며<br>다양한 네트워킹 환경(홈 오피스, 지점, 본사,
+						코 로케이션)을 유연하게 연결하고, 연결된 요소 간의 논리적 구분 및 그룹화를 통하여 일관된 정책 적용
+						및 네트워크 서비스를 구현할 수 있는 멀티 클라우드 네트워킹 플랫폼입니다.
+					<p>
+				</div>
+				
+				<div class="Eaa_title">Cloud Networking as a Service 특징</div>
+
+				<div class="alkira_section_container">
+					<div class="alkira_section_box">
+						<div class="alkira_title">
+							Multi Cloud 환경과 기업내 Branch,<br>Home Office 및 Data Center 간
+							기업 전용
+						</div>
+						<div class="alkira_text">
+							&#9312; Global Cloud Backbone Service를 표방하며 다양한 Branch 환경
+							(IPsec, SD-WAN, Remote Access VPN)을 Multi Cloud (AWS,
+							Azure, GCP, OCI 등)와 상호 연결하는 기업 전용 Backbone Network망 구성
+							지원 <br>&#9313; 해당 Branch 및 Cloud 자원의 위치 기준으로 인접 서비스
+							PoP(Regional Cloud Hub)을 선정하고 Branch 및 Cloud 연결을
+							Dashboard의 단순한 Click으로 몇 분 내 구성 가능
+						</div>
+					</div>
+					<div class="alkira_section_box">
+						<div class="alkira_title">
+							사설 Backbone을 이용한<br>일관된 정책 적용
+						</div>
+						<div class="alkira_text">
+							&#9312; 구성된 사설망은 논리적(Macro-Segmentation)으로 Network 구분 및
+							자원에 대한 그룹화 (Micro-Segmentation)를 통하여 다양한 정책 적용
+							가능(Traffic, Routing, NAT 정책)<br>&#9313; Branch 및 Cloud 내 보안
+							정책을 개별 단위에서 하지 않고 Backbone 단위에서 중앙 집중적으로 적용 가능
+							<br>&#9314; 방화벽 서비스 등 고급 보안 적용이 필요시 Backbone내 방화벽 서비스를 활성화하여
+							방화벽으로 경유될 Traffic만 선별적으로 처리 가능
+						</div>
+					</div>
+					<div class="alkira_section_box">
+						<div class="alkira_title">
+							3rd Party Vendors 서비스<br> Alkira Marketplace
+						</div>
+						<div class="alkira_text">
+							&#9312; 네트워킹, 네트워크 서비스의 복잡성과 연동 간 제약사항을 최소화하도록 다양한
+							Solution 연동 및 Cloud 간 API 통합<br> &#9313; Backbone 내 연동 가능
+							Solution: SD-WAN (Cisco, VMware, Aruba), 
+							Firewall(Paloalto, Checkpoint, Fortinet, Akamai Prolexic, Cisco), 
+							Cloud Security (Zscaler) 등<br> &#9314; 기업 전용의 Private
+							Backbone Network Cloud 관리를 위한 통합된 Dashboard 제공
+						</div>
+					</div>
+				</div>
+				
+				<div class="vsphere_bottom_img_box">
+					<p class="vsphere_bottom_img_box_text2" style="top:80px;">이런 기업에게<br>CNaaS가 필요합니다.</p>
+					<img src="../../../image/common/aic-layer.png" />
+					
+
+					<div class="vsphere_bottom_text_box">
+						<ul>
+							<li><img src="../../../image/common/aic-checkbox.png" />멀티 클라우드(ex.aws, azure, gcp 등)를 이용하거나, 멀티 리전을 이용 중인 기업</li>
+							<li><img src="../../../image/common/aic-checkbox.png" />일부 데이터 센터만 클라우드로 이전하여 하이브리드 형태로 인프라를 운영 중인 기업</li>
+							<li><img src="../../../image/common/aic-checkbox.png" />클라우드 데이터 센터와 On-Premise 데이터 센터 간의 전용선을 이용하거나 SSL VPN을 이용 중인 기업</li>
+						</ul>
+					</div>
+				</div>
+
+
+				
+
+
+
+				<div class="vsphere_ask_box">
+					<p class="vsphere_ask_text1">더 알고 싶으시다면</p>
+					<p class="vsphere_ask_text2">지금 바로 문의주세요.</p>
+					<p class="vsphere_ask_text2">빠르고 성실하게 답변해 드리겠습니다.</p>
+					<div class="vsphere_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+
+
+			</div>
+
+
+
+			<!-- 모바일 버전 끝 -->
+
+
+		</div>
+	</div>
+
+
+	<!-- Side Navigator Start -->
+	<?php include_once '../../../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+
+</body>
+</html>

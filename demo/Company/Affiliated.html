@@ -1,0 +1,112 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'COMPANY';
+	$_category2 = '관계사';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/company.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_company.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/company.js"></script>
+
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+	<!-- Head Navigator Start -->
+	<?php include_once '../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background 시작 -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="company_background_text1">COMPANY</p>
+			<p class="company_background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>COMPANY</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/company.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background 끝 -->
+
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+			
+		    <div class='Affiliated_container'>
+		    	<p class="Company_top_text">
+					<span>COMPANY</span>
+				</p>
+		        <div class='Affiliated_container_center'>
+		            <h2 class='affiliated_title'>관계사</h2>
+		            <p class='Affiliated_text_top'>굿모닝아이텍(주)은 정보보호전문 자회사, 이벤트 행사기획, 연수펜션 등 다양한 분야의 관계사를 보유하고 있습니다.<br />
+		                분야는 다양하지만 ‘최고의 서비스, 최고의 고객만족’을 드리겠다는 마음은 모든 회사가 동일하게 지키고 있는 가치입니다.</p>
+		    
+		            <h6 class='Affiliated_text_center'>IT Solution &amp; Service:&nbsp;조인어스비즈(주) ｜&nbsp;디지털비즈니스 ｜&nbsp;디지털아지텍
+		            </h6>
+		    
+		            <div class='Affiliated_img_top_box'>
+		                <a href="http://www.goodmit.co.kr/wp-content/uploads/2014/04/조인어스비즈.jpg" target="_blank"
+		                    rel="nofollow"><img class="Affiliated_img_top Affiliated_img_top_first"
+		                        src="../image/common/joinusbiz.jpg" alt="" /></a>
+		                <a href="http://www.goodmit.co.kr/wp-content/uploads/2014/04/디지털비즈니스.jpg" rel="nofollow"><img
+		                        class="Affiliated_img_top"
+		                        src="../image/common/digital.jpg" alt="" /></a>
+		                <a href="http://www.goodmit.co.kr/wp-content/uploads/2014/04/디지털아이텍.jpg" rel="nofollow"><img
+		                        class="Affiliated_img_top"
+		                        src="../image/common/digitaltec.jpg" alt="" /></a>
+		            </div>
+		    
+		    
+		            <div class='Affiliated_img_top_box1'>
+		                <h6 class='Affiliated_text_center marginbot'>이벤트·행사기획: 모닝베네스트(주) ｜&nbsp;연수펜션: 하늘계곡연수펜션</h6>
+		                <p><a href="http://www.goodmit.co.kr/wp-content/uploads/2014/04/31.png" rel="nofollow"><img
+		                            class="alignnone size-full wp-image-10938"
+		                            src="../image/common/morningbenest.png" alt="1" /></a>
+		                    <a href="http://monest.co.kr/" rel="nofollow">&nbsp;</a><a href="http://www.skyvp.co.kr/personal/"
+		                        rel="nofollow"><img class="alignnone wp-image-10937 size-full"
+		                            src="../image/common/sky.png" alt="2" /></a>
+		                </p>
+		                <h6></h6>
+		            </div>
+		        </div>
+		    </div>
+
+		</div>
+	</div>
+	
+	<!-- footer Start -->
+	<?php include_once '../_inc/footer.html'; ?>
+	<!-- footer End -->
+	
+	<!-- Side Navigator Start -->
+	<?php include_once '../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+	
+</body>
+</html>

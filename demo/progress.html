@@ -1,0 +1,780 @@
+<?php
+	include_once("./_common.php");
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php include_once("../_inc/head.html"); ?>
+<link href="../../../_css/solutions.css" rel="stylesheet"
+	type="text/css">
+<link href="../../../_css/m_solutions.css" rel="stylesheet"
+	type="text/css">
+<link href="../../../_css/category.css" rel="stylesheet" type="text/css">
+<link href="../../../_css/font-face.css" rel="stylesheet"
+	type="text/css">
+<script src="../../../js/category.js"></script>
+<script src="../../../js/solutions.js"></script>
+
+<script>
+	new WOW().init();
+	$(document).ready(function() {
+
+	});
+</script>
+
+<style>
+a{
+text-decoration: none;
+}
+table {
+	width: 100%;
+	margin: 0 auto;
+	border: 1px solid #f2f2f2;
+}
+
+th {
+	border: 1px solid #f2f2f2;
+	margin: 0;
+}
+
+td {
+	border: 1px solid #f2f2f2;
+	text-align: center;
+	margin: 0;
+	
+
+}
+
+td p {
+	background-color: #f2f2f2;
+	/*background-color: rgb(104,97,232);*/
+	/*background: linear-gradient(90deg,rgba(104,97,232,1)
+    0%, rgba(190,0,255,1) 100%);*/
+	/* background: linear-gradient(90deg,rgb(232, 158, 97)
+    0%, rgb(0, 255, 55) 100%); */
+	color: black;
+	padding: 0.5em 1em;
+	margin: 0.4em 0;
+	border-radius: 100px;
+	box-sizing: border-box;
+	height: 40px;
+}
+
+td p::before {
+	content: attr(data-score);
+	float: right;
+}
+
+td p[data-score="0%"] {
+	width: 0%;
+}
+
+td p[data-score="10%"] {
+	width: 10%;
+}
+
+td p[data-score="20%"] {
+	width: 20%;
+}
+
+td p[data-score="30%"] {
+	width: 30%;
+}
+
+td p[data-score="40%"] {
+	width: 40%;
+}
+
+td p[data-score="100%"] {
+	width: 100%;
+}
+
+td p[data-score="60%"] {
+	width: 60%;
+}
+
+td p[data-score="70%"] {
+	width: 70%;
+}
+
+td p[data-score="100%"] {
+	width: 100%;
+}
+
+td p[data-score="90%"] {
+	width: 90%;
+}
+
+td p[data-score="95%"] {
+	width: 95%;
+}
+
+td p[data-score="100%"] {
+	width: 100%;
+}
+progress{
+width: 75%;
+height: 100px;
+}
+td div{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+td div p{
+width: 25%;
+background-color: white;
+text-align: center;
+
+
+}
+</style>
+</head>
+<body>
+
+	<table>
+		<thead>
+			<tr>
+				<th style="width: 10%">페이지명</th>
+				<th style="width: 30%">링크</th>
+				<th style="width: 30%">디자인(%)</th>
+				<th style="width: 30%">퍼블리싱(%)</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>메인페이지</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/index.html" />http://partner.start1.co.kr/goodmit/demo/index.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="1000" max="100"></progress><p>100%</p></div></td>
+			</tr>
+			<tr style="height: 100px;">
+				<td colspan="4" style="background-color: #164781; color: white">Company</td>
+			</tr>
+			<tr>
+				<td>대표이사 인사말</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/company/ceo.html" />http://partner.start1.co.kr/goodmit/demo/Company/Ceo.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>사업개요</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/company/overview.html" />http://partner.start1.co.kr/goodmit/demo/Company/Overview.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>연혁</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/company/history.html" />http://partner.start1.co.kr/goodmit/demo/Company/History.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>CI</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/company/ci.html" />http://partner.start1.co.kr/goodmit/demo/Company/CI.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>미션과 비전</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/company/misstion.html" />http://partner.start1.co.kr/goodmit/demo/Company/Misstion.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>수상실적</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/company/performance.html" />http://partner.start1.co.kr/goodmit/demo/Company/PerFormance.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>국가인증 및 파트너인증</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/company/certified.html" />http://partner.start1.co.kr/goodmit/demo/Company/Certified.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>관계사</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/company/affiliated.html" />http://partner.start1.co.kr/goodmit/demo/Company/Affiliated.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>협력사</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/company/cooperative.html" />http://partner.start1.co.kr/goodmit/demo/Company/Cooperative.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>사회공헌활동</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/company/contribution.html" />http://partner.start1.co.kr/goodmit/demo/Company/Contribution.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr style="height: 100px;">
+				<td colspan="4" style="background-color: #164781; color: white">PR CENTER</td>
+			</tr>
+			
+		<tr>
+			<td>공지사항</td>
+			<td><a href="http://partner.start1.co.kr/goodmit/demo/prcenter/notice"/>http://partner.start1.co.kr/goodmit/demo/prcenter/notice</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+		</tr>
+		
+		<tr>
+			<td>언론보도</td>
+			<td><a href="http://partner.start1.co.kr/goodmit/demo/prcenter/news"/>http://partner.start1.co.kr/goodmit/demo/prcenter/news</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+		</tr>
+		
+		<tr>
+			<td>영상</td>
+			<td><a href="http://partner.start1.co.kr/goodmit/demo/prcenter/gitube"/>http://partner.start1.co.kr/goodmit/demo/prcenter/gitube</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+		</tr>
+		
+		<tr>
+			<td>이벤트</td>
+			<td><a href="http://partner.start1.co.kr/goodmit/demo/prcenter/event"/>http://partner.start1.co.kr/goodmit/demo/prcenter/event</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+
+		</tr>
+
+			<tr style="height: 100px;background-color: #164781; color: white">
+				<td colspan="4">SOLUTION</td>
+			</tr>
+			<tr style="height: 100px;">
+				<td colspan="4" style="background-color: #16478130">CLOUD</td>
+			</tr>
+
+			<tr>
+				<td>Cisco ACI</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/cloud/cisco/aci.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/CLOUD/Cisco/ACI.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Cisco Hyper</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/cloud/cisco/hyper.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/CLOUD/Cisco/Hyper.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Cisco UCS</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/cloud/cisco/ucs.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/CLOUD/Cisco/Ucs.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>DellTechnologies PowerEdge</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/cloud/delltechnologies/poweredge.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/CLOUD/DellTechnologies/PowerEdge.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>DellTechnologies Rail</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/cloud/delltechnologies/rail.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/CLOUD/DellTechnologies/Rail.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Druva</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/cloud/druva/druva.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/CLOUD/Druva/druva.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Goolgle Cloud Platform</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/cloud/google/google.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/CLOUD/Google/Google.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>MsAzure</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/cloud/msazure/msazure.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/CLOUD/MsAzure/MsAzure.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Naver Cloud Platform</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/cloud/naver/naver.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/CLOUD/Naver/Naver.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>NetApp</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/cloud/netapp/netapp.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/CLOUD/NetApp/NetApp.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>PureStorage</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/cloud/purestorage/purestorage.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/CLOUD/PureStorage/PureStorage.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Veeam</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/cloud/veeam/veeam.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/CLOUD/Veeam/Veeam.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Veritas Info</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/cloud/veritas/info.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/CLOUD/Veritas/Info.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Veritas Netbackup</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/cloud/veritas/netbackup.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/CLOUD/Veritas/Netbackup.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>VMware Horizon</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/cloud/vmware/horizon.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/CLOUD/VMware/Horizon.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>VMware NSX</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/cloud/vmware/nsx.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/CLOUD/VMware/Nsx.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>VMware Tanzu</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/cloud/vmware/tanzu.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/CLOUD/VMware/Tanzu.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>VMware vSan</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/cloud/vmware/vsan.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/CLOUD/VMware/Vsan.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>VMware vSphere</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/cloud/vmware/vsphere.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/CLOUD/VMware/vSphere.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr style="height: 100px;">
+				<td colspan="4" style="background-color: #16478130">BIGDATA</td>
+			</tr>
+
+			<tr>
+				<td>Cloudera</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/bigdata/cloudera.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/BIGDATA/Cloudera.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr style="height: 100px;">
+				<td colspan="4" style="background-color: #16478130">MANAGEMENT</td>
+			</tr>
+
+			<tr>
+				<td>ClovirCM</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/management/clovircm.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/MANAGEMENT/ClovirCM.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Clovirdaas</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/management/clovirdaas.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/MANAGEMENT/Clovirdaas.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>ClovirSM</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/management/clovirsm.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/MANAGEMENT/ClovirSM.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Controlup</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/management/controlup.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/MANAGEMENT/Controlup.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Docusign</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/management/docusign.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/MANAGEMENT/Docusign.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr style="height: 100px;">
+				<td colspan="4" style="background-color: #16478130">SECURITY</td>
+			</tr>
+
+			<tr>
+				<td>Akamai App</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/akamai/app.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/Akamai/App.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Akamai BotManager</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/akamai/botmanager.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/Akamai/BotManager.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Akamai Eaa</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/akamai/eaa.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/Akamai/Eaa.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Akamai EdgeDns</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/akamai/edgedns.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/Akamai/EdgeDns.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Akamai Etp</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/akamai/etp.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/Akamai/Etp.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Akamai Nlta</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/akamai/nlta.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/Akamai/Nlta.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Appm ForLogin</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/appm/forlogin.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/Appm/ForLogin.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Appm ForPassword</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/appm/forpassword.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/Appm/ForPassword.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>GrippinTower</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/grippintower/grippintower.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/GrippinTower/GrippinTower.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>J-Tops</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/jtops/jtops.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/Jtops/Jtops.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Menlo Email</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/menlo/email.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/Menlo/Email.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Menlo Web</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/menlo/web.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/Menlo/Web.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Quest ChangeAuditor</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/quest/changeauditor.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/Quest/ChangeAuditor.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Quest RecoveryManager</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/quest/recoverymanager.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/Quest/RecoveryManager.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Rsa NetWitnessPlatform</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/rsa/netwitnessplatform.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/Rsa/NetWitnessPlatform.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Rsa Securid</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/rsa/securid.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/Rsa/Securid.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Sentinelone</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/sentinelone/sentinelone.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/Sentinelone/Sentinelone.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>SecureGate</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/securegate/securegate.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/SecureGate/SecureGate.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>SolidStep CCE</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/solidstep/cce.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/SolidStep/Cce.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>SolidStep CVE</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/solidstep/cve.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/SolidStep/Cve.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Sparrow Dast</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/sparrow/dast.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/Sparrow/Dast.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Sparrow Sast</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/sparrow/sast.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/Sparrow/Sast.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Sweeper</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/sweeper/sweeper.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/Sweeper/Sweeper.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>WeedsBlackBoxs</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/solutions/security/weedsblackbox/weedsblackbox.html" />http://partner.start1.co.kr/goodmit/demo/Solutions/SECURITY/WeedsBlackBoxs/WeedsBlackBoxs.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr style="height: 100px;">
+				<td colspan="4" style="background-color: #164781; color: white">CONTACT AS</td>
+			</tr>
+
+			<tr>
+				<td>오시는길</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/contactus/directions.html" />http://partner.start1.co.kr/goodmit/demo/ContactUs/directions.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>영업·기술·유지보수 문의</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/contactus/inquiry.html" />http://partner.start1.co.kr/goodmit/demo/ContactUs/Inquiry.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr style="height: 100px;">
+				<td colspan="4" style="background-color: #164781; color: white">ENGLISH</td>
+			</tr>
+
+			<tr>
+				<td>Overview</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/english/eoverview.html" />http://partner.start1.co.kr/goodmit/demo/English/EOverview.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Solution</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/english/esolutions.html" />http://partner.start1.co.kr/goodmit/demo/English/ESolutions.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Awards and Achievments</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/english/eawards.html" />http://partner.start1.co.kr/goodmit/demo/English/EAwards.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Partner</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/english/epartner.html" />http://partner.start1.co.kr/goodmit/demo/English/EPartner.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Marketing Activities</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/english/emarketing.html" />http://partner.start1.co.kr/goodmit/demo/English/EMarketing.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Locations</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/english/elocation.html" />http://partner.start1.co.kr/goodmit/demo/English/ELocation.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+
+			<tr>
+				<td>Contact us</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/english/econtact.html" />http://partner.start1.co.kr/goodmit/demo/English/EContact.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+			</tr>
+			
+			<tr style="height: 100px;">
+				<td colspan="4" style="background-color: #164781; color: white">관리자</td>
+			</tr>
+				<tr>
+				<td>관리자 메인페이지</td>
+				<td><a
+					href="http://partner.start1.co.kr/goodmit/demo/mgmt/main/" />http://partner.start1.co.kr/goodmit/demo/English/EContact.html</td>
+				<td><div><progress value="100" max="100"></progress><p>100%</p></div></td>
+				<td><div><progress value="50" max="100"></progress><p>50%</p></div></td>
+			</tr>
+		</tbody>
+
+	</table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'SOLUTIONS';
+	$_category2 = 'CLOUD / INFRA';
+	$_category3 = 'VMware';
+	$_category4 = 'vSAN';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../../../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/solutions.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_solutions.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/solutions.js"></script>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			M_main_navbar();
+			M_sidenav_accordion();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+
+	<!-- Head Navigator Start -->
+	<?php include_once '../../../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background Start -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="background_text1">SOLUTIONS</p>
+			<p class="background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>SOLUTIONS</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/solution.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background End -->
+
+	<!-- Contents Start -->
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../../../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+
+			<!-- pc버전 시작 -->
+			<div class="Solution_container">
+				<div class="Solution_top_box">
+					<div class="Solution_top_left">
+						<div class="Solution_top_img" data-aos="fade-right"
+							data-aos-duration="1000">
+							<img src="../../../image/common/vsimg1" />
+						</div>
+					</div>
+					<div class="Solution_top_rigth">
+						<p class="Solution_top_title1">스토리지 가상화 솔루션</p>
+						<p class="Solution_top_title2">VMware vSAN</p>
+					</div>
+				</div>
+
+
+				<div class="color_box">
+					<div class="color_box_left"></div>
+					<div class="color_box_rigth" data-aos="fade-left"
+						data-aos-duration="1000">
+						<p>VMware vSAN은 vSphere 하이퍼바이저 커널에 포함되어 있는</p>
+						<p>소프트웨어 정의 스토리지(SDS)솔루션 입니다.</p>
+						<div class="Solution_down_box">
+							<span class="Solution_down"><a href="<?php echo URL; ?>/pdf/vSAN.pdf" download>자료다운로드</a><span>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white">핵심 구성요소</div>
+					<div class="Solution_center_black">vSAN</div>
+				</div>
+
+				<div class="Solution_box6_container">
+					<div class="Solution_box6_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<p class="Solution_box6_item_text">VM에 최적화된</p>
+						<p class="Solution_box6_item_text">소프트웨어 정의 스토리지</p>
+					</div>
+					<div class="Solution_box6_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<p class="Solution_box6_item_text">하이퍼바이저 커널에</p>
+						<p class="Solution_box6_item_text">내장된 기능</p>
+					</div>
+					<div class="Solution_box6_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<p class="Solution_box6_item_text">HDD/SDD를</p>
+						<p class="Solution_box6_item_text">공유 데이터스토어로 풀링</p>
+					</div>
+					<div class="Solution_box6_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+						<p class="Solution_box6_item_text">엔터프라이즈 급의</p>
+						<p class="Solution_box6_item_text">확장성 및 성능 제공</p>
+					</div>
+					<div class="Solution_box6_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+						<p class="Solution_box6_item_text">VM레벨 스토리지</p>
+						<p class="Solution_box6_item_text">정책을 통한 관리</p>
+					</div>
+				</div>
+				
+				
+				<div class="vsphere_bottom_container">
+
+					<div class="vsphere_bottom_img_box" data-aos="fade-right" data-aos-duration="1000">
+						<p class="vsphere_bottom_img_box_text">vSAN기술의 특징</p>
+						<img src="../../../image/common/vsan-layer.png" />
+					</div>
+					<div class="vsphere_bottom_text_box" data-aos="fade-left"
+						data-aos-duration="1000">
+						<ul>
+							<li><img src="../../../image/common/vsan-checkbox.png" />vSAN은 Cache 뿐만 아니라 데이터도 SSD 장치사용 가능</li>
+							<li><img src="../../../image/common/vsan-checkbox.png" />vSAN은 QoS 기능 제공</li>
+							<li><img src="../../../image/common/vsan-checkbox.png" />vSAN은 스토리지 관리 간소화 및 자동화 기능 제공</li>
+							<li><img src="../../../image/common/vsan-checkbox.png" />vSAN은 소프트웨어 기반의 중복제거 및 압축 기능 제공</li>
+							<li><img src="../../../image/common/vsan-checkbox.png" />vSAN은 엔터프라이즈 급의 고가용성 제공</li>
+							<li><img src="../../../image/common/vsan-checkbox.png" />하이퍼컨버지드인프라를 위한 소프트웨어 정의 스토리지</li>
+							<li><img src="../../../image/common/vsan-checkbox.png" />IO 우선순위를 인지하는 지능화된 데이터 저장소 디스크 그룹 및 호스트 기반 확장성</li>
+							<li><img src="../../../image/common/vsan-checkbox.png" />스토리지 정책을 활용한 데이터 보호</li>
+
+						</ul>
+					</div>
+				</div>
+				
+
+				<div class="vsphere_center_box2_container">
+				<span class="vsphere_center_box2">vSAN 아키텍쳐</span>
+				</div>
+				<div class="vsphere_center_img_box2" data-aos="fade-up"
+					data-aos-duration="1000">
+					<div class="vsphere_center_img2">
+						<img src="../../../image/common/vsan1.png" />
+					</div>
+				</div>
+
+
+				<div class="Solution_ask_box">
+					<p class="Solution_ask_text1">더 알고 싶으시다면</p>
+					<p class="Solution_ask_text2">지금 바로 문의주세요. 최대한 빠르고 성실하게 답변해
+						드리겠습니다.</p>
+					<div class="Solution_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+
+			</div>
+			<!-- pc버전 끝 -->
+
+			<!-- 모바일 버전 시작 -->
+			<div class="M_Solution_container">
+
+				<div class="M_Solution_title_box">
+					<p class="M_Solution_title_text1">스토리지 가상화 솔루션</p>
+					<p class="M_Solution_title_text2">VMware vSAN</p>
+				</div>
+				<div class="M_Solution_title_img_box">
+					<img src="../../../image/common/vsimg1" />
+				</div>
+
+				<div class="M_Solution_black_box">
+					<p>VMware vSAN은 vSphere 하이퍼바이저 커널에 포함되어 있는 소프트웨어 정의 스토리지(SDS)솔루션 입니다.<p>
+				</div>
+
+
+
+
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white">핵심 구성요소</div>
+					<div class="Solution_center_black">vSAN</div>
+				</div>
+
+				<div class="Solution_box6_container">
+					<div class="Solution_box6_item">
+						<p class="Solution_box6_item_text">VM에 최적화된</p>
+						<p class="Solution_box6_item_text">소프트웨어 정의 스토리지</p>
+					</div>
+					<div class="Solution_box6_item">
+						<p class="Solution_box6_item_text">하이퍼바이저 커널에</p>
+						<p class="Solution_box6_item_text">내장된 기능</p>
+					</div>
+					<div class="Solution_box6_item">
+						<p class="Solution_box6_item_text">HDD/SDD를</p>
+						<p class="Solution_box6_item_text">공유 데이터스토어로 풀링</p>
+					</div>
+					<div class="Solution_box6_item">
+						<p class="Solution_box6_item_text">엔터프라이즈 급의</p>
+						<p class="Solution_box6_item_text">확장성 및 성능 제공</p>
+					</div>
+					<div class="Solution_box6_item">
+						<p class="Solution_box6_item_text">VM레벨 스토리지</p>
+						<p class="Solution_box6_item_text">정책을 통한 관리</p>
+					</div>
+
+					
+				</div>
+				
+
+
+				<div class="vsphere_bottom_img_box">
+					<p class="vsphere_bottom_img_box_text">vSAN기술의 특징</p>
+					<img src="../../../image/common/vsimg6" />
+					
+					<div class="vsphere_bottom_text_box">
+						<ul>
+							<li><img src="../../../image/common/vsan-checkbox.png" />vSAN은 Cache 뿐만 아니라 데이터도 SSD 장치사용 가능</li>
+							<li><img src="../../../image/common/vsan-checkbox.png" />vSAN은 QoS 기능 제공</li>
+							<li><img src="../../../image/common/vsan-checkbox.png" />vSAN은 스토리지 관리 간소화 및 자동화 기능 제공</li>
+							<li><img src="../../../image/common/vsan-checkbox.png" />vSAN은 소프트웨어 기반의 중복제거 및 압축 기능 제공</li>
+							<li><img src="../../../image/common/vsan-checkbox.png" />vSAN은 엔터프라이즈 급의 고가용성 제공</li>
+							<li><img src="../../../image/common/vsan-checkbox.png" />하이퍼컨버지드인프라를 위한 소프트웨어 정의 스토리지</li>
+							<li><img src="../../../image/common/vsan-checkbox.png" />IO 우선순위를 인지하는 지능화된 데이터 저장소 디스크 그룹 및 호스트 기반 확장성</li>
+							<li><img src="../../../image/common/vsan-checkbox.png" />스토리지 정책을 활용한 데이터 보호</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="vsphere_center_box2_container">
+					<span class="vsphere_center_box2">vSAN 아키텍쳐</span>
+				</div>
+
+				<div class="vsphere_center_img_box2" data-aos="fade-up"
+					data-aos-duration="1000">
+					<div class="vsphere_center_img2">
+						<img src="../../../image/common/vsan1.png" />
+					</div>
+				</div>
+			
+
+
+				<div class="vsphere_ask_box">
+					<p class="vsphere_ask_text1">더 알고 싶으시다면</p>
+					<p class="vsphere_ask_text2">지금 바로 문의주세요.</p>
+					<p class="vsphere_ask_text2">빠르고 성실하게 답변해 드리겠습니다.</p>
+					<div class="vsphere_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+
+			</div>
+
+
+			<!-- 모바일 버전 끝 -->
+
+
+		</div>
+	</div>
+
+	<!-- Side Navigator Start -->
+	<?php include_once '../../../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+</body>
+</html>

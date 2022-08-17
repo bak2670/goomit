@@ -1,0 +1,293 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'COMPANY';
+	$_category2 = '수상실적';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/company.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_company.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/company.js"></script>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+	<!-- Head Navigator Start -->
+	<?php include_once '../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background 시작 -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="company_background_text1">COMPANY</p>
+			<p class="company_background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>COMPANY</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/company.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background 끝 -->
+
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+	        <div class="Performance_background">
+				<p class="Company_top_text performance_top_title">
+					<span>COMPANY</span>
+				</p>
+            <div class="Performance_container_box">
+			<div class="Performance_container">
+	            <div class="performance_title">수상실적</div>
+	            <div class="performance_title_img_box">
+	            	<div class="performance_img_text">굿모닝아이텍(주)이 걸어온 길은 혁신과 도전의 시간들이<br> 빼곡히 차 있습니다.<br>고객 여러분과 함께 새로운 도전의 길을 한 걸음 한 걸음 성실하게<br>걸어갈 것입니다.</div>
+	            	<div class="performance_img_item"><img src="../image/common/award1.png" /></div> 
+	            </div>
+        
+
+        <div class="performance_table_box">
+            <div class="performance_item_box">
+                <div class="performance_year">2022</div>
+                <div class="performance_data">
+                    <ul>
+                    	<li>[수상] VMware FY22 최고 실적 파트너(Best Performance) '올해의 파트너상' 수상</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="performance_item_box">
+                <div class="performance_year">2021</div>
+                <div class="performance_data">
+                    <ul>
+                    	<li>[수상] 2021년 일자리창출 유공 정부포상 대통령표창 수상</li>
+                    	<li>[수상] 2021년 대한민국 신성장경영대상 대통령표창 수상</li>
+                    	<li>[수상] NetApp 올해의 파트너상 수상</li>
+                    	<li>[수상] "제10회 정보보호의 날" 과학기술정보통신부 장관표창 수상</li>
+                        <li>“2021 모범 중소기업인” 산업포장 수상</li>
+                        <li>한국법무보호복지공단에서 소외계층의 복지 증진과 범죄예방 활동에 기여한 공로로 감사장 수여</li>
+                        <li>VMware 2021회계년도(FY21) 국내 최고 매출(Partner of the year) 실적 파트너상 수상</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="performance_item_box">
+                <div class="performance_year">2020</div>
+                <div class="performance_data">
+                    <ul>
+                        <li>한국문화정보원으로부터 감사패 수상[12월]</li>
+                        <li>조선일보 ’2020 올해의 일자리대상’ 수상 (고용확대 부문) [12월]</li>
+                        <li>포스코ICT 감사패 수상 [11월]</li>
+                        <li>Dell Technologies Korea_’Best VMware Partner’ 수상 [8월]</li>
+                        <li>동아일보 ’2020 한국의 소비자대상’ 수상 (빅테이터솔루션 부문) [7월]</li>
+                        <li>VMware Korea Prartner Award 2019 WINNER_CY2019 Top Performer of the Year 수상 [1월]</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="performance_item_box">
+                <div class="performance_year">2019</div>
+                <div class="performance_data">
+                    <ul>
+                        <li>Cisco ‘Cisco HX Authorization’인증 취득</li>
+                        <li>VMware Partner of the Year emerging market상 수상</li>
+                        <li>VMware 아태 지역 올해의 파트너상 수상</li>
+                        <li>고용노동부, 2019년 청년친화강소기업 선정</li>
+                        <li>동아일보 대한민국 고용친화 모범경영대상 수상</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="performance_item_box">
+                <div class="performance_year">2018</div>
+                <div class="performance_data">
+                    <ul>
+                        <li>영우디지탈 Best Partner상(Data Center 부문)</li>
+                        <li>Cisco 총판사 아이넷뱅크로부터 The Most Promising Partner of the Year상 수상</li>
+                        <li>시스코 하이퍼플렉스 세일즈 피치 컨테스트 1위</li>
+                        <li>대한상의, ‘일하기 좋은 중소기업’ 2년 연속 선정</li>
+                        <li>VMware 마스터 서비스 자격 인증 획득(네트워크 가상화 부문)</li>
+                        <li>2018 대한민국 산업대상 수상(경영혁신 부문)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="performance_item_box">
+                <div class="performance_year">2017</div>
+                <div class="performance_data">
+                    <ul>
+                        <li>시스코 Best Data Center Partner of The Year 수상</li>
+                        <li>클라우데라 Korea Partner of the Year 수상</li>
+                        <li>제4회 코리아 빅데이터 어워드 경영자부문 장관상 수상(중소벤처기업장관상)</li>
+                        <li>제2회 대한민국 혁신경영인대상 기술혁신대상 수상</li>
+                        <li>제31회 정보인의 날 공로상 수상</li>
+                        <li>고용노동부 선정 강소기업 인증</li>
+                        <li>NICE평가정보 기술평가 우수기업 인증</li>
+                        <li>VERITAS FY17 Pioneer of the year 수상</li>
+                        <li>2017년 VMware 최고 매출 파트너상 수상(10년언속)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="performance_item_box">
+                <div class="performance_year">2016</div>
+                <div class="performance_data">
+                    <ul>
+                        <li>2016년 일자리창출 유공 ‘장관상’ 표창</li>
+                        <li>공공솔루션마켓 2016 ‘정부정보화협의회장 공로상’ 수상</li>
+                        <li>Cisco 2016 Partner Award ‘Data Center Sales of the Year’ 수상</li>
+                        <li>Cisco FY17 ‘Best Data Center Reseller’ 수상</li>
+                        <li>2016 글로벌 상용 SW 명품대전 ‘미래창조과학부장관상’ 수상</li>
+                        <li>제10회 CIOCISO AWARDS 2015 베스트 파트너 대상 수상</li>
+                        <li>Netapp의 FY15 FlexPod 파트너사 프로그램 부문 Achiever Award</li>
+                        <li>영우디지탈 2015 베스트 파트너상 수상</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="performance_item_box">
+                <div class="performance_year">2015</div>
+                <div class="performance_data">
+                    <ul>
+                        <li>2015 대한민국 고객만족 서비스 경영대상_기업부문 인증 및 수상</li>
+                        <li>VMware 최고 매출 파트너상(국내)(The Greatest Revenue partner of the year)</li>
+                        <li>VMware 베스트 파트너 세일즈상(국내)(VMware Best Partner Sales Rep of the Year)</li>
+                        <li>브레인네트워크포럼 Best Charity Award 수상</li>
+                        <li>ICT플랫폼학회 공로상 수상</li>
+                        <li>Cisco APJ Partner Connection 2015, ‘Cisco UCS서버 코리아 판매 1위’상 수상</li>
+                        <li>2015 대한민국 미래성장동력대상 ‘빅데이터 부문’ 수상</li>
+                        <li>제2회 코리아빅데이터어워드 경영자부문 최우수상 통계청장상 수상</li>
+                        <li>APJ Riverbed Rising Star Partner of the Year 리버베드 라이징스타상 수상</li>
+                        <li>VMware 세일즈어워드 수상</li>
+                        <li>Netapp FY15 우수파트너상 수상</li>
+                        <li>Cisco DC PVT Award 수상</li>
+                        <li>Cisco FY15 Top DC Growth Partner 수상</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="performance_item_box">
+                <div class="performance_year">2014</div>
+                <div class="performance_data">
+                    <ul>
+                        <li>2014년/2015년도 VMware Premier Partner</li>
+                        <li>2014 서울중소기업인대회 중소기업유공자(국무총리 표창)</li>
+                        <li>‘ROTC 리더스월드’ ICT(스마트창조/친환경 녹색성장)부문 리더 선정</li>
+                        <li>제1회 코리아빅데이터어워드 기술분야 우수상(한국정보화진흥원장상)</li>
+                        <li>VMware Partner Exchange 최고 파트너상(국내)(Top Performer of the Year)</li>
+                        <li>VMware Partner Exchange 베스트 파트너 세일즈상(국내)(Best Partner Sales Rep of the Year)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="performance_item_box">
+                <div class="performance_year">2013</div>
+                <div class="performance_data">
+                    <ul>
+                        <li>SymanTec FY13 Best Partner Award 우수 파트너상 수상 (국내) (Net Back Up Appliance)</li>
+                        <li>VMware Partner Exchange 최우수 파트너상 수상 (국내) (VMware Partner of the Year)</li>
+                        <li>VMware Partner Exchange APJ (APJ Desktop Competency)</li>
+                        <li>SW사용/관리 우수기업 문화체육관광부장관상 수상</li>
+                        <li>제18회 바다의 날 기념 마라톤 대회 5년 연속 최다인원 참가상(5년 연속) 수상</li>
+                        <li>Symantec FY13 Best Partner Award 우수 파트너상 수상</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="performance_item_box">
+                <div class="performance_year">2012</div>
+                <div class="performance_data">
+                    <ul>
+                        <li>VMware 최고 파트너상(Top Partner of the Year) 수상</li>
+                        <li>CIO Awards 2012 IT마케팅 대상 수상</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="performance_item_box">
+                <div class="performance_year">2011</div>
+                <div class="performance_data">
+                    <ul>
+                        <li>Apac Award 수상 (Most Valuable Partner Award)</li>
+                        <li>중소기업청장 표창 수상</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="performance_item_box">
+                <div class="performance_year">2010</div>
+                <div class="performance_data">
+                    <ul>
+                        <li>Partner Network Award 수상 (Solution Provider of the Year,2010)</li>
+                        <li>Partner Exchange 최우수 파트너상 수상 (국내) (Best Partner / Competency Award)</li>
+                        <li>CIO Awards 2010 베스트파트너 대상 수상</li>
+                        <li>법무부장관 표창 수상</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="performance_item_box">
+                <div class="performance_year">2009</div>
+                <div class="performance_data">
+                    <ul>
+                        <li>Partner Exchange 최우수 파트너상 (국내) (Best Partner / Competency Award)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="performance_item_box">
+                <div class="performance_year">2008</div>
+                <div class="performance_data">
+                    <ul>
+                        <li>Virtualization Forum 최우수 파트너상 (국내) (Regional Partner Of The Year)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="performance_item_box">
+                <div class="performance_year">2007</div>
+                <div class="performance_data">
+                    <ul>
+                        <li>VMware Rising Star APAC 2007 아시아 태평양 최우수 협력사</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+		</div>
+	</div>
+	<!-- footer Start -->
+	<?php include_once '../_inc/footer.html'; ?>
+	<!-- footer End -->
+	<!-- Side Navigator Start -->
+	<?php include_once '../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+	
+</body>
+</html>

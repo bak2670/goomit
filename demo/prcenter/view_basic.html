@@ -1,0 +1,235 @@
+<?php
+	include_once '_common.php';
+	$_category1 = 'PR CENTER';
+	$_category2 = '공지사항';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once '../_inc/head.html'; ?>
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/default_board_skin.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/main.js"></script>
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			M_sidenav_accordion();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+	<!-- Head Navigator Start -->
+	<?php include_once '../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+	
+	<!-- top background Start -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="background_text1">PR CENTER</p>
+			<p class="background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>PR CENTER</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/prcenter.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background End -->
+	<!-- Contents Start -->
+	<div class="detail-wrap mb-50">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+			
+			<div class="container notice-container">
+				<div class="row top-title-row">
+					<div class="tit-col">
+						<p class="top_tit prcenter">
+							<span>PR CENTER</span>
+						</p>
+						<h1 class="tit">공지사항[Dynamic]</h1>
+					</div>
+				</div>
+				
+				<div class="row board-view-wrap">
+					<!-- PC -->
+					<div class="view-col">
+						<div class="v-row board-view-top mb-10">
+							<div class="col tit">
+								<h2>굿모닝아이텍, 비대면 시대 스마트워크 위한 ‘ GIT-DaaS’ 선보여</h2>
+							</div>
+							<div class="col sub-tit">
+								<span>등록일 2022.05.15. 출처 디지털데일리(https://www.ddaily.co.kr/)</span>
+								<div class="right-con btn-set only-pc">
+									<button class="btn1" onclick="location.href='notice'">목록</button>
+								</div>
+							</div>
+						</div>
+						<div class="board-view-body mb-10">
+							<div class="col">
+								<?php include_once 'test_content1.html'; ?>
+							</div>
+						</div>
+						<div class="v-row board-view-footer mb-10">
+							<div class="col footer-col v-row recommand-readbook mb-10">
+								<div class="recommand-top mb-10 tit">
+									<span>추천게시글</span>
+								</div>
+								<div class="recommand-content">
+									<ul>
+										<li>제목1</li>
+										<li>제목2</li>
+										<li>제목3</li>
+										<li>제목4</li>
+										<li>제목5</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col footer-col v-row recommand-feel mb-10">
+								<div class="feel-top mb-10 tit">
+									<span>게시글을 추천합니다</span>
+								</div>
+								<div class="row feel-content">
+									<div class="v-row feel-btn-wrap">
+										<div class="feel-btn">
+											<div class="mb-10">
+												<img src="<?php echo URL.'/image/common/emoji/love.png'; ?>" alt="" />
+											</div>
+											<div>감동이야</div>
+											<div class="feel-cnt">0</div>
+										</div>
+									</div>
+									<div class="v-row feel-btn-wrap">
+										<div class="feel-btn">
+											<div class="mb-10">
+												<img src="<?php echo URL.'/image/common/emoji/smile.png'; ?>" alt="" />
+											</div>
+											<div>좋은느낌</div>
+											<div class="feel-cnt">0</div>
+										</div>
+									</div>
+									<div class="v-row feel-btn-wrap">
+										<div class="feel-btn">
+											<div class="mb-10">
+												<img src="<?php echo URL.'/image/common/emoji/fearful.png'; ?>" alt="" />
+											</div>
+											<div>생각필요</div>
+											<div class="feel-cnt">0</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 
+							<div class="col footer-col recommand-reply mb-10">
+								
+							</div>
+							 -->
+							<div class="col footer-col action-btn mb-10">
+								<button class="btn1" onclick="location.href='notice'">목록</button>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Mob -->
+					 <div class="only-mobile mob-view-col">
+						<div class="v-row board-view-top mb-10">
+							<div class="col tit">
+								<h2>굿모닝아이텍, 비대면 시대 스마트워크 위한 ‘ GIT-DaaS’ 선보여</h2>
+							</div>
+							<div class="col sub-tit">
+								<span>등록일 2022.05.15. 출처 디지털데일리(https://www.ddaily.co.kr/)</span>
+								<div class="right-con">
+									<button>목록</button>
+								</div>
+							</div>
+						</div>
+						<div class="board-view-body mb-10">
+							<div class="col">
+								<?php include_once 'test_content2.html'; ?>
+							</div>
+						</div>
+						<div class="v-row board-view-footer mb-10">
+							<div class="col footer-col v-row recommand-readbook mb-10">
+								<div class="recommand-top mb-10 tit">
+									<span>추천게시글</span>
+								</div>
+								<div class="recommand-content">
+									<ul>
+										<li>제목1</li>
+										<li>제목2</li>
+										<li>제목3</li>
+										<li>제목4</li>
+										<li>제목5</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col footer-col v-row recommand-feel mb-10">
+								<div class="feel-top mb-10 tit">
+									<span>게시글을 추천합니다</span>
+								</div>
+								<div class="row feel-content">
+									<div class="v-row feel-btn-wrap">
+										<div class="feel-btn">
+											<div class="mb-10">
+												<img src="<?php echo URL.'/image/common/emoji/love.png'; ?>" alt="" />
+											</div>
+											<div>감동이야</div>
+											<div class="feel-cnt">0</div>
+										</div>
+									</div>
+									<div class="v-row feel-btn-wrap">
+										<div class="feel-btn">
+											<div class="mb-10">
+												<img src="<?php echo URL.'/image/common/emoji/smile.png'; ?>" alt="" />
+											</div>
+											<div>좋은느낌</div>
+											<div class="feel-cnt">0</div>
+										</div>
+									</div>
+									<div class="v-row feel-btn-wrap">
+										<div class="feel-btn">
+											<div class="mb-10">
+												<img src="<?php echo URL.'/image/common/emoji/fearful.png'; ?>" alt="" />
+											</div>
+											<div>생각필요</div>
+											<div class="feel-cnt">0</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col footer-col action-btn mb-10">
+								<button>목록</button>
+							</div>
+						</div>
+					</div>
+					<!-- 요기위  -->
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- Contents End -->
+	
+	<!-- footer Start -->
+	<?php include_once '../_inc/footer.html'; ?>
+	<!-- footer End -->
+	
+	<!-- Side Navigator Start -->
+	<?php include_once '../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+</body>
+</html>

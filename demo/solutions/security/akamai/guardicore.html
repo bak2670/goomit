@@ -1,0 +1,411 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'SOLUTIONS';
+	$_category2 = 'SECURITY';
+	$_category3 = 'Akamai';
+	$_category4 = 'Guardicore Segmentation';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../../../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/solutions.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_solutions.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/solutions.js"></script>
+	
+	<style>
+		.solution_section5_icon {
+		    height: 43%;
+		    width: 100%;
+		    text-align: center;
+		}
+		.solution_section5_icon img {
+		    width: 15%;
+		}
+		.Sentinel_section3_icon img {
+		    width: 20%;
+		}
+	</style>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			M_main_navbar();
+			M_sidenav_accordion();
+			AOS.init();
+		});
+	</script>
+	
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+
+	<!-- Head Navigator Start -->
+	<?php include_once '../../../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background Start -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="background_text1">SOLUTIONS</p>
+			<p class="background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>SOLUTIONS</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/solution.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background End -->
+
+	<!-- Contents Start -->
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../../../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+			
+			<!-- pc버전 시작 -->
+			<div class="Solution_container">
+				<div class="Solution_top_box">
+					<div class="Solution_top_left">
+						<div class="Solution_top_img" data-aos="fade-right"
+							data-aos-duration="1000">
+							<img src="../../../image/common/Akamai.png" />
+						</div>
+					</div>
+					<div class="Solution_top_rigth">
+						<p class="Solution_top_title1">마이크로 세그멘테이션 솔루션</p>
+						<p class="Solution_top_title2">Akamai Guardicore Segmentation</p>
+					</div>
+				</div>
+
+
+				<div class="color_box" style="background-color: #ff7c00">
+					<div class="color_box_left"></div>
+					<div class="color_box_rigth" data-aos="fade-left"
+						data-aos-duration="1000">
+						<p>
+							마이크로 세그멘테이션 기술로 제로 트러스트 보안 포트폴리오를 강화합니다.
+						</p>
+
+						<div class="Solution_down_box">
+							<span class="Solution_down"><a href="<?php echo URL; ?>/pdf/Akamai Guardicore.pdf" download>자료다운로드</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="Eaa_title">공격 표면을 줄이고 디지털 혁신을 단순화하세요</div>
+				<p class="Solution_sub_title" style="margin-top: 1vw;"data-aos="fade-up" data-aos-duration="1000">Akamai Guardicore Segmentation(AGS)의 마이크로 세그멘테이션은 분산 방화벽 플랫폼을 말합니다.<br>네트워크를 보다 작은 조각으로 분할한다는 뜻으로 네트워크 일부가 바이러스에 오염돼도 확산을 막을 수 있습니다.<br>클라우드, PaaS, On-premise 및 이러한 환경 간의 통신을 매핑하여 트래픽이 어디에 있든 완벽하고 Context가 풍부한 가시성을 제공합니다.<br>이러한 가시성을 통해 '큰 그림'을 볼 수 있을 뿐만 아니라 세부적인 세부 사항까지 드릴 다운할 수 있습니다.</p>
+				<div class="Solution_Alone_img aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+					<img src="../../../image/common/guardimg1.jpg">
+				</div>
+				<div class="vsphere_center_box2_container"> 
+					<span class="vsphere_center_box2">Akamai Guardicore Segmentation, 드리는 약속</span>
+				</div>
+				<p class="Solution_sub_title" data-aos="fade-up" data-aos-duration="1000">
+					Akamai Guardicore Segmentation(AGS)는 애플리케이션이 어떻게 작동하고 통신하는지 자세히 알아볼 수 있습니다.<br>모든 플랫폼과 환경에서 작동하는 세분화된 정책 생성이 가능하며 여러 기술을 통해 위협을 신속하게 감지하고 대응합니다.<br>네트워크를 분리시키고 다중 인증 등의 복잡한 검증 과정을 통해서만 시스템 접근을 허용하여 제로 트러스트 전략을 강화하고 보안을 강력하게 유지합니다.<br>또한, 워크 로드에 방화벽이 내장돼 있어 감염된 워크 로드가 다른 워크 로드나 애플리케이션을 감염시키지 못합니다.
+				</p>
+				
+				<div class="Aap_section_container">
+					<div class="Aap_section_item_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<div class="Aap_section_img">
+							<img src="../../../image/common/guardicon1.png" />
+						</div>
+						<div class="Aap_section_title">
+							인프라 및<br>위험 시각화
+						</div>
+					</div>
+
+					<div class="Aap_section_item_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<div class="Aap_section_img">
+							<img src="../../../image/common/guardicon2.png" />
+						</div>
+						<div class="Aap_section_title">
+							보안 정책 간소화
+						</div>
+					</div>
+
+					<div class="Aap_section_item_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<div class="Aap_section_img">
+							<img src="../../../image/common/guardicon3.png" />
+						</div>
+						<div class="Aap_section_title">
+							위협 탐지 및 대응 가속화
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="vsphere_center_box2_container">
+					<span class="vsphere_center_box2">Akamai Guardicore Segmentation 작동방식</span>
+				</div>
+				<p class="Solution_sub_title" data-aos="fade-up" data-aos-duration="1000">
+					Akamai Guardicore Segmentation(AGS)의 Centra는 경량 에이전트 오버레이 접근 방식을 사용하므로 고객은<br>성능 저하 없이 흐름(L4), 사용자 및 프로세스(L7)에 대한 강력한 정책 시행의 이점을 누릴 수 있습니다.<br>작동 방식은 다음과 같습니다.
+				</p>
+				<div class="Solution_Alone_img aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+					<img src="../../../image/common/guardimg2.jpg">
+				</div>
+				<div class="Sentinel_section3_box" style="width: 85%;">
+					<div class="Sentinel_section3_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<div class="Sentinel_section3_icon"><img src="../../../image/common/guardicon6.png"/></div>
+						<div class="Sentinel_section3_title">방지</div>
+						<div class="Sentinel_section3_content">
+							멀웨어 및 랜섬웨어 바이너리가<br>위험을 일으키기 전에 AI 기반 모델이<br>높은 수준의 정밀도로 식별합니다.
+						</div>
+					</div>
+					
+					<div class="Sentinel_section3_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+						<div class="Sentinel_section3_icon"><img src="../../../image/common/guardicon6.png"/></div>
+						<div class="Sentinel_section3_title">ActiveEDR</div>
+						<div class="Sentinel_section3_content">
+							사용자 친화적인 방식으로<br>사전에 대응적인 실시간 감지 및<br>대응과 장기 위협이 헌팅을 수행하기<br>위해 중요한 컨텍스트를 빌드 합니다.
+						</div>
+					</div>
+					
+					<div class="Sentinel_section3_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+						<div class="Sentinel_section3_icon"><img src="../../../image/common/guardicon6.png"/></div>
+						<div class="Sentinel_section3_title">loT</div>
+						<div class="Sentinel_section3_content">
+							Ranger®loT 불량 디바이스 검색으로 모든 관리형/관리되지 않는 네트워크 디바이스를 모니터링하고 이러한<br>디바이스를 제어할 수 있습니다.
+						</div>
+					</div>
+					
+					<div class="Sentinel_section3_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+						<div class="Sentinel_section3_icon"><img src="../../../image/common/guardicon6.png"/></div>
+						<div class="Sentinel_section3_title">워크로드</div>
+						<div class="Sentinel_section3_content">
+							워크로드를 프라이빗/퍼블릭 클라우드 인프라로 마이그레이션하는 것은 디지털 혁신의 핵심입니다.<br>완벽한 보호, 가시성, 제어가 제공됩니다.
+						</div>
+					</div>
+					<div class="Sentinel_section3_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+						<div class="Sentinel_section3_icon"><img src="../../../image/common/guardicon6.png"/></div>
+						<div class="Sentinel_section3_title">워크로드</div>
+						<div class="Sentinel_section3_content">
+							워크로드를 프라이빗/퍼블릭 클라우드 인프라로 마이그레이션하는 것은 디지털 혁신의 핵심입니다.<br>완벽한 보호, 가시성, 제어가 제공됩니다.
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="vsphere_center_box2_container">
+					<span class="vsphere_center_box2">Akamai Bot Manager 기대효과</span>
+				</div>
+				<p class="Solution_sub_title" data-aos="fade-up" data-aos-duration="1000">
+					Akamai Bot Manager는 단순히 봇을 차단하지 않고 Good과 Bad 봇을 관리합니다.<br>비즈니스 영향도에 따라 봇을 분류하고 관리하며 봇 트래픽 관리를 CDN 사업자에 위임합니다.<br>또한 봇 트래픽을 모니터링하고 분석 보고서를 제공해 편리한 관리를 지원합니다.
+				</p>
+				<div class="solution_section5_box">
+					<div class="solution_section5_item" style="margin-top:20px;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<div class="solution_section5_icon"><img src="../../../image/common/guardicon4.png"/></div>
+						<div class="solution_section5_title">이메일 본문 URL은 안전한 격리 플랫폼에서 실행</div>
+					</div>
+					
+					<div class="solution_section5_item"  style="margin-top:20px;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<div class="solution_section5_icon"><img src="../../../image/common/guardicon5.png"/></div>
+						<div class="solution_section5_title">위험도가 높은 웹페이지는 Read-Only 실행</div>
+					</div>
+					
+					<div class="solution_section5_item" style="margin-top:20px;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+						<div class="solution_section5_icon"><img src="../../../image/common/guardicon6.png"/></div>
+						<div class="solution_section5_title">첨부파일 확인 시 Safe PDF 변환</div>
+					</div>
+					
+					<div class="solution_section5_item" style="margin-top:20px;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+						<div class="solution_section5_icon"><img src="../../../image/common/guardicon7.png"/></div>
+						<div class="solution_section5_title">격리 기술로 악성코드 원천 차단</div>
+					</div>
+				</div>
+
+				<div class="Solution_ask_box">
+					<p class="Solution_ask_text1">더 알고 싶으시다면</p>
+					<p class="Solution_ask_text2">지금 바로 문의주세요. 최대한 빠르고 성실하게 답변해
+						드리겠습니다.</p>
+					<div class="Solution_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+
+			</div>
+
+			<!-- pc버전 끝 -->
+
+			<!-- 모바일 버전 시작 -->
+			<div class="M_Solution_container">
+				<div class="M_Solution_title_box">
+					<p class="M_Solution_title_text1">마이크로 세그멘테이션 솔루션</p>
+					<p class="M_Solution_title_text2">Akamai Guardicore Segmentation</p>
+				</div>
+				<div class="M_Solution_title_img_box">
+					<img src="../../../image/common/Akamai.png" />
+				</div>
+
+				<div class="M_Solution_black_box" style="background-color: #ff7c00">
+					<p>
+					마이크로 세그멘테이션 기술로 제로 트러스트 보안 포트폴리오를 강화합니다.
+					<p>
+				</div>
+				
+				<div class="Eaa_title">공격 표면을 줄이고 디지털 혁신을 단순화하세요</div>
+				<p class="Solution_sub_title">
+					Akamai Guardicore Segmentation(AGS)의 마이크로 세그멘테이션은 분산 방화벽 플랫폼을 말합니다.네트워크를 보다 작은 조각으로 분할한다는 뜻으로 네트워크 일부가 바이러스에 오염돼도 확산을 막을 수 있습니다.클라우드, PaaS, On-premise 및 이러한 환경 간의 통신을 매핑하여 트래픽이 어디에 있든 완벽하고 Context가 풍부한 가시성을 제공합니다.이러한 가시성을 통해 '큰 그림'을 볼 수 있을 뿐만 아니라 세부적인 세부 사항까지 드릴 다운할 수 있습니다.
+				</p>
+								
+				<div class="Solution_Alone_img">
+					<img src="../../../image/common/guardimg1.jpg">
+				</div>
+				<div class="vsphere_center_box2_container">
+					<span class="vsphere_center_box2">Akamai Guardicore Segmentation, 드리는 약속</span>
+				</div>
+
+				<p class="Solution_sub_title M_Solution_sub_title" >
+					Akamai Guardicore Segmentation(AGS)는 애플리케이션이 어떻게 작동하고 통신하는지 자세히 알아볼 수 있습니다.<br>모든 플랫폼과 환경에서 작동하는 세분화된 정책 생성이 가능하며 여러 기술을 통해 위협을 신속하게 감지하고 대응합니다.<br>네트워크를 분리시키고 다중 인증 등의 복잡한 검증 과정을 통해서만 시스템 접근을 허용하여 제로 트러스트 전략을 강화하고 보안을 강력하게 유지합니다.<br>또한, 워크 로드에 방화벽이 내장돼 있어 감염된 워크 로드가 다른 워크 로드나 애플리케이션을 감염시키지 못합니다.
+				</p>
+				
+				<div class="Aap_section_container">
+					<div class="Aap_section_item_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<div class="Aap_section_img">
+							<img src="../../../image/common/guardicon1.png" />
+						</div>
+						<div class="Aap_section_title">
+							인프라 및<br>위험 시각화
+						</div>
+					</div>
+
+					<div class="Aap_section_item_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<div class="Aap_section_img">
+							<img src="../../../image/common/guardicon2.png" />
+						</div>
+						<div class="Aap_section_title">
+							보안 정책 간소화
+						</div>
+					</div>
+
+					<div class="Aap_section_item_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<div class="Aap_section_img">
+							<img src="../../../image/common/guardicon3.png" />
+						</div>
+						<div class="Aap_section_title">
+							위협 탐지 및 대응 가속화
+						</div>
+					</div>
+				</div>
+
+
+				<div class="vsphere_center_box2_container">
+					<span class="vsphere_center_box2">Akamai Guardicore Segmentation 작동방식</span>
+				</div>
+
+				<p class="Solution_sub_title M_Solution_sub_title" >
+					Akamai Guardicore Segmentation(AGS)의 Centra는 경량 에이전트 오버레이 접근 방식을 사용하므로 고객은<br>성능 저하 없이 흐름(L4), 사용자 및 프로세스(L7)에 대한 강력한 정책 시행의 이점을 누릴 수 있습니다.<br>작동 방식은 다음과 같습니다.
+				</p>
+				<div class="Solution_Alone_img">
+					<img src="../../../image/common/guardimg2.jpg">
+				</div>
+				
+				<div class="Sentinel_section3_box" >
+					<div class="Sentinel_section3_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<div class="Sentinel_section3_icon"><img src="../../../image/common/guardicon6.png"/></div>
+						<div class="Sentinel_section3_title">자동화된 Tool 활용</div>
+						<div class="Sentinel_section3_content">
+							Cloud OS나 다른 현존 프로세스를 통해 통합을 위한 Tool 활용 가능
+						</div>
+					</div>
+					
+					<div class="Sentinel_section3_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+						<div class="Sentinel_section3_icon"><img src="../../../image/common/guardicon6.png"/></div>
+						<div class="Sentinel_section3_title">시각화</div>
+						<div class="Sentinel_section3_content">
+							한 장의 창 방식으로 시스템들과 애플리케이션들 간의 통신을 시각화
+						</div>
+					</div>
+					
+					<div class="Sentinel_section3_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+						<div class="Sentinel_section3_icon"><img src="../../../image/common/guardicon6.png"/></div>
+						<div class="Sentinel_section3_title">제어</div>
+						<div class="Sentinel_section3_content">
+							IT와 OT환경에서 노출을 제한하고 리스크를 줄이기 위해 워크로드와 애플리케이션 간의 통신을 제어
+						</div>
+					</div>
+					
+					<div class="Sentinel_section3_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+						<div class="Sentinel_section3_icon"><img src="../../../image/common/guardicon6.png"/></div>
+						<div class="Sentinel_section3_title">스마트 탐지</div>
+						<div class="Sentinel_section3_content">
+							정의된 영역과 Zone에서 발생하는 비정상적인 현상을 탐지
+						</div>
+					</div>
+					<div class="Sentinel_section3_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+						<div class="Sentinel_section3_icon"><img src="../../../image/common/guardicon6.png"/></div>
+						<div class="Sentinel_section3_title">통합 장점</div>
+						<div class="Sentinel_section3_content">
+							통찰과 내용에 깊이를 SIEM,CMDB나 Orchestration Tool들과의 연동
+						</div>
+					</div>
+				</div>
+					
+				<div class="vsphere_center_box2_container">
+					<span class="vsphere_center_box2">Akamai Guardicore Segmentation 기대효과</span>
+				</div>
+				
+				<div class="solution_section5_box">
+					<div class="solution_section5_item"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<div class="solution_section5_icon"><img src="../../../image/common/guardicon4.png"/></div>
+						<div class="solution_section5_title">랜섬웨어</div>
+						<div class="solution_section5_text">몇 번의 클릭만으로 공격자의 측면 움직임 제어</div>
+					</div>
+					
+					<div class="solution_section5_item"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<div class="solution_section5_icon"><img src="../../../image/common/guardicon5.png"/></div>
+						<div class="solution_section5_title">마이크로 세그멘테이션</div>
+						<div class="solution_section5_text">간단한 3단계로 마이크로 세분화 경로 탐색</div>
+					</div>
+					
+					<div class="solution_section5_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+						<div class="solution_section5_icon"><img src="../../../image/common/guardicon6.png"/></div>
+						<div class="solution_section5_title">제로 트러스트</div>
+						<div class="solution_section5_text">제로 트러스트 접근 방식으로 중요한 자산에 대한 위험 감소</div>
+					</div>
+					
+					<div class="solution_section5_item"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+						<div class="solution_section5_icon"><img src="../../../image/common/guardicon7.png"/></div>
+						<div class="solution_section5_title">방화벽 대안</div>
+						<div class="solution_section5_text">복잡하고 유연하지 않으며 비효율인 레거시 방화벽을 대체</div>
+					</div>
+				</div>
+				
+					
+				
+				<div class="vsphere_ask_box">
+					<p class="vsphere_ask_text1">더 알고 싶으시다면</p>
+					<p class="vsphere_ask_text2">지금 바로 문의주세요.</p>
+					<p class="vsphere_ask_text2">빠르고 성실하게 답변해 드리겠습니다.</p>
+					<div class="vsphere_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+			</div>
+			
+
+
+			<!-- 모바일 버전 끝 -->
+
+
+		</div>
+	</div>
+
+
+	<!-- Side Navigator Start -->
+	<?php include_once '../../../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<?php
+if (!defined('_GMIT_')) exit; // 개별 페이지 접근 불가
+?>
+<div class="navbar nav_title" style="border: 0;">
+	<a href="<?php echo MGMT_URL?>/main" class="site_title">
+		<i class="cilogo"></i>
+		<span style="font-size: 0.8em; ">굿모닝아이텍 (주)</span>
+	</a>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="profile clearfix">
+	<div class="profile_info">
+		<span>Welcome,</span>
+		<h2><?php echo $member['gmem_name']; ?> 님</h2>
+	</div>
+</div>
+
+<!-- sidebar menu -->
+<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+	<div class="menu_section">
+		<ul class="nav side-menu">
+			<li>
+				<a href="<?php echo MGMT_URL.'/main'; ?>">
+					<i class="fa fa-home"></i> Home
+				</a>
+			</li>
+			
+			<li <?php echo ($category == "welcome")? "class=\"active\"":""; ?>>
+				<a>
+					<i class="fa-solid fa-table-columns"></i> Welcome Page <span class="fa fa-chevron-down"></span>
+				</a>
+				<ul class="nav child_menu" <?php echo ($category == "welcome")? "style=\"display: block;\"":""; ?>>
+					<li <?php echo ($page == "slide")? "class=\"active\"":""; ?>><a href="<?php echo MGMT_URL.'/welcome/slide'; ?>">슬라이드</a></li>
+					<li <?php echo ($page == "partner")? "class=\"active\"":""; ?>><a href="<?php echo MGMT_URL.'/welcome/partner'; ?>">파트너</a></li>
+				</ul>
+			</li>
+			
+			<li <?php echo ($category == "page")? "class=\"active\"":""; ?>>
+				<a>
+					<i class="fa fa-edit"></i> Page <span class="fa fa-chevron-down"></span>
+				</a>
+				<ul class="nav child_menu" <?php echo ($category == "page")? "style=\"display: block;\"":""; ?>>
+					<li <?php echo ($page == "slider_img")? "class=\"active\"":""; ?>><a href="<?php echo MGMT_URL; ?>/page/main/slide">슬라이드</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<a>
+					<i class="fa-solid fa-building"></i> Company <span class="fa fa-chevron-down"></span>
+				</a>
+				<ul class="nav child_menu">
+					<li><a href="javascript:;">대표이사 인사말</a></li>
+					<li><a href="javascript:;">사업개요</a></li>
+					<li><a href="javascript:;">연혁</a></li>
+					<li><a href="javascript:;">CI</a></li>
+					<li><a href="javascript:;">미션과 비전</a></li>
+					<li><a href="javascript:;">수상실적</a></li>
+					<li><a href="javascript:;">국가인증 및 파트너인증</a></li>
+					<li><a href="javascript:;">관계사</a></li>
+					<li><a href="javascript:;">협력사</a></li>
+					<li><a href="javascript:;">사회공헌 활동</a></li>
+				</ul>
+			</li>
+			<li <?php echo ($category == "prcenter")? "class=\"active\"":""; ?>>
+				<a>
+					<i class="fa-solid fa-newspaper"></i> PR Center <span class="fa fa-chevron-down"></span>
+				</a>
+				<ul class="nav child_menu" <?php echo ($category == "prcenter")? "style=\"display: block;\"":""; ?>>
+					<li <?php echo ($bbs_id == "notice")? "class=\"active\"":""; ?>><a href="<?php echo MGMT_URL; ?>/prcenter/list?bbs_id=notice">공지사항</a></li>
+					<li <?php echo ($bbs_id == "news")? "class=\"active\"":""; ?>><a href="<?php echo MGMT_URL; ?>/prcenter/list?bbs_id=news">언론보도</a></li>
+					<li <?php echo ($bbs_id == "gitube")? "class=\"active\"":""; ?>><a href="<?php echo MGMT_URL; ?>/prcenter/list?bbs_id=gitube">영상</a></li>
+					<li <?php echo ($bbs_id == "event")? "class=\"active\"":""; ?>><a href="<?php echo MGMT_URL; ?>/prcenter/list?bbs_id=event">이벤트</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>
+					<i class="fa fa-edit"></i> Solutions <span class="fa fa-chevron-down"></span>
+				</a>
+				<ul class="nav child_menu">
+					<li><a href="javascript:;">MANAGEMENT</a></li>
+					<li><a href="javascript:;">BIGDATA/AI</a></li>
+					<li><a href="javascript:;">MANAGEMENT</a></li>
+					<li><a href="javascript:;">SECURITY</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>
+					<i class="fa-solid fa-address-card"></i> Contact Us <span class="fa fa-chevron-down"></span>
+				</a>
+				<ul class="nav child_menu">
+					<li><a href="javascript:;">[서울본사] 오시는 길</a></li>
+					<li><a href="javascript:;">[지역사무소] 오시는 길</a></li>
+					<li><a href="<?php echo MGMT_URL; ?>/contactus/list">영업·기술·유지보수 문의</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>
+					<i class="fa-solid fa-globe"></i> English <span class="fa fa-chevron-down"></span>
+				</a>
+				<ul class="nav child_menu">
+					<li><a href="javascript:;">Overview</a></li>
+					<li><a href="javascript:;">Solutions</a></li>
+					<li><a href="javascript:;">Partner</a></li>
+					<li><a href="javascript:;">Locations</a></li>
+					<li><a href="javascript:;">Maketing Activities</a></li>
+					<li><a href="javascript:;">Awards and Achievements</a></li>
+					<li><a href="javascript:;">Contact us</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<a>
+					<i class="fa-regular fa-rectangle-list"></i> survey <span class="fa fa-chevron-down"></span>
+				</a>
+				<ul class="nav child_menu">
+					<li><a href="javascript:;">설문관리</a></li>
+					<li><a href="javascript:;">설문확인</a></li>
+				</ul>
+			</li>
+			<li <?php echo ($category == "admin")? "class=\"active\"":""; ?>>
+				<a>
+					<i class="fa-solid fa-users"></i> Admin <span class="fa fa-chevron-down"></span>
+				</a>
+				<ul class="nav child_menu" <?php echo ($category == "admin")? "style=\"display: block;\"":""; ?>>
+					<li <?php echo ($page == "company")? "class=\"active\"":""; ?>><a href="<?php echo MGMT_URL; ?>/admin/company">회사정보</a></li>
+					<li <?php echo ($page == "menuconfig")? "class=\"active\"":""; ?>><a href="<?php echo MGMT_URL; ?>/admin/menu">메뉴관리</a></li>
+					<li <?php echo ($page == "employee")? "class=\"active\"":""; ?>><a href="<?php echo MGMT_URL; ?>/admin/employee">사용자관리</a></li>
+					<li <?php echo ($page == "log")? "class=\"active\"":""; ?>><a href="<?php echo MGMT_URL; ?>/admin/log">접속로그</a></li>
+					<!-- <li><a href="javascript:;" onClick="location.reload();">권한관리</a></li> -->
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- /sidebar menu -->
+
+<!-- /menu footer buttons -->
+<div class="sidebar-footer hidden-small">
+</div>
+<!-- /menu footer buttons -->

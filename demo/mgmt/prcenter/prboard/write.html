@@ -1,0 +1,104 @@
+<?php
+	include_once('./_common.php');
+	include_once(MGMT_PATH.'/classes/pagenation.class.php');
+	$category = "prcenter";
+	$page = "prboard";
+	
+	$pg = $_GET['page'];
+	if(!$pg) $pg = 1;
+	//$pagination = new Pagination(20, $pg, $_SERVER['REQUEST_URI'], $gmit['cateogry_menu_table']);
+	
+	$sql_common = "";
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<?php include_once(MGMT_INC_PATH."/head.html"); ?>
+<script>
+	$(document).ready(function() {
+		noteedit('.click2edit', 'content-editor')
+	});
+</script>
+</head>
+
+<body class="nav-md">
+	<div class="container body">
+		<div class="main_container">
+			<div class="col-md-3 left_col menu_fixed">
+				<div class="left_col scroll-view">
+					<?php include_once(MGMT_INC_PATH."/left_nav.html"); ?>
+				</div>
+			</div>
+			<?php include_once(MGMT_INC_PATH."/top_nav.html"); ?>
+
+			<!-- page content -->
+			<div class="right_col" role="main">
+				<div class="page-title">
+					<div class="title_left">
+						<h5>공지/언론 : 글작성</h5>
+					</div>
+					<ul class="nav navbar-right panel_toolbox">
+						<li>
+							<button class="btn btn-sm btn-primary">
+								<i class="fa fa-edit"></i> 등록
+							</button>
+							<button class="btn btn-sm btn-primary">
+								<i class="fa fa-edit"></i> 목록
+							</button>
+						</li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+
+				<div class="row">
+					<div class="col-md-12 col-sm-12 ">
+						<div class="x_panel">
+							<div class="x_content">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form_container">
+											<form action="" method="get">
+
+												<div class="prcenter_title_box">
+													<p class="prcenter_title">제목</p>
+													<div class="prcenter_checkbox">
+														<div class="prcenter_checkbox_item">
+															사용여부 <input type="checkbox" id="" name="" value="">
+														</div>
+
+														<div class="prcenter_checkbox_item">
+															추천 <input type="checkbox" id="" name="" value="">
+														</div>
+
+														<select name="prcenter">
+															<option value="1">1</option>
+															<option value="1">1</option>
+															<option value="1">1</option>
+														</select>
+													</div>
+												</div>
+												<input type="text" placeholder="제목을 입력하세요"> 
+												<input type="file">
+
+												<div class="click2edit" id="content-editor"></div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<br />
+
+			</div>
+			<!-- /page content -->
+
+		</div>
+	</div>
+	<?php include_once(MGMT_INC_PATH."/jshead.html"); ?>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<?php
+	include_once('./_common.php');
+	include_once(MGMT_PATH.'/classes/pagenation.class.php');
+	$category = "admin";
+	$page = "employee";
+
+	$pg = $_GET['page'];
+	if(!$pg) $pg = 1;
+	$id = $_GET['id'];
+	if(!$id){ alert('', MGMT_URL); } else { if($id <= 0){ alert('', MGMT_URL); } }
+	
+	$member_sql = "SELECT * FROM {$gmit['member_table']} WHERE gmem_id = '{$id}'";
+	$member_row = sql_fetch($member_sql);
+
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<?php include_once(MGMT_INC_PATH."/head.html"); ?>
+</head>
+
+<body class="nav-md">
+	<div class="container body">
+		<div class="main_container">
+			<div class="col-md-3 left_col menu_fixed">
+				<div class="left_col scroll-view">
+					<?php include_once(MGMT_INC_PATH."/left_nav.html"); ?>
+				</div>
+			</div>
+			<?php include_once(MGMT_INC_PATH."/top_nav.html"); ?>
+			
+			<!-- page content -->
+			<div class="right_col" role="main">
+				<div class="page-title">
+					<div class="title_left">
+						<h5>사용자 수정</h5>
+					</div>
+					<ul class="nav navbar-right panel_toolbox">
+						<li>
+							<button class="btn btn-sm btn-primary">
+								<i class="fa fa-edit"></i> 저장
+							</button>
+							<button class="btn btn-sm btn-primary" onclick="location.href='view?page=<?php echo $pg; ?>&id=<?php echo $id; ?>';">
+								<i class="fa fa-ban"></i> 취소
+							</button>
+						</li>
+					</ul>
+				</div>
+
+				<div class="clearfix"></div>
+
+				<div class="row">
+					<div class="col-md-12 col-sm-12 ">
+						<div class="x_panel">
+							<div class="x_content">
+
+								<div class="row">
+									<div class="col-md-12">
+										<div class="admin_info">
+											<div class="admin_info_line">
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">아이디</div>
+													<input type="text" placeholder="아이디를 입력하세요." class="admin_info_item_data form-control" value="<?php echo $member_row['gmem_userid']; ?>" disabled="disabled"/>
+												</div>
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">이름</div>
+													<input type="text" placeholder="이름을 입력하세요." class="admin_info_item_data form-control" value="<?php echo $member_row['gmem_name']; ?>"/>
+												</div>
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">파트</div>
+													<select name="part" class="admin_info_item_data form-control">
+														<option value="">파트선택</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+													</select>
+												</div>
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">포지션</div>
+													<select name="position" class="admin_info_item_data form-control">
+														<option value="">직책선택</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="admin_info_line">
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">메일</div>
+													<input type="email" placeholder="goodmit@goodmit.com" class="admin_info_item_data form-control" value="<?php echo $member_row['gmem_email']; ?>"/>
+												</div>
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">번호</div>
+													<input type="text" placeholder="'-'를 포함하여 입력하세요" class="admin_info_item_data form-control" value="<?php echo $member_row['gmem_hp']; ?>"/>
+												</div>
+																								<div class="admin_info_item">
+													<div class="admin_info_item_title">비밀번호</div>
+													<input type="password" placeholder="비밀번호를 입력하세요"class="admin_info_item_data form-control" value=""/>
+												</div>
+				
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">비밀번호 재확인</div>
+													<input type="password" placeholder="비밀번호를 확인하세요" class="admin_info_item_data form-control" value=""/>
+												</div>
+
+											</div>
+
+											<div class="admin_info_line">
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">차단여부</div>
+													<div class="admin_info_check" style="margin-top: 15px;">
+														<label ><input type="checkbox" class="flat" id="" name="" <?php echo ($member_row['gmem_intercept'] == 'Y')? "checked='checked'":""; ?> /></label>
+													</div>
+												</div>
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">관리자여부</div>
+													<div class="admin_info_check" style="margin-top: 15px;">
+														<label ><input type="checkbox" class="flat" id="" name="" <?php echo ($member_row['gmem_isadmin'] == '1')? "checked='checked'":""; ?> /></label>
+													</div>
+												</div>
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">사용여부</div>
+													<div class="admin_info_check" style="margin-top: 15px;">
+														<label ><input type="checkbox" class="flat" id="" name="" <?php echo ($member_row['gmem_useyn'] == 'Y')? "checked='checked'":""; ?>/></label>
+													</div>
+												</div>
+											</div>
+
+										
+											<div class="admin_info_line">
+												<div class="admin_memo_title">메모</div>
+												<textarea class="admin_memo_input" placeholder="내용을 입력하세요." rows="" cols="">
+												<?php echo $member_row['gmem_memo']; ?>
+												</textarea>
+											</div>
+
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<br />
+
+			</div>
+			<!-- /page content -->
+
+			<!-- footer content -->
+			<!-- <footer>
+				<div class="pull-right">
+				</div>
+				<div class="clearfix"></div>
+			</footer> -->
+			<!-- /footer content -->
+		</div>
+	</div>
+	<?php include_once(MGMT_INC_PATH."/jshead.html"); ?>
+</body>
+</html>

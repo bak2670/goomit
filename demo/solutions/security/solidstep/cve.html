@@ -1,0 +1,392 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'SOLUTIONS';
+	$_category2 = 'SECURITY';
+	$_category3 = 'SolidStep';
+	$_category4 = 'CVE';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../../../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/solutions.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/test.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_solutions.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/solutions.js"></script>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			M_main_navbar();
+			M_sidenav_accordion();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+
+	<!-- Head Navigator Start -->
+	<?php include_once '../../../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background Start -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="background_text1">SOLUTIONS</p>
+			<p class="background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>SOLUTIONS</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/solution.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background End -->
+
+	<!-- Contents Start -->
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../../../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+			
+			
+			<!-- pc버전 시작 -->
+			<div class="Solution_container">
+				<div class="Solution_top_box">
+					<div class="Solution_top_left">
+						<div class="Solution_top_img" data-aos="fade-right"
+							data-aos-duration="1000">
+							<img src="../../../image/common/cve.png" />
+						</div>
+					</div>
+					<div class="Solution_top_rigth">
+						<p class="Solution_top_title1">CVE 취약점 진단 자동화<br/>& 인벤토리 관리 솔루션</p>
+						<p class="Solution_top_title2">SolidStep CVE</p>
+					</div>
+				</div>
+
+
+				<div class="color_box" style="background-color: #1d8dcd">
+					<div class="color_box_left"></div>
+					<div class="color_box_rigth" data-aos="fade-left"
+						data-aos-duration="1000">
+						<p>
+							CVE 취약점 진단부터 권고, 조치 결과 확인,보고까지<br>One-Stop으로 관리합니다.
+						</p>
+						<div class="Solution_down_box">
+							<span class="Solution_down"><a href="<?php echo URL; ?>/pdf/SolidStep.pdf" download>자료다운로드</a></span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="Eaa_title">CVE 취약점 진단 + 국내 시장에 맞게 다양한 기능 추가</div>
+				<p class="Solution_sub_title">
+					SolidStep CVE는 국내 시장에 맞게 다양한 기능을 추가하여 CVE 취약점 진단 뿐만 아니라 자산별 상세 인벤토리 관리까지 가능한 CVE 취약점 지니단 및 인벤토리 관리 솔루션 입니다.<br>최신 발표된 취약점 정보를 주기적으로 반영하여 신규 취약점에 신속한 대응이 가능하며, CVE 취약점 진단부터 권고, 조치 결과 확인, 보고까지 모든 과정을 체계적으로 관리할 수 있습니다.
+				</p>
+				<div class="Solution_Alone_img" data-aos="fade-up" data-aos-duration="1000"><img src="../../../image/common/cve_img1.png"/></div>
+				
+				<div class="vsphere_center_box2_container">
+					<span class="vsphere_center_box2">SolidStep CVE, 드리는 약속</span>
+				</div>
+
+				<p class="Solution_sub_title" style="line-height: 2">
+					SolidStep CVE는 주기적인 최신 CVE 취약점 정보 반영으로 빠른 신규 취약점 대응이 가능합니다.<br>에이전트, 원격 진단(Agentless), 수동 진단 방식을 지원하며 CVSS 버전별(V2, V3)진단 및 버전별 전환이 가능합니다.<br>자산별 취약점 현황 및 상세 인벤토리 관리가 가능하여 전체 자산에 대한 쉽고 빠른 원클릭 전수 진단을 실행하며 자산관리대장 작성이 용이하고, 자산 및 인벤토리 관리가 탁월합니다.
+				</p>
+				
+				<div class="Aap_section_container">
+					<div class="Aap_section_item_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+						<div class="Aap_section_img">
+							<img src="../../../image/common/cve_icon1.gif" />
+						</div>
+						<div class="Aap_section_title">
+							고객 맞춤<br>정확도 높은 진단 방식
+						</div>
+					</div>
+
+					<div class="Aap_section_item_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+						<div class="Aap_section_img">
+							<img src="../../../image/common/cve_icon2.gif" />
+						</div>
+						<div class="Aap_section_title">
+							보안 컴플라이언스<br>완벽 대응
+						</div>
+					</div>
+
+					<div class="Aap_section_item_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+						<div class="Aap_section_img">
+							<img src="../../../image/common/cve_icon3.gif" />
+						</div>
+						<div class="Aap_section_title">
+							취약점 진단에<br>최적화된 아키텍처
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="vsphere_center_box2_container">
+					<span class="vsphere_center_box2">SolidStep CVE 구성도</span>
+				</div>
+
+				<p class="Solution_sub_title" >
+					SolidStep CVE는 에이전트, 원격 스캔, 수동 진단 방식을 지원하여 고객 맞춤 진단이 가능하며,<br>최신 CVE 정보를 주기적으로 업데이트 반영하고 최상의 진단 구성을 갖추고 있습니다. 
+				</p>
+				<div class="Solution_Alone_img" data-aos="fade-up" data-aos-duration="1000"><img src="../../../image/common/cve_img2.png"/></div>
+
+				
+				<div class="vsphere_center_box2_container">
+					<span class="vsphere_center_box2">SolidStep CVE 기대효과</span>
+				</div>
+
+				<p class="Solution_sub_title" >
+					SolidStep CVE와 함께라면 자동화된 CVE 취약점 진단 및 자산 관리로 가시성 확보하고 지속적인 CVE 취약점 평가로<br>보안 위협과 사고 사전 예방 및 보안 진단 프로세스 개선으로 신속하고 체계적인 보안 관리가 가능합니다.
+				</p>
+				
+				<div class="solution_section2_box" >
+					<div class="solution_section2_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<div class="solution_section2_top">
+							<div class="solution_section2_icon"><img src="../../../image/common/cve_icon4.gif"/></div>
+							<div class="solution_section2_title">편리한 웹 UI 방식의 통합 대시보드</div>
+						</div>
+						<div class="solution_section2_bot">
+							<ul>
+								<li>사용자 접근성과 편의성을 고려한 Web UI 방식의 대시보드 제공으로 전체 자산에 대한 현황 및 상세정보, 인벤토리, CVE, 진단현황, 보고서, 조치 관리 등 다양한 현황 파악 및 관리 용이</li>
+								<li>보안성 평가를 위한 점수 산정 기준(CVSS v2, v3)전환 기능 제공</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="solution_section2_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"> 
+						<div class="solution_section2_top">
+							<div class="solution_section2_icon"><img src="../../../image/common/cve_icon5.gif"/></div>
+							<div class="solution_section2_title">자산·인벤토리 관리</div>
+						</div>
+						<div class="solution_section2_bot">
+							<ul>
+								<li>자산별,운영 부서별 다양한 그룹핑(연결그룹)설정으로 그룹화 관리 가능</li>
+								<li>관리자별, 사용자별 접근 권한 관리 가능</li>
+								<li>CVE 취약점 점수 및 정보 제공</li>
+								<li>인벤토리별 CVE 취약점 상세 정보, 보유 자산내역 및 상세 정보 확인 가능</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="solution_section2_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+						<div class="solution_section2_top">
+							<div class="solution_section2_icon"><img src="../../../image/common/cve_icon6.gif"/></div>
+							<div class="solution_section2_title">상세한 진단 결과 보고서</div>
+						</div>
+						<div class="solution_section2_bot">
+							<ul>
+								<li>취약점 진단 항목의 한글화 전환 기능 제공</li>
+								<li>취약점 진단 후 웹 UI 보고서 및 엑셀 형식의 다양한 결과 보고서<br>(개별,그룹,전체)제공</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="solution_section2_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+						<div class="solution_section2_top">
+							<div class="solution_section2_icon"><img src="../../../image/common/cve_icon7.gif"/></div>
+							<div class="solution_section2_title">신속한 취약점 조치 관리</div>
+						</div>
+						<div class="solution_section2_bot">
+							<ul>
+								<li>승인이 필요한 작업 요청에 대한 결재선을 지정함으로써 신속한 취약점 조치 계획 수립 및 승인 가능</li>
+								<li>취약점 처리 내역 현황 및 결재 요청 리스트에 대한 효율적인 이력 관리 가능</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="Solution_ask_box">
+					<p class="Solution_ask_text1">더 알고 싶으시다면</p>
+					<p class="Solution_ask_text2">지금 바로 문의주세요. 최대한 빠르고 성실하게 답변해
+						드리겠습니다.</p>
+					<div class="Solution_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+
+			</div>
+			
+
+			<!-- pc버전 끝 -->
+
+			<!-- 모바일 버전 시작 -->
+			<div class="M_Solution_container">
+
+				<div class="M_Solution_title_box">
+					<p class="M_Solution_title_text1">CVE 취약점 진단 자동화<br/>& 인벤토리 관리 솔루션</p>
+					<p class="M_Solution_title_text2">SolidStep CVE</p>
+				</div>
+				<div class="M_Solution_title_img_box">
+					<img src="../../../image/common/cve.png" />
+				</div>
+
+				<div class="M_Solution_black_box" style="background-color: #1d8dcd">
+					<p>
+						CVE 취약점 진단부터 권고, 조치 결과 확인,보고까지<br>One-Stop으로 관리합니다.
+					<p>
+				</div>
+				
+				
+				
+				<div class="Eaa_title">CVE 취약점 진단<br>+ 국내 시장에 맞게 다양한 기능 추가</div>
+				<p class="Solution_sub_title">
+					SolidStep CVE는 국내 시장에 맞게 다양한 기능을 추가하여 CVE 취약점 진단 뿐만 아니라 자산별 상세 인벤토리 관리까지 가능한 CVE 취약점 지니단 및 인벤토리 관리 솔루션 입니다. 최신 발표된 취약점 정보를 주기적으로 반영하여 신규 취약점에 신속한 대응이 가능하며, CVE 취약점 진단부터 권고, 조치 결과 확인, 보고까지 모든 과정을 체계적으로 관리할 수 있습니다.
+				</p>
+				<div class="Solution_Alone_img" ><img src="../../../image/common/cve_img1.png"/></div>
+				
+				
+				<div class="vsphere_center_box2_container">
+					<span class="vsphere_center_box2">SolidStep CVE, 드리는 약속</span>
+				</div>
+				<p class="Solution_sub_title M_Solution_sub_title" >
+					SolidStep CVE는 주기적인 최신 CVE 취약점 정보 반영으로 빠른 신규 취약점 대응이 가능합니다. 에이전트, 원격 진단(Agentless), 수동 진단 방식을 지원하며 CVSS 버전별(V2, V3)진단 및 버전별 전환이 가능합니다. 자산별 취약점 현황 및 상세 인벤토리 관리가 가능하여 전체 자산에 대한 쉽고 빠른 원클릭 전수 진단을 실행하며 자산관리대장 작성이 용이하고, 자산 및 인벤토리 관리가 탁월합니다.
+				</p>
+				<div class="Aap_section_container icon60">
+					<div class="Aap_section_item_box">
+						<div class="Aap_section_img">
+							<img src="../../../image/common/cve_icon1.gif" />
+						</div>
+						<div class="Aap_section_title">
+							고객 맞춤<br>정확도 높은 진단 방식
+						</div>
+					</div>
+
+					<div class="Aap_section_item_box">
+						<div class="Aap_section_img">
+							<img src="../../../image/common/cve_icon2.gif" />
+						</div>
+						<div class="Aap_section_title">
+							보안 컴플라이언스<br>완벽 대응
+						</div>
+					</div>
+
+					<div class="Aap_section_item_box">
+						<div class="Aap_section_img">
+							<img src="../../../image/common/cve_icon3.gif" />
+						</div>
+						<div class="Aap_section_title">
+							취약점 진단에<br>최적화된 아키텍처
+						</div>
+					</div>
+				</div>	
+								
+				
+				<div class="vsphere_center_box2_container">
+					<span class="vsphere_center_box2">SolidStep CVE 구성도</span>
+				</div>
+				<p class="Solution_sub_title M_Solution_sub_title" >
+					SolidStep CVE는 에이전트, 원격 스캔, 수동 진단 방식을 지원하여 고객 맞춤 진단이 가능하며, 최신 CVE 정보를 주기적으로 업데이트 반영하고 최상의 진단 구성을 갖추고 있습니다. </p>
+				<div class="Solution_Alone_img" ><img src="../../../image/common/cve_img2.png"/></div>
+				
+
+				<div class="vsphere_center_box2_container">
+					<span class="vsphere_center_box2">SolidStep CVE 기대효과</span>
+				</div>
+
+				<p class="Solution_sub_title M_Solution_sub_title" >
+					SolidStep CVE와 함께라면 자동화된 CVE 취약점 진단 및 자산 관리로 가시성 확보하고 지속적인 CVE 취약점 평가로 보안 위협과 사고 사전 예방 및 보안 진단 프로세스 개선으로 신속하고 체계적인 보안 관리가 가능합니다.
+				</p>
+				<div class="solution_section2_box Sentinel_section2" >
+					<div class="solution_section2_item">
+						<div class="solution_section2_top">
+							<div class="solution_section2_icon"><img src="../../../image/common/cve_icon4.gif"/></div>
+							<div class="solution_section2_title">편리한 웹 UI 방식의 통합 대시보드</div>
+						</div>
+						<div class="solution_section2_bot" style="padding-left:20px;">
+							<ul>
+								<li>사용자 접근성과 편의성을 고려한 Web UI 방식의 대시보드 제공으로 전체 자산에 대한 현황 및 상세정보, 인벤토리, CVE, 진단현황, 보고서, 조치 관리 등 다양한 현황 파악 및 관리 용이</li>
+								<li>보안성 평가를 위한 점수 산정 기준(CVSS v2, v3)전환 기능 제공</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="solution_section2_item">
+						<div class="solution_section2_top">
+							<div class="solution_section2_icon"><img src="../../../image/common/cve_icon5.gif"/></div>
+							<div class="solution_section2_title">자산·인벤토리 관리</div>
+						</div>
+						<div class="solution_section2_bot"   style="padding-left:20px;">
+							<ul>
+								<li>자산별, 운영 부서별 다양한 그룹핑(연결그룹)설정으로<br>그룹화 관리 가능</li>
+								<li>관리자별, 사용자별 접근 권한 관리 가능</li>
+								<li>CVE 취약점 점수 및 정보 제공</li>
+								<li>인벤토리별 CVE 취약점 상세 정보, 보유 자산내역 및 상세 정보 확인 가능</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="solution_section2_item">
+						<div class="solution_section2_top">
+							<div class="solution_section2_icon"><img src="../../../image/common/cve_icon6.gif"/></div>
+							<div class="solution_section2_title">상세한 진단 결과 보고서</div>
+						</div>
+						<div class="solution_section2_bot"  style="padding-left:20px;">
+							<ul>
+								<li>취약점 진단 항목의 한글화 전환 기능 제공</li>
+								<li>취약점 진단 후 웹 UI 보고서 및 엑셀 형식의 다양한 결과 보고서<br>(개별,그룹,전체)제공</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="solution_section2_item">
+						<div class="solution_section2_top">
+							<div class="solution_section2_icon"><img src="../../../image/common/cve_icon7.gif"/></div>
+							<div class="solution_section2_title">신속한 취약점 조치 관리</div>
+						</div>
+						<div class="solution_section2_bot"  style="padding-left:20px;">
+							<ul>
+								<li>승인이 필요한 작업 요청에 대한 결재선을 지정함으로써<br>신속한 취약점 조치 계획 수립 및 승인 가능</li>
+								<li>취약점 처리 내역 현황 및 결재 요청 리스트에 대한 효율적인 이력 관리 가능</li>
+							</ul>
+						</div>
+					</div>
+					
+
+
+				</div>
+				
+
+
+
+
+				<div class="vsphere_ask_box">
+					<p class="vsphere_ask_text1">더 알고 싶으시다면</p>
+					<p class="vsphere_ask_text2">지금 바로 문의주세요.</p>
+					<p class="vsphere_ask_text2">빠르고 성실하게 답변해 드리겠습니다.</p>
+					<div class="vsphere_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+
+
+			</div>
+			
+
+
+			<!-- 모바일 버전 끝 -->
+
+
+		</div>
+	</div>
+
+	<!-- Side Navigator Start -->
+	<?php include_once '../../../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+
+
+</body>
+</html>

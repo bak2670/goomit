@@ -1,0 +1,222 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'ENGLISH';
+	$_category2 = 'Locations';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/english.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_english.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/contactus.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_contactus.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/english.js"></script>
+	<script src="<?php echo URL; ?>/js/contactus.js"></script>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			directionsbtn();
+			AOS.init();
+			
+			
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+	<!-- Head Navigator Start -->
+	<?php include_once '../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+	
+	<!-- top background Start -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="company_background_text1">CONTACT US</p>
+			<p class="company_background_text2">우리의 고객 한 분, 한 분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>CONTACT US</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/contactus.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background End -->
+
+	<!-- Contents Start -->
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+
+			<div class='directions_container'>
+				<p class="Contactus_top_text">
+					<span>Contact Us</span>
+				</p>
+				<div class="directions_title">오시는 길</div>
+
+				<div class="directions_btn_box" style="text-align: center;">
+					<div class="directions_btn active">Seoul Headquarter</div>
+					<div class="directions_btn" >Yeongnam Branch</div>
+					<div class="directions_btn" >Central Branch</div>
+					<div class="directions_btn" >Gyeonggi Branch</div>
+					<div class="directions_btn" >Eastern Branch</div>
+					<div class="directions_btn">Naju<br>Branch</div>
+				</div>
+
+				<div class="direcions_box active">
+					<div class='Branch_item'>
+						<h2 class="direcions_font_center">Seoul Headquarters</h2>
+						<div id="googleMap1">
+							<div style="width: 100%;" id="daumRoughmapContainer1658207630206" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+						</div>
+						<ul>
+							<li>
+								<h5>World cup buk-ro 434, Sangam-dong, Mapo-gu, Seoul, Korea</h5>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="direcions_box">
+					<div class='Branch_item'>
+						<h2 class="direcions_font_center">Ulsan Yeongnam Branch</h2>
+							<div id="googleMap2">
+								<div style="width: 100%;" id="daumRoughmapContainer1658208642062" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+							</div>
+						<ul>
+							<li>
+								<h5>The Terrace 805. 7, Jongga 6-gil, Jung-gu, Ulsan, Korea</h5>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+
+				<div class="direcions_box">
+					<div class='Branch_item'>
+						<h2 class="direcions_font_center">Daejeon Central Branch</h2>
+						<div id="googleMap3">
+							<div id="daumRoughmapContainer1658209068286" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+						</div>
+						<ul>
+							<li>
+								<h5>Dream Building 303. 83, Dunsan-daero, 117beon-gil, Seo-gu, Daejeon, Korea</h5>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="direcions_box">
+					<div class='Branch_item'>
+						<h2 class="direcions_font_center">Dongtan Gyeonggi Branch</h2>
+						<div id="googleMap4">
+							<div id="daumRoughmapContainer1658209273566" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+						</div>
+						<ul>
+							<li>
+								<h5>2833, IX Tower Building A. 14, Dongtancheomdansaneop 1-ro, Hwaseong-si, Gyeonggi-do, Korea</h5>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="direcions_box">
+					<div class='Branch_item'>
+						<h2 class="direcions_font_center">Icheon Eastern Branch</h2>
+						<div id="googleMap5">
+							<div id="daumRoughmapContainer1658209431558" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+						</div>
+						<ul>
+							<li>
+								<h5>201, 2F. 76-19, Gyeongchung-daero 2092beon-gil, Bubal-eup, Icheon-si, Gyeonggi-do, Korea</h5>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="direcions_box">
+					<div class='Branch_item'>
+						<h2 class="direcions_font_center"> Naju Branch</h2>
+						<div id="googleMap6">
+							<div id="daumRoughmapContainer1658216714432" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+						</div>
+						<ul>
+							<li>
+								<h5>Ghetto333 C-dong 201-204, 186-1 Bitgaram-dong, Naju-si, Jeollanam-do</h5>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- footer Start -->
+	<?php include_once '../_inc/footer.html'; ?>
+	<!-- footer End -->
+	
+	<!-- Side Navigator Start -->
+	<?php include_once '../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+</body>
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+<script charset="UTF-8">
+new daum.roughmap.Lander({
+	"timestamp" : "1658207630206",
+	"key" : "2b2oe",
+	//"mapWidth" : "640",
+	"mapHeight" : "360"
+}).render();
+
+new daum.roughmap.Lander({
+	"timestamp" : "1658208642062",
+	"key" : "2b2p6",
+	//"mapWidth" : "640",
+	"mapHeight" : "360"
+}).render();
+
+new daum.roughmap.Lander({
+	"timestamp" : "1658209068286",
+	"key" : "2b2ph",
+	//"mapWidth" : "640",
+	"mapHeight" : "360"
+}).render();
+
+new daum.roughmap.Lander({
+	"timestamp" : "1658209273566",
+	"key" : "2b2pk",
+	//"mapWidth" : "640",
+	"mapHeight" : "360"
+}).render();
+
+new daum.roughmap.Lander({
+	"timestamp" : "1658209431558",
+	"key" : "2b2pp",
+	//"mapWidth" : "640",
+	"mapHeight" : "360"
+}).render();
+new daum.roughmap.Lander({
+	"timestamp" : "1658216714432",
+	"key" : "2b2tp",
+	"mapWidth" : "640",
+	"mapHeight" : "360"
+}).render();
+</script>
+</html>

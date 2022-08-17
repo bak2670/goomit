@@ -1,0 +1,110 @@
+<?php
+	include_once('./_common.php');
+	$category = "page";
+	$page = "slider_img";
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<?php include_once(MGMT_INC_PATH."/head.html"); ?>
+<link href="<?php echo URL; ?>/plugin/slick-1.8.1/slick/slick.css" rel="stylesheet"
+	type="text/css">
+<link href="<?php echo URL; ?>/plugin/slick-1.8.1/slick/slick-theme.css" rel="stylesheet"
+	type="text/css">
+<script src="<?php echo URL; ?>/plugin/slick-1.8.1/slick/slick.js"></script>
+<link href="<?php echo URL; ?>/_css/main.css" rel="stylesheet" type="text/css">
+<link href="<?php echo URL; ?>/_css/m_main.css" rel="stylesheet" type="text/css">
+<script src="<?php echo URL; ?>/js/main.js"></script>
+</head>
+
+<body class="nav-md">
+	<div class="container body">
+		<div class="main_container">
+			<div class="col-md-3 left_col menu_fixed">
+				<div class="left_col scroll-view">
+					<?php include_once(MGMT_INC_PATH."/left_nav.html"); ?>
+				</div>
+			</div>
+			<?php include_once(MGMT_INC_PATH."/top_nav.html"); ?>
+			
+			<!-- page content -->
+			<div class="right_col" role="main">
+				<div class="page-title">
+					<div class="title_left">
+						<h5>슬라이드</h5>
+					</div>
+					<ul class="nav navbar-right panel_toolbox">
+						<li>
+							<button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target=".mgmt-img-upload">
+								<i class="fa fa-image"></i> 업로드
+							</button>
+						</li>
+						<li>
+							<button class="btn btn-sm btn-outline-primary" onClick="noteedit(this, 'content-editor')">
+								<i class="fa fa-edit"></i> 편집
+							</button>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="modal fade mgmt-img-upload" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content img-upload" id="img-upload">
+							<div class="modal-header">
+								<h4 class="modal-title" id="myModalLabel">이미지 업로드</h4>
+								<button type="button" class="close" data-dismiss="modal">
+									<span aria-hidden="true"><i class="fa-solid fa-x"></i></span>
+								</button>
+							</div>
+							
+							<div class="modal-body">
+								<div class="dropzone" id="fileDropzone"></div>
+							</div>
+							
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary" id="img-upload-btn">업로드</button>
+								<button type="button" class="btn btn-secondary" data-dismiss="modal" id="img-upload-cancel">취소</button>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="clearfix"></div>
+				
+				<div class="row">
+					<div class="col-md-12 col-sm-12 ">
+						<div class="x_panel">
+							<div class="x_content">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="click2edit" id="content-editor">click2edit</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<br />
+				
+			</div>
+			<!-- /page content -->
+			
+			<!-- footer content -->
+			<!-- <footer>
+				<div class="pull-right">
+				</div>
+				<div class="clearfix"></div>
+			</footer> -->
+			<!-- /footer content -->
+		</div>
+	</div>
+	<?php include_once(MGMT_INC_PATH."/jshead.html"); ?>
+	<script>
+		img_upload_dropzone('page_slide');
+	</script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+
+/* 로그인 프레임 */
+.login_Wrap { width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;}
+
+.login_form { border: 1px solid #afafaf; width: 500px; background: #efefef; box-shadow: 1px 3px 5px rgba(25,25,25,0.5); border-radius: 5px; text-align: center; padding: 20px; }
+.login_form .logo_Wrap { height: 40px; line-height: 40px; vertical-align: middle; }
+.login_form .logo_Wrap .logo { display: inline-block; height: 40px; }
+.login_form .logo_Wrap span { font-size: 27px; letter-spacing: 2px; font-weight: 500; color: #1451ee; margin-left: 10px; }
+.login_form .data_Wrap { width: 100%; height: 200px; margin-top: 20px; }
+.login_form .data_Wrap .user_input_Wrap { width: 100%; height: 140px; }
+.login_form .data_Wrap .user_input_Wrap .login_btn_set { margin-top: 25px; }
+.login_form .data_Wrap .user_modify_Wrap { width: 100%; height: 60px; color: #3f3f3f; font-size: 13px; line-height: 60px; vertical-align: bottom;}
+
+/* DropDown Navigator Style */
+.sub_nav_con ul li .dropdown_btn { border: 0px; width: 100%; font-size: 14px; color:#555; background: #fff; text-align: left; cursor: pointer; }
+.sub_nav_con ul li .dropdown_btn:active { color:#000; font-weight: 700; background: #fff; }
+.sub_nav_con ul li .dropdown { display: none; margin-top: 5px; }
+.sub_nav_con ul li .dropdown a { display: block; padding: 10px 5px; }
+.sub_nav_con ul li .dropdown a span { font-size: 14px; color: #555; }
+.sub_nav_con ul li .dropdown a span:active { color: #000; font-weight: 700; }
+
+/* Label Style */
+.sto-label-1 { line-height: 20px; height: 20px; margin: 0; }
+
+/* Input Style */
+.input_txt1 { display: block; font-size: 15px; font-weight: 500; margin: 10px auto; padding: 5px 0; padding-left: 10px; color: #777677; border: 1px solid #8e8e8e; border-radius: 5px; }
+.input_txt2 { font-size: 12px; font-weight: 500; margin: 10px 5px; padding: 5px 15px; color: #777677; border: 1px solid #b6b6b7; border-radius: 5px; }
+.sto-input-text1 { height: 30px; border: 1px solid #cdcdcd; border-radius: 5px; padding: 2px 5px; }
+.sto-input-text1:focus { box-shadow: 0px 0px 3px 2px #d5e5fc;  }
+
+
+/* Select Style */
+.select1 { width: 50px; font-size: 12px; font-weight: 500; color: #777677; border: 1px solid #b6b6b7; border-radius: 5px; margin: 0 10px; }
+.select2 { width: 80px; font-size: 15px; font-weight: 500; color: #777677; border: 1px solid #b6b6b7; border-radius: 5px; margin: 0 10px; padding: 5px 0; }
+
+.sto-selete1 { height: 30px; border: 1px solid #cdcdcd; border-radius: 5px; padding: 2px 5px; }
+.sto-selete1:focus { box-shadow: 0px 0px 3px 2px #d5e5fc; }
+
+
+/* Button Style */
+.btn1 { height: 30px; border-radius: 10px; border: 1px solid #7699b7; background: #fff; }
+.btn2 { width: 70px; height: 30px; border-radius: 10px; border: 1px solid #7699b7; background: #fff; margin: 0 15px; }
+.btn2:hover,.btn2:active { color: #000; cursor: pointer; }
+.btn3 { width: 70px; height: 30px; border-radius: 10px; border: 1px solid #7699b7; background: #fff; margin: 0 5px; }
+.btn3:last-child { width: 70px; height: 30px; border-radius: 10px; border: 1px solid #7699b7; background: #fff; margin: 0 5px; margin-right: 15px; }
+.btn3:hover,.btn3:active { color: #000; cursor: pointer; }
+
+
+/* Textarea Style */
+.textArea1 { font-size: 12px; font-weight: 500; margin: 10px 5px; padding: 5px 15px; color: #777677; border: 1px solid #b6b6b7; border-radius: 5px; resize: none; }
+
+/* icon Box */
+.mgt-icon-box { border:1px solid #333; box-sizing: border-box; padding: 3px 5px; border-radius: 5px; }
+
+/* Table Style */
+.sto_tableStyle1 { width:100%; border: 0px; }
+.sto_tableStyle1 thead tr { border: 0px; }
+.sto_tableStyle1 thead th { border: 0px; text-align: left; padding: 10px 50px; font-size: 14px; color: #2d2c2d; }
+.sto_tableStyle1 tbody tr { border: 0px; }
+.sto_tableStyle1 tbody td { border: 0px; text-align: left; padding: 0 50px; font-size: 11px; color: #807f7f; vertical-align: top; line-height: 190%; font-weight: 500; }
+
+.sto_tableStyle2 { width:100%; border: 1px solid #a8a8a8; }
+.sto_tableStyle2 thead tr { border-top: 1px solid #a8a8a8; border-bottom: 1px solid #a8a8a8; background: #c9c7d3; }
+.sto_tableStyle2 thead th { border: 0px; text-align: center; padding: 3px; font-size: 12px; color: #2d2c2d; }
+.sto_tableStyle2 tbody tr { border-top: 1px solid #a8a8a8; border-bottom: 1px solid #a8a8a8; }
+.sto_tableStyle2 tbody td { border: 0px; text-align: left; padding: 3px; font-size: 11px; color: #807f7f; vertical-align: top; line-height: 190%; font-weight: 500; }
+.sto_tableStyle2 tbody td.center { border: 0px; text-align: center; padding: 3px; font-size: 11px; color: #807f7f; vertical-align: top; line-height: 190%; font-weight: 500; }
+
+.sto_tableStyle3 { width:100%; border: 0px; margin-top: 10px; table-layout: fixed;}
+.sto_tableStyle3 tbody tr { border-top: 0px; border-bottom: 0px; }
+.sto_tableStyle3 th { border: 0px; text-align: center; padding: 3px; font-size: 12px; color: #2d2c2d; }
+.sto_tableStyle3 td { border: 0px; text-align: center; padding: 3px; font-size: 11px; color: #807f7f; vertical-align: top; line-height: 190%; font-weight: 500; }
+.sto_tableStyle3 td.center { border: 0px; text-align: center; padding: 3px; font-size: 11px; color: #807f7f; vertical-align: top; line-height: 190%; font-weight: 500; }
+.sto_tableStyle3 td.tb_content{white-space:nowrap ; overflow: hidden ; text-overflow: ellipsis ;  cursor: pointer; position: relative;}
+.modal-content { cursor: default; }
+
+.mask p { font-family: inherit; }
+.thumbnail { height: AUTO; }
+.thumbnail .image { height: 140px; }
+.view .tools { margin: 60px 0 0 0; }
+
+/* 승철이 CSS */
+.admin_info{
+	width: 100%;
+
+}
+.admin_info_line{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 10px 0px 10px 0px;
+	border-bottom: 1px solid #c9c7d3;
+}
+.admin_info_line:last-child{
+	border:none;
+}
+.admin_info_item{
+	width: 25%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border-right: 1px solid #c9c7d3;
+	padding: 10px 0px 10px 0px;
+	
+}
+.admin_info_check{
+	width: 50%;
+	text-align: center;
+
+
+}
+
+.admin_info_item:last-child {
+	border:none;
+}
+.admin_info_item_title{
+	font-size: 18px;
+}
+.admin_info_item_data{
+	font-size: 16px;
+	margin-top: 10px;
+	width: auto;
+}
+.admin_memo_title{
+	width: 25%;
+	padding: 40px 0px 40px 0px;
+	text-align: center;
+	font-size: 20px;
+
+}
+.admin_memo_input{
+	width: 75%;
+	padding: 40px 0px 40px 20px;
+	font-size: 16px;
+	resize: none;
+	border:1px solid #ccc;
+}
+
+.admin_info_check input[type="checkbox"]{
+width: 20px; /*Desired width*/
+height: 20px; /*Desired height*/
+margin-top:20px;
+cursor: pointer;
+}
+
+.admin_info_item select{
+	width: 203px;
+	margin-top: 5px;
+}
+
+.form_container{
+	width: 50%;
+	margin: 0 auto;
+}
+.prcenter_title_box{
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+}
+.prcenter_title{
+	font-size: 18px;
+	margin: 0;
+	width: 51%;
+
+}
+.form_container input{
+	width: 100%;
+	height:50px;
+	border-radius:5px;
+	text-align: center;
+	margin-top: 5px;
+	font-size: 16px;
+}
+.prcenter_checkbox{
+	width: 49%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.prcenter_checkbox_item {
+	font-size: 16px;
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.form_container input[type="checkbox"]{
+width: 20px; /*Desired width*/
+height: 20px; /*Desired height*/
+
+cursor: pointer;
+
+margin:0px 5px 0px 5px;
+text-align: center;
+}
+
+.form_container form select{
+	width: 200px;
+	height:30px;
+	border-radius: 5px;
+}
+
+
+.contactus_popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: #00000060;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    min-width: 1280px;
+    display: none;
+}
+.contactus_popup .contactus_popup-wrap {
+    width: 30%;
+    height: auto;
+    background: #fff;
+    margin: 10% AUTO;
+    border-radius: 5px;
+    position: relative;
+    background: #f7f7f7;
+}
+.contactus_popup_box{
+	width: 100%;
+	height: 100%;
+	padding: 10px;	
+}
+.contactus_popup_item{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	
+}
+.contactus_popup_item_title{
+	width: 12%;
+	padding: 10px 0px;
+	text-align: center;
+}
+.contactus_popup_item_content{
+	width: 88%;
+	background: #fff;
+	padding: 10px 5px;
+}
+.contactus_popup_box p{
+	width: 12%;
+	padding: 10px 0px;
+	text-align: center;
+}
+.contactus_popup_main{
+	width: 100%;
+	height: auto;
+	background: #fff;
+	padding: 10px;
+}

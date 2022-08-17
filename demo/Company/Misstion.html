@@ -1,0 +1,99 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'COMPANY';
+	$_category2 = '미션과 비전';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/company.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_company.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/company.js"></script>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+	<!-- Head Navigator Start -->
+	<?php include_once '../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background 시작 -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="company_background_text1">COMPANY</p>
+			<p class="company_background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>COMPANY</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/company.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background 끝 -->
+	
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+			
+			<div class='Misstion_container'>
+				<p class="Company_top_text">
+					<span>COMPANY</span>
+				</p>
+				<p class="misstion_title">Mission & Vision</p>
+				<div class='Misstion_top_img'>
+					<img
+						src="../image/common/mission.jpg" />
+				</div>
+				<div data-aos="fade-up" data-aos-duration="1000">
+				<p class='Misstion_text1'>신뢰받고 앞서가는 <span>굿모닝아이텍</span></p>
+				
+				<div class='Misstion_text3_box'>
+					<p class='Misstion_text3'>위대한 성공의 시작점에는 늘 가슴 뛰는 비전이 있었습니다.</p>
+					<p class='Misstion_text3'>굿모닝아이텍은 구성원 모두의 의견을 모아 회사의 존재 이유인 미션,</p>
+					<p class='Misstion_text3'>새로운 비전 그리고 모든 판단의 기준이 될 가치를 새롭게
+						정립했습니다.</p>
+					<p class='Misstion_text3'>굿모닝아이텍은 비전과 미션을 바탕으로 더 나은 미래를 향해 나아갈
+						것입니다.</p>
+				</div>
+				</div>
+
+				<div class='Misstion_bottom_img'>
+					<img
+						src="../image/common/mission2.jpg" />
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<!-- footer Start -->
+	<?php include_once '../_inc/footer.html'; ?>
+	<!-- footer End -->
+	<!-- Side Navigator Start -->
+	<?php include_once '../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+</body>
+</html>

@@ -1,0 +1,124 @@
+<?php
+	include_once './common.php';
+	include_once('./_lib/board.lib.php');
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<?php include_once './_inc/head.html'; ?>
+<link href="<?php echo URL; ?>/plugin/slick-1.8.1/slick/slick.css"
+	rel="stylesheet" type="text/css">
+<link href="<?php echo URL; ?>/plugin/slick-1.8.1/slick/slick-theme.css"
+	rel="stylesheet" type="text/css">
+<script src="<?php echo URL; ?>/plugin/slick-1.8.1/slick/slick.js"></script>
+<link href="<?php echo URL; ?>/_css/main.css" rel="stylesheet"
+	type="text/css">
+<link href="<?php echo URL; ?>/_css/m_main.css" rel="stylesheet"
+	type="text/css">
+<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet"
+	type="text/css">
+<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet"
+	type="text/css">
+<script src="<?php echo URL; ?>/js/common.js"></script>
+<script src="<?php echo URL; ?>/js/main.js"></script>
+<script>
+	new WOW().init();
+	$(document).ready(function() {
+		top_nav_over();
+		top_nav_out();
+		top_slick();
+		main_partner_slick();
+		main_event();
+		M_main_partner_slick();
+		main_mittion_number();
+		M_main_navbar();
+		M_sidenav_accordion();
+		AOS.init();
+	});
+</script>
+<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+	<!-- Side Navigator Start -->
+	<?php include_once './_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+	<!-- Head Navigator Start -->
+	<?php include_once './_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<div class="main_container_position">
+		<div class="main_container">
+			<!-- top background 시작 -->
+			<section class="main_top_slick">
+
+				<div class="main_top_background0 ">
+					<div class="main_top_background_text testbackground">
+						<p>[2021 대한민국 신성장경영대상]</p>
+						<p>굿모닝아이텍, 대통령 표창</p>
+					</div>
+
+					<div class="M_main_top_background_text">
+						<p>철저한 검증을 거친</p>
+						<p>최상의 기술력으로</p>
+						<p>고객사의 밤을</p>
+						<p>지켜주는 보안 솔루션</p>
+					</div>
+				</div>
+				<div class="main_top_background1 ">
+					<div class="main_top_background_text">
+						<p>철저한 검증을 거친 최상의 기술력으로</p>
+						<p>고객사의 밤을 지켜주는 보안 솔루션</p>
+					</div>
+
+					<div class="M_main_top_background_text">
+						<p>철저한 검증을 거친</p>
+						<p>최상의 기술력으로</p>
+						<p>고객사의 밤을</p>
+						<p>지켜주는 보안 솔루션</p>
+					</div>
+				</div>
+
+
+
+				<div class="main_top_background2">
+					<div class="main_top_background_text">
+						<p>철저한 검증을 거친 최상의 기술력으로</p>
+						<p>고객사의 밤을 지켜주는 보안 솔루션</p>
+					</div>
+
+					<div class="M_main_top_background_text">
+						<p>철저한 검증을 거친</p>
+						<p>최상의 기술력으로</p>
+						<p>고객사의 밤을</p>
+						<p>지켜주는 보안 솔루션</p>
+					</div>
+				</div>
+
+				<div class="main_top_background3">
+					<div class="main_top_background_text">
+						<p>철저한 검증을 거친 최상의 기술력으로</p>
+						<p>고객사의 밤을 지켜주는 보안 솔루션</p>
+					</div>
+
+					<div class="M_main_top_background_text">
+						<p>철저한 검증을 거친</p>
+						<p>최상의 기술력으로</p>
+						<p>고객사의 밤을</p>
+						<p>지켜주는 보안 솔루션</p>
+					</div>
+				</div>
+
+
+			</section>
+			<!-- top background 끝 -->
+			
+			<div class="gdl-page-content2">
+				<img src="<?php echo URL; ?>/image/common/email1.gif"/>
+			</div>
+		</div>
+	</div>
+	<!-- footer Start -->
+	<?php include_once './_inc/footer.html'; ?>
+	<!-- footer End -->
+</body>
+</html>

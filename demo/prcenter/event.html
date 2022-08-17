@@ -1,0 +1,249 @@
+<?php
+	include_once '_common.php';
+	$_category1 = 'PR CENTER';
+	$_category2 = '이벤트';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once '../_inc/head.html'; ?>
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/default_board_skin.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/main.js"></script>
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			M_sidenav_accordion();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+	<style>
+		.event_pc{padding: 0px 0px; border-top: 1px solid #cfcfcf;}
+		.event_item{
+			width: 100%;
+			display: flex;
+			padding: 50px 0px;
+			border-bottom:1px solid #cfcfcf;
+			
+		}
+		.event_img{flex:1;}
+		.event_img img{width: 100%; }
+		.evnet_content{flex:1; padding-left: 30px;}
+		.pc_event_ongoing{
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		width: 80px;
+		height: 30px;
+		background-color: #93c4c5;
+		color: white;
+		margin-top: 20px;
+		}
+		.m_event_ongoing{
+			display: none;
+		}
+		.evnet_title{font-size: 18px; margin-top: 20px; font-weight: 500;}
+		.event_date{margin-top: 90px; font-size: 14px;}
+		.event_date span{color: #93c4c5; position: relative; margin-right: 10px;}
+		.event_date span:after{
+			content: "";
+		    position: absolute;
+		    width: 1px;
+		    left: 72px;
+		    top: 3px;
+		    height: 13px;
+		    border-right: 2px solid #93c4c5;
+		}
+		@media (max-width:500px){
+			.event_item{
+				width: 100%;
+				display: block;
+				padding: 50px 0px;
+				border-bottom:1px solid #cfcfcf;
+			}
+	
+			.pc_event_ongoing{display: none;}
+			.m_event_ongoing{
+				display: flex;
+				align-items:center;
+				justify-content:center;
+				width: 60px;
+				height: 25px;
+				font-size:12px;
+				background-color: #93c4c5;
+				color: white;
+				margin:0px 0px 10px 10px;
+			}
+			.evnet_title{font-size: 16px; margin-top: 20px; font-weight: 500;}
+			.event_date{margin-top: 10px; font-size: 12px;}
+			.event_date span:after{
+				content: "";
+			    position: absolute;
+			    width: 1px;
+			    left: 63px;
+			    top: 3px;
+			    height: 10px;
+			    border-right: 1px solid #93c4c5;
+			}
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- Head Navigator Start -->
+	<?php include_once '../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+	
+	<!-- top background Start -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="background_text1">PR CENTER</p>
+			<p class="background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>PR CENTER</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/prcenter.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background End -->
+
+
+	<!-- Contents Start -->
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+			
+			<!-- pc버전 시작 -->
+			<div class="container notice-container">
+				<div class="row top-title-row">
+					<div class="tit-col">
+						<p class="top_tit prcenter">
+							<span>PR CENTER</span>
+						</p>
+						<h1 class="tit">이벤트</h1>
+					</div>
+				</div>
+
+				<div class="row board-row">
+					<div class="board-col">
+						<div class="board-top">
+							<div class="col-left">
+						<!--  		<span >전체</span> <span class="line">15건</span>  <span>페이지</span><span>1</span>/<span>1</span>-->
+							</div>
+							<div class="col-right">
+								<div class="search-box">
+									<select class="form-select search-select">
+										<option value="">전체</option>
+									</select>
+									<input class="form-input search-input" type="text" placeholder="검색어를 입력하세요"/>
+									<button class="btn search-btn">검색</button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="board-body">
+							<div class="event_pc">
+								<div class="event_item">
+									<div class="event_img"><div class="m_event_ongoing">진행중</div><img src="../image/common/event_img1.png"/></div>
+									<div class="evnet_content">
+										<div class="pc_event_ongoing">진행중</div>
+										<div class="evnet_title">웹 보안 패키지 AkamaiAAP 프로모션, 해택을 놓치지 마세요!</div>
+										<div class="event_date"><span>이벤트 기간</span> ~ 2022.05.31</div>
+									</div>
+								</div>
+								
+								<div class="event_item">
+									<div class="event_img"><div class="m_event_ongoing">진행중</div><img src="../image/common/event_img1.png"/></div>
+									<div class="evnet_content">
+										<div class="pc_event_ongoing">진행중</div>
+										<div class="evnet_title">웹 보안 패키지 AkamaiAAP 프로모션, 해택을 놓치지 마세요!</div>
+										<div class="event_date"><span>이벤트 기간</span> ~ 2022.05.31</div>
+									</div>
+								</div>
+								
+								<div class="event_item">
+									<div class="event_img"><div class="m_event_ongoing">진행중</div><img src="../image/common/event_img1.png"/></div>
+									<div class="evnet_content">
+										<div class="pc_event_ongoing">진행중</div>
+										<div class="evnet_title">웹 보안 패키지 AkamaiAAP 프로모션, 해택을 놓치지 마세요!</div>
+										<div class="event_date"><span>이벤트 기간</span> ~ 2022.05.31</div>
+									</div>
+								</div>
+								
+					
+								
+							</div>
+
+							
+
+						</div>
+						
+						<div class="board-page">
+							<div class="default-pagenation">
+								
+								<ul class="page-index">
+									<li><a><i class="fa-solid fa-angles-left"></i></a></li>
+									<li><a><i class="fa-solid fa-angle-left"></i></a></li>
+									
+									<li><a>1</a></li>
+									<li><a>2</a></li>
+									<li><a>3</a></li>
+									<li><a>4</a></li>
+									<li><a>5</a></li>
+									<li><a>6</a></li>
+									<li><a>7</a></li>
+									<li><a>8</a></li>
+									<li><a>9</a></li>
+									<li><a>10</a></li>
+									<li><a>11</a></li>
+									<li><a>12</a></li>
+									<li><a>13</a></li>
+									<li><a>14</a></li>
+									
+									<li><a><i class="fa-solid fa-angle-right"></i></a></li>
+									<li><a><i class="fa-solid fa-angles-right"></i></a></li>
+								</ul>
+								
+							</div>
+						</div>
+						
+						<div class="board-foot">
+							
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+			<!-- pc버전 끝 -->
+
+
+			
+		</div>
+	</div>
+	<!-- Contents End -->
+	
+	<!-- footer Start -->
+	<?php include_once '../_inc/footer.html'; ?>
+	<!-- footer End -->
+	
+	<!-- Side Navigator Start -->
+	<?php include_once '../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+</body>
+</html>

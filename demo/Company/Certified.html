@@ -1,0 +1,99 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'COMPANY';
+	$_category2 = '국가인증 및 파트너인증';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/company.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_company.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/company.js"></script>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+	<!-- Head Navigator Start -->
+	<?php include_once '../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+	<!-- top background 시작 -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="company_background_text1">COMPANY</p>
+			<p class="company_background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>COMPANY</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/company.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background 끝 -->
+
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+			<div class='Certified_container'>
+				<p class="Company_top_text">
+					<span>COMPANY</span>
+				</p>
+				<h2 class='Certified_title'>국가인증 및 파트너인증</h2>
+				<h5 class='Certified_text1'>
+					<strong>국가 인증서</strong>
+				</h5>
+
+				<h5 data-aos="fade-up" data-aos-duration="1000">
+					<a
+						href="http://www.goodmit.co.kr/wp-content/uploads/2015/02/333.jpg"><img
+						class="aligncenter wp-image-19685 size-full"
+						src="../image/common/333.jpg"
+						alt="" width="100%" /></a>
+				</h5>
+				<h5 class='Certified_text1'>
+					<strong>벤더별 파트너 인증서</strong>
+				</h5>
+				<p class="bottom_img_box" data-aos="fade-up" data-aos-duration="1000">
+					<a
+						href="http://www.goodmit.co.kr/wp-content/uploads/2015/02/파트너인증서_국문페이지.jpg"><img
+						class="alignnone wp-image-20952 size-full"
+						src="../image/common/444.jpg"
+						alt="" width="100%" /></a>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- footer Start -->
+	<?php include_once '../_inc/footer.html'; ?>
+	<!-- footer End -->
+	
+	<!-- Side Navigator Start -->
+	<?php include_once '../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+
+
+</body>
+</html>

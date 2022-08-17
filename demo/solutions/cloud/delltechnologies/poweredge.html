@@ -1,0 +1,333 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'SOLUTIONS';
+	$_category2 = 'CLOUD / INFRA';
+	$_category3 = 'Dell Technologies';
+	$_category4 = 'PowerEdge';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../../../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/solutions.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_solutions.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/solutions.js"></script>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			M_main_navbar();
+			M_sidenav_accordion();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+
+	<!-- Head Navigator Start -->
+	<?php include_once '../../../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background Start -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="background_text1">SOLUTIONS</p>
+			<p class="background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>SOLUTIONS</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/solution.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background End -->
+
+	<!-- Contents Start -->
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../../../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+			
+			<!-- pc버전 시작 -->
+			<div class="Solution_container">
+				<div class="Solution_top_box">
+					<div class="Solution_top_left">
+						<div class="Solution_top_img" data-aos="fade-right"
+							data-aos-duration="1000">
+							<img src="../../../image/common/DELL.png" />
+						</div>
+					</div>
+					<div class="Solution_top_rigth">
+						<p class="Solution_top_title1">다양한 업무영역에 최적화된 업계 1위 서버</p>
+						<p class="Solution_top_title2">Dell Technologies PowerEdge</p>
+					</div>
+				</div>
+
+				<div class="color_box" style="background-color: #007cb8">
+					<div class="color_box_left"></div>
+					<div class="color_box_rigth" data-aos="fade-left"
+						data-aos-duration="1000">
+						<p>Dell Technologies PowerEdge 서버 제품군은 확장된 GPU 및 스토리지 옵션으로</p>
+						<p>더 많은 워크로드 수용이 가능하며, 새로운 NVDIMM 활용으로 SQL등 응용프로그램 엑세스 및</p>
+						<p>성능 속도를 대폭 향상 할 수 있는 기능을 제공합니다.</p>
+
+						<div class="Solution_down_box">
+							<span class="Solution_down"><a href="<?php echo URL; ?>/pdf/Dell PowerEdge.pdf" download>자료다운로드</a><span>
+						</div>
+					</div>
+				</div>
+
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white">PowerEdge</div>
+					<div class="Solution_center_black">주요기능</div>
+				</div>
+
+				<div class="ACI_center_box" style="width: 57%">
+					<div class="ACI_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+						<p class="ACI_item_title">다양한 워크로드</p>
+						<p class="ACI_item_content">확장된 GPU와 스토리지</p>
+						<p class="ACI_item_content">용량으로 워크로드 성능 향상 및</p>
+						<p class="ACI_item_content">사전 검증을 통해 다양한</p>
+						<p class="ACI_item_content">운영체제와 하이퍼바이저 지원</p>
+					</div>
+
+					<div class="ACI_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+						<p class="ACI_item_title">지능형 자동화</p>
+						<p class="ACI_item_content">관리를 위한 iDRAC9와</p>
+						<p class="ACI_item_content">OpenManage 지원</p>
+					</div>
+
+					<div class="ACI_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+						<p class="ACI_item_title">통합된 보안기능</p>
+						<p class="ACI_item_content">Cyber Resilient 아키텍처,</p>
+						<p class="ACI_item_content">서버 라이프사이클에 보안</p>
+						<p class="ACI_item_content">아키텍처 통합</p>
+					</div>
+				</div>
+
+
+				<div class="vsphere_bottom_container">
+					<div class="vsphere_bottom_img_box" data-aos="fade-right" data-aos-duration="1000">
+						<p class="vsphere_bottom_img_box_text2">PowerEdge<br>제품의 주요기능</p>
+						<img src="../../../image/common/Rail-layer" />
+					</div>
+					<div class="vsphere_bottom_text_box" data-aos="fade-left"
+						data-aos-duration="1000">
+						<ul>
+							<li><img src="../../../image/common/Rail-checkbox.png" />최신
+								Intel CPU 지원을 통한 코어 내부 캐시 구조 변경 및 인텔 AVX-512 지원으로<br>최대 2배 성능
+								향상,I/O성능 50% 향상 제공</li>
+							<li><img src="../../../image/common/Rail-checkbox.png" />iDRAC9와
+								OpenManage를 사용하여 서버 배포 시간 단축 및 서버 프로파일 구성 시간을 획기적으로 단축</li>
+							<li><img src="../../../image/common/Rail-checkbox.png" />확장된
+								GPU 및 스토리지 용량으로 워크로드 성능 향상</li>
+							<li><img src="../../../image/common/Rail-checkbox.png" />다양한
+								하이퍼바이저와 OS지원</li>
+							<li><img src="../../../image/common/Rail-checkbox.png" />Agent-free
+								임베디드 관리 모듈 iDRAC9와 멀티 시스템관리 툴인 Open Manage를 사용하여 시스템관리 자동화 지원</li>
+							<li><img src="../../../image/common/Rail-checkbox.png" />실리콘
+								보안 기능</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white">PowerEdge</div>
+					<div class="Solution_center_black">기대효과</div>
+				</div>
+
+				<div class="vsphere_center_img_box">
+					<div class="vsphere_center_item" data-aos="fade-up"
+						data-aos-duration="1000">
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/PowerEdgeimg1.png" />
+						</div>
+						<p class="vsphere_center_text1">적응형 컴퓨팅</p>
+						<p class="vsphere_center_text2">최신 기술 발전을 최적화하도록</p>
+						<p class="vsphere_center_text2">엔지니어링된 플랫폼을 활용하여 진화하는</p>
+						<p class="vsphere_center_text2">컴퓨팅 요구 사항을 해결하면서 필요한 시점에</p>
+						<p class="vsphere_center_text2">데이터를 처리하기 위해 쉽게 확장 가능</p>
+					</div>
+
+					<div class="vsphere_center_item" data-aos="fade-up"
+						data-aos-duration="1000">
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/PowerEdgeimg2.png" />
+						</div>
+						<p class="vsphere_center_text1">자율 컴퓨팅 인프라스트럭처</p>
+						<p class="vsphere_center_text2">독립적으로 협력할 수 있는 지능형 시스템을</p>
+						<p class="vsphere_center_text2">활용하여 비즈니스 영업 기회에</p>
+						<p class="vsphere_center_text2">빠르게 대응하고 설정한 매개변수로 제공</p>
+					</div>
+
+					<div class="vsphere_center_item" data-aos="fade-up"
+						data-aos-duration="1000">
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/PowerEdgeimg3.png" />
+						</div>
+						<p class="vsphere_center_text1">사전 예방적 회복탄력성</p>
+						<p class="vsphere_center_text2">보안 상호 작용을 위해 설계된 인프라스트럭처와</p>
+						<p class="vsphere_center_text2">잠재적인 위협을 예측하는 기능을 통해</p>
+						<p class="vsphere_center_text2">디지털 혁신에 대한 신뢰 구축</p>
+					</div>
+				</div>
+
+
+
+
+
+				<div class="Solution_ask_box">
+					<p class="Solution_ask_text1">더 알고 싶으시다면</p>
+					<p class="Solution_ask_text2">지금 바로 문의주세요. 최대한 빠르고 성실하게 답변해
+						드리겠습니다.</p>
+					<div class="Solution_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+			</div>
+			<!-- pc버전 끝 -->
+
+			<!-- 모바일 버전 시작 -->
+			<div class="M_Solution_container">
+				<div class="M_Solution_title_box">
+					<p class="M_Solution_title_text1">다양한 업무영역에 최적화된 업계 1위 서버</p>
+					<p class="M_Solution_title_text2">Dell Technologies PowerEdge</p>
+				</div>
+				<div class="M_Solution_title_img_box">
+					<img src="../../../image/common/DELL.png" />
+				</div>
+
+				<div class="M_Solution_black_box" style="background-color: #007cb8">
+					<p>Dell Technologies PowerEdge 서버 제품군은 확장된 GPU 및 스토리지 옵션으로 더 많은
+						워크로드 수용이 가능하며, 새로운 NVDIMM 활용으로 SQL등 응용프로그램 엑세스 및 성능 속도를 대폭 향상 할 수
+						있는 기능을 제공합니다.
+					<p>
+				</div>
+
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white">PowerEdge</div>
+					<div class="Solution_center_black">주요기능</div>
+				</div>
+
+				<div class="ACI_center_box" >
+					<div class="ACI_center_item">
+						<p class="ACI_item_title">다양한 워크로드</p>
+						<p class="ACI_item_content">확장된 GPU와 스토리지</p>
+						<p class="ACI_item_content">용량으로 워크로드 성능 향상 및</p>
+						<p class="ACI_item_content">사전 검증을 통해 다양한</p>
+						<p class="ACI_item_content">운영체제와 하이퍼바이저 지원</p>
+					</div>
+
+					<div class="ACI_center_item" style="padding-top:40px;">
+						<p class="ACI_item_title">지능형 자동화</p>
+						<p class="ACI_item_content">관리를 위한 iDRAC9와</p>
+						<p class="ACI_item_content">OpenManage 지원</p>
+					</div>
+
+					<div class="ACI_center_item" style="padding-top:40px;">
+						<p class="ACI_item_title">통합된 보안기능</p>
+						<p class="ACI_item_content">Cyber Resilient 아키텍처,</p>
+						<p class="ACI_item_content">서버 라이프사이클에 보안</p>
+						<p class="ACI_item_content">아키텍처 통합</p>
+					</div>
+				</div>
+
+
+				<div class="vsphere_bottom_img_box">
+					<p class="vsphere_bottom_img_box_text2">PowerEdge<br>제품의 주요기능</p>
+					<img src="../../../image/common/Rail-layer.png" />
+
+					<div class="vsphere_bottom_text_box" >
+						<ul>
+							<li><img src="../../../image/common/Rail-checkbox.png" />최신
+								Intel CPU 지원을 통한 코어 내부 캐시 구조 변경 및 인텔 AVX-512 지원으로 최대 2배 성능
+								향상,I/O성능 50% 향상 제공</li>
+							<li><img src="../../../image/common/Rail-checkbox.png" />iDRAC9와
+								OpenManage를 사용하여 서버 배포 시간 단축 및 서버 프로파일 구성 시간을 획기적으로 단축</li>
+							<li><img src="../../../image/common/Rail-checkbox.png" />확장된
+								GPU 및 스토리지 용량으로 워크로드 성능 향상</li>
+							<li><img src="../../../image/common/Rail-checkbox.png" />다양한
+								하이퍼바이저와 OS지원</li>
+							<li><img src="../../../image/common/Rail-checkbox.png" />실리콘
+								보안 기능</li>
+							<li><img src="../../../image/common/Rail-checkbox.png" />Agent-free
+								임베디드 관리 모듈 iDRAC9와 멀티 시스템관리 툴인 Open Manage를 사용하여 시스템관리 자동화 지원</li>
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white">PowerEdge</div>
+					<div class="Solution_center_black">기대효과</div>
+				</div>
+
+
+				<div class="vsphere_center_img_box">
+					<div class="vsphere_center_item" >
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/PowerEdgeimg1.png" />
+						</div>
+						<p class="vsphere_center_text1">적응형 컴퓨팅</p>
+						<p class="vsphere_center_text2">최신 기술 발전을 최적화하도록</p>
+						<p class="vsphere_center_text2">엔지니어링된 플랫폼을 활용하여 진화하는</p>
+						<p class="vsphere_center_text2">컴퓨팅 요구 사항을 해결하면서 필요한 시점에</p>
+						<p class="vsphere_center_text2">데이터를 처리하기 위해 쉽게 확장 가능</p>
+					</div>
+
+					<div class="vsphere_center_item" >
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/PowerEdgeimg2.png" />
+						</div>
+						<p class="vsphere_center_text1">자율 컴퓨팅 인프라스트럭처</p>
+						<p class="vsphere_center_text2">독립적으로 협력할 수 있는 지능형 시스템을</p>
+						<p class="vsphere_center_text2">활용하여 비즈니스 영업 기회에</p>
+						<p class="vsphere_center_text2">빠르게 대응하고 설정한 매개변수로 제공</p>
+					</div>
+
+					<div class="vsphere_center_item" >
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/PowerEdgeimg3.png" />
+						</div>
+						<p class="vsphere_center_text1">사전 예방적 회복탄력성</p>
+						<p class="vsphere_center_text2">보안 상호 작용을 위해 설계된 인프라스트럭처와</p>
+						<p class="vsphere_center_text2">잠재적인 위협을 예측하는 기능을 통해</p>
+						<p class="vsphere_center_text2">디지털 혁신에 대한 신뢰 구축</p>
+					</div>
+				</div>
+
+
+				<div class="vsphere_ask_box">
+					<p class="vsphere_ask_text1">더 알고 싶으시다면</p>
+					<p class="vsphere_ask_text2">지금 바로 문의주세요.</p>
+					<p class="vsphere_ask_text2">빠르고 성실하게 답변해 드리겠습니다.</p>
+					<div class="vsphere_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+			</div>
+			<!-- 모바일 버전 끝 -->
+		</div>
+	</div>
+
+	
+
+	
+	<!-- Side Navigator Start -->
+	<?php include_once '../../../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+
+</body>
+</html>

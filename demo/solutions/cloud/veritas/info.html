@@ -1,0 +1,275 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'SOLUTIONS';
+	$_category2 = 'CLOUD / INFRA';
+	$_category3 = 'Veritas';
+	$_category4 = 'InfoScale';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../../../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/solutions.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_solutions.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/solutions.js"></script>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			M_main_navbar();
+			M_sidenav_accordion();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+
+	<!-- Head Navigator Start -->
+	<?php include_once '../../../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background Start -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="background_text1">SOLUTIONS</p>
+			<p class="background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>SOLUTIONS</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/solution.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background End -->
+
+	<!-- Contents Start -->
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../../../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+			
+			<!-- pc버전 시작 -->
+			<div class="Solution_container">
+				<div class="Solution_top_box" >
+					<div class="Solution_top_left">
+						<div class="Solution_top_img" data-aos="fade-right"
+							data-aos-duration="1000">
+							<img src="../../../image/common/Veritas.png" />
+						</div>
+					</div>
+					<div class="Solution_top_rigth">
+						<p class="Solution_top_title1">고가용성 운영을 위한 InfoScale 솔루션</p>
+						<p class="Solution_top_title2">VERITAS Infoscale Enterprise</p>
+					</div>
+				</div>
+
+
+				<div class="color_box" style="background-color:#aa2128 ">
+					<div class="color_box_left"></div>
+					<div class="color_box_rigth" data-aos="fade-left"
+						data-aos-duration="1000">
+						<p>VERITAS InfoScale(SF) Cluster File System은 업계 선두의 VERITAS Volume Manager,</p>
+						<p>File System과 Cluster Server를 기반으로 구현된 폭발적으로 증가하는 데이터 문제를</p>
+						<p>중앙에서 관리하고, 스토리지 하드웨어 투자 효과를 극대화하고, 데이터 보호를 제공하고,</p>
+						<p>변화하는 비즈니스 요구사항에 대응하기 위한 표준적 통합 툴을 제공합니다.</p>
+
+
+						<div class="Solution_down_box">
+							<span class="Solution_down"><a href="<?php echo URL; ?>/pdf/VERITAS Infoscale Enterprise.pdf" download>자료다운로드</a><span>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="Solution_center_box1" >
+					<div class="Solution_center_white" style="font-size: 0.8vw">VERITAS Inforscale Enterprise</div>
+					<div class="Solution_center_black">주요기능</div>
+				</div>
+				
+				<div class="info_center_box">
+					<div class="info_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<p class="info_item_title">검증된 솔루션</p>
+
+					</div>
+					
+					<div class="info_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+						<p class="info_item_title">최고의 제품</p>
+
+					</div>
+					
+					<div class="info_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+						<p class="info_item_title">비용 절감</p>
+
+					</div>
+					
+					<div class="info_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+						<p class="info_item_title">다운타임"0"</p>
+	
+					</div>
+					
+				</div>
+				
+				
+				<div class="Info_img_box" data-aos="fade-up" data-aos-duration="1000">
+					<img src="../../../image/common/VERITAS_img.png"/>
+				</div>
+
+
+				<p class="Solution_list_container_title">도입효과</p>
+				<div class="Solution_list_container">
+					<div class="Solution_list_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+						<div class="Solution_list_img"><img src="../../../image/common/Info2.png"/></div>
+						<div class="Solution_list_title">고가용성</div>
+						<div class="Solution_list_text">온라인 스토리지 구성변경</div>
+						<div class="Solution_list_text">온라인 클러스터 구성 변경관리</div>
+						<div class="Solution_list_text">공유 파일 시스템 기반 빠른 페일오버</div>
+					</div>
+					
+					<div class="Solution_list_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+						<div class="Solution_list_img"><img style="width: 65%;" src="../../../image/common/Info3.png"/></div>
+						<div class="Solution_list_title">비용 절감</div>
+						<div class="Solution_list_text">하드웨어 비종속적인 구성</div>
+						<div class="Solution_list_text">포인트 솔루션 제거</div>
+						<div class="Solution_list_text">관리 편의성 강화</div>
+					</div>
+					
+					<div class="Solution_list_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+						<div class="Solution_list_img"><img src="../../../image/common/Info4.png"/></div>
+						<div class="Solution_list_title">성능 향상</div>
+						<div class="Solution_list_text">SSD 디바이스 적용 최적화</div>
+						<div class="Solution_list_text">고성능 저널링 파일 시스템</div>
+						<div class="Solution_list_text">논리적 볼륨 구성 및 튜닝</div>
+					</div>
+				</div>
+
+				<div class="Solution_ask_box">
+					<p class="Solution_ask_text1">더 알고 싶으시다면</p>
+					<p class="Solution_ask_text2">지금 바로 문의주세요. 최대한 빠르고 성실하게 답변해
+						드리겠습니다.</p>
+					<div class="Solution_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+
+			</div>
+			<!-- pc버전 끝 -->
+
+			<!-- 모바일 버전 시작 -->
+			<div class="M_Solution_container">
+				<div class="M_Solution_title_box">
+					<p class="M_Solution_title_text1">고가용성 운영을 위한 InfoScale 솔루션</p>
+					<p class="M_Solution_title_text2">VERITAS Infoscale Enterprise</p>
+				</div>
+				<div class="M_Solution_title_img_box">
+					<img src="../../../image/common/Veritas.png" />
+				</div>
+
+				<div class="M_Solution_black_box" style="background-color: #aa2128; ">
+
+					<p style="margin-top: 100px;">VERITAS InfoScale(SF) Cluster File System은 업계 선두의 VERITAS Volume Manager,
+						File System과 Cluster Server를 기반으로 구현된 폭발적으로 증가하는 데이터 문제를
+						중앙에서 관리하고, 스토리지 하드웨어 투자 효과를 극대화하고, 데이터 보호를 제공하고,
+						변화하는 비즈니스 요구사항에 대응하기 위한 표준적 통합 툴을 제공합니다.
+					</p>
+				</div>
+				
+				
+				<div class="Solution_center_box1" style="height:63px;">
+					<div class="Solution_center_white">VERITAS Inforscale Enterprise</div>
+					<div class="Solution_center_black">주요기능</div>
+				</div>
+				
+				<div class="info_center_box">
+					<div class="info_center_item">
+						<p class="info_item_title">검증된 솔루션</p>
+
+					</div>
+					
+					<div class="info_center_item">
+						<p class="info_item_title">최고의 제품</p>
+
+					</div>
+					
+					<div class="info_center_item">
+						<p class="info_item_title">비용 절감</p>
+
+					</div>
+					
+					<div class="info_center_item">
+						<p class="info_item_title">다운타임"0"</p>
+	
+					</div>
+					
+				</div>
+				
+				
+				<div class="Info_img_box">
+					<img src="../../../image/common/VERITAS_img.png"/>
+				</div>
+				
+				
+				
+				<p class="Solution_list_container_title">도입효과</p>
+				<div class="Solution_list_container">
+					<div class="Solution_list_item">
+						<div class="Solution_list_img"><img src="../../../image/common/Info2.png"/></div>
+						<div class="Solution_list_title">고가용성</div>
+						<div class="Solution_list_text">온라인 스토리지 구성변경</div>
+						<div class="Solution_list_text">온라인 클러스터 구성 변경관리</div>
+						<div class="Solution_list_text">공유 파일 시스템 기반 빠른 페일오버</div>
+					</div>
+					
+					<div class="Solution_list_item">
+						<div class="Solution_list_img"><img src="../../../image/common/Info3.png"/></div>
+						<div class="Solution_list_title">비용 절감</div>
+						<div class="Solution_list_text">하드웨어 비종속적인 구성</div>
+						<div class="Solution_list_text">포인트 솔루션 제거</div>
+						<div class="Solution_list_text">관리 편의성 강화</div>
+					</div>
+					
+					<div class="Solution_list_item">
+						<div class="Solution_list_img"><img src="../../../image/common/Info4.png"/></div>
+						<div class="Solution_list_title">성능 향상</div>
+						<div class="Solution_list_text">SSD 디바이스 적용 최적화</div>
+						<div class="Solution_list_text">고성능 저널링 파일 시스템</div>
+						<div class="Solution_list_text">논리적 볼륨 구성 및 튜닝</div>
+					</div>
+				</div>
+
+				<div class="vsphere_ask_box">
+					<p class="vsphere_ask_text1">더 알고 싶으시다면</p>
+					<p class="vsphere_ask_text2">지금 바로 문의주세요.</p>
+					<p class="vsphere_ask_text2">빠르고 성실하게 답변해 드리겠습니다.</p>
+					<div class="vsphere_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+
+			</div>
+
+
+			<!-- 모바일 버전 끝 -->
+
+
+		</div>
+	</div>
+
+	<!-- Side Navigator Start -->
+	<?php include_once '../../../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+
+
+</body>
+</html>

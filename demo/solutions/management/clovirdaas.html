@@ -1,0 +1,330 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'SOLUTIONS';
+	$_category2 = 'MANAGEMENT';
+	$_category3 = 'Clovir VDI / DaaS';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/solutions.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_solutions.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/solutions.js"></script>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			M_main_navbar();
+			M_sidenav_accordion();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+
+	<!-- Head Navigator Start -->
+	<?php include_once '../../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background Start -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="background_text1">SOLUTIONS</p>
+			<p class="background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>SOLUTIONS</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/solution.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background End -->
+
+	<!-- Contents Start -->
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+			
+			<!-- pc버전 시작 -->
+			<div class="Solution_container">
+				<div class="Solution_top_box" >
+					<div class="Solution_top_left">
+						<div class="Solution_top_img" data-aos="fade-right"
+							data-aos-duration="1000">
+							<img src="../../image/common/VDI.png" />
+						</div>
+					</div>
+					<div class="Solution_top_rigth">
+						<p class="Solution_top_title1">효율적인 VDI / DaaS운영 관리를 위한</p>
+						<p class="Solution_top_title2">ClovirVDI / DaaS</p>
+					</div>
+				</div>
+
+
+				<div class="color_box" style="background-color:#404042 ">
+					<div class="color_box_left"></div>
+					<div class="color_box_rigth" data-aos="fade-left"
+						data-aos-duration="1000">
+						<p>ClovirVDI / DaaS는 복잡하고 전문화된 지식을 필요로 하는 VDI 운영에 있어,</p>
+						<p>여러 콘솔들을 단일화된 웹 콘솔을 통해 편리하고 일관성 있는 관리기능을</p>
+						<p>제공하여 운영효율성을 제고할 수 있도록 한 VDI/DaaS 통합 관리 시스템 입니다.</p>
+
+
+						<div class="Solution_down_box">
+							<span class="Solution_down"><a href="<?php echo URL; ?>/pdf/Clovir VDI.pdf" download>자료다운로드</a><span>
+						</div>
+					</div>
+				</div>
+
+				
+				
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white">ClovirVDI / DaaS</div>
+					<div class="Solution_center_black">기대효과</div>
+				</div>
+				
+				
+				<div class="ACI_center_box">
+					<div class="ACI_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<p class="ACI_item_title">효율성</p>
+						<p class="ACI_item_content">정책수립, 자동화관리</p>
+						<p class="ACI_item_content">자원 통합 관리, 변경/이력관리</p>
+					</div>
+
+					<div class="ACI_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+						<p class="ACI_item_title">확장성</p>
+						<p class="ACI_item_content">포털 운영서버 사용량에 따른</p>
+						<p class="ACI_item_content">Scale in/out 지원</p>
+						<p class="ACI_item_content">그룹사를 위한 멀티테넌트 환경 지원</p>
+					</div>
+
+					<div class="ACI_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+						<p class="ACI_item_title">안정성</p>
+						<p class="ACI_item_content">검증된 프레임워크</p>
+						<p class="ACI_item_content">다양한 상용 운영 사례</p>
+					</div>
+
+					<div class="ACI_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+						<p class="ACI_item_title">표준성</p>
+						<p class="ACI_item_content">표준화된 Interface</p>
+						<p class="ACI_item_content">활용도 높은 OpenAPI 기술</p>
+						<p class="ACI_item_content">검증된 OpenSource 기술 적용</p>
+					</div>
+
+				</div>
+				
+				<div class="vsphere_center_box2_container">
+					<span class="vsphere_center_box2">ClovirVDI / DaaS 주요기능</span>
+				</div>
+				
+				
+				<div class="daas_section_container">
+					<div class="daas_item_box">
+						<div class="daas_item_title">사용자 포털</div>
+						<div class="daas_item_content" data-aos="fade-up" data-aos-duration="1000">
+							<div class="daas_item_img"><img src="../../image/common/clovirdass1.png"/></div>
+							<div class="daas_item_text">사용자 포털은 사용자가 할당 받은 VDI 상세 정보, 웹 기반의 VDI접속 및 사용자<br>Self-Service Portal을 통한 VDI관련<br>신청 기능을 제공합니다. 사용자가 시스템 상태 및 패스워드 변경 등 자가 조치가<br>가능한 환경을 제공함으로써 운영<br>비용의 절감을 제공합니다.</div>
+						</div>
+					</div>
+					
+					<div class="daas_item_box">
+						<div class="daas_item_title">Auto Provisioning</div>
+						<div class="daas_item_content" data-aos="fade-up" data-aos-duration="1000">
+							<div class="daas_item_img"><img src="../../image/common/clovirdass2.png"/></div>
+							<div class="daas_item_text">ClovirVDI는 VMware Horizon View에서 제공하는 여러 가지 유형의 데스크톱 풀<br>배포를 지원합니다.<br>특히 사용자 계정, VM 이미지 생성,리소스 설정 데스크톱 풀 할당 등 다양한 단계의<br>작업을 ClovirVDI를 통해 자동 배포가 가능합니다.</div>
+						</div>
+					</div>
+					
+					<div class="daas_item_box">
+						<div class="daas_item_title">모니터링</div>
+						<div class="daas_item_content" data-aos="fade-up" data-aos-duration="1000">
+							<div class="daas_item_img"><img src="../../image/common/clovirdass3.png"/></div>
+							<div class="daas_item_text">ClivirVDI는 가상화 인프라 및 VDI관리<br>서버에 대한 모니터링 현황, vCenter 및 View Manager 서버와 연계한 Error / Warning에 대한 정보 등에 대한 대시보드 및 사용자 접속 이력 등 운영자 및<br>관리자에게 필요한 Reporting 기능을 제공합니다.</div>
+						</div>
+					</div>
+					
+					<div class="daas_item_box">
+						<div class="daas_item_title">배포 정책 지원</div>
+						<div class="daas_item_content" data-aos="fade-up" data-aos-duration="1000">
+							<div class="daas_item_img"><img src="../../image/common/clovirdass4.png"/></div>
+							<div class="daas_item_text">ClovirVDI는 VDI 배포 단위인 데스크톱 풀 단위의 배포 정책 기능을 제공 합니다.<br>AD 및 사용자 NAS 설정, VM 배포 시, CPU,Memory,Network와 같은 리소스 설정 등에 대한 정책을 설정하여 관리자 및<br>운영자의 정책 기반의 데스크톱 풀 관리를 실현합니다.</div>
+						</div>
+					</div>
+					
+					<div class="daas_item_box">
+						<div class="daas_item_title">VDI Multi 인프라 / 도메인 지원</div>
+						<div class="daas_item_content" data-aos="fade-up" data-aos-duration="1000">
+							<div class="daas_item_img"><img src="../../image/common/clovirdass5.png"/></div>
+							<div class="daas_item_text">여러 개로 분산된 VDI인프라 구축 환경에서도 ClovirVDI를 통한 통합 제어가 가능합니다. 관리자에게는 운영의 단일화, 사용자에게는 사용자 포털을 통한 접속의 단일화를 실현하며, ClovirVDI를 통해 Active / Active와 같은 다양한 구성의 기회를 제공하는 솔루션 입니다.</div>
+						</div>
+					</div>
+					
+
+				</div>
+
+
+				<div class="Solution_ask_box">
+					<p class="Solution_ask_text1">더 알고 싶으시다면</p>
+					<p class="Solution_ask_text2">지금 바로 문의주세요. 최대한 빠르고 성실하게 답변해 드리겠습니다</p>
+					<div class="Solution_ask_btn"><div class="Solution_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div></div>
+				</div>
+				
+
+
+			</div>
+			<!-- pc버전 끝 -->
+
+			<!-- 모바일 버전 시작 -->
+			<div class="M_Solution_container">
+			
+				<div class="M_Solution_title_box">
+					<p class="M_Solution_title_text1">효율적인 VDI / DaaS운영 관리를 위한</p>
+					<p class="M_Solution_title_text2">ClovirVDI / DaaS</p>
+				</div>
+				<div class="M_Solution_title_img_box">
+					<img src="../../image/common/VDI.png" />
+				</div>
+
+				<div class="M_Solution_black_box" style="background-color: #404042">
+					<p>
+					ClovirVDI / DaaS는 복잡하고 전문화된 지식을 필요로 하는 VDI 운영에 있어, 여러 콘솔들을 단일화된 웹 콘솔을 통해 편리하고 일관성 있는 관리기능을 제공하여 운영효율성을 제고할 수 있도록 한 VDI/DaaS 통합 관리 시스템 입니다.
+					<p>
+				</div>
+				
+				
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white">ClovirVDI / DaaS</div>
+					<div class="Solution_center_black">기대효과</div>
+				</div>
+				
+				
+				<div class="ACI_center_box">
+					<div class="ACI_center_item" style="padding-top:33px;">
+						<p class="ACI_item_title">효율성</p>
+						<p class="ACI_item_content">정책수립, 자동화관리</p>
+						<p class="ACI_item_content">자원 통합 관리, 변경/이력관리</p>
+					</div>
+
+					<div class="ACI_center_item" style="padding-top:33px;">
+						<p class="ACI_item_title">확장성</p>
+						<p class="ACI_item_content">포털 운영서버 사용량에 따른</p>
+						<p class="ACI_item_content">Scale in/out 지원</p>
+						<p class="ACI_item_content">그룹사를 위한 멀티테넌트 환경 지원</p>
+					</div>
+
+					<div class="ACI_center_item" style="padding-top:33px;">
+						<p class="ACI_item_title">안정성</p>
+						<p class="ACI_item_content">검증된 프레임워크</p>
+						<p class="ACI_item_content">다양한 상용 운영 사례</p>
+					</div>
+
+					<div class="ACI_center_item" style="padding-top:33px;">
+						<p class="ACI_item_title">표준성</p>
+						<p class="ACI_item_content">표준화된 Interface</p>
+						<p class="ACI_item_content">활용도 높은 OpenAPI 기술</p>
+						<p class="ACI_item_content">검증된 OpenSource 기술 적용</p>
+					</div>
+
+				</div>
+				
+				
+				
+				
+				
+				<div class="vsphere_center_box2_container">
+					<span class="vsphere_center_box2">ClovirVDI / DaaS 주요기능</span>
+				</div>
+				
+				
+				<div class="daas_section_container">
+					<div class="daas_item_box">
+						<div class="daas_item_title">사용자 포털</div>
+						<div class="daas_item_content">
+							<div class="daas_item_img"><img src="../../image/common/clovirdass1.png"/></div>
+							<div class="daas_item_text">사용자 포털은 사용자가 할당 받은 VDI 상세 정보, 웹 기반의 VDI접속 및 사용자 Self-Service Portal을 통한 VDI관련 신청 기능을 제공합니다. 사용자가 시스템 상태 및 패스워드 변경 등 자가 조치가 가능한 환경을 제공함으로써 운영 비용의 절감을 제공합니다.</div>
+						</div>
+					</div>
+					
+					<div class="daas_item_box">
+						<div class="daas_item_title">Auto Provisioning</div>
+						<div class="daas_item_content">
+							<div class="daas_item_img"><img src="../../image/common/clovirdass2.png"/></div>
+							<div class="daas_item_text">ClovirVDI는 VMware Horizon View에서 제공하는 여러 가지 유형의 데스크톱 풀<br>배포를 지원합니다.<br>특히 사용자 계정, VM 이미지 생성,리소스 설정 데스크톱 풀 할당 등 다양한 단계의<br>작업을 ClovirVDI를 통해 자동 배포가 가능합니다.</div>						</div>
+					</div>
+					
+					<div class="daas_item_box">
+						<div class="daas_item_title">모니터링</div>
+						<div class="daas_item_content">
+							<div class="daas_item_img"><img src="../../image/common/clovirdass3.png"/></div>
+							<div class="daas_item_text">ClivirVDI는 가상화 인프라 및 VDI관리 서버에 대한 모니터링 현황, vCenter 및 View Manager 서버와 연계한 Error / Warning에 대한 정보 등에 대한 대시보드 및 사용자 접속 이력 등 운영자 및 관리자에게 필요한 Reporting 기능을 제공합니다.</div>
+						</div>
+					</div>
+					
+					<div class="daas_item_box">
+						<div class="daas_item_title">배포 정책 지원</div>
+						<div class="daas_item_content">
+							<div class="daas_item_img"><img src="../../image/common/clovirdass4.png"/></div>
+							<div class="daas_item_text">ClovirVDI는 VDI 배포 단위인 데스크톱 풀 단위의 배포 정책 기능을 제공 합니다.<br>AD 및 사용자 NAS 설정, VM 배포 시, CPU,Memory,Network와 같은 리소스 설정 등에 대한 정책을 설정하여 관리자 및<br>운영자의 정책 기반의 데스크톱 풀 관리를 실현합니다.</div>						</div>
+					</div>
+					
+					<div class="daas_item_box">
+						<div class="daas_item_title">VDI Multi 인프라 / 도메인 지원</div>
+						<div class="daas_item_content">
+							<div class="daas_item_img"><img src="../../image/common/clovirdass5.png"/></div>
+							<div class="daas_item_text">여러 개로 분산된 VDI인프라 구축 환경에서도 ClovirVDI를 통한 통합 제어가 가능합니다. 관리자에게는 운영의 단일화, 사용자에게는 사용자 포털을 통한 접속의 단일화를 실현하며, ClovirVDI를 통해 Active / Active와 같은 다양한 구성의 기회를 제공하는 솔루션 입니다.</div>
+						</div>
+					</div>
+					
+
+				</div>
+				
+				
+				
+				
+				<div class="vsphere_ask_box">
+					<p class="vsphere_ask_text1">더 알고 싶으시다면</p>
+					<p class="vsphere_ask_text2">지금 바로 문의주세요.</p>
+					<p class="vsphere_ask_text2">빠르고 성실하게 답변해 드리겠습니다.</p>
+					<div class="vsphere_ask_btn"><div class="Solution_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div></div>
+				</div>
+			
+			
+
+
+
+
+
+			</div>
+
+
+			<!-- 모바일 버전 끝 -->
+
+
+		</div>
+	</div>
+
+
+	<!-- Side Navigator Start -->
+	<?php include_once '../../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+
+</body>
+</html>

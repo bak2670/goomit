@@ -1,0 +1,184 @@
+<?php
+	include_once('./_common.php');
+	$category = "admin";
+	$page = "company";
+
+	$sql = "SELECT * FROM {$gmit['config_table']} LIMIT 1";
+	$company_info = sql_fetch($sql);
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<?php include_once(MGMT_INC_PATH."/head.html"); ?>
+</head>
+
+<body class="nav-md">
+	<div id="load_img" style="z-index:998; background: #000; width: 100vw; height: 100vh; display: none; position: absolute;">
+		<div style="z-index:999; background: rgba(244,244,244,0.8); width: 100%; height: 50vh; display: block; position: relative;">Loding</div>	
+	</div>
+	<div class="container body">
+		<div class="main_container">
+			<div class="col-md-3 left_col menu_fixed">
+				<div class="left_col scroll-view">
+					<?php include_once(MGMT_INC_PATH."/left_nav.html"); ?>
+				</div>
+			</div>
+			<?php include_once(MGMT_INC_PATH."/top_nav.html"); ?>
+			
+			<!-- page content -->
+			<div class="right_col" role="main">
+				<form class="form-horizontal form-label-left" id="Formdata" method="post">
+					<input type="hidden" name="command_code" value="companyinfo">
+					<input type="hidden" name="w" value="<?php echo ($company_info['cf_no'] == 1)? 'u':'w'; ?>">
+					<input type="hidden" name="no" value="<?php echo $company_info['cf_no']; ?>">
+					<div class="page-title">
+						<div class="title_left">
+							<h5>회사정보</h5>
+						</div>
+						<ul class="nav navbar-right panel_toolbox">
+							<li>
+								<button class="btn btn-sm btn-outline-primary" onClick="from_confirm(this.form);">
+									<i class="fa fa-edit"></i> 수정
+								</button>
+							</li>
+						</ul>
+					</div>
+				
+					<div class="clearfix"></div>
+				
+				<div class="row">
+					<div class="col-md-12 col-sm-12 ">
+						<div class="x_panel">
+							<div class="x_content">
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label class="control-label col-md-2 col-sm-3">
+												회사명(한글)
+											</label>
+											<div class="col-md-10 col-sm-10">
+												<input type="text" name="name_kor" class="form-control" placeholder="회사명" value="<?php echo $company_info['cf_cpname_kor']; ?>">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label class="control-label col-md-2 col-sm-3 ">
+												회사명(영문)
+											</label>
+											<div class="col-md-10 col-sm-10">
+												<input type="text" name="name_eng" class="form-control" placeholder="Company Name" value="<?php echo $company_info['cf_cpname_eng']; ?>">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label class="control-label col-md-2 col-sm-3 ">
+												주소(한글)
+											</label>
+											<div class="col-md-10 col-sm-10">
+												<input type="text" name="address_kor" class="form-control" placeholder="회사주소" value="<?php echo $company_info['cf_cpaddress_kor']; ?>">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label class="control-label col-md-2 col-sm-3 ">
+												주소(영문)
+											</label>
+											<div class="col-md-10 col-sm-10">
+												<input type="text" name="address_eng" class="form-control" placeholder="Company Address" value="<?php echo $company_info['cf_cpaddress_eng']; ?>">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group row">
+											<label class="control-label col-md-1 col-sm-3 ">
+												사업자번호
+											</label>
+											<div class="col-md-11 col-sm-10">
+												<input type="text" name="businessnumber" class="form-control" placeholder="" value="<?php echo $company_info['cf_cpnumber']; ?>">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group row">
+											<label class="control-label col-md-1 col-sm-3 ">
+												대표메일
+											</label>
+											<div class="col-md-11 col-sm-10">
+												<input type="text" name="email" class="form-control" placeholder="" value="<?php echo $company_info['cf_cpemail']; ?>">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group row">
+											<label class="control-label col-md-1 col-sm-3 ">
+												대표연락처
+											</label>
+											<div class="col-md-11 col-sm-10">
+												<input type="text" name="callnumber" class="form-control" placeholder="" value="<?php echo $company_info['cf_cpphone']; ?>">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group row">
+											<label class="control-label col-md-1 col-sm-3 ">
+												Blog
+											</label>
+											<div class="col-md-11 col-sm-10">
+												<input type="text" name="blog_url" class="form-control" placeholder="" value="<?php echo $company_info['cf_cpblog']; ?>">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group row">
+											<label class="control-label col-md-1 col-sm-3 ">
+												FaceBook
+											</label>
+											<div class="col-md-11 col-sm-10">
+												<input type="text" name="facebook_url" class="form-control" placeholder="" value="<?php echo $company_info['cf_cpfacebook']; ?>">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group row">
+											<label class="control-label col-md-1 col-sm-3 ">
+												Instagram
+											</label>
+											<div class="col-md-11 col-sm-10">
+												<input type="text" name="instagram_url" class="form-control" placeholder="" value="<?php echo $company_info['cf_cpinstagram']; ?>">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group row">
+											<label class="control-label col-md-1 col-sm-3 ">
+												Youtube
+											</label>
+											<div class="col-md-11 col-sm-10">
+												<input type="text" name="youtube_url" class="form-control" placeholder="" value="<?php echo $company_info['cf_cpyoutube']; ?>">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<br />
+				</form>
+			</div>
+			<!-- /page content -->
+			
+			<!-- footer content -->
+			<!-- <footer>
+				<div class="pull-right">
+				</div>
+				<div class="clearfix"></div>
+			</footer> -->
+			<!-- /footer content -->
+		</div>
+	</div>
+	<?php include_once(MGMT_INC_PATH."/jshead.html"); ?>
+</body>
+</html>

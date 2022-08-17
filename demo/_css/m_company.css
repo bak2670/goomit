@@ -1,0 +1,694 @@
+@media (max-width:600px) {
+.M_sidenav_container,.M_big_category_box,.M_Ceo_container,.M_main_top_position{
+	display: block;
+}
+.top_container_over,.background_text_box{
+	display: none;
+}
+
+
+
+
+
+
+
+/*모바일 메뉴바 시작*/
+.M_sidenav_container{
+	position: relative;
+	display: none;
+	opacity: 0;
+	transition-duration: 0s;
+
+	
+}
+.M_sidenav_box{
+	width: 100vw;
+	height: 100vh;
+	background:white;
+	position: absolute;
+
+	transition-duration: 1s;
+	opacity: 1;
+	background: white;
+	z-index: 9999;
+}
+
+.M_sidenav_top{
+	display: flex;
+	justify-content: space-between;
+	height: 50px;
+	align-items: center;
+}
+
+.M_sidenav_logo{
+	margin-left: 10px;
+	width: 150px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.M_sidenav_logo img{
+	width: 100%;
+}
+.M_sidenav_btn{
+	margin-right: 20px;
+
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+.M_sidenav_btn:hover{
+	cursor: pointer;
+}
+
+.M_sidenav_menu_title{
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+}
+.M_sidenav_menu{
+	font-size: 14px;
+	font-weight: bold;
+}
+.M_sidenav_menu_box{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	position: relative;
+	bottom: 30px;
+	right: 20px; 
+	
+}
+
+.M_sidenav_menu_item{
+	width: 200px;
+	margin-top: 40px;
+
+}
+.M_sidenav_menu_item:first-child{
+	margin:0px;
+}
+.M_sidenav_menu_title{
+	display: flex;
+	justify-content: space-between;
+}
+.M_sidenav_menu_line{
+	border-bottom: 2px solid #abb9c3;
+	margin-top: 5px;
+	position: relative;
+	left: 20px;
+	top:5px;
+}
+
+.M_sidenav_menu_list_box{
+	font-size: 14px;
+	margin-top: 5px;
+	/*transform:translateY(-200px);
+	transition-duration: 0.4s;
+	opacity: 0;*/
+	display: none;
+}
+.M_sidenav_menu_list_box ul li{
+	list-style: none;
+	text-decoration: none;
+}
+.M_sidenav_menu_list{
+	line-height: 2;
+	font-weight:bold;
+	color:#788895;
+	font-size: 10px;
+}
+
+/*모바일 메뉴바 끝*/
+
+/*모바일 상단 navbar시작*/
+
+.M_main_top_position{
+	position: relative;
+	z-index: 100;
+	
+
+}
+.M_main_top{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	color: white;
+	z-index: 1;
+	height: 50px;
+	align-items: center;
+
+}
+.M_main_top_img_box{
+	margin-left: 10px;
+	margin-top:20px;
+	width: 150px;
+	height: 30px;
+}
+.M_main_top_img_box img{
+	width: 100%;
+}
+.M_main_top_menu{
+	cursor: pointer;
+	margin-top:10px;
+	margin-right: 10px;
+}
+/*모바일 상단 navbar끝*/
+	
+	
+	
+	
+/*모바일 background 시작*/
+.main_top_background{
+	height: 200px;
+}
+.M_background_text_box{
+	width:100%;
+	
+	position: absolute;
+	z-index: 2;
+	top:40%;
+	text-align: center;
+}
+.M_background_text_box p{
+	color: white;
+	font-size: 14px;
+	
+}
+.M_background_text_box p:first-child {
+	font-size:20px;
+	line-height: 1.5;
+	font-weight: bold;
+}
+/*모바일 background 끝*/	
+
+
+/*대표이사 인사말 시작*/
+.Company_top_text span {
+    border-bottom: 2.5px solid #638b82;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.Ceo_container{
+	display: none;
+}
+
+
+.M_Ceo_container{
+	width: 90%;
+	margin:0 auto;
+	margin-top: 30px;
+
+}
+
+.M_Company_top_text{
+	text-align: center;
+	font-weight: bold;
+	color: #638b82;
+}
+.M_Company_top_text span{
+	border-bottom:2.5px solid #638b82;
+	font-weight: bold;
+	font-size: 12px;
+}
+.M_ceo_title{
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 20px;
+}
+.M_ceo_top_img_box{
+
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+.M_ceo_bottom_box{
+	position: relative;
+	bottom: 50px;
+}
+.M_ceo_bottom_text_top{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.M_ceo_bottom_text_center{
+    margin-top: 15px;
+    font-size: 13px;
+    opacity: 0.7;
+    line-height: 1.5;	
+}
+
+.company_ceo_bottom_img{
+
+}
+.company_ceo_bottom_img img{
+	width: 30%;
+}
+
+/*대표이사 인사말 끝*/
+
+/*사업개요 시작*/
+.overview_title {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.Overview_container{
+	width: 90%;	
+}
+.overview_top_img{
+	width: 100%;
+	margin-top: 20px;
+}
+.overview_text1_box{
+	width: 100%;
+	line-height: 1.5;
+
+}
+.Overview_text1 br{
+	display: none;
+}
+.Overview_text1{
+	font-size: 14px;
+}
+.overview_table{
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+}
+.overview_table_2 div,.overview_table_1 div{
+	height: 40px;
+}
+.overview_text_center{
+	margin-top: 20px;
+}
+.overview_text_center strong{
+	font-size: 18px;
+}
+.fontsize {
+    font-size:14px;
+    line-height: 1.5;
+}
+.bottom_box{
+	width: 100%;
+}
+.Overview_video,.Overview_video2{
+	height: 250px;
+}
+.overview_btn1,.overview_btn2{
+	width: 100px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+}
+.bottom_box{
+	margin-top: 20px;
+}
+
+/*사업개요 끝*/
+	
+	/* 연혁 시작 */
+	
+	.History_container {
+		width: 90%;
+	}
+	
+	.history_title {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.history_title img {
+	width: 90%;
+}
+.History_tab{
+	width: 100%;
+}
+.tab_btn{
+	width:50%;
+	font-size: 12px;
+	height: 30px;
+}
+.his_table{
+	width: 100%;
+}
+	/* 연혁 끝 */
+	
+	
+	
+/*CI 시작*/
+.CI_container{
+	width: 90%;
+}
+.ci_title{
+	   width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.CI_top{
+	display: block;
+}
+.CI_top_img{
+	width: 20%;
+	margin-top: 20px;
+}
+
+.CI_top_text{
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+
+.CI_center {
+    display: block;
+    margin-top: 40px;
+}
+.ci_img_box{
+	text-align: center;
+	width: 100%;
+}
+.ci_img_box img{
+	width: 100%;
+}
+.CI_center1{
+	 font-size: 14px;
+    line-height: 1.5;
+}
+.CI_center2 {
+    margin-left: 0px;
+    margin-top:20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.CI_bottom_text{
+	font-size: 14px;
+}
+.CI_download_box{
+
+	height: auto;
+	margin-top: 20px;
+}
+.CI_download {
+
+    color: #fff;
+    background: #ccc;
+    border-color: #a30a00;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid #b6b5b5 !important;
+    margin-top: 3vw;
+    border-radius: 10px;
+}
+/*CI 끝*/
+
+/*미션과 비전 시작*/
+
+.Misstion_container{
+	width: 90%
+}
+.misstion_title{
+	width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.Misstion_text1{
+	font-size: 14px;
+}
+.Misstion_text3{
+	font-size: 11px;
+	line-height: 1.5;
+}
+
+.Misstion_top_img {
+	margin-top: 20px;
+}
+
+.Misstion_bottom_img img{
+	width: 100%;
+}
+/*미션과 비전 끝*/
+
+/*수상실적 시작*/
+
+.performance_top_title {
+	margin-bottom: 20px;
+}
+
+.performance_title{
+	width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+.Performance_container_box{
+    width: 90%;
+    margin:0 auto;
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 5vw;
+}
+.Performance_container{
+    width: 80%;
+    margin: 0 auto;
+}
+.performance_title_img_box{
+	width:100%;
+	margin-top: 10px;
+}
+.performance_title_img_box img{
+	width: 100%;
+}
+.performance_item_box{
+	display: block;
+	padding: 15px 0px;
+}
+.performance_year{
+	justify-content: flex-start;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+.performance_data{
+	padding-left: 15px;
+	width: 95%;
+}
+
+/* .performance_data ul {
+	width: 120%;
+} */
+
+.performance_data ul li{
+	font-size: 12px;
+	line-height: 1.5;
+}
+/*수상실적 끝*/
+
+/*국가인증 및 파트너인증 시작*/
+
+.Certified_title{
+	width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.Certified_container{
+	width: 90%;
+}
+
+.Certified_text1{
+	font-size: 16px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+/*국가인증 및 파트너인증 끝*/
+
+/*관계사 시작*/
+.Company_top_text {
+	margin-top: 20px;
+}
+
+.affiliated_title{
+	width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 20px 0 10px;
+}
+.Affiliated_container{
+	width: 90%;
+
+}
+.Affiliated_container br{
+	display: none;
+}
+
+.Affiliated_text_top{
+	font-size: 12px;
+	line-height: 1.5;
+	text-align: left;
+	margin-bottom: 45px;
+}
+.Affiliated_container_center {
+    width: 100%;
+}
+.Affiliated_text_center{
+	font-size: 12px;
+	text-align: center;
+	font-weight: 500;
+}
+
+.Affiliated_img_top_box{
+	text-align: center;
+	margin-bottom: 28px;
+	margin-top: 10px;
+}
+.Affiliated_img_top_box img {
+    width: 100px;
+    height: 35px;
+}
+
+.Affiliated_img_top_box1{
+	text-align: center;
+}
+.Affiliated_img_top_box1 img {
+    width: 100px;
+    height: 35px;
+}
+/*관계사 끝*/
+
+/*협력사 시작*/
+.cooperative_title{
+	width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.Cooperative_container{
+	width: 90%;
+}
+.Cooperative_img{
+    width: 46%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.Cooperative_btn_box{
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.Cooperative_btn1, .Cooperative_btn2, .Cooperative_btn3, .Cooperative_btn4, .Cooperative_btn5 {
+    width: 30%;
+    border: 1px solid #4b5c6b;
+    height: 40px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.Cooperative_text1{
+	font-size: 16px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.Cooperative_text2{
+	font-size: 14px;
+}
+/*협력사 끝*/
+
+/*사회공헌활동 시작*/
+.Contribution_container{
+	width: 90%;
+}
+.Contribution_top_box{
+	height: 200px;
+	margin-top: 20px;
+}
+.Contribution_top_txt1{
+	font-size: 16px;
+}
+.Contribution_top_txt2{
+	font-size: 14px;
+}
+.Contribution_top_txt2 br{
+	display: none;
+}
+.Contribution_btn_box{
+	width: 100%;
+}
+.Contribution_btn_box div{
+	height: 50px;
+	font-size: 14px;
+}
+.image{
+	width: 100%;
+}
+.category{
+	font-size: 14px;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.caption{
+	font-size: 12px;
+}
+.news{
+	width:100%;
+	float: none;
+}
+.category{
+	border: none;
+}
+
+element.style {
+    display: block;
+    opacity: 1;
+}
+.tab_content1, .tab_content2, .tab_content3 {
+    width: 100%;
+    margin-top: 20px;
+}
+/*사회공헌활동 끝*/
+
+
+
+
+
+}
+
+
+
+@media (max-width:480px){
+	
+	
+}

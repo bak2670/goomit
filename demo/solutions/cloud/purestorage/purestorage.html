@@ -1,0 +1,346 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'SOLUTIONS';
+	$_category2 = 'CLOUD / INFRA';
+	$_category3 = 'Pure Storage';
+	$_category4 = 'Pure Storage';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../../../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/solutions.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_solutions.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/solutions.js"></script>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			M_main_navbar();
+			M_sidenav_accordion();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+
+	<!-- Head Navigator Start -->
+	<?php include_once '../../../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background Start -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="background_text1">SOLUTIONS</p>
+			<p class="background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>SOLUTIONS</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/solution.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background End -->
+
+	<!-- Contents Start -->
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../../../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+			
+			<!-- pc버전 시작 -->
+			<div class="Solution_container">
+				<div class="Solution_top_box">
+					<div class="Solution_top_left">
+						<div class="Solution_top_img" data-aos="fade-right"
+							data-aos-duration="1000">
+							<img src="../../../image/common/Purestorage.png" />
+						</div>
+					</div>
+					<div class="Solution_top_rigth">
+						<p class="Solution_top_title1">차별화된 Flash 기술로 5년 연속 All Flash 스토리지 리더</p>
+						<p class="Solution_top_title2">Pure Storage</p>
+					</div>
+				</div>
+
+
+				<div class="color_box" style="background-color: #f05423">
+					<div class="color_box_left"></div>
+					<div class="color_box_rigth" data-aos="fade-left"
+						data-aos-duration="1000">
+						<p>Pure Storage의 All Flash 스토리지는 Hybrid, All Flash, Object 스토리지를 기반으로,</p>
+						<p>기업에 민첩성이 뛰어난 업무 활동, 우수한 애플리케이션 가동 시간, 단순한 관리 및</p>
+						<p>획기적인 가치를 제공합니다.</p>
+						<div class="Solution_down_box">
+							<span class="Solution_down"><a href="<?php echo URL; ?>/pdf/PureStorage.pdf" download>자료다운로드</a><span>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white">Pure Storage</div>
+					<div class="Solution_center_black">주요기능</div>
+				</div>
+				
+				<div class="Solution_box6_container">
+					<div class="Solution_box6_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+						<p class="Solution_box6_item_text">Flash 최적화 기술</p>
+						<p class="Solution_box6_item_text">FlashCare</p>
+					</div>
+					<div class="Solution_box6_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+						<p class="Solution_box6_item_text">업계 최고의 인라인</p>
+						<p class="Solution_box6_item_text">중복제거 및 압축 기술</p>
+					</div>
+					<div class="Solution_box6_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+						<p class="Solution_box6_item_text">SSD디스크 암호화기술</p>
+					</div>
+					<div class="Solution_box6_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+						<p class="Solution_box6_item_text">자체 SSD 보호기술</p>
+						<p class="Solution_box6_item_text">RAID-3D</p>
+					</div>
+					<div class="Solution_box6_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+						<p class="Solution_box6_item_text">백업기술 Snapshot,</p>
+						<p class="Solution_box6_item_text">Clone & Syne,</p>
+						<p class="Solution_box6_item_text">Async Replication</p>
+					</div>
+					<div class="Solution_box6_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+						<p class="Solution_box6_item_text">웹 베이스의</p>
+						<p class="Solution_box6_item_text">손쉬운 관리 툴</p>
+					</div>
+
+					
+				</div>
+
+
+
+
+
+
+				<div class="vsphere_bottom_container">
+
+					<div class="vsphere_bottom_img_box" data-aos="fade-right" data-aos-duration="1000">
+						<p class="vsphere_bottom_img_box_text">Pure Strorage 기반 스토리지</p>
+						<img src="../../../image/common/purestorage-layer.png" />
+					</div>
+					<div class="vsphere_bottom_text_box" data-aos="fade-left"
+						data-aos-duration="1000">
+						<ul>
+							<li><img src="../../../image/common/purestorage-checkbox.png" />End-to-End NVMe 프로토콜 기반 차세대 아키텍처</li>
+							<li><img src="../../../image/common/purestorage-checkbox.png" />100% All Flash 기반, SSD에 의한 성능 제약 없음</li>
+							<li><img src="../../../image/common/purestorage-checkbox.png" />OS단의 전역 FLASH 관리로 항상 일정한 성능 제공</li>
+							<li><img src="../../../image/common/purestorage-checkbox.png" />Cache 처리 없이 고성능 Direct Flash Module에서 직접 읽기 수행과<br>Direct Memory Module(Optane Memory)로 더욱 성능 극대화</li>
+							<li><img src="../../../image/common/purestorage-checkbox.png" />최고의 데이터 절감 및 용량 보증 프로그램 제공</li>
+							<li><img src="../../../image/common/purestorage-checkbox.png" />검증된 컨버지드 아키텍처 FlashStack 및 AI 전용 아키텍처 AIRI</li>
+
+						</ul>
+					</div>
+				</div>
+				
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white">Pure Storage</div>
+					<div class="Solution_center_black">기대효과</div>
+				</div>
+				
+				
+				<div class="vsphere_center_img_box">
+					<div class="vsphere_center_item" data-aos="fade-up"
+						data-aos-delay="300" data-aos-duration="1000">
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/purestorage1.png" />
+						</div>
+						<p class="vsphere_center_text1">더 적은 수의 어레이로</p>
+						<p class="vsphere_center_text1">더 많은 워크로드 실행</p>
+
+					</div>
+
+					<div class="vsphere_center_item" data-aos="fade-up"
+						data-aos-delay="600" data-aos-duration="1000">
+						<div class="vsphere_center_img">
+							<img style="width: 80%" src="../../../image/common/purestorage2.png" />
+						</div>
+						<p class="vsphere_center_text1" >손 쉬운 스토리지 관리</p>
+
+					</div>
+
+					<div class="vsphere_center_item" data-aos="fade-up"
+						data-aos-delay="900" data-aos-duration="1000">
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/purestorage3.png" />
+						</div>
+						<p class="vsphere_center_text1">상시(Always-on)데이터 보호</p>
+
+					</div>
+				</div>
+
+
+				<div class="Solution_ask_box">
+					<p class="Solution_ask_text1">더 알고 싶으시다면</p>
+					<p class="Solution_ask_text2">지금 바로 문의주세요. 최대한 빠르고 성실하게 답변해
+						드리겠습니다.</p>
+					<div class="Solution_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+
+			</div>
+			<!-- pc버전 끝 -->
+
+			<!-- 모바일 버전 시작 -->
+			<div class="M_Solution_container">
+
+				<div class="M_Solution_title_box">
+					<p class="M_Solution_title_text1">차별화된 Flash 기술로 5년 연속 All Flash 스토리지 리더</p>
+					<p class="M_Solution_title_text2">Pure Storage</p>
+				</div>
+				<div class="M_Solution_title_img_box" data-aos="fade-up"
+					data-aos-duration="1000">
+					<img src="../../../image/common/Purestorage.png" />
+				</div>
+
+				<div class="M_Solution_black_box" style="background-color: #f05423">
+					<p>
+					Pure Storage의 All Flash 스토리지는 Hybrid, All Flash, Object 스토리지를 기반으로,기업에 민첩성이 뛰어난 업무 활동, 우수한 애플리케이션 가동 시간, 단순한 관리 및 획기적인 가치를 제공합니다.
+					<p>
+				</div>
+				
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white">Pure Storage</div>
+					<div class="Solution_center_black">주요기능</div>
+				</div>
+				
+				
+				<div class="Solution_box6_container">
+					<div class="Solution_box6_item">
+						<p class="Solution_box6_item_text">Flash 최적화 기술</p>
+						<p class="Solution_box6_item_text">FlashCare</p>
+					</div>
+					<div class="Solution_box6_item">
+						<p class="Solution_box6_item_text">업계 최고의 인라인</p>
+						<p class="Solution_box6_item_text">중복제거 및 압축 기술</p>
+					</div>
+					<div class="Solution_box6_item">
+						<p class="Solution_box6_item_text">SSD디스크 암호화기술</p>
+					</div>
+					<div class="Solution_box6_item">
+						<p class="Solution_box6_item_text">자체 SSD 보호기술</p>
+						<p class="Solution_box6_item_text">RAID-3D</p>
+					</div>
+					<div class="Solution_box6_item">
+						<p class="Solution_box6_item_text">백업기술 Snapshot</p>
+						<p class="Solution_box6_item_text">Clone & Syne,</p>
+						<p class="Solution_box6_item_text">Async Replication</p>
+					</div>
+					<div class="Solution_box6_item">
+						<p class="Solution_box6_item_text">웹 베이스의</p>
+						<p class="Solution_box6_item_text">손쉬운 관리 툴</p>
+					</div>
+
+					
+				</div>
+				
+				
+				
+				<div class="vsphere_bottom_img_box">
+					<p class="vsphere_bottom_img_box_text">Pure Strorage<br>기반 스토리지</p>
+					<img src="../../../image/common/purestorage-layer.png" />
+					
+
+					<div class="vsphere_bottom_text_box" data-aos="fade-left"
+						data-aos-duration="1000">
+						<ul>
+							<li><img src="../../../image/common/purestorage-checkbox.png" />End-to-End NVMe 프로토콜 기반 차세대 아키텍처</li>
+							<li><img src="../../../image/common/purestorage-checkbox.png" />100% All Flash 기반, SSD에 의한 성능 제약 없음</li>
+							<li><img src="../../../image/common/purestorage-checkbox.png" />OS단의 전역 FLASH 관리로 항상 일정한 성능 제공</li>
+							<li><img src="../../../image/common/purestorage-checkbox.png" />Cache 처리 없이 고성능 Direct Flash Module에서 직접 읽기 수행과 Direct Memory Module(Optane Memory)로 더욱 성능 극대화</li>
+							<li><img src="../../../image/common/purestorage-checkbox.png" />최고의 데이터 절감 및 용량 보증 프로그램 제공</li>
+							<li><img src="../../../image/common/purestorage-checkbox.png" />검증된 컨버지드 아키텍처 FlashStack 및 AI 전용 아키텍처 AIRI</li>
+
+						</ul>
+					</div>
+				</div>
+				
+				
+				
+				
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white">Pure Storage</div>
+					<div class="Solution_center_black">기대효과</div>
+				</div>
+				
+				
+								<div class="vsphere_center_img_box">
+					<div class="vsphere_center_item" data-aos="fade-up"
+						data-aos-delay="300" data-aos-duration="1000">
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/purestorage1.png" />
+						</div>
+						<p class="vsphere_center_text1">더 적은 수의 어레이로</p>
+						<p class="vsphere_center_text1">더 많은 워크로드 실행</p>
+
+					</div>
+
+					<div class="vsphere_center_item" data-aos="fade-up"
+						data-aos-delay="600" data-aos-duration="1000">
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/purestorage2.png" />
+						</div>
+						<p class="vsphere_center_text1">손 쉬운 스토리지 관리</p>
+
+					</div>
+
+					<div class="vsphere_center_item" data-aos="fade-up"
+						data-aos-delay="900" data-aos-duration="1000">
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/purestorage3.png" />
+						</div>
+						<p class="vsphere_center_text1">상시(Always-on)데이터 보호</p>
+
+					</div>
+				</div>
+
+
+
+
+				<div class="vsphere_ask_box">
+					<p class="vsphere_ask_text1">더 알고 싶으시다면</p>
+					<p class="vsphere_ask_text2">지금 바로 문의주세요.</p>
+					<p class="vsphere_ask_text2">빠르고 성실하게 답변해 드리겠습니다.</p>
+					<div class="vsphere_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+
+
+
+
+
+
+			</div>
+
+
+			<!-- 모바일 버전 끝 -->
+
+
+		</div>
+	</div>
+
+	<!-- Side Navigator Start -->
+	<?php include_once '../../../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+
+
+</body>
+</html>

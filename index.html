@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<?php include_once("./_inc/head.html"); ?>
+		<style>
+		
+			.login-input { width: 400px;  margin: 30px 0; font-size: 17px; }
+			.login-input button { width: 100%;  padding: 10px 0; font-size: 1em; font-weight: 900; letter-spacing: 1em; color: #fff; border-radius: 5px; border: none; background: #2C325F; }
+			.login-input button:hover { cursor: pointer; opacity: 0.8; }
+			.login-input input { width: 100%; padding: 20px 10px 10px; border: none; border-bottom: 1px solid #999; outline: none; background: transparent; }
+			
+		</style>
+		
+		<script>
+			location.replace('demo');
+		</script>
+	</head>
+	<body>
+		<section class="background-full" style="width: 100vw; height: 100vh; display: flex; align-content: center; align-items: center; justify-content: center; background: #eee;">
+			<div style="padding: 1rem;">
+				<div style="text-align: center;">
+					<h1>LOGO IMG</h1>
+				</div>
+				<form action="demo" onSubmit="" method="post">
+					<div class="login-input">
+						<input class="login-username" name="username" type="text" placeholder="USERNAME"/>
+					</div>
+					<div class="login-input">
+						<input class="login-password" name="password" type="password" placeholder="PASSWORD" autocomplete="off"/>
+					</div>
+					<div class="login-input">
+						<button type="submit">LOGIN</button>
+					</div>
+				</form>
+				<div style="color: #999;"> Forget Password? </div>
+			</div>
+		</section>
+	</body>
+</html>

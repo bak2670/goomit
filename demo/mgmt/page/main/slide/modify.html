@@ -1,0 +1,73 @@
+<?php
+	include_once('./_common.php');
+	$category = "page";
+	$page = "slider_img";
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<?php include_once(MGMT_INC_PATH."/head.html"); ?>
+</head>
+
+<body class="nav-md">
+	<div class="container body">
+		<div class="main_container">
+			<div class="col-md-3 left_col menu_fixed">
+				<div class="left_col scroll-view">
+					<?php include_once(MGMT_INC_PATH."/left_nav.html"); ?>
+				</div>
+			</div>
+			<?php include_once(MGMT_INC_PATH."/top_nav.html"); ?>
+			
+			<!-- page content -->
+			<div class="right_col" role="main">
+				<form method="post" enctype="multipart/form-data">
+				<div class="page-title">
+					<div class="title_left">
+						<h5>메인슬라이드 수정</h5>
+					</div>
+					<ul class="nav navbar-right panel_toolbox">
+						<li>
+							<button class="btn btn-sm btn-outline-primary">
+								<i class="fa fa-edit"></i> 수정
+							</button>
+							<button class="btn btn-sm btn-outline-secondary" onClick="history.back();">
+								<i class="fa fa-undo"></i> 목록
+							</button>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="clearfix"></div>
+				
+				<div class="row">
+					<div class="col-md-12 col-sm-12 ">
+						<div class="x_panel">
+							<div class="x_content">
+								<div class="row">
+									
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<br />
+				
+				</form>
+			</div>
+			<!-- /page content -->
+			
+			<!-- footer content -->
+			<!-- <footer>
+				<div class="pull-right">
+				</div>
+				<div class="clearfix"></div>
+			</footer> -->
+			<!-- /footer content -->
+		</div>
+	</div>
+	<?php include_once(MGMT_INC_PATH."/jshead.html"); ?>
+</body>
+</html>

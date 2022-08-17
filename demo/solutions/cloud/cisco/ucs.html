@@ -1,0 +1,309 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'SOLUTIONS';
+	$_category2 = 'CLOUD / INFRA';
+	$_category3 = 'Cisco';
+	$_category4 = 'UCS';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../../../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/solutions.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_solutions.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/solutions.js"></script>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			M_main_navbar();
+			M_sidenav_accordion();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+
+	<!-- Head Navigator Start -->
+	<?php include_once '../../../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background Start -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="background_text1">SOLUTIONS</p>
+			<p class="background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>SOLUTIONS</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/solution.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background End -->
+
+	<!-- Contents Start -->
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../../../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+			
+			
+			<!-- pc버전 시작 -->
+			<div class="Solution_container">
+				<div class="Solution_top_box" >
+					<div class="Solution_top_left">
+						<div class="Solution_top_img" data-aos="fade-right"
+							data-aos-duration="1000">
+							<img style="width: 80%" src="../../../image/common/CISCO로고.png" />
+						</div>
+					</div>
+					<div class="Solution_top_rigth">
+						<p class="Solution_top_title1">혁신적인 컴퓨팅 아키텍처</p>
+						<p class="Solution_top_title2">Cisco UCS</p>
+					</div>
+				</div>
+
+
+				<div class="color_box" style="background-color:#049fd8 ">
+					<div class="color_box_left"></div>
+					<div class="color_box_rigth" data-aos="fade-left"
+						data-aos-duration="1000">
+						<p>Cisco UCS 서버는 혁신적인 아키텍처를 통하여 Unified Computing을 구현하여</p>
+						<p>데이터 센터의 다양한 패브릭과 블레이드 서버 및 랙 서버를 하나로 통합하는</p>
+						<p>진정한 의미의 Unified Computing 환경을 제공합니다.</p>
+						
+						<div class="Solution_down_box">
+							<span class="Solution_down"><a href="<?php echo URL; ?>/pdf/CUSCI UCS.pdf" download>자료다운로드</a><span>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white">Cisco UCS</div>
+					<div class="Solution_center_black">주요기능</div>
+				</div>
+				
+				<div class="ACI_center_box" style="width: 57%">
+					<div class="ACI_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+						<p class="ACI_item_title">Unified Fabric</p>
+						<p class="ACI_item_content">10G 또는 4G LAN/SAN</p>
+						<p class="ACI_item_content">관리 네트워크의 통합 패브릭</p>
+					</div>
+					
+					<div class="ACI_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+						<p class="ACI_item_title">Unified Computing</p>
+						<p class="ACI_item_content">단순한 구성유소</p>
+					</div>
+					
+					<div class="ACI_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+						<p class="ACI_item_title">Unified Management</p>
+						<p class="ACI_item_content">물리적 환경 및</p>
+						<p class="ACI_item_content">가상화 환경에 대한 통합관리</p>
+					</div>
+				</div>
+				
+				
+				<div class="vsphere_bottom_container">
+					<div class="vsphere_bottom_img_box" data-aos="fade-right" data-aos-duration="1000">
+						<p class="vsphere_bottom_img_box_text2">UCS기반<br>인프라 환경의 이점</p>
+						<img src="../../../image/common/aic-layer.png" />
+					</div>
+					<div class="vsphere_bottom_text_box" data-aos="fade-left"
+						data-aos-duration="1000">
+						<ul>
+							<li><img src="../../../image/common/aic-checkbox.png" /> Management, Service, FC 네트워크를 1개의 FCoE 통합 케이블로 구성하여<br>케이블 절감 및 관리 포인트 감소</li>
+							<li><img src="../../../image/common/aic-checkbox.png" /> 블레이드 샤시와 통합 샤시 관리스위치(Fabric Interconnect)제공</li>
+							<li><img src="../../../image/common/aic-checkbox.png" /> 장애 시에도 사전 정의된 정책 기반의 서비스 프로파일 기능을 사용하여 신속한 장애복구 기능 제공(1시간 이내)</li>
+
+						</ul>
+					</div>
+				</div>
+
+
+
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white">Cisco UCS</div>
+					<div class="Solution_center_black">기대효과</div>
+				</div>
+				
+				<p class="Solution_sub_title">Cisco UCS와 함께 더 효울적인 IT 운영이 가능해집니다.</p>
+
+				<div class="vsphere_center_img_box">
+					<div class="vsphere_center_item" data-aos="fade-up"
+						data-aos-duration="1000">
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/UCSimg1.png" />
+						</div>
+						<p class="vsphere_center_text1">시스템 관리 간소화</p>
+						<p class="vsphere_center_text2">Cisco Intersight는 SaaS 관리의 이점과</p>
+						<p class="vsphere_center_text2">Cisco UCS 및 Cisco HyperFlex의</p>
+						<p class="vsphere_center_text2">선제적 지원을 제공합니다.</p>
+					</div>
+
+					<div class="vsphere_center_item" data-aos="fade-up"
+						data-aos-duration="1000">
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/UCSimg2.png" />
+						</div>
+						<p class="vsphere_center_text1">앱 강화</p>
+						<p class="vsphere_center_text2">Cosco UCS Rack 서버는</p>
+						<p class="vsphere_center_text2">향상된 애플리케이션 성능으로</p>
+						<p class="vsphere_center_text2">고객 및 직원 만족도를 향상시킵니다.</p>
+					</div>
+
+					<div class="vsphere_center_item" data-aos="fade-up"
+						data-aos-duration="1000">
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/UCSimg3.png" />
+						</div>
+						<p class="vsphere_center_text1">인프라 간소화</p>
+						<p class="vsphere_center_text2">Cisco UCS는 업계 표준서버,</p>
+						<p class="vsphere_center_text2">네트워킹, 스토리지 액세스를</p>
+						<p class="vsphere_center_text2">단일한 통합시스템으로 결합합니다.</p>
+					</div>
+				</div>
+
+				<div class="Solution_ask_box">
+					<p class="Solution_ask_text1">더 알고 싶으시다면</p>
+					<p class="Solution_ask_text2">지금 바로 문의주세요. 최대한 빠르고 성실하게 답변해
+						드리겠습니다.</p>
+					<div class="Solution_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+
+				</div>
+
+			</div>
+			<!-- pc버전 끝 -->
+
+			<!-- 모바일 버전 시작 -->
+			<div class="M_Solution_container">
+			
+				<div class="M_Solution_title_box">
+					<p class="M_Solution_title_text1">혁신적인 컴퓨팅 아키텍처</p>
+					<p class="M_Solution_title_text2">Cisco UCS</p>
+				</div>
+				<div class="M_Solution_title_img_box">
+					<img src="../../../image/common/CISCO로고.png" />
+				</div>
+
+				<div class="M_Solution_black_box" style="background-color: #049fd8">
+					<p>
+					Cisco UCS 서버는 혁신적인 아키텍처를 통하여 Unified Computing을 구현하여 데이터 센터의 다양한 패브릭과 블레이드 서버 및 랙 서버를 하나로 통합하는 진정한 의미의 Unified Computing 환경을 제공합니다.
+					<p>
+				</div>
+				
+				
+				
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white">Cisco UCS</div>
+					<div class="Solution_center_black">주요기능</div>
+				</div>
+				
+				<div class="ACI_center_box">
+					<div class="ACI_center_item" style="padding-top:43px;">
+						<p class="ACI_item_title">Unified Fabric</p>
+						<p class="ACI_item_content">10G 또는 4G LAN/SAN</p>
+						<p class="ACI_item_content">관리 네트워크의 통합 패브릭</p>
+					</div>
+					
+					<div class="ACI_center_item" style="padding-top:43px;">
+						<p class="ACI_item_title">Unified Computing</p>
+						<p class="ACI_item_content">단순한 구성유소</p>
+					</div>
+					
+					<div class="ACI_center_item" style="padding-top:43px;">
+						<p class="ACI_item_title">Unified Management</p>
+						<p class="ACI_item_content">물리적 환경 및</p>
+						<p class="ACI_item_content">가상화 환경에 대한 통합관리</p>
+					</div>
+				</div>
+				
+				
+				<div class="vsphere_bottom_img_box">
+					<p class="vsphere_bottom_img_box_text2">UCS기반<br>인프라 환경의 이점</p>
+					<img src="../../../image/common/aic-layer.png" />
+					
+					<div class="vsphere_bottom_text_box">
+						<ul>
+							<li><img src="../../../image/common/aic-checkbox.png" />Management, Service, FC 네트워크를 1개의 FCoE 통합 케이블로 구성하여 케이블 절감 및 관리 포인트 감소</li>
+							<li><img src="../../../image/common/aic-checkbox.png" />블레이드 샤시와 통합 샤시 관리스위치(Fabric Interconnect)제공</li>
+							<li><img src="../../../image/common/aic-checkbox.png" />장애 시에도 사전 정의된 정책 기반의 서비스 프로파일 기능을 사용하여 신속한 장애복구 기능 제공(1시간 이내)</li>
+						</ul>
+					</div>
+				</div>
+								
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white">Cisco UCS</div>
+					<div class="Solution_center_black">기대효과</div>
+				</div>
+				
+				<p class="Solution_sub_title">Cisco UCS와 함께 더 효울적인 IT 운영이 가능해집니다.</p>
+
+
+				<div class="vsphere_center_img_box">
+					<div class="vsphere_center_item">
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/UCSimg1.png" />
+						</div>
+						<p class="vsphere_center_text1">시스템 관리 간소화</p>
+						<p class="vsphere_center_text2">Cisco Intersight는 SaaS 관리의 이점과</p>
+						<p class="vsphere_center_text2">Cisco UCS 및 Cisco HyperFlex의</p>
+						<p class="vsphere_center_text2">선제적 지원을 제공합니다.</p>
+					</div>
+
+					<div class="vsphere_center_item" >
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/UCSimg2.png" />
+						</div>
+						<p class="vsphere_center_text1">앱 강화</p>
+						<p class="vsphere_center_text2">Cosco UCS Rack 서버는</p>
+						<p class="vsphere_center_text2">향상된 애플리케이션 성능으로</p>
+						<p class="vsphere_center_text2">고객 및 직원 만족도를 향상시킵니다.</p>
+					</div>
+
+					<div class="vsphere_center_item" >
+						<div class="vsphere_center_img">
+							<img src="../../../image/common/UCSimg3.png" />
+						</div>
+						<p class="vsphere_center_text1">인프라 간소화</p>
+						<p class="vsphere_center_text2">Cisco UCS는 업계 표준서버,</p>
+						<p class="vsphere_center_text2">네트워킹, 스토리지 액세스를</p>
+						<p class="vsphere_center_text2">단일한 통합시스템으로 결합합니다.</p>
+					</div>
+				</div>
+				
+				<div class="vsphere_ask_box">
+					<p class="vsphere_ask_text1">더 알고 싶으시다면</p>
+					<p class="vsphere_ask_text2">지금 바로 문의주세요.</p>
+					<p class="vsphere_ask_text2">빠르고 성실하게 답변해 드리겠습니다.</p>
+					<div class="vsphere_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+					
+				</div>
+			</div>
+			<!-- 모바일 버전 끝 -->
+		</div>
+	</div>
+
+	
+	<!-- Side Navigator Start -->
+	<?php include_once '../../../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+</body>
+</html>

@@ -1,0 +1,577 @@
+<?php
+	include_once("./_common.php");
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php include_once("../_inc/head.html"); ?>
+<link href="../_css/english.css" rel="stylesheet" type="text/css">
+<link href="../_css/category.css" rel="stylesheet" type="text/css">
+<link href="../_css/font-face.css" rel="stylesheet" type="text/css">
+<script src="../js/category.js"></script>
+<script src="../js/english.js"></script>
+
+<script>
+	new WOW().init();
+	$(document).ready(function() {
+		top_nav_over();
+		top_nav_out();
+		AOS.init();
+
+	});
+</script>
+</head>
+<body>
+
+	<!-- sidenav 시작 -->
+
+	<div class='container_sidenav'>
+		<div class='sidenav_closebtn' onclick="sidenav_close()">
+			<img src="../image/common/sidenavclose.png" />
+		</div>
+		<div class="sidenav_box">
+			<div class='sidenav'>
+
+				<div class='nav_item_box'>
+					<div class='nav_item_title'>
+						<a
+							href="http://partner.start1.co.kr/goodmit/demo/Company/Ceo.html">COMPANY</a>
+					</div>
+					<div class='nav_list_box'>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Ceo.html">대표이사
+								인사말</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Overview.html">사업개요</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/History.html">연혁</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/CI.html">CI</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Misstion.html">미션과
+								비전</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Performance.html">수상실적</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Certified.html">국가인증
+								및 파트너인증</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Affiliated.html">관계사</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Cooperative.html">협력사</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Contribution.html">사회공헌
+								활동</a>
+						</div>
+					</div>
+				</div>
+
+				<div class='nav_item_box'>
+					<div class='nav_item_title'>
+						<a href="javascript:;">PR CENTER</a>
+					</div>
+					<div class='nav_list_box'>
+						<div class='nav_list_item'>
+							<a href="javascript:;">공지사항</a>
+						</div>
+						<div class='nav_list_item'>
+							<a href="javascript:;">언론보도</a>
+						</div>
+						<div class='nav_list_item'>
+							<a href="javascript:;">영상</a>
+						</div>
+					</div>
+				</div>
+
+				<div class='nav_item_box'>
+					<div class='nav_item_title'>
+						<a href="javascript:;">SOULTIONS</a>
+					</div>
+					<div id="sidenav_off" class='nav_list_box'
+						onmouseleave="sidenav_underline_out()">
+						<div class='nav_list_item'>
+							<div id="nav_soultion_title1" class='nav_soultion_title'
+								onmouseover="sidenav1()">
+								<a href="javascript:;">CLOUDE / INFRA</a>
+							</div>
+							<div id="nav_solution1" class='nav_soultion_box'>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">VMware</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Dell Technologies</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Clsco</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">NetaAPP</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">PURESTORAGE</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Veeam</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">VERITAS</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Red Hat</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">MS Azure</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Zero Client</a>
+								</div>
+								<div id="nav_soultion_list_line" class='nav_soultion_list '>
+									<a href="javascript:;">KT Cloud</a>
+								</div>
+							</div>
+						</div>
+
+						<div class='nav_list_item'>
+							<div id="nav_soultion_title2" class='nav_soultion_title'
+								onmouseover="sidenav2()">
+								<a href="javascript:;">BIG DATA / AI</a>
+							</div>
+							<div id="nav_solution2" class='nav_soultion_box'>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Cloudera</a>
+								</div>
+								<div id="nav_soultion_list_line" class='nav_soultion_list'>
+									<a href="javascript:;">NVIDIA</a>
+								</div>
+							</div>
+						</div>
+
+						<div class='nav_list_item'>
+							<div id="nav_soultion_title3" class='nav_soultion_title'
+								onmouseover="sidenav3()">
+								<a href="javascript:;">MANAGEMENT</a>
+							</div>
+							<div id="nav_solution3" class='nav_soultion_box'>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">VMware Tanzu</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Druva</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">ControlUp</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Clovir VDI</a>
+								</div>
+								<div id="nav_soultion_list_line" class='nav_soultion_list'>
+									<a href="javascript:;">Clovir SM</a>
+								</div>
+							</div>
+						</div>
+
+						<div class='nav_list_item'>
+							<div id="nav_soultion_title4" class='nav_soultion_title'
+								onmouseover="sidenav4()">
+								<a href="javascript:;">SECURITY</a>
+							</div>
+							<div id="nav_solution4" class='nav_soultion_box'>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Akamai</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">AKAMAI KSD</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Akamai WAP</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Akamai Edge DNS</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Akamai ETP</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Akamai EAA</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">APPM</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">RSA NetWitness Platform</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">OTP</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">MENLO WEB:EMAIL ISOLATION</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">SPARROW SCE</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">SolidStep</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Sweeper(스위퍼) 서비스</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Secure Gate V3.5</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">J-TOPS</a>
+								</div>
+								<div id="nav_soultion_list_line" class='nav_soultion_list'>
+									<a href="javascript:;">Weeds BlackBox Suite</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class='nav_item_box'>
+					<div class='nav_item_title'>
+						<a href="javascript:;">CONTACT US</a>
+					</div>
+					<div class='nav_list_box'>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/ContactUs/directions.html">오시는
+								길</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/ContactUs/Inquiry.html">영업·기술·유지보수
+								문의</a>
+						</div>
+
+					</div>
+				</div>
+				<div class='nav_item_box'>
+					<div class='nav_item_title'>
+						<a
+							href="http://partner.start1.co.kr/goodmit/demo/English/EOverview.html">ENGLISH</a>
+					</div>
+					<div class='nav_list_box'>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/English/EOverview.html">Overview</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/English/ESolutions.html">Solution</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/English/EAwards.html">Awards
+								and Achievements</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/English/EPartner.html">Partner</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/English/EMarketing.html">Marketing
+								Activities</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/English/ELocation.html">Locations</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/English/EContact.html">Contact
+								us</a>
+						</div>
+					</div>
+
+				</div>
+
+
+
+			</div>
+
+			<div class="side_nav_logo">
+				<div class="side_nav_logo">
+					<img src="../image/common/mainlogo_black" />
+				</div>
+				<div class="side_nav_text">ⓒ 2022 굿모닝아이텍(주) All rigth reserved</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- sidenav 끝 -->
+
+	<div class="Company_position">
+		<div class="Company_container">
+
+			<!-- nav바 시작 -->
+
+			<div class='top_container_over'>
+
+
+				<div class='navbar_position_over'>
+
+					<div class='nav_container_over'>
+						<div class='nav_left'>
+							<a href="http://partner.start1.co.kr/goodmit/demo"><img id="mainlogo"
+								src="../image/common/mainlogo_black.png" /></a>
+						</div>
+						<div class='nav_center'>
+							<div class='nav_center_menu'>
+								<div class='nav_item_over nav_item_hover1'
+									onmouseover="nav_change1()">
+									<a href="http://partner.start1.co.kr/goodmit/demo/Company/Ceo.html">COMPANY</a>
+								</div>
+								<div class='nav_item_over nav_item_hover2'
+									onmouseover="nav_change2()">
+									<a href="javascript:;">PR CENTER</a>
+								</div>
+								<div class='nav_item_over nav_item_hover3'
+									onmouseover="nav_change3()">
+									<a href="javascript:;">SOLUTIONS</a>
+								</div>
+								<div class='nav_item_over nav_item_hover4'
+									onmouseover="nav_change4()">
+									<a href="http://partner.start1.co.kr/goodmit/demo/ContactUs/directions.html">CONTACT US</a>
+								</div>
+								<div class='nav_item_over nav_item_hover5'
+									onmouseover="nav_change5()">
+									<a href="http://partner.start1.co.kr/goodmit/demo/English/EOverview.html">ENGLISH</a>
+									
+								</div>
+							</div>
+						</div>
+
+						<div class='nav_rigth' style="color: black"
+							onclick="sidenav_open()">
+							<i class="fa-solid fa-bars"></i>
+						</div>
+					</div>
+					<div class="nav_item_detail_hidden">
+						<div class='nav_item_detail'>
+
+							<div class='nav_detail_1 nav_detail_view1'>
+								<div class='nav_detail_text_1'>
+									<div class="nav_detail_item">
+										<a href="http://partner.start1.co.kr/goodmit/demo/Company/Ceo.html">대표이사 인사말</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="http://partner.start1.co.kr/goodmit/demo/Company/Overview.html">사업개요</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="http://partner.start1.co.kr/goodmit/demo/Company/History.html">연혁</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="http://partner.start1.co.kr/goodmit/demo/Company/CI.html">CI</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="http://partner.start1.co.kr/goodmit/demo/Company/Misstion.html">미션과 비전</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="http://partner.start1.co.kr/goodmit/demo/Company/Performance.html">수상실적</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="http://partner.start1.co.kr/goodmit/demo/Company/Certified.html">국가인증 및 파트너인증</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="http://partner.start1.co.kr/goodmit/demo/Company/Affiliated.html">관계사</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="http://partner.start1.co.kr/goodmit/demo/Company/Cooperative.html">협력사</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="partner.start1.co.kr/goodmit/demo/Company/Contribution.html">사회공헌 활동</a>
+									</div>
+								</div>
+							</div>
+							<div class='nav_detail_1 nav_detail_view2'>
+								<div class='nav_item_detail_box nav_detail_2'>
+									<div class="nav_detail_item">
+										<a href="javascript:;">공지사항</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="javascript:;">언론보도</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="javascript:;">영상</a>
+									</div>
+								</div>
+							</div>
+							<div class='nav_detail_1 nav_detail_view3'>
+								<div class='nav_item_detail_box nav_detail_3'>
+									<div class="nav_detail_item">
+										<a href="javascript:;">CLOUD/INFRA</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="javascript:;">BIGDATA/AI</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="javascript:;">MANAGEMENT</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="javascript:;">SECURITY</a>
+									</div>
+								</div>
+							</div>
+							<div class='nav_detail_1 nav_detail_view4'>
+								<div class='nav_item_detail_box nav_detail_4'>
+									<div class="nav_detail_item">
+										<a href="http://partner.start1.co.kr/goodmit/demo/ContactUs/directions.html">[서울본사] 오시는 길</a>
+									</div>
+
+									<div class="nav_detail_item">
+										<a href="http://partner.start1.co.kr/goodmit/demo/ContactUs/Inquiry.html">영업·기술·유지보수 문의</a>
+									</div>
+								</div>
+							</div>
+
+							<div class='nav_detail_1 nav_detail_view5'>
+								<div class='nav_detail_text_1'>
+									<div class="nav_detail_item">
+										<a href="http://partner.start1.co.kr/goodmit/demo/English/EOverview.html">Overview</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="http://partner.start1.co.kr/goodmit/demo/English/ESolutions.html">Solutions</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="http://partner.start1.co.kr/goodmit/demo/English/EPartner.html">Partner</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="http://partner.start1.co.kr/goodmit/demo/English/ELocation.html">Locations</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="http://partner.start1.co.kr/goodmit/demo/English/EMarketing.html">Maketing Activities</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="http://partner.start1.co.kr/goodmit/demo/English/EAwards.html">Awards and Achievements</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="http://partner.start1.co.kr/goodmit/demo/English/EContact.html">Contact us</a>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+					
+				</div>
+
+			</div>
+			<!-- nav바 끝 -->
+
+			<!-- top background 시작 -->
+			<div class="main_top_background">
+				<div class="background_text_box">
+					<p class="company_background_text1">COMPANY</p>
+					<p class="company_background_text2">우리의 고객 한분,한분이 모두 좋은 아침을
+						맞이하기를 기대합니다.</p>
+				</div>
+			</div>
+			<!-- top background 끝 -->
+
+			<!-- 카테고리 시작 -->
+			<div class='category_container'>
+				<div class='category_subcontainer'>
+					<div class="category_home_box">
+						<div class="category_home">
+							<img src="../image/common/category_home.png" />
+						</div>
+
+					</div>
+					<div class='big_category_box'>
+						<div class='big_category' onclick="big_category_btn()">
+							<div class='big_category_title'>ENGLISH</div>
+							<div class='big_category_arrow'>
+								<img src="../image/common/dropdown.png" />
+							</div>
+						</div>
+						<div class='category_item_hide_line'>
+							<div class="big_category_item_box">
+								<div class='category_item'>COMPANY</div>
+								<div class='category_item'>PR CENTER</div>
+								<div class='category_item'>SOLUTIONS</div>
+								<div class='category_item'>CONTACT US</div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class='middle_category_box1'>
+						<div class='middle_category1' onclick="middle_category_btn()">
+							<div class='middle_category_title'>중분류</div>
+							<div class='middle_category_arrow'>
+								<img src="../image/common/dropdown.png" />
+							</div>
+						</div>
+						<div class='category_item_hide_line'>
+							<div class="middle_category_item_box">
+								<a
+									href="http://partner.start1.co.kr/goodmit/demo/English/EOverview.html"><div
+										class='category_item'>Overview</div></a> <a
+									href="http://partner.start1.co.kr/goodmit/demo/English/ESolutions.html"><div
+										class='category_item'>Solutions</div></a> <a
+									href="http://partner.start1.co.kr/goodmit/demo/English/EAwards.html"><div
+										class='category_item'>Awards and Achievements</div></a> <a
+									href="http://partner.start1.co.kr/goodmit/demo/English/EPartner.html"><div
+										class='category_item'>Partner</div></a> <a
+									href="http://partner.start1.co.kr/goodmit/demo/English/EMarketing.html"><div
+										class='category_item'>Marketing Activities</div></a> <a
+									href="http://partner.start1.co.kr/goodmit/demo/English/ELocation.html"><div
+										class='category_item'>Locations</div></a> <a
+									href="http://partner.start1.co.kr/goodmit/demo/English/EContact.html"><div
+										class='category_item'>Contact us</div></a>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- 카페고리 끝 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>

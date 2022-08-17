@@ -1,0 +1,334 @@
+<?php
+	include_once '_common.php';
+	$_category1 = 'PR CENTER';
+	$_category2 = '채용';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once '../_inc/head.html'; ?>
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/default_board_skin.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/card_board_skin1.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/main.js"></script>
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			M_sidenav_accordion();
+		});
+	</script>
+	
+
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+	
+	<!-- Head Navigator Start -->
+	<?php include_once '../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+	
+	<!-- top background Start -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="background_text1">RECRUIT</p>
+			<p class="background_text2">우리의 동료가 되어주세요.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>PR CENTER</p>
+			<p>RECRUIT</p>
+			<p>우리의 동료가 되어주세요.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/prcenter.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background End -->
+
+
+	<!-- Contents Start -->
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+			
+			<!-- pc버전 시작 -->
+			<div class="tit-col">
+				<p class="top_tit prcenter">
+					<span>PR CENTER</span>
+				</p>
+				<h1 class="tit">채용</h1>
+			</div>
+			
+			<div class="full-box">
+				<div class="application_btn">[신입] 입사지원서</div>
+				<div class="application_btn">[경력] 입사지원서</div>
+			</div>
+			
+			<div class="container notice-container only-pc">
+
+
+				<div class="row board-row">
+					<div class="board-col">
+
+						
+						<div class="board-body">
+							<table class="tb_recuit">
+								<colgroup>
+									<col width="18%" style="width: 18%;"/> 
+									<col width="37%" style="width: 37%;"/> 
+									<col width="35%" style="width: 35%;"/> 
+									<col width="10%" style="width: 10%;"/> 
+								</colgroup>
+								<thead>
+									<tr>
+										<th>모집분야</th>
+										<th>담당 업무</th>
+										<th>우대사항</th>
+										<th>모집인원</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>서버 가상화 엔지니어<br>(경력)</td>
+										<td>서버 가상화 구축 및 기술지원</td>
+										<td>
+											<ul>
+												<li>- VMware 솔루션 구축 및 기술지원 경력</li>
+												<li>- 중 대규모 가상화 운영 경험</li>
+												<li>- VCP 취득자</li>
+											</ul>
+										</td>
+										<td>O명</td>
+									</tr>
+									<tr>
+										<td>네트워크 가상화 엔지니어<br>(신입,경력)</td>
+										<td>네트워크 가상화(VMware NSX) 구축 및 기술지원</td>
+										<td>
+											<ul>
+												<li>- VMware 솔루션 구축 및 기술지원 경력</li>
+												<li>- 네트워크 인프라 구축 및 기술지원 경력</li>
+												<li>- VCP 취득자</li>
+											</ul>
+										</td>
+										<td>O명</td>
+									</tr>
+									<tr>
+										<td>데스크탑 가상화 엔지니어<br>(신입,경력)</td>
+										<td>데스크탑 가상화 구축 및 기술지원</td>
+										<td>
+											<ul>
+												<li>- VMware 솔루션 구축 및 기술지원 경력</li>
+												<li>- 하드웨어 인프라 구축 및 기술지원 경력</li>
+												<li>- VCP 취득자</li>
+											</ul>
+										</td>
+										<td>O명</td>
+									</tr>
+									<tr>
+										<td>서버/네트워크 엔지니어<br>(신입,경력)</td>
+										<td>x86/네트워크 신규 구축에 따른 설치 및 유지보수 기술지원 등</td>
+										<td>
+											<ul>
+												<li>- HCI(Cisco, Dell, NetApp 등) 시스템 경험자</li>
+												<li>- 가상화/클라우드/서버/네트워크 교육 이수자</li>
+												<li>- 정보처리기사/산업기사 취득자</li>
+											</ul>
+										</td>
+										<td>0명</td>
+									</tr>
+									<tr>
+										<td>퍼블릭 클라우드 엔지니어<br>(신입,경력)</td>
+										<td>퍼블릭 클라우드 구축을 위한 기술 지원 및 기술 영업 등</td>
+										<td>
+											<ul>
+												<li>- AWS 및 MS Azure 사용 경험 보유</li>
+												<li>- Linux & MS Windows Server 경험 보유</li>
+												<li>- VMware 사용 경험 보유</li>
+											</ul>
+										</td>
+										<td>O명</td>
+									</tr>
+								</tbody>
+							</table>
+							
+							
+							<div class="recruit_content">
+								<div><span class="recruit_inquire">문의사항</span></div>
+								<p>담당자 : 경영지원팀 장유선 이사 / 박광익 과장</p>
+								<p>상담문의 : githr@goodmit.co.kr</p>
+								<p>연락처 : 070-7164-4257</p>
+								<p>주소 : 서울 마포구 월드컵북로 434 상암 IT Tower 10층<a href="http://www.goodmit.co.kr/">http://www.goodmit.co.kr/</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!-- pc버전 끝 -->
+			
+			
+			<!-- 모바일 -->
+						<div class="container notice-container only-mobile">
+
+
+				<div class="row board-row">
+					<div class="board-col">
+
+						<div class="board-body">
+								<div class="recruit-card-item_box">
+									<div class="recruit-card-item">
+										<div class="recruit-card-title">서버 가상화 엔지니어(경력)</div>
+										<div class="recruit-card-list">
+											<div class="w20p recruit-card-category">담당 업무</div>
+											<div class="w80p recruit-card-content">서버 가상화 구축 기술지원</div>
+										</div>
+											
+										<div class="recruit-card-list">
+											<div class="w20p recruit-card-category">우대사항</div>
+											<div class="w80p recruit-card-content">
+												<ul>
+													<li>VMware솔루션 구축 및 기술지원 경력</li>
+													<li>중 대규모 가상화 운영 경험</li>
+													<li>VCP 취득자</li>
+												</ul>
+											</div>
+										</div>
+										<div class="recruit-card-list">
+											<div class="w20p recruit-card-category">모집인원</div>
+											<div class="w80p recruit-card-content">0명</div>
+										</div>
+									</div>
+									
+									<div class="recruit-card-item">
+										<div class="recruit-card-title">네트워크 가상화 엔지니어(신입/경력)</div>
+										<div class="recruit-card-list">
+											<div class="w20p recruit-card-category">담당 업무</div>
+											<div class="w80p recruit-card-content">네트워크 가상화(VMware NSX) 구축 및 기술지원</div>
+										</div>
+											
+										<div class="recruit-card-list">
+											<div class="w20p recruit-card-category">우대사항</div>
+											<div class="w80p recruit-card-content">
+												<ul>
+													<li>VMware솔루션 구축 및 기술지원 경력</li>
+													<li>네트워크 인프라 구축 및 기술지원경력</li>
+													<li>VCP 취득자</li>
+												</ul>
+											</div>
+										</div>
+										<div class="recruit-card-list">
+											<div class="w20p recruit-card-category">모집인원</div>
+											<div class="w80p recruit-card-content">0명</div>
+										</div>
+									</div>
+									
+									<div class="recruit-card-item">
+										<div class="recruit-card-title">데스크탑 가상화 엔지니어(신입/경력)</div>
+										<div class="recruit-card-list">
+											<div class="w20p recruit-card-category">담당 업무</div>
+											<div class="w80p recruit-card-content">데스크탑 가상화 구축 및 기술지원</div>
+										</div>
+											
+										<div class="recruit-card-list">
+											<div class="w20p recruit-card-category">우대사항</div>
+											<div class="w80p recruit-card-content">
+												<ul>
+													<li>VMware솔루션 구축 및 기술지원 경력</li>
+													<li>하드웨어 인프라 구축 및 기술지원 경력</li>
+													<li>VCP 취득자</li>
+												</ul>
+											</div>
+										</div>
+										<div class="recruit-card-list">
+											<div class="w20p recruit-card-category">모집인원</div>
+											<div class="w80p recruit-card-content">0명</div>
+										</div>
+									</div>
+									
+									<div class="recruit-card-item">
+										<div class="recruit-card-title">서버/네트워크 엔지니어(신입/경력)</div>
+										<div class="recruit-card-list">
+											<div class="w20p recruit-card-category">담당 업무</div>
+											<div class="w80p recruit-card-content">X86/네트워크 신규 구축에 따른 설치 및 유지보수 기술지원 등</div>
+										</div>
+											
+										<div class="recruit-card-list">
+											<div class="w20p recruit-card-category">우대사항</div>
+											<div class="w80p recruit-card-content">
+												<ul>
+													<li>HCI(Cisco,Dell,NetApp 등) 시스템 경험자</li>
+													<li>가상화/클라우드/서버/네트워크 교육 이수자</li>
+													<li>정보처리기사/산업기사 취득자</li>
+												</ul>
+											</div>
+										</div>
+										<div class="recruit-card-list">
+											<div class="w20p recruit-card-category">모집인원</div>
+											<div class="w80p recruit-card-content">0명</div>
+										</div>
+									</div>
+									
+									<div class="recruit-card-item">
+										<div class="recruit-card-title">퍼블릭 클라우드 엔지니어(신입/경력)</div>
+										<div class="recruit-card-list">
+											<div class="w20p recruit-card-category">담당 업무</div>
+											<div class="w80p recruit-card-content">퍼블릭 클라우드 구축을 위한 기술 지원 및 기술 영업 등</div>
+										</div>
+											
+										<div class="recruit-card-list">
+											<div class="w20p recruit-card-category">우대사항</div>
+											<div class="w80p recruit-card-content">
+												<ul>
+													<li>AWS 및 MS Azure 사용 경험 보유</li>
+													<li>Linux & MS Windows Server 경험 보유</li>
+													<li>VMware 사용 경험 보유</li>
+												</ul>
+											</div>
+										</div>
+										<div class="recruit-card-list">
+											<div class="w20p recruit-card-category">모집인원</div>
+											<div class="w80p recruit-card-content">0명</div>
+										</div>
+									</div>
+									
+									
+								</div>
+									
+							<div class="recruit_content">
+								<div><span class="recruit_inquire">문의사항</span></div>
+								<p>담당자 : 경영지원팀 장유선 이사 / 박광익 과장</p>
+								<p>상담문의 : githr@goodmit.co.kr</p>
+								<p>연락처 : 070-7164-4257</p>
+								<p>주소 : 서울 마포구 월드컵북로 434 상암 IT Tower 10층<a href="http://www.goodmit.co.kr/">http://www.goodmit.co.kr/</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+
+			
+		</div>
+	</div>
+	<!-- Contents End -->
+	
+	<!-- footer Start -->
+	<?php include_once '../_inc/footer.html'; ?>
+	<!-- footer End -->
+	
+	<!-- Side Navigator Start -->
+	<?php include_once '../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+</body>
+</html>

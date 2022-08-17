@@ -1,0 +1,128 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'COMPANY';
+	$_category2 = 'CI';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/company.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_company.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/company.js"></script>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+	<!-- Head Navigator Start -->
+	<?php include_once '../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+	
+	<!-- top background 시작 -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="company_background_text1">COMPANY</p>
+			<p class="company_background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>COMPANY</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/company.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background 끝 -->
+	
+	<!-- Contents Start -->
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+			
+			<!-- pc버전 시작 -->
+			<div class='CI_container'>
+				<p class="Company_top_text">
+					<span>COMPANY</span>
+				</p>
+				<h2 class='ci_title'>Corporate Identity</h2>
+				<div class='CI_top'>
+					<div class='CI_top_img'>
+						<img
+							src="../image/common/cilogo.png" />
+					</div>
+					<div class='CI_top_text'>
+						<p>굿모닝아이텍(주)의 CI는 ‘아침에 떠오르는 해’처럼 새로운 도전으로 성장을 거듭하여, 최고의 고객 만족을
+							드리겠다는 굿모닝아이텍(주)의 결의를 나타내고 있습니다.</p>
+						<p>컬러는 ‘신뢰 할 수 있는 기업’을 상징하는 Blue, ‘끊임없는 열정’을 상징하는 Red, ‘우수한
+							기술력’을 상징하는 Grey를 선택하여 굿모닝아이텍(주)의 기업 이미지를 형상화하였습니다.</p>
+					</div>
+				</div>
+		
+				<div class='CI_center'>
+					<div class='CI_center1' data-aos="fade-up" data-aos-duration="1000">
+						<div class="ci_img_box">
+							<img
+								src="../image/common/ci1.png" />
+						</div>
+						<p>심벌마크는 굿모닝아이텍(주)의 상징성을 가장 잘 드러내는 요소입니다. 아이덴티티의 왜곡, 변형 및 오남용
+							등에 따른 이미지 손상 방지를 위하여 심벌마크 적용에 따른 규정과 원칙을 반드시 준수해야 합니다.</p>
+					</div>
+		
+					<div class='CI_center2' data-aos="fade-up" data-aos-duration="2000">
+						<div class="ci_img_box">
+							<img
+								src="../image/common/ci2.png" />
+						</div>
+						<p>국문 로고타입은 굿모닝아이텍(주)의 사명을 표시하기 위해 디자인 된 것으로, 굿모닝아이텍(주) 심볼마크와
+							열결되어 아이덴티티를 유지하며 결합하여 사용하는 것을 원칙으로 합니다.</p>
+					</div>
+				</div>
+		
+				<div class='CI_bottom' data-aos="fade-up" data-aos-duration="1000">
+					<span class="CI_bottom_text"><br /> 굿모닝아이텍(주) 대표 컬러인 Blue,
+						Red, Grey는 각각 신뢰, 열정, 기술력을 나타냅니다. 컬러는 항상 정확한 색상과 정확한 명도, 채도 등을
+						유지하여 통일된 느낌의 색상이 재현되도록 사용해야 합니다.</span><br /> <span
+						class="CI_bottom_text">시그니처는 굿모닝아이텍(주)의 심볼마크와 로고타입을 가장
+						효과적으로 조합시킨 정식 표기 형태입니다.<br /> 적용 매체의 상황에 따라 공간, 레이아웃 등을 고려해 국문
+						가로/세로, 영문 가로 중 적절한 것을 선택하여 사용합니다.<br /> 사용 시 비례나 간격, 크기를 임의로 변경하여
+						사용할 수 없습니다.
+					</span>
+				</div>
+		
+				<div class="CI_download_box"><a href="javascript:;"><span class='CI_download'>CI DOWNLOAD</span></a></div>
+			</div>
+			<!-- pc버전 End -->
+		</div>
+	</div>
+	
+	
+	<!-- footer Start -->
+	<?php include_once '../_inc/footer.html'; ?>
+	<!-- footer End -->
+	
+	<!-- Side Navigator Start -->
+	<?php include_once '../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: url(/goodmit/demo/data/font/Noto_Sans_KR/NotoSansKR-Thin.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url(/goodmit/demo/data/font/Noto_Sans_KR/NotoSansKR-Light.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/goodmit/demo/data/font/Noto_Sans_KR/NotoSansKR-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: url(/goodmit/demo/data/font/Noto_Sans_KR/NotoSansKR-Medium.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/goodmit/demo/data/font/Noto_Sans_KR/NotoSansKR-Bold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 900;
+  src: url(/goodmit/demo/data/font/Noto_Sans_KR/NotoSansKR-Black.otf) format('opentype');
+}
+
+
+/* Common Setting */
+* { font-family: 'Noto Sans KR'; }
+em { font-style:normal; }
+table { border-collapse: collapse; }
+a { text-decoration: none; }
+a:active,a:hover { text-decoration: none; }
+
+/* Width Common */
+.width_p1 { width: 1% } .width_p2 { width: 2% } .width_p3 { width: 3% } .width_p4 { width: 4% } .width_p5 { width: 5% } .width_p6 { width: 6% } .width_p7 { width: 7% } .width_p8 { width: 8% } .width_p9 { width: 9% } .width_p10 { width: 10% } .width_p11 { width: 11% } .width_p12 { width: 12% } .width_p13 { width: 13% } .width_p14 { width: 14% } .width_p15 { width: 15% } .width_p16 { width: 16% } .width_p17 { width: 17% } .width_p18 { width: 18% } .width_p19 { width: 19% } .width_p20 { width: 20% } .width_p21 { width: 21% } .width_p22 { width: 22% } .width_p23 { width: 23% } .width_p24 { width: 24% } .width_p25 { width: 25% } .width_p26 { width: 26% } .width_p27 { width: 27% } .width_p28 { width: 28% } .width_p29 { width: 29% } .width_p30 { width: 30% } .width_p31 { width: 31% } .width_p32 { width: 32% } .width_p33 { width: 33% } .width_p34 { width: 34% } .width_p35 { width: 35% } .width_p36 { width: 36% } .width_p37 { width: 37% } .width_p38 { width: 38% } .width_p39 { width: 39% } .width_p40 { width: 40% } .width_p41 { width: 41% } .width_p42 { width: 42% } .width_p43 { width: 43% } .width_p44 { width: 44% } .width_p45 { width: 45% } .width_p46 { width: 46% } .width_p47 { width: 47% } .width_p48 { width: 48% } .width_p49 { width: 49% } .width_p50 { width: 50% } .width_p51 { width: 51% } .width_p52 { width: 52% } .width_p53 { width: 53% } .width_p54 { width: 54% } .width_p55 { width: 55% } .width_p56 { width: 56% } .width_p57 { width: 57% } .width_p58 { width: 58% } .width_p59 { width: 59% } .width_p60 { width: 60% } .width_p61 { width: 61% } .width_p62 { width: 62% } .width_p63 { width: 63% } .width_p64 { width: 64% } .width_p65 { width: 65% } .width_p66 { width: 66% } .width_p67 { width: 67% } .width_p68 { width: 68% } .width_p69 { width: 69% } .width_p70 { width: 70% } .width_p71 { width: 71% } .width_p72 { width: 72% } .width_p73 { width: 73% } .width_p74 { width: 74% } .width_p75 { width: 75% } .width_p76 { width: 76% } .width_p77 { width: 77% } .width_p78 { width: 78% } .width_p79 { width: 79% } .width_p80 { width: 80% } .width_p81 { width: 81% } .width_p82 { width: 82% } .width_p83 { width: 83% } .width_p84 { width: 84% } .width_p85 { width: 85% } .width_p86 { width: 86% } .width_p87 { width: 87% } .width_p88 { width: 88% } .width_p89 { width: 89% } .width_p90 { width: 90% } .width_p91 { width: 91% } .width_p92 { width: 92% } .width_p93 { width: 93% } .width_p94 { width: 94% } .width_p95 { width: 95% } .width_p96 { width: 96% } .width_p97 { width: 97% } .width_p98 { width: 98% } .width_p99 { width: 99% } .width_p100 { width: 100% } 
+.w_140p { width: 140px; }
+.w_250p { width: 250px; }
+.w_550p { width: 550px; }
+
+
+/* Height Common */
+.height_p1 { height: 1% } .height_p2 { height: 2% } .height_p3 { height: 3% } .height_p4 { height: 4% } .height_p5 { height: 5% } .height_p6 { height: 6% } .height_p7 { height: 7% } .height_p8 { height: 8% } .height_p9 { height: 9% } .height_p10 { height: 10% } .height_p11 { height: 11% } .height_p12 { height: 12% } .height_p13 { height: 13% } .height_p14 { height: 14% } .height_p15 { height: 15% } .height_p16 { height: 16% } .height_p17 { height: 17% } .height_p18 { height: 18% } .height_p19 { height: 19% } .height_p20 { height: 20% } .height_p21 { height: 21% } .height_p22 { height: 22% } .height_p23 { height: 23% } .height_p24 { height: 24% } .height_p25 { height: 25% } .height_p26 { height: 26% } .height_p27 { height: 27% } .height_p28 { height: 28% } .height_p29 { height: 29% } .height_p30 { height: 30% } .height_p31 { height: 31% } .height_p32 { height: 32% } .height_p33 { height: 33% } .height_p34 { height: 34% } .height_p35 { height: 35% } .height_p36 { height: 36% } .height_p37 { height: 37% } .height_p38 { height: 38% } .height_p39 { height: 39% } .height_p40 { height: 40% } .height_p41 { height: 41% } .height_p42 { height: 42% } .height_p43 { height: 43% } .height_p44 { height: 44% } .height_p45 { height: 45% } .height_p46 { height: 46% } .height_p47 { height: 47% } .height_p48 { height: 48% } .height_p49 { height: 49% } .height_p50 { height: 50% } .height_p51 { height: 51% } .height_p52 { height: 52% } .height_p53 { height: 53% } .height_p54 { height: 54% } .height_p55 { height: 55% } .height_p56 { height: 56% } .height_p57 { height: 57% } .height_p58 { height: 58% } .height_p59 { height: 59% } .height_p60 { height: 60% } .height_p61 { height: 61% } .height_p62 { height: 62% } .height_p63 { height: 63% } .height_p64 { height: 64% } .height_p65 { height: 65% } .height_p66 { height: 66% } .height_p67 { height: 67% } .height_p68 { height: 68% } .height_p69 { height: 69% } .height_p70 { height: 70% } .height_p71 { height: 71% } .height_p72 { height: 72% } .height_p73 { height: 73% } .height_p74 { height: 74% } .height_p75 { height: 75% } .height_p76 { height: 76% } .height_p77 { height: 77% } .height_p78 { height: 78% } .height_p79 { height: 79% } .height_p80 { height: 80% } .height_p81 { height: 81% } .height_p82 { height: 82% } .height_p83 { height: 83% } .height_p84 { height: 84% } .height_p85 { height: 85% } .height_p86 { height: 86% } .height_p87 { height: 87% } .height_p88 { height: 88% } .height_p89 { height: 89% } .height_p90 { height: 90% } .height_p91 { height: 91% } .height_p92 { height: 92% } .height_p93 { height: 93% } .height_p94 { height: 94% } .height_p95 { height: 95% } .height_p96 { height: 96% } .height_p97 { height: 97% } .height_p98 { height: 98% } .height_p99 { height: 99% } .height_p100 { height: 100% }
+
+/* OverFlow Common */
+.ovh {overflow: hidden;}
+.ofs {overflow: scroll;}
+
+/* Border Common */
+.border_hide {border: 0px !important;}
+.border_default {border: 1px solid #353535 !important;}
+
+/* Margin */
+.mb_10 { margin-bottom: 10px !important; }
+
+.mt_10 { margin-top: 10px !important; }
+
+
+/* Cursor icon */
+.cs_pointer { cursor: pointer; }
+
+/* IMG */
+img { border: 0; }
+
+/* Page */
+.pagination-wrap { display:flex; justify-content: center; width: 100%; }
+
+

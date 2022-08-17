@@ -1,0 +1,269 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'SOLUTIONS';
+	$_category2 = 'CLOUD / INFRA';
+	$_category3 = 'Veeam';
+	$_category4 = 'Veeam';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../../../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/solutions.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_solutions.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/solutions.js"></script>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			M_main_navbar();
+			M_sidenav_accordion();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+
+	<!-- Head Navigator Start -->
+	<?php include_once '../../../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background Start -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="background_text1">SOLUTIONS</p>
+			<p class="background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>SOLUTIONS</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/solution.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background End -->
+
+	<!-- Contents Start -->
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../../../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+			
+			<!-- pc버전 시작 -->
+			<div class="Solution_container">
+				<div class="Solution_top_box">
+					<div class="Solution_top_left">
+						<div class="Solution_top_img" data-aos="fade-right"
+							data-aos-duration="1000">
+							<img src="../../../image/common/VEEAM.png" />
+						</div>
+					</div>
+					<div class="Solution_top_rigth">
+						<p class="Solution_top_title1">멀티 클라우드 환경의 NO.1 통합 가용성 솔루션</p>
+						<p class="Solution_top_title2">Veeam</p>
+					</div>
+				</div>
+
+
+				<div class="color_box" style="background-color: #01af40">
+					<div class="color_box_left"></div>
+					<div class="color_box_rigth" data-aos="fade-left"
+						data-aos-duration="1000">
+						<p>Veeam은 단일 관리 콘솔에서 가상, 물리 및 클라우드(VMware vSphere 및</p>
+						<p>Microsoft Hyper-V 포함)와 같은 모든 워크로드를 위한 가용성을 제공합니다.</p>
+						<p>또한, 애플리케이션과 데이터에 빠르고 유연하며 안정적인 복구를 지원하고</p>
+						<p>단일 소프트웨어 솔루션에 백업과 복제를 함께 제공합니다.</p>
+
+						<div class="Solution_down_box">
+							<span class="Solution_down"><a href="<?php echo URL; ?>/pdf/VEEAM.pdf" download>자료다운로드</a><span>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="vsphere_bottom_container">
+
+					<div class="vsphere_bottom_img_box" data-aos="fade-right" data-aos-duration="1000">
+						<p class="vsphere_bottom_img_box_text">Veeam 주요 기능</p>
+						<img src="../../../image/common/Veeam-layer.png" />
+					</div>
+					<div class="vsphere_bottom_text_box" data-aos="fade-left"
+						data-aos-duration="1000">
+						<ul>
+							<li><img src="../../../image/common/Veeam-checkbox.png" />가상환경 VMware, Hyper-V, AHV Agentiess 백업 및 복구</li>
+							<li><img src="../../../image/common/Veeam-checkbox.png" />가상환경 에이전트리스 DB 테이블 / 트랜스액션 로그단위 복구</li>
+							<li><img src="../../../image/common/Veeam-checkbox.png" />물리환경 단일 에이전트 DB,OS,File 백업물리환경 윈도우,<br>리눅스 AIX, Solaris 에이전트 백업</li>
+							<li><img src="../../../image/common/Veeam-checkbox.png" />가상/물리환경 장애 시 백업본으로 즉시 VM 서비스가 가능한<br>인스턴트 리커버리 기능</li>
+							<li><img src="../../../image/common/Veeam-checkbox.png" />Kubernetes 환경의 백업, 복구 & 마이그레이션</li>
+
+
+						</ul>
+					</div>
+				</div>
+				
+				
+				<div class="Veeam_img_box" data-aos="fade-up" data-aos-duration="1000" >
+					<img src="../../../image/common/Veeam1.png"/>
+				</div>
+				
+				
+				
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white">주요 하이라이트</div>
+					<div class="Solution_center_black">Veeam</div>
+				</div>
+				
+				<div class="Solution_box6_container">
+					<div class="Solution_box6_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+						<p class="Solution_box6_item_text">글로벌 프라이빗</p>
+						<p class="Solution_box6_item_text">클라우드 백업 1위</p>
+					</div>
+					
+					<div class="Solution_box6_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+						<p class="Solution_box6_item_text">글로벌 AWS 퍼블릭 클라우드</p>
+						<p class="Solution_box6_item_text">백업시장 1위</p>
+					</div>
+					
+					<div class="Solution_box6_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+						<p class="Solution_box6_item_text">유럽 전체 백업시장 1위</p>
+						<p class="Solution_box6_item_text">[물리환경, 가상환경, 클라우드]</p>
+					</div>
+					
+					<div class="Solution_box6_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+						<p class="Solution_box6_item_text">글로벌 전체 백업시장 빅4</p>
+						<p class="Solution_box6_item_text">[물리환경, 가상환경, 클라우드]</p>
+					</div>
+					
+					<div class="Solution_box6_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+						<p class="Solution_box6_item_text">포보스 500대 기업의</p>
+						<p class="Solution_box6_item_text">75%가 빔 소프트웨어 사용</p>
+					</div>
+
+
+					
+				</div>
+
+
+				<div class="Solution_ask_box">
+					<p class="Solution_ask_text1">더 알고 싶으시다면</p>
+					<p class="Solution_ask_text2">지금 바로 문의주세요. 최대한 빠르고 성실하게 답변해
+						드리겠습니다.</p>
+					<div class="Solution_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+
+			</div>
+			<!-- pc버전 끝 -->
+
+			<!-- 모바일 버전 시작 -->
+			<div class="M_Solution_container">
+				<div class="M_Solution_title_box">
+					<p class="M_Solution_title_text1">멀티 클라우드 환경의 NO.1 통합 가용성 솔루션</p>
+					<p class="M_Solution_title_text2">Veeam</p>
+				</div>
+				<div class="M_Solution_title_img_box">
+					<img src="../../../image/common/VEEAM.png" />
+				</div>
+
+				<div class="M_Solution_black_box" style="background-color: #01af40">
+
+					<p>Veeam은 단일 관리 콘솔에서 가상, 물리 및 클라우드(VMware vSphere 및
+						Microsoft Hyper-V 포함)와 같은 모든 워크로드를 위한 가용성을 제공합니다.
+						또한, 애플리케이션과 데이터에 빠르고 유연하며 안정적인 복구를 지원하고
+						단일 소프트웨어 솔루션에 백업과 복제를 함께 제공합니다.
+					</p>
+				</div>
+				
+				
+				<div class="vsphere_bottom_img_box">
+					<p class="vsphere_bottom_img_box_text">Veeam 주요 기능</p>
+					<img src="../../../image/common/Veeam-layer.png" />
+
+
+					<div class="vsphere_bottom_text_box">
+						<ul>
+							<li><img src="../../../image/common/Veeam-checkbox.png" /> 가상환경 VMware, Hyper-V, AHV Agentiess 백업 및 복구</li>
+							<li><img src="../../../image/common/Veeam-checkbox.png" /> 가상환경 에이전트리스 DB 테이블 / 트랜스액션 로그단위 복구</li>
+							<li><img src="../../../image/common/Veeam-checkbox.png" /> 물리환경 단일 에이전트 DB,OS,File 백업물리환경 윈도우, <br>리눅스 AIX, Solaris 에이전트 백업</li>
+							<li><img src="../../../image/common/Veeam-checkbox.png" /> 가상/물리환경 장애 시 백업본으로 즉시 VM 서비스가 가능한 인스턴트 리커버리 기능</li>
+							<li><img src="../../../image/common/Veeam-checkbox.png" /> Kubernetes 환경의 백업, 복구 & 마이그레이션</li>
+							
+						</ul>
+					</div>
+				</div>
+				
+				
+				<div class="Veeam_img_box">
+					<img src="../../../image/common/Veeam1.png"/>
+				</div>
+				
+				
+				
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white">주요하이라이트</div>
+					<div class="Solution_center_black">Veeam</div>
+				</div>
+				
+				<div class="Solution_box6_container">
+					<div class="Solution_box6_item">
+						<p class="Solution_box6_item_text">글로벌 프라이빗</p> 
+						<p class="Solution_box6_item_text">클라우드 백업 1위</p>
+					</div>
+					
+					<div class="Solution_box6_item">
+						<p class="Solution_box6_item_text">글로벌 AWS<br>퍼블릭 클라우드</p>
+						<p class="Solution_box6_item_text">백업시장 1위</p>
+					</div>
+					
+					<div class="Solution_box6_item">
+						<p class="Solution_box6_item_text">유럽 전체 백업시장 1위</p>
+						<p class="Solution_box6_item_text">[물리환경, 가상환경, 클라우드]</p>
+					</div>
+					
+					<div class="Solution_box6_item">
+						<p class="Solution_box6_item_text">글로벌 전체 백업시장 빅4</p>
+						<p class="Solution_box6_item_text">[물리환경, 가상환경, 클라우드]</p>
+					</div>
+					
+					<div class="Solution_box6_item">
+						<p class="Solution_box6_item_text">포보스 500대 기업의</p>
+						<p class="Solution_box6_item_text">75%가 빔 소프트웨어 사용</p>
+					</div>
+				</div>
+				
+				<div class="vsphere_ask_box">
+					<p class="vsphere_ask_text1">더 알고 싶으시다면</p>
+					<p class="vsphere_ask_text2">지금 바로 문의주세요.</p>
+					<p class="vsphere_ask_text2">빠르고 성실하게 답변해 드리겠습니다.</p>
+					<div class="vsphere_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+			</div>
+
+
+			<!-- 모바일 버전 끝 -->
+
+
+		</div>
+	</div>
+
+	<!-- Side Navigator Start -->
+	<?php include_once '../../../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+
+
+</body>
+</html>

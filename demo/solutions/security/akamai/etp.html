@@ -1,0 +1,509 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'SOLUTIONS';
+	$_category2 = 'SECURITY';
+	$_category3 = 'Akamai';
+	$_category4 = 'SIA';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../../../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/solutions.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_solutions.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/test.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/solutions.js"></script>
+	
+	<style>
+	.solution_section2_icon {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 1vw;
+    left: 1px;
+	}
+	@media (max-width:500px) {
+	
+	.ETP_section .solution_section2_icon {
+    position: relative;
+    top: 39px;
+}
+	
+}
+	</style>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			M_main_navbar();
+			M_sidenav_accordion();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+
+	<!-- Head Navigator Start -->
+	<?php include_once '../../../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background Start -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="background_text1">SOLUTIONS</p>
+			<p class="background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>SOLUTIONS</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/solution.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background End -->
+
+	<!-- Contents Start -->
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../../../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+			
+			<!-- pc버전 시작 -->
+
+			<div class="Solution_container">
+				<div class="Solution_top_box">
+					<div class="Solution_top_left">
+						<div class="Solution_top_img" data-aos="fade-right"
+							data-aos-duration="1000">
+							<img src="../../../image/common/Akamai.png" />
+						</div>
+					</div>
+					<div class="Solution_top_rigth">
+						<p class="Solution_top_title1">DNS 기반 악성코드, 랜섬웨어 탐지 및 차단</p>
+						<p class="Solution_top_title2">Akamai SIA</p>
+					</div>
+				</div>
+
+
+				<div class="color_box" style="background-color: #ff7c00">
+					<div class="color_box_left"></div>
+					<div class="color_box_rigth" data-aos="fade-left"
+						data-aos-duration="1000">
+						<p>
+							세계 최대 규모의 엣지 플랫폼에서 100% 가용성의 웹 보안을 제공합니다.
+						</p>
+
+						<div class="Solution_down_box">
+							<span class="Solution_down"><a href="<?php echo URL; ?>/pdf/Akamai SIA - Enterprise Threat Protector.pdf" download>자료다운로드</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="Eaa_title">제로데이 멀웨어 및 피싱을 선제적으로 방어합니다</div>
+				<p class="Solution_sub_title">
+					 Akamai SIA(Enterprise Threat Protector)는 기업 내 사용자의 외부 사이트에 대한 DNS 요청을 확인하여<br>봇과 멀웨어 그리고 C&C(Command And Control) 서버로의 접속 시도를 사전에 차단하는 DNS 보안 솔루션입니다.<br>매일 업데이트되는 최대 2조 2천억 건의 DNS 요청에서 얻는 Akamai의 최신 인사이트로 보안을 강화하세요.<br>Akamai SIA는 단일 대시보드에서 모든 아웃바운드 트래픽과 위협 이벤트, 그 이상에 관한 실시간 인사이트를 보여주며<br>탐지 엔진 등 멀티 레이어 방어로 사용자 및 디바이스를 보호합니다.
+				</p>
+				<div class="Solution_Alone_img" data-aos="fade-up" data-aos-duration="1000"><img src="../../../image/common/ETP-img1.png"/></div>
+				
+				<div class="vsphere_center_box2_container">
+					<span class="vsphere_center_box2">Akamai SIA, 드리는 약속</span>
+				</div>
+
+				<p class="Solution_sub_title" >
+					Akamai SIA는 DNS를 활용해 내부 보안을 강화합니다.<br>내부 사용자의 멀웨어, 랜섬웨어, 피싱사이트 접근 및 DNS 쿼리로 위장한 내부 기밀 데이터 유출을 차단합니다.<br>Akamai SIA를 활용해 비업무 사이트 접속을 통제할 수 있으며 웹 접속의 전반적인 모니터링을 누릴 수 있습니다.<br>또한 클라우드 기반으로 별도 장비 도입 없이 내부 DNS 설정 변경만으로 간편하게 구축이 가능합니다.
+				</p>
+
+				<div class="Aap_section_container">
+					<div class="Aap_section_item_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<div class="Aap_section_img">
+							<img src="../../../image/common/ETP-icon1.gif" />
+						</div>
+						<div class="Aap_section_title">
+							글로벌 트래픽<br>15~30% 처리
+						</div>
+					</div>
+
+					<div class="Aap_section_item_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<div class="Aap_section_img">
+							<img src="../../../image/common/ETP-icon2.gif" />
+						</div>
+						<div class="Aap_section_title">
+							일일 1500억<br>DNS 쿼리 처리
+						</div>
+					</div>
+
+					<div class="Aap_section_item_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<div class="Aap_section_img">
+							<img src="../../../image/common/ETP-icon3.gif" />
+						</div>
+						<div class="Aap_section_title">
+							대규모 빅데이터 활용
+						</div>
+					</div>
+
+					<div class="Aap_section_item_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+						<div class="Aap_section_img">
+							<img src="../../../image/common/ETP-icon4.gif" />
+						</div>
+						<div class="Aap_section_title">
+							자동화된 분석 정보
+						</div>
+					</div>
+
+					<div class="Aap_section_item_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+						<div class="Aap_section_img">
+							<img src="../../../image/common/ETP-icon5.gif" />
+						</div>
+						<div class="Aap_section_title">
+							Akamai 보안센터<br>전문적인 분석
+						</div>
+					</div>
+				</div>
+
+				<div class="vsphere_center_box2_container">
+					<span class="vsphere_center_box2">Akamai SIA 구성도</span>
+				</div>
+
+				<div class="Aap_img_container" data-aos="fade-up"
+					data-aos-duration="1000">
+					<p class="Solution_sub_title">
+						Akamai SIA는 기존 보안 스택을 보완하여 전반적인 보안 체계를 강화하는 클라우드 기반의 사전 예방적 보안 레이어를 빠르고 쉽게 구축할 수 있도록 지원합니다.<br>Akamai EAA와 함께 사용하면 더욱 안전한 원격 접속 서비스를 경험할 수 있습니다.
+					</p>
+					<div class="Aap_img">
+						<img src="../../../image/common/ETP-img2.png" />
+					
+					</div>
+					<div class="Aap_img">
+						<img src="../../../image/common/ETP-img3.png" />
+					
+					</div>
+				</div>
+				
+				
+				<div class="vsphere_center_box2_container">
+					<span class="vsphere_center_box2">Akamai SIA 기대효과</span>
+				</div>
+				
+				<p class="Solution_sub_title" >
+					글로벌 Akamai 인텔리전스 엣지 플랫폼(Intelligent Edge Platform) DNS 서비스를 기반으로 구축된, Akamai SIA는 빠르게 구성하고 배포할 수 있는 클라우드 보안 웹 게이트웨이입니다.<br>멀웨어, 렌섬웨어, 피싱 및 DNS 기반 데이터 유출과 같은 표적 위협을 차단하고 위협 이벤트와 사이버 위협에 대한 실시간 인사이트를 제공합니다.
+				</p>
+				
+				
+				<div class="solution_section2_box ETP_section">
+					<div class="solution_section2_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<div class="solution_section2_top">
+							<div class="solution_section2_icon"><img src="../../../image/common/ETP-icon6.gif"/></div>
+							<div class="solution_section2_title">위협 인텔리전스</div>
+						</div>
+						<div class="solution_section2_bot" style="padding-left:20px;">
+							<p>
+								지속적으로 업데이트되는 최신 인사이트로 보안을 강화
+							</p>
+						</div>
+					</div>
+					
+					<div class="solution_section2_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<div class="solution_section2_top">
+							<div class="solution_section2_icon"><img src="../../../image/common/ETP-icon7.gif"/></div>
+							<div class="solution_section2_title">페이로드 분석</div>
+						</div>
+						<div class="solution_section2_bot"  style="padding-left:20px;">
+							<p>
+							 고급 멀웨어 탐지 엔진으로<br>제로데이 공격과 복잡한 위협을 방어
+							 </p>
+						</div>
+					</div>
+					
+					<div class="solution_section2_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+						<div class="solution_section2_top">
+							<div class="solution_section2_icon"><img src="../../../image/common/ETP-icon8.gif"/></div>
+							<div class="solution_section2_title">데이터 유출 차단</div>
+						</div>
+						<div class="solution_section2_bot"  style="padding-left:20px;">
+							<p>
+								PII, PCI, DSS, HIPAA 등 민감한 데이터가<br>포함된 콘텐츠 업로드를 차단하거나 모니터링
+							</p>
+						</div>
+					</div>
+					
+					<div class="solution_section2_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+						<div class="solution_section2_top">
+							<div class="solution_section2_icon"><img src="../../../image/common/ETP-icon9.gif"/></div>
+							<div class="solution_section2_title">애플리케이션 제어</div>
+						</div>
+						<div class="solution_section2_bot"  style="padding-left:20px;">
+							<p>
+								리스크 점수에 따라 미승인 애플리케이션을<br>식별 및 차단하거나 애플리케이션 기능을 제한
+							</p>
+						</div>
+					</div>
+					
+					<div class="solution_section2_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+						<div class="solution_section2_top">
+							<div class="solution_section2_icon"><img src="../../../image/common/ETP-icon10.gif"/></div>
+							<div class="solution_section2_title">분석 및 리포팅</div>
+						</div>
+						<div class="solution_section2_bot"  style="padding-left:20px;">
+							<p>
+								단일 대시보드에서 모든 아웃바운드<br>트래픽과 위협 이벤트, 그 이상에 관한 실시간 인사이트 제공
+							</p>
+						</div>
+					</div>
+					
+					<div class="solution_section2_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+						<div class="solution_section2_top">
+							<div class="solution_section2_icon"><img src="../../../image/common/ETP-icon11.gif"/></div>
+							<div class="solution_section2_title">제한적 사용 정책</div>
+						</div>
+						<div class="solution_section2_bot"  style="padding-left:20px;">
+							<p>
+								기업 정책을 적용하고,<br>특정 도메인을 차단함으로써 모든 직원이 이를 준수하도록 함
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="Solution_ask_box">
+					<p class="Solution_ask_text1">더 알고 싶으시다면</p>
+					<p class="Solution_ask_text2">지금 바로 문의주세요. 최대한 빠르고 성실하게 답변해
+						드리겠습니다.</p>
+					<div class="Solution_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+
+			</div>
+
+			<!-- pc버전 끝 -->
+
+			<!-- 모바일 버전 시작 -->
+			<div class="M_Solution_container">
+			
+				<div class="M_Solution_title_box">
+					<p class="M_Solution_title_text1">DNS 기반 악성코드,<br>랜섬웨어 탐지 및 차단</p>
+					<p class="M_Solution_title_text2">Akamai SIA</p>
+				</div>
+				<div class="M_Solution_title_img_box">
+					<img src="../../../image/common/Akamai.png" />
+				</div>
+
+				<div class="M_Solution_black_box" style="background-color: #ff7c00">
+					<p>
+						세계 최대 규모의 엣지 플랫폼에서 100% 가용성의 웹 보안을 제공합니다.
+					<p>
+				</div>
+				
+				<div class="Eaa_title">제로데이 멀웨어 및 피싱을<br>선제적으로 방어합니다</div>
+				<p class="Solution_sub_title">
+					Akamai SIA(Enterprise Threat Protector)는 기업 내 사용자의 외부 사이트에 대한 DNS 요청을 확인하여 봇과 멀웨어 그리고 C&C(Command And Control) 서버로의 접속 시도를 사전에 차단하는 DNS 보안 솔루션입니다. 매일 업데이트되는 최대 2조 2천억 건의 DNS 요청에서 얻는 Akamai의 최신 인사이트로 보안을 강화하세요. Akamai SIA는 단일 대시보드에서 모든 아웃바운드 트래픽과 위협 이벤트, 그 이상에 관한 실시간 인사이트를 보여주며 탐지 엔진 등 멀티 레이어 방어로 사용자 및 디바이스를 보호합니다.
+				</p>
+				<div class="Solution_Alone_img" style="width:90%;" ><img src="../../../image/common/ETP-img1.png"/></div>
+				
+				
+				<div class="vsphere_center_box2_container">
+					<span class="vsphere_center_box2">Akamai SIA, 드리는 약속</span>
+				</div>
+
+				<p class="Solution_sub_title M_Solution_sub_title" >
+					Akamai SIA는 DNS를 활용해 내부 보안을 강화합니다. 내부 사용자의 멀웨어, 랜섬웨어, 피싱사이트 접근 및 DNS 쿼리로 위장한 내부 기밀 데이터 유출을 차단합니다. Akamai SIA를 활용해 비업무 사이트 접속을 통제할 수 있으며 웹 접속의 전반적인 모니터링을 누릴 수 있습니다. 또한 클라우드 기반으로 별도 장비 도입 없이 내부 DNS 설정 변경만으로 간편하게 구축이 가능합니다.
+				</p>
+				
+				
+				<div class="Aap_section_container icon60">
+					<div class="Aap_section_item_box">
+						<div class="Aap_section_img">
+							<img src="../../../image/common/ETP-icon1.gif" />
+						</div>
+						<div class="Aap_section_title">
+							글로벌 트래픽<br>15~30% 처리
+						</div>
+					</div>
+
+					<div class="Aap_section_item_box">
+						<div class="Aap_section_img">
+							<img src="../../../image/common/ETP-icon2.gif" />
+						</div>
+						<div class="Aap_section_title">
+							일일 1500억<br>DNS 쿼리 처리
+						</div>
+					</div>
+
+					<div class="Aap_section_item_box">
+						<div class="Aap_section_img">
+							<img src="../../../image/common/ETP-icon3.gif" />
+						</div>
+						<div class="Aap_section_title">
+							대규모 빅데이터 활용
+						</div>
+					</div>
+
+					<div class="Aap_section_item_box">
+						<div class="Aap_section_img">
+							<img src="../../../image/common/ETP-icon4.gif" />
+						</div>
+						<div class="Aap_section_title">
+							자동화된 분석 정보
+						</div>
+					</div>
+
+					<div class="Aap_section_item_box">
+						<div class="Aap_section_img">
+							<img src="../../../image/common/ETP-icon5.gif" />
+						</div>
+						<div class="Aap_section_title">
+							Akamai 보안센터<br>전문적인 분석
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+				<div class="vsphere_center_box2_container">
+					<span class="vsphere_center_box2">Akamai SIA 구성도</span>
+				</div>
+
+				<div class="Aap_img_container" data-aos="fade-up"
+					data-aos-duration="1000">
+					<p class="Solution_sub_title">
+						Akamai SIA는 기존 보안 스택을 보완하여 전반적인 보안 체계를 강화하는 클라우드 기반의 사전 예방적 보안 레이어를 빠르고 쉽게 구축할 수 있도록 지원합니다.<br>Akamai EAA와 함께 사용하면 더욱 안전한 원격 접속 서비스를 경험할 수 있습니다.
+					</p>
+					<div class="Aap_img">
+						<img src="../../../image/common/ETP-img2.png" />
+					
+					</div>
+					<div class="Aap_img">
+						<img src="../../../image/common/ETP-img3.png" />
+					
+					</div>
+				</div>
+				
+				
+				<div class="vsphere_center_box2_container">
+					<span class="vsphere_center_box2">Akamai SIA 기대효과</span>
+				</div>
+				
+				<p class="Solution_sub_title M_Solution_sub_title" >
+					글로벌 Akamai 인텔리전스 엣지 플랫폼(Intelligent Edge Platform) DNS 서비스를 기반으로 구축된, Akamai SIA는 빠르게 구성하고 배포할 수 있는 클라우드 보안 웹 게이트웨이입니다.<br>멀웨어, 렌섬웨어, 피싱 및 DNS 기반 데이터 유출과 같은 표적 위협을 차단하고 위협 이벤트와 사이버 위협에 대한 실시간 인사이트를 제공합니다.
+				</p>
+				
+				
+				<div class="solution_section2_box ETP_section" >
+					<div class="solution_section2_item">
+						<div class="solution_section2_top">
+							<div class="solution_section2_icon"><img src="../../../image/common/ETP-icon6.gif"/></div>
+							<div class="solution_section2_title" style="font-size:18px;">위협 인텔리전스</div>
+						</div>
+						<div class="solution_section2_bot" style="padding-left:12px;">
+							<p>
+								지속적으로 업데이트되는<br>최신 인사이트로 보안을 강화
+							</p>
+						</div>
+					</div>
+					
+					<div class="solution_section2_item">
+						<div class="solution_section2_top">
+							<div class="solution_section2_icon"><img src="../../../image/common/ETP-icon7.gif"/></div>
+							<div class="solution_section2_title" style="font-size:18px;">페이로드 분석</div>
+						</div>
+						<div class="solution_section2_bot" style="padding-left:12px;">
+							<p>
+							 고급 멀웨어 탐지 엔진으로<br>제로데이 공격과 복잡한 위협을 방어
+							 </p>
+						</div>
+					</div>
+					
+					<div class="solution_section2_item">
+						<div class="solution_section2_top">
+							<div class="solution_section2_icon"><img src="../../../image/common/ETP-icon8.gif"/></div>
+							<div class="solution_section2_title" style="font-size:18px;">데이터 유출 차단</div>
+						</div>
+						<div class="solution_section2_bot" style="padding-left:12px;">
+							<p>
+								PII,PCI,DSS,HIPAA 등 민감한 데이터가<br>포함된 콘텐츠 업로드를 차단하거나 모니터링
+							</p>
+						</div>
+					</div>
+					
+					<div class="solution_section2_item">
+						<div class="solution_section2_top">
+							<div class="solution_section2_icon"><img src="../../../image/common/ETP-icon9.gif"/></div>
+							<div class="solution_section2_title" style="font-size:18px;">애플리케이션 제어</div>
+						</div>
+						<div class="solution_section2_bot" style="padding-left:12px;">
+							<p>
+								리스크 점수에 따라 미승인 애플리케이션을<br>식별 및 차단하거나 애플리케이션 기능을 제한
+							</p>
+						</div>
+					</div>
+					
+					<div class="solution_section2_item">
+						<div class="solution_section2_top">
+							<div class="solution_section2_icon"><img src="../../../image/common/ETP-icon10.gif"/></div>
+							<div class="solution_section2_title" style="font-size:18px;">분석 및 리포팅</div>
+						</div>
+						<div class="solution_section2_bot" style="padding-left:12px;">
+							<p>
+								단일 대시보드에서 모든 아웃바운드 트래픽과<br>위협 이벤트, 그 이상에 관한<br>실시간 인사이트 제공
+							</p>
+						</div>
+					</div>
+					
+					<div class="solution_section2_item">
+						<div class="solution_section2_top">
+							<div class="solution_section2_icon"><img src="../../../image/common/ETP-icon11.gif"/></div>
+							<div class="solution_section2_title" style="font-size:18px;">제한적 사용 정책</div>
+						</div>
+						<div class="solution_section2_bot" style="padding-left:12px;">
+							<p>
+								기업 정책을 적용하고, 특정 도메인을 차단함으로써<br>모든 직원이 이를 준수하도록 함
+							</p>
+						</div>
+					</div>
+				</div>
+				
+								<div class="vsphere_ask_box">
+					<p class="vsphere_ask_text1">더 알고 싶으시다면</p>
+					<p class="vsphere_ask_text2">지금 바로 문의주세요.</p>
+					<p class="vsphere_ask_text2">빠르고 성실하게 답변해 드리겠습니다.</p>
+					<div class="vsphere_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+
+
+
+
+			</div>
+			
+
+
+			<!-- 모바일 버전 끝 -->
+
+
+		</div>
+	</div>
+
+
+	<!-- Side Navigator Start -->
+	<?php include_once '../../../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+
+</body>
+</html>

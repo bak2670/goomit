@@ -1,0 +1,306 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'COMPANY';
+	$_category2 = '협력사';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/company.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_company.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/company.js"></script>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+	<!-- Head Navigator Start -->
+	<?php include_once '../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background 시작 -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="company_background_text1">COMPANY</p>
+			<p class="company_background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>COMPANY</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/company.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background 끝 -->
+	
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+
+			<div class='Cooperative_container'>
+				<p class="Company_top_text">
+					<span>COMPANY</span>
+				</p>
+				<h3 class='cooperative_title'>
+					<strong>협력사</strong>
+				</h3>
+				<div class="Cooperative_btn_box">
+					<div class="Cooperative_btn1" onclick="cooperativebtn1()">글로벌+국내</div>
+					<div class="Cooperative_btn2" onclick="cooperativebtn2()">협회</div>
+					<div class="Cooperative_btn3" onclick="cooperativebtn3()">조합</div>
+					<div class="Cooperative_btn4" onclick="cooperativebtn4()">학회</div>
+					<div class="Cooperative_btn5" onclick="cooperativebtn5()">회원사</div>
+				</div>
+
+				<div class="Cooperative_box1">
+					<h6 class='Cooperative_text1 marginnone'>
+						<strong>글로벌 파트너</strong>
+					</h6>
+					<p class='Cooperative_text2'>굿모닝아이텍은 가상화, 클라우드, 빅데이터 분야에서 세계적으로
+						인정받은 기업의 파트너로서 국내 시장 확대를 위해 노력하고 있습니다.</p>
+
+
+					<div class="full_width">
+						<div class='Cooperative_img_box'>
+							<img class="Cooperative_img Cooperative_img_first"
+								src="../image/common/logo_vmware.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_dell.png"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_ciscojpg.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_veeam.jpg"
+								alt="" />
+								
+								<img class="Cooperative_img Cooperative_img_first"
+								src="../image/common/logo_veritas.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_netapp.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_pure.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_nvidiajpg.jpg"
+								alt="" />
+								
+								<img class="Cooperative_img Cooperative_img_first"
+								src="../image/common/logo_akamai.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_cloud.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_redhatjpg.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_tanzu.jpg"
+								alt="" />
+								
+								<img class="Cooperative_img Cooperative_img_first"
+								src="../image/common/logo_google.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_ms-azure.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_aws.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_naver.jpg"
+								alt="" />
+								
+								<img class="Cooperative_img Cooperative_img_first"
+								src="../image/common/logo_rsa.png"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_quest.png"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_druva.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_menlo.jpg"
+								alt="" />
+								
+								<img class="Cooperative_img Cooperative_img_first"
+								src="../image/common/logo_control-up.png"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_trend.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_automation.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_alteryx.jpg"
+								alt="" />
+						</div>
+					</div>
+
+
+
+
+
+
+
+
+
+
+					<h6 class='Cooperative_text1'>
+						<strong>국내 파트너</strong>
+					</h6>
+
+					<div class="full_width">
+						<div class='Cooperative_img_box'>
+							<img class="Cooperative_img Cooperative_img_first"
+								src="../image/common/logo_daou.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_young.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_netbank.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_bt.jpg"
+								alt="" />
+								
+								<img class="Cooperative_img Cooperative_img_first"
+								src="../image/common/logo_mirae.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_appm.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_ssr.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_sga.jpg"
+								alt="" />
+								
+								<img class="Cooperative_img Cooperative_img_first"
+								src="../image/common/logo_spc.png"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_sk.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_fasoo.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_weeds.jpg"
+								alt="" />
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="Cooperative_box2">
+					<h6 class='Cooperative_text1'>
+						<strong>협회</strong>
+					</h6>
+					<div class="full_width">
+						<div class='Cooperative_img_box'>
+							<img class="Cooperative_img Cooperative_img_first"
+								src="../image/common/logo_sw.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_mainbiz.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_innobiz.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_kbiz.jpg"
+								alt="" />
+								
+								
+								<img class="Cooperative_img Cooperative_img_first"
+								src="../image/common/logo_kica.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_itsa.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_kpmoa.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_korea.jpg"
+								alt="" />
+								
+								
+								<img class="Cooperative_img Cooperative_img_first"
+								src="../image/common/logo_fkii.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_igdata.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_kcsa.jpg"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_kdia.jpg"
+								alt="" />
+								
+								
+								<img class="Cooperative_img Cooperative_img_first"
+								src="../image/common/logo_kisia.jpg"
+								alt="" />
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="Cooperative_box3">
+					<h6 class='Cooperative_text1'>
+						<strong>조합</strong>
+					</h6>
+					<div class="full_width">
+						<div class='Cooperative_img_box'>
+							<img class="Cooperative_img Cooperative_img_first"
+								src="../image/common/logo_CSI.png"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_kbiz.png"
+								alt="" />
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="Cooperative_box4">
+					<h6 class='Cooperative_text1'>
+						<strong>학회</strong>
+					</h6>
+					<div class="full_width">
+						<div class='Cooperative_img_box'>
+							<img class="Cooperative_img Cooperative_img_first"
+								src="../image/common/logo_ictps.png"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_kipm.png"
+								alt="" />
+						</div>
+					</div>
+				</div>
+
+				<div class="Cooperative_box5">
+					<h6 class='Cooperative_text1'>
+						<strong>회원사</strong>
+					</h6>
+					<div class="full_width">
+						<div class='Cooperative_img_box'>
+							<img class="Cooperative_img Cooperative_img_first"
+								src="../image/common/logo_igm.png"
+								alt="" /> <img class="Cooperative_img"
+								src="../image/common/logo_kma.png"
+								alt="" />
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	
+	
+	
+	<!-- footer Start -->
+	<?php include_once '../_inc/footer.html'; ?>
+	<!-- footer End -->
+	
+	
+	<!-- Side Navigator Start -->
+	<?php include_once '../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+</body>
+</html>

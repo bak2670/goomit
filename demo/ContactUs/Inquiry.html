@@ -1,0 +1,336 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'CONTACT US';
+	$_category2 = '영업·기술·유지보수 문의';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/contactus.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_contactus.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/contactus.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+	<!-- Head Navigator Start -->
+	<?php include_once '../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+	
+	<!-- top background Start -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="company_background_text1">CONTACT US</p>
+			<p class="company_background_text2">우리의 고객 한 분, 한 분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>CONTACT US</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/contactus.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background End -->
+	
+	<!-- Contents Start -->
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+
+			<div class="Inquiry_container">
+				<p class="Contactus_top_text">
+					<span>Contact Us</span>
+				</p>
+		<div>
+		<h2 class="inquiry_title">영업·기술·유지보수 문의</h2>
+        <p class="inquiry_top_text">솔루션 영업 및 기술, 유지보수 관련 문의사항이 있으시면 언제든지 연락주시기 바랍니다.</p>
+        </div>
+        
+        <div class="inquiry_btn_box">
+        	<div class="inquiry_btn1" onclick="inquirybtn1()">영업문의</div>
+        	<div class="inquiry_btn2" onclick="inquirybtn2()">기술문의</div>
+        	<div class="inquiry_btn3" onclick="inquirybtn3()">유지보수문의</div>
+        	<div class="inquiry_btn4" onclick="inquirybtn4()">문의하기</div>
+        </div>
+        
+        <div class="inquiry_box1">
+        <p class="inquiry_table_title"><span style="color: #1157a2; font-size: medium;"><strong>영업문의</strong></span></p>
+        <table class="contact_type" border="0" width="100%" cellspacing="0" cellpadding="0">
+        <tbody>
+        <tr>
+        <th class="top1" width="33%">담당자</th>
+        <th class="top" width="33%">이메일</th>
+        <th class="top" width="34%">연락처</th>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>조당훈 전무</strong></td>
+        <td style="text-align: center; font-size: light;">dhcho@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-8993-6721</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>김춘 전무</strong></td>
+        <td style="text-align: center; font-size: light;">ckim@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-6524-1471</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>국태원 전무</strong></td>
+        <td style="text-align: center; font-size: light;">twkuk@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-7212-1506</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>정진철 전무</strong></td>
+        <td style="text-align: center; font-size: light;">jungjc@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-9419-6947</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>김민주 상무</strong></td>
+        <td style="text-align: center; font-size: light;">mjkim@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-6271-3717</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>최윤석&nbsp;상무</strong></td>
+        <td style="text-align: center; font-size: light;">yschoi@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-3293-2742</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>홍동훈 상무</strong></td>
+        <td style="text-align: center; font-size: light;">hdhoon@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-3235-0912</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>신준균 상무</strong></td>
+        <td style="text-align: center; font-size: light;">jkshin@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-3779-3933</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>안윤선 상무</strong></td>
+        <td style="text-align: center; font-size: light;">ysahn@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-3711-2047</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>오진호 이사</strong></td>
+        <td style="text-align: center; font-size: light;">jhoh@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-2923-7460</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>이명남 이사</strong></td>
+        <td style="text-align: center; font-size: light;">mnlee@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-6335-8972</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>윤귀형 이사</strong></td>
+        <td style="text-align: center; font-size: light;">ghyoun@goodmit.co.krr</td>
+        <td style="text-align: center; font-size: light;">010-8903-6580</td>
+        </tr>
+                <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>정종균 이사</strong></td>
+        <td style="text-align: center; font-size: light;">jgjeong@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-2950-7583</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>김성철 이사</strong></td>
+        <td style="text-align: center; font-size: light;">sckim@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-7113-7169</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>이국진 부장</strong></td>
+        <td style="text-align: center; font-size: light;">s6242@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-4372-6242</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>정경선 부장</strong></td>
+        <td style="text-align: center; font-size: light;">ksjeong@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-4197-1463</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>이경근 부장</strong></td>
+        <td style="text-align: center; font-size: light;">kklee@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-7388-4132</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>정윤성 차장</strong></td>
+        <td style="text-align: center; font-size: light;">ysjung@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-8782-1626</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>서용범&nbsp;부장</strong></td>
+        <td style="text-align: center; font-size: light;">ybseo@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-9976-7419</td>
+        </tr>
+        
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>이준석&nbsp;차장</strong></td>
+        <td style="text-align: center; font-size: light;">junsuk@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-4228-6615</td>
+        </tr>
+                <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>지달근&nbsp;이사(영남지사)</strong></td>
+        <td style="text-align: center; font-size: light;">dalkeun.ji@goomit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-5543-7771</td>
+        </tr>
+                <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>이진호&nbsp;차장(중부지사)</strong></td>
+        <td style="text-align: center; font-size: light;">jinho.lee@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-5680-0093</td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+
+        <div class="inquiry_box2">
+        <p class="inquiry_table_title"><span style="color: #1157a2; font-size: medium;"><strong>기술문의</strong></span></p>
+        <table class="contact_type" border="0" width="100%" cellspacing="0" cellpadding="0">
+        <tbody>
+        <tr>
+        <th class="top1" style="text-align: center;" width="25%">분야</th>
+        <th class="top" style="text-align: center;" width="25%">담당자</th>
+        <th class="top" style="text-align: center;" width="25%">이메일</th>
+        <th class="top" style="text-align: center;" width="25%">연락처</th>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>VMware vSphere</strong></td>
+        <td style="text-align: center; font-size: light;"><strong>황순혁 이사</strong></td>
+        <td style="text-align: center; font-size: light;">shhwang@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-7449-6807</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>VMware Tanzu</strong></td>
+        <td style="text-align: center; font-size: light;"><strong>김도은 상무</strong></td>
+        <td style="text-align: center; font-size: light;">dekim@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-9097-6470</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>VMware Horizon</strong></td>
+        <td style="text-align: center; font-size: light;"><strong>박준성 이사</strong></td>
+        <td style="text-align: center; font-size: light;">jspark@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-2018-1518</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center;"><strong>Cisco</strong></td>
+        <td style="text-align: center; font-size: light;"><strong>신현준 이사</strong></td>
+        <td style="text-align: center; font-size: light;">hjshin@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-4692-0573</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>NetApp</strong></td>
+        <td style="text-align: center; font-size: light;"><strong>신현준 이사</strong></td>
+        <td style="text-align: center; font-size: light;">hjshin@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-4692-0573</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>PureStorage</strong></td>
+        <td style="text-align: center; font-size: light;"><strong>신현준 이사</strong></td>
+        <td style="text-align: center; font-size: light;">hjshin@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-4692-0573</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>Veeam</strong></td>
+        <td style="text-align: center; font-size: light;"><strong>김동규 과장</strong></td>
+        <td style="text-align: center; font-size: light;">dkkim@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-7454-7877</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>Veritas</strong></td>
+        <td style="text-align: center; font-size: light;"><strong>김동규 과장</strong></td>
+        <td style="text-align: center; font-size: light;">dkkim@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-7454-7877</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>Cloudera</strong></td>
+        <td style="text-align: center; font-size: light;"><strong><strong>박근봉 전무</strong></strong></td>
+        <td style="text-align: center; font-size: light;">kbpark@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-5225-6166</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>APPM/OTP/SolidStep</strong></td>
+        <td style="text-align: center; font-size: light;"><strong>이응봉 이사</strong></td>
+        <td style="text-align: center; font-size: light;">eblee@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-5510-7604</td>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>Akamai</strong></td>
+        <td style="text-align: center; font-size: light;"><strong>권중술 이사</strong></td>
+        <td style="text-align: center; font-size: light;">jskwon@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-2030-1537</td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        
+        <div class="inquiry_box3">
+        <p class="inquiry_table_title"> <span style="color: #1157a2; font-size: medium;"><strong>유지보수문의</strong></span></p>
+        <table class="contact_type" border="0" width="100%" cellspacing="0" cellpadding="0">
+        <tbody>
+        <tr>
+        <th class="top1" style="text-align: center;" width="33%">담당자</th>
+        <th class="top" style="text-align: center;" width="33%">이메일</th>
+        <th class="top" style="text-align: center;" width="34%">연락처</th>
+        </tr>
+        <tr>
+        <td class="none" style="text-align: center; font-size: light;"><strong>박미소 이사</strong></td>
+        <td style="text-align: center; font-size: light;">mspark@goodmit.co.kr</td>
+        <td style="text-align: center; font-size: light;">010-9304-0905</td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        
+        <div class="inquiry_box4">
+        	<div class="contactus_container">
+		        <br>
+		        <form name="regForm" method="post" class="contact_frm" action="inquiry_proc">
+		            <p><strong>■ 본인의 개인정보를 적어주세요. (*필수)</strong></p>
+		            <div class="contactus_topbox">
+		                <span class="topbox_wrap"><input type="text" name="wr_name" required="required" size="40" placeholder="Name"></span>
+		                <span class="topbox_wrap"><input type="text" name="wr_subject" required="required" size="40" placeholder="Job Title"></span>
+		                <span class="topbox_wrap"><input type="text" name="wr_email" required="required" size="40" placeholder="Business Email"></span>
+		                <span class="topbox_wrap"><input type="text" name="wr_phone" required="required" size="40" placeholder="Phone Number"></span>
+		                <span class="topbox_wrap"><input type="text" name="wr_company" required="required" size="40" placeholder="Company Name"></span>
+		                <span class="topbox_wrap"><input type="text" name="wr_country" required="required" size="40" placeholder="Country"></span>
+		            </div>
+		            <p><strong>■ 무엇을 도와드릴까요?</strong></p>
+		            <div class="contactus_bottombox">
+		                <textarea name="wr_content" cols="40" rows="10"></textarea>
+		            </div>
+		            <p class="btnbox">
+		                <input type="submit" value="전송하기">
+		            </p>
+		        </form>
+		    </div>
+        </div>
+        
+        </div>
+		</div>
+	</div>
+	
+	
+	<!-- footer Start -->
+	<?php include_once '../_inc/footer.html'; ?>
+	<!-- footer End -->
+	
+	<!-- Side Navigator Start -->
+	<?php include_once '../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!-- nav바 시작 -->
+<div class='top_container only-pc'>
+	<div class='navbar_position'>
+		<div class='nav_container'>
+			<div class='nav_left'>
+				<a href="<?php echo URL; ?>"><img id="mainlogo" src="<?php echo URL; ?>/image/common/mainlogo_white.png" /></a>
+			</div>
+			<div class='nav_center'>
+				<div class='nav_center_menu'>
+					<div class='nav_item nav_item_hover1'>
+						<a href="<?php echo URL.'/company'; ?>">COMPANY</a>
+					</div>
+					<div class='nav_item nav_item_hover2'>
+						<a href="<?php echo URL.'/prcenter'; ?>">PR CENTER</a>
+					</div>
+					<div class='nav_item nav_item_hover3'>
+						<a href="<?php echo URL.'/solutions'; ?>">SOLUTIONS</a>
+					</div>
+					<div class='nav_item nav_item_hover4'>
+						<a href="<?php echo URL.'/contactus'; ?>">CONTACT US</a>
+					</div>
+					<div class='nav_item nav_item_hover5'>
+						<a href="<?php echo URL.'/english'; ?>">ENGLISH</a>
+					</div>
+				</div>
+			</div>
+			<div class='nav_rigth' onclick="new_sidenav_open()">
+				<i class="fa-solid fa-bars "></i>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class='top_container_over only-pc'>
+	<div class='navbar_position_over'>
+		<div class='nav_container_over'>
+			<div class='nav_left'>
+				<a href="<?php echo URL; ?>"><img id="mainlogo" src="<?php echo URL; ?>/image/common/mainlogo_black.png" /></a>
+			</div>
+			<div class='nav_center'>
+				<div class='nav_center_menu'>
+					<div class='nav_item_over nav_item_hover1' onmouseover="nav_change1()">
+						<a href="<?php echo URL.'/company'; ?>">COMPANY</a>
+					</div>
+					<div class='nav_item_over nav_item_hover2' onmouseover="nav_change2()">
+						<a href="<?php echo URL.'/prcenter'; ?>">PR CENTER</a>
+					</div>
+					<div class='nav_item_over nav_item_hover3' onmouseover="nav_change3()">
+						<a href="<?php echo URL.'/solutions'; ?>">SOLUTIONS</a>
+					</div>
+					<div class='nav_item_over nav_item_hover4' onmouseover="nav_change4()">
+						<a href="<?php echo URL.'/contactus'; ?>">CONTACT US</a>
+					</div>
+					<div class='nav_item_over nav_item_hover5' onmouseover="nav_change5()">
+						<a href="<?php echo URL.'/english'; ?>">ENGLISH</a>
+					</div>
+				</div>
+			</div>
+
+			<div class='nav_rigth' style="color: black" onclick="new_sidenav_open()">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</div>
+		
+		<div class="nav_item_detail_hidden">
+			<div class='nav_item_detail'>
+				<div class='nav_detail_1 nav_detail_view1'>
+					<div class='nav_detail_text_1'>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/company/ceo'; ?>">대표이사 인사말</a>
+						</div>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/company/overview'; ?>">사업개요</a>
+						</div>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/company/history'; ?>">연혁</a>
+						</div>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/company/ci'; ?>">CI</a>
+						</div>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/company/misstion'; ?>">미션과 비전</a>
+						</div>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/company/performance'; ?>">수상실적</a>
+						</div>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/company/certified'; ?>">국가인증 및 파트너인증</a>
+						</div>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/company/affiliated'; ?>">관계사</a>
+						</div>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/company/cooperative'; ?>">협력사</a>
+						</div>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/company/contribution'; ?>">사회공헌 활동</a>
+						</div>
+					</div>
+				</div>
+				<div class='nav_detail_1 nav_detail_view2'>
+					<div class='nav_item_detail_box nav_detail_2'>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/prcenter/list?bbs_id=notice'; ?>">공지사항</a>
+						</div>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/prcenter/list?bbs_id=news'; ?>">언론보도</a>
+						</div>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/prcenter/list?bbs_id=gitube'; ?>">영상</a>
+						</div>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/prcenter/list?bbs_id=event'; ?>">이벤트</a>
+						</div>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/prcenter/recruit'; ?>">채용</a>
+						</div>
+					</div>
+				</div>
+				<div class='nav_detail_1 nav_detail_view3'>
+					<div class='nav_item_detail_box nav_detail_3'>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/solutions/cloud'; ?>">CLOUD/INFRA</a>
+						</div>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/solutions/bigdata'; ?>">BIGDATA/AI</a>
+						</div>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/solutions/management'; ?>">MANAGEMENT</a>
+						</div>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/solutions/security'; ?>">SECURITY</a>
+						</div>
+					</div>
+				</div>
+				<div class='nav_detail_1 nav_detail_view4'>
+					<div class='nav_item_detail_box nav_detail_4'>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/contactus/directions'; ?>">오시는 길</a>
+						</div>
+
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/contactus/inquiry'; ?>">영업·기술·유지보수 문의</a>
+						</div>
+					</div>
+				</div>
+
+				<div class='nav_detail_1 nav_detail_view5'>
+					<div class='nav_detail_text_1'>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/english/eoverview'; ?>">Overview</a>
+						</div>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/english/esolutions'; ?>">Solutions</a>
+						</div>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/english/epartner'; ?>">Partner</a>
+						</div>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/english/elocation'; ?>">Locations</a>
+						</div>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/english/emarketing'; ?>">Maketing Activities</a>
+						</div>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/english/eawards'; ?>">Awards and Achievements</a>
+						</div>
+						<div class="nav_detail_item">
+							<a href="<?php echo URL.'/english/econtact'; ?>">Contact us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- nav바 끝 -->
+<!-- 모바일nav파 시작 -->
+<div class="M_main_top_position only-mobile">
+	<div class="M_main_top">
+		<div class="M_main_top_img_box">
+			<a href="<?php echo URL; ?>"><img src="<?php echo URL; ?>/image/common/mainlogo_white.png" /></a>
+		</div>
+		<div class="M_main_top_menu" onclick="M_side_menu_open()">
+			<i class="fa-solid fa-bars"></i>
+		</div>
+	</div>
+</div>
+<!-- 모바일nav파 끝 -->

@@ -1,0 +1,229 @@
+<?php
+	include_once('./_common.php');
+	$category = "admin";
+	$page = "employee";
+	
+	$pg = $_GET['page'];
+	if(!$pg) $pg = 1;
+
+	$id = $_GET['id'];
+	if(!$id){ alert('', MGMT_URL); } else { if($id <= 0){ alert('', MGMT_URL); } }
+	
+	$member_sql = "SELECT * FROM {$gmit['member_table']} WHERE gmem_id = '{$id}' ";
+	$login_log_sql = "SELECT * FROM {$gmit['login_log_table']} WHERE gllog_id = '{$id}' "; 
+	$member_row = sql_fetch($member_sql);
+	$login_log_list = sql_query($login_log_sql);
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<?php include_once(MGMT_INC_PATH."/head.html"); ?>
+</head>
+
+<body class="nav-md">
+	<div class="container body">
+		<div class="main_container">
+			<div class="col-md-3 left_col menu_fixed">
+				<div class="left_col scroll-view">
+					<?php include_once(MGMT_INC_PATH."/left_nav.html"); ?>
+				</div>
+			</div>
+			<?php include_once(MGMT_INC_PATH."/top_nav.html"); ?>
+
+			<!-- page content -->
+			<div class="right_col" role="main">
+				<div class="page-title">
+					<div class="title_left">
+						<h5>사용자 정보</h5>
+					</div>
+					<ul class="nav navbar-right panel_toolbox">
+						<li><a class="close-link" href="javascript:;">
+								<button class="btn btn-sm btn-primary">
+									<i class="fa fa-edit"></i> 수정
+								</button>
+								<button class="btn btn-sm btn-primary">
+									<i class="fa-solid fa-ban"></i> 차단
+								</button>
+						</a></li>
+					</ul>
+				</div>
+
+				<div class="clearfix"></div>
+
+				<div class="row">
+					<div class="col-md-12 col-sm-12 ">
+						<div class="x_panel">
+							<div class="x_content">
+
+								<div class="row">
+									<div class="col-md-12">
+										<div class="admin_info">
+											<div class="admin_info_line">
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">아이디</div>
+													<div class="admin_info_item_data">admin</div>
+												</div>
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">이름</div>
+													<div class="admin_info_item_data">홍길동</div>
+												</div>
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">파트</div>
+													<div class="admin_info_item_data">인력운영팀</div>
+												</div>
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">포지션</div>
+													<div class="admin_info_item_data">팀장</div>
+												</div>
+											</div>
+
+											<div class="admin_info_line">
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">메일</div>
+													<div class="admin_info_item_data">startone@naver.com</div>
+												</div>
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">번호</div>
+													<div class="admin_info_item_data">010-0000-0000</div>
+												</div>
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">체크박스</div>
+													<div class="admin_info_item_data">홍길동</div>
+												</div>
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">수정한사람</div>
+													<div class="admin_info_item_data">홍길동</div>
+												</div>
+											</div>
+
+											<div class="admin_info_line">
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">로그인시간</div>
+													<div class="admin_info_item_data">2021/09/11 23:11:21</div>
+												</div>
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">아이피</div>
+													<div class="admin_info_item_data">1213.231343.32423423</div>
+												</div>
+												<div class="admin_info_item" >
+													<div class="admin_info_check">
+													<div class="admin_info_item_title">관리자여부</div>
+													<div class="admin_info_item_data">x</div>
+													</div>
+												
+												</div>
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">차단일자</div>
+													<div class="admin_info_item_data">2021/09/11 23:11:21</div>
+												</div>
+											</div>
+
+											<div class="admin_info_line">
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">사용여부</div>
+													<div class="admin_info_item_data">o</div>
+												</div>
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">생성일</div>
+													<div class="admin_info_item_data">2021/09/11 23:11:21</div>
+												</div>
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">수정일자</div>
+													<div class="admin_info_item_data">2021/09/11 23:11:21</div>
+												</div>
+												<div class="admin_info_item">
+													<div class="admin_info_item_title">만든사람</div>
+													<div class="admin_info_item_data">홍길동</div>
+												</div>
+											</div>
+											
+											<div class="admin_info_line">
+												<div class="admin_memo_title">메모</div>
+												<div class="admin_memo_input">내용내용</div>
+											</div>
+
+
+
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12 col-sm-12 ">
+						<div class="x_panel">
+							<div class="x_title">
+								<h6>로그인 기록</h6>
+							</div>
+							<div class="x_content">
+								<div class="row">
+									<div class="col-md-12">
+										<table class="table sto_tableStyle2">
+											<colgroup>
+												<col width="20%" style="width: 20%;">
+												<col width="20%" style="width: 20%;">
+												<col width="20%" style="width: 20%;">
+												<col width="20%" style="width: 20%;">
+												<col width="20%" style="width: 20%;">
+												<col width="20%" style="width: 20%;">
+											</colgroup>
+											<thead>
+												<tr>
+													<th>접속시간</th>
+													<th>접속IP</th>
+													<th>OS</th>
+													<th>Device</th>
+													<th>상태</th>
+												</tr>
+											</thead>
+											<tbody>
+												<?php foreach($login_log_list as $login_log) { ?>
+												<tr>
+													<td class="center">
+														<?php echo $login_log['gllog_datetime']; ?>
+													</td>
+													<td class="center">
+														<?php echo $login_log['gllog_ip']; ?>
+													</td>
+													<td class="center">
+														<?php echo $login_log['gllog_os']; ?>
+													</td>
+													<td class="center">
+														<?php echo $login_log['gllog_device']; ?>
+													</td>
+													<td class="center">
+														<?php echo $login_log['gllog_state']; ?>
+													</td>
+												</tr>
+												<?php } ?>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- /page content -->
+
+			<!-- footer content -->
+			<!-- <footer>
+				<div class="pull-right">
+				</div>
+				<div class="clearfix"></div>
+			</footer> -->
+			<!-- /footer content -->
+		</div>
+	</div>
+	<?php include_once(MGMT_INC_PATH."/jshead.html"); ?>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'SOLUTIONS';
+	$_category2 = 'CLOUD / INFRA';
+	$_category3 = 'Veritas';
+	$_category4 = 'NetBackup';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../../../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/solutions.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_solutions.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/solutions.js"></script>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			M_main_navbar();
+			M_sidenav_accordion();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+
+	<!-- Head Navigator Start -->
+	<?php include_once '../../../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background Start -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="background_text1">SOLUTIONS</p>
+			<p class="background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>SOLUTIONS</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/solution.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background End -->
+
+	<!-- Contents Start -->
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../../../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+			
+			<!-- pc버전 시작 -->
+			<div class="Solution_container">
+				<div class="Solution_top_box" >
+					<div class="Solution_top_left">
+						<div class="Solution_top_img" data-aos="fade-right"
+							data-aos-duration="1000">
+							<img src="../../../image/common/Veritas.png" />
+						</div>
+					</div>
+					<div class="Solution_top_rigth">
+						<p class="Solution_top_title1">효과적인 정보 보호를 위한 백업 솔루션</p>
+						<p class="Solution_top_title2">VERITAS NetBackup Appliance</p>
+					</div>
+				</div>
+
+
+				<div class="color_box" style="background-color:#aa2128 ">
+					<div class="color_box_left"></div>
+					<div class="color_box_rigth" data-aos="fade-left"
+						data-aos-duration="1000">
+						<p>NetBackup Appliance은 다양한 환경에서 포괄적이면서 통합적인 방식으로</p>
+						<p>데이터를 보호합니다. NetBackup은 고급기술을 자동화하고</p>
+						<p>애플리케이션, 플랫폼 및 가상환경 전 범위에서 운영을 표준화 함으로써</p>
+						<p>정보중심의 엔터프라이즈 환경 보호를 간소화합니다.</p>
+	
+
+
+						<div class="Solution_down_box">
+							<span class="Solution_down"><a href="<?php echo URL; ?>/pdf/VERITAS Netbackup Appliance.pdf" download>자료다운로드</a><span>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white" style="font-size: 0.8vw">VERITAS NetBackup Appliance</div>
+					<div class="Solution_center_black">특징</div>
+				</div>
+				
+				<div class="netbackup1_img_box" data-aos="fade-up" data-aos-duration="1000">
+				<p class="netbackup1_img_text">- 운영의 복잡성 제거 - </p>
+					<img src="../../../image/common/netbackup1.png"/>
+				</div>
+
+
+				<p class="Solution_list_container_title">도입효과</p>
+				<div class="ACI_center_box">
+					<div class="ACI_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<p class="ACI_item_title">가상 및 물리적 환경보호</p>
+						<p class="ACI_item_content">Proxy 서버 없이 VMware와</p>
+						<p class="ACI_item_content">Hyper-V 에 대한 Bulit-in 된</p>
+						<p class="ACI_item_content">데이터 보호</p>
+
+					</div>
+					
+					<div class="ACI_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<p class="ACI_item_title">견고한 데이터 보안</p>
+						<p class="ACI_item_content">견고한 OS,접근제어,암호화를</p>
+						<p class="ACI_item_content">통한 내/외부의 위협으로 부터</p>
+						<p class="ACI_item_content">백업 데이터 보호</p>
+
+					</div>
+					
+					<div class="ACI_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<p class="ACI_item_title">뛰어난 확장성</p>
+						<p class="ACI_item_content">3-tier architecture의</p>
+						<p class="ACI_item_content">NetBackup을 기본 탑재하여</p>
+						<p class="ACI_item_content">Scalce 제한 없는 확장성 제공</p>
+
+					</div>
+					
+					<div class="ACI_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<p class="ACI_item_title">단일화된 패치관리</p>
+						<p class="ACI_item_content">단일 패치를 통한</p>
+						<p class="ACI_item_content">모든 Appliiance 구성요소에 대한</p>
+						<p class="ACI_item_content">업데이트 수행</p>
+	
+					</div>
+					
+				    <div class="ACI_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+						<p class="ACI_item_title">Accelerator</p>
+						<p class="ACI_item_content">비정형 데이터의 PRO 단축을 통해</p>
+						<p class="ACI_item_content">손실 데이터를 최소화 할 수 있는</p>
+						<p class="ACI_item_content">진보한 백업 기술</p>
+
+					</div>
+					
+					<div class="ACI_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+						<p class="ACI_item_title">Copilot for Oracle</p>
+						<p class="ACI_item_content">DBA와 백업 관리자 간의</p>
+						<p class="ACI_item_content">통일된 정보 제공을 통해</p>
+						<p class="ACI_item_content">가시성 확보 및 민첩성 향상</p>
+
+					</div>
+					
+					<div class="ACI_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+						<p class="ACI_item_title">Instant Recovery</p>
+						<p class="ACI_item_content">VM의 빠른 서비스 재개를 통해</p>
+						<p class="ACI_item_content">비즈니스 연속성을 극대화하고</p>
+						<p class="ACI_item_content">기업의 신뢰도 향상</p>
+
+					</div>
+					
+					<div class="ACI_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+						<p class="ACI_item_title">A.I.R(Auto Image Replication)</p>
+						<p class="ACI_item_content">End-To-End Backup Lifecycle</p>
+						<p class="ACI_item_content">자동 관리를 통한</p>
+						<p class="ACI_item_content">즉각적인 복구 가능 상태의 DR환경</p>
+	
+					</div>
+					
+				</div>
+
+				<div class="Solution_ask_box">
+					<p class="Solution_ask_text1">더 알고 싶으시다면</p>
+					<p class="Solution_ask_text2">지금 바로 문의주세요. 최대한 빠르고 성실하게 답변해
+						드리겠습니다.</p>
+					<div class="Solution_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+
+			</div>
+			<!-- pc버전 끝 -->
+
+			<!-- 모바일 버전 시작 -->
+			<div class="M_Solution_container">
+
+				<div class="M_Solution_title_box">
+					<p class="M_Solution_title_text1" ">효과적인 정보 보호를 위한 백업 솔루션</p>
+					<p class="M_Solution_title_text2">VERITAS NetBackup Appliance</p>
+				</div>
+				<div class="M_Solution_title_img_box" data-aos="fade-up"
+					data-aos-duration="1000">
+					<img src="../../../image/common/Veritas.png" />
+				</div>
+
+				<div class="M_Solution_black_box" style="background-color: #aa2128">
+						<p>NetBackup Appliance은 다양한 환경에서 포괄적이면서 통합적인 방식으로
+						데이터를 보호합니다. NetBackup은 고급기술을 자동화하고
+						애플리케이션, 플랫폼 및 가상환경 전 범위에서 운영을 표준화 함으로써
+						정보중심의 엔터프라이즈 환경 보호를 간소화합니다.
+						</p>
+				</div>
+
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white" >VERITAS NetBackup Appliance</div>
+					<div class="Solution_center_black">특징</div>
+				</div>
+				
+				
+				<div class="netbackup1_img_box">
+				<p class="netbackup1_img_text">- 운영의 복잡성 제거 - </p>
+					<img src="../../../image/common/netbackup1.png"/>
+				</div>
+
+
+				<p class="Solution_list_container_title">도입효과</p>
+				<div class="ACI_center_box">
+					<div class="ACI_center_item">
+						<p class="ACI_item_title">가상 및 물리적 환경보호</p>
+						<p class="ACI_item_content">Proxy 서버 없이 VMware와</p>
+						<p class="ACI_item_content">Hyper-V 에 대한 Bulit-in 된</p>
+						<p class="ACI_item_content">데이터 보호</p>
+
+					</div>
+					
+					<div class="ACI_center_item">
+						<p class="ACI_item_title">견고한 데이터 보안</p>
+						<p class="ACI_item_content">견고한 OS,접근제어,암호화를</p>
+						<p class="ACI_item_content">통한 내/외부의 위협으로 부터</p>
+						<p class="ACI_item_content">백업 데이터 보호</p>
+
+					</div>
+					
+					<div class="ACI_center_item">
+						<p class="ACI_item_title">뛰어난 확장성</p>
+						<p class="ACI_item_content">3-tier architecture의</p>
+						<p class="ACI_item_content">NetBackup을 기본 탑재하여</p>
+						<p class="ACI_item_content">Scalce 제한 없는 확장성 제공</p>
+
+					</div>
+					
+					<div class="ACI_center_item">
+						<p class="ACI_item_title">단일화된 패치관리</p>
+						<p class="ACI_item_content">단일 패치를 통한 모든 Appliiance 구성요소에 대한 업데이트 수행</p>
+	
+					</div>
+					
+				    <div class="ACI_center_item">
+						<p class="ACI_item_title">Accelerator</p>
+						<p class="ACI_item_content">비정형 데이터의 PRO 단축을 통해 손실 데이터를 최소화 할 수 있는 진보한 백업 기술</p>
+
+					</div>
+					
+					<div class="ACI_center_item">
+						<p class="ACI_item_title">Copilot for Oracle</p>
+						<p class="ACI_item_content">DBA와 백업 관리자 간의 통일된 정보 제공을 통해 가시성 확보 및 민첩성 향상</p>
+
+					</div>
+					
+					<div class="ACI_center_item">
+						<p class="ACI_item_title">Instant Recovery</p>
+						<p class="ACI_item_content">VM의 빠른 서비스 재개를 통해</p>
+						<p class="ACI_item_content">비즈니스 연속성을 극대화하고</p>
+						<p class="ACI_item_content">기업의 신뢰도 향상</p>
+
+					</div>
+					
+					<div class="ACI_center_item">
+						<p class="ACI_item_title">A.I.R(Auto Image Replication)</p>
+						<p class="ACI_item_content">End-To-End Backup Lifecycle</p>
+						<p class="ACI_item_content">자동 관리를 통한</p>
+						<p class="ACI_item_content">즉각적인 복구 가능 상태의 DR환경</p>
+	
+					</div>		
+				</div>
+
+				<div class="vsphere_ask_box">
+					<p class="vsphere_ask_text1">더 알고 싶으시다면</p>
+					<p class="vsphere_ask_text2">지금 바로 문의주세요.</p>
+					<p class="vsphere_ask_text2">빠르고 성실하게 답변해 드리겠습니다.</p>
+					<div class="vsphere_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+			</div>
+
+
+			<!-- 모바일 버전 끝 -->
+
+
+		</div>
+	</div>
+
+	<!-- Side Navigator Start -->
+	<?php include_once '../../../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+
+
+</body>
+</html>

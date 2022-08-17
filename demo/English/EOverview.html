@@ -1,0 +1,197 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'ENGLISH';
+	$_category2 = 'Overview';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/english.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_english.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/english.js"></script>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			M_main_navbar();
+			M_sidenav_accordion();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+	<!-- Head Navigator Start -->
+	<?php include_once '../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background 시작 -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="company_background_text1">ENGLISH</p>
+			<p class="company_background_text2">우리의 고객 한 분, 한 분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>ENGLISH</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/english.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background 끝 -->
+
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+			
+			<div class='EOverview_container'>
+				<p class="English_top_text">
+					<span>English</span>
+				</p>
+				<h2 class="EOverview_title">
+					<strong>Overview</strong>
+				</h2>
+				<h4 class='EOverview_text1'>Engineer &amp; Consulting Oriented
+					Company for Cloud, Big Data, AI, and Security.</h4>
+				<p class="EOverview_top_img_box" data-aos="fade-up"
+					data-aos-duration="1000">
+					<img class="alignnone"
+						src="../image/common/overview.png"
+						alt="overview" width="715" height="221" />
+				</p>
+
+				<div data-aos="fade-up" data-aos-duration="1000">
+					<p class="EOverview_text_center">GIT(Goodmorning Information
+						Technology Co. Ltd.) was established in 2004 to provide the best
+						IT solutions and consulting services to enterprise customers for
+						their efficiency of IT infrastructures. GIT has more than 500
+						customers in many areas such as manufacturing, government, and
+						financial industries in Korea. Our GIT team is driven by a
+						result-based approach that enables us to deliver optimized
+						technical knowledge that we take great pride in.
+					</p>
+
+					<table class="tbl_type none" border="1" summary="회사개요" width="100%"
+						cellspacing="0">
+						<colgroup>
+							<col width="140" />
+							<col />
+							<col width="120" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th class="top1" scope="row">Company Name</th>
+								<td class="top">Goodmorning Information Technology Co.,Ltd.</td>
+								<th class="top" scope="row">Founder and CEO</th>
+								<td class="top">Mr. Juchan Lee</td>
+							</tr>
+							<tr>
+								<th class="none" scope="row">&nbsp; Date of Establishment</th>
+								<td>Aug 2, 2004</td>
+								<th scope="row">Sales of Yr. 2020</th>
+								<td>108 Billion (Approx. USD 90 million)</td>
+							</tr>
+							<tr>
+								<th class="none" scope="row">No. of Employees</th>
+								<td>301(As of Jul, 2022)</td>
+								<th scope="row"><b>Technical Resources</b></th>
+								<td>261(As of Jul, 2022)</td>
+							</tr>
+						</tbody>
+					</table>
+				<div class="M_EOverview_table_contanier">
+					<div class="M_EOverview_table_box">
+						<div class="M_EOverview_table">
+							<div class="M_EOverview_text_box">
+								<div class="M_EOverview_left_text">Company Name</div>
+								<div class="M_EOverview_rigth_text">Goodmorning Information Technology Co.,
+									Ltd.</div>
+							</div>
+						</div>
+
+						<div class="M_EOverview_table">
+							<div class="M_EOverview_text_box">
+								<div class="M_EOverview_left_text">Date of Establishment</div>
+								<div class="M_EOverview_rigth_text">Aug 2, 2004</div>
+							</div>
+						</div>
+
+						<div class="M_EOverview_table">
+							<div class="M_EOverview_text_box line_none">
+								<div class="M_EOverview_left_text">No. of Employees</div>
+								<div class="M_EOverview_rigth_text">278 (As of Oct, 2021)</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="M_EOverview_table_box margin_top">
+						<div class="M_EOverview_table">
+							<div class="M_EOverview_text_box">
+								<div class="M_EOverview_left_text">Founder and CEO</div>
+								<div class="M_EOverview_rigth_text">Mr. Juchan Lee</div>
+							</div>
+						</div>
+
+						<div class="M_EOverview_table">
+							<div class="M_EOverview_text_box">
+								<div class="M_EOverview_left_text">Sales of Yr. 2020</div>
+								<div class="M_EOverview_rigth_text">KRW 73.1 Billion (Approx. USD 65.5 million)</div>
+							</div>
+						</div>
+
+						<div class="M_EOverview_table">
+							<div class="M_EOverview_text_box line_none">
+								<div class="M_EOverview_left_text">Technical Resources</div>
+								<div class="M_EOverview_rigth_text">234 (As of Oct, 2021)</div>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+
+				<div data-aos="fade-up" data-aos-duration="1000">
+					<h4 class="EOverview_font_center">
+						<strong>Revenue Growth</strong>
+					</h4>
+					<div class='EOverview_bottom_box'>
+						<p>As our sales volume is increasing rapidly, both company’s
+							revenue and the number of employees have been showing steady
+							growth for the past 18 years as below.</p>
+						<p>
+							<a href='http://www.goodmit.co.kr/wp-content/uploads/2015/10/202101010101010rerr.png'>
+							<img class="alignnone wp-image-20987 size-full" src="../image/common/overview2.png" alt="" width="1920" height="1189"/>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- footer Start -->
+	<?php include_once '../_inc/footer.html'; ?>
+	<!-- footer End -->
+	
+	
+	<!-- Side Navigator Start -->
+	<?php include_once '../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+</body>
+</html>

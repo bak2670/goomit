@@ -1,0 +1,175 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'COMPANY';
+	$_category2 = '대표이사 인사말';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/company.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_company.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/company.js"></script>
+
+
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			M_sidenav_accordion();
+			M_main_navbar();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+	<!-- Head Navigator Start -->
+	<?php include_once '../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background 시작 -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="company_background_text1">COMPANY</p>
+			<p class="company_background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>COMPANY</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/company.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background 끝 -->
+
+
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+			<!-- pc버전 시작 -->
+			<div class='Ceo_container only-pc'>
+				<p class="Company_top_text">
+					<span>COMPANY</span>
+				</p>
+				<h1 class='company_ceo_title'>대표이사 인사말</h1>
+				<br />
+				<h4 class='company_ceo_top'>굿모닝아이텍(주)이 디지털변혁과 함께 다가오는 미래를
+					준비합니다.</h4>
+				<h4 class='company_ceo_top'>고객의 성공과 행복을 위해 끊임없는 노력과 최선의 열정을
+					기울이겠습니다.</h4>
+				<p>&nbsp;</p>
+				<div class='img_text_box'>
+					<div class='company_ceo_img' data-aos="fade-right" data-aos-duration="1000">
+						<img src="../image/common/ceo3.png" alt='대표님사진' />
+					</div>
+					<div class='ceo_text' data-aos="fade-left" data-aos-duration="1000">
+						<p>
+							<strong>안녕하십니까? 굿모닝아이텍(주) 대표이사 이주찬입니다.</strong>
+						</p>
+		
+						<p class='company_ceo_center_text'>디지털트랜스포메이션과 4차 산업혁명 대응이라는
+							주제가 우리의 화두로 시작된 것도 벌써 한참입니다. 모든 산업 분야가 디지털 비즈니스로 변화하고 전 세계 70억 명의
+							사람들에게 300억 개 장비의 연결 및 제타바이트 단위 데이터 생성의 일반화가 예견되어있던 2022년이 펼쳐졌습니다.</p>
+		
+						<p class='company_ceo_center_text'>저희 굿모닝아이텍(주)은 이와 같은
+							디지털트랜스포메이션과 4차 산업혁명에 따르는 업계의 변화 등을 위한 VMware, 시스코, 넷앱, 퓨어스토리지 등의
+							인프라 솔루션과 레드햇, 클라우데라, 엔비디아 및 아카마이 정보보호 솔루션 등 가까운 미래에 기업 고객들이 필요로
+							하는 제반 IT 솔루션들을 모두 갖추고 다가오는 미래를 맞이하고 있습니다.</p>
+		
+						<p class='company_ceo_center_text'>고객은 물론 임직원들의 행복도 함께 추구하며
+							우수인력의 양성과 함께 지속적인 채용 기회의 발굴을 통해 우리 현 정부가 최우선 경제 과제로 삼고 있는 일자리
+							창출에도 적극 일조하겠습니다.</p>
+		
+						<p class='company_ceo_center_text'>굿모닝아이텍(주)은 앞으로도 변함없이 고객사와
+							함께 파트너사와 함께 그리고 주변의 어려운 이웃들과 함께 손을 잡고 미래로 나아가는 100년 가는 기업이 될 수
+							있도록 끝까지 최선을 다하겠습니다.</p>
+		
+						<p class='company_ceo_center_text'>
+							<strong>감사합니다.</strong>
+						</p>
+		
+						<p class='company_ceo_bottom_text'>
+							<strong>굿모닝아이텍(주) 대표이사 이주찬</strong>
+						</p>
+						<p class='company_ceo_bottom_img'>
+							<img src="../image/common/sign.png"/>
+						</p>
+					</div>
+		
+				</div>
+			</div>
+			<!-- pc버전 끝 -->
+			<!-- 모바일버전 시작 -->
+		
+			<div class="M_Ceo_container only-mobile">
+				<p class="M_Company_top_text">
+					<span>COMPANY</span>
+				</p>
+		
+				<div class="M_ceo_title">대표이사 인사말</div>
+				<div class="M_ceo_top_img_box">
+					<img src="http://www.goodmit.co.kr/wp-content/uploads/2013/06/ceo3.png" alt='대표님사진' />
+				</div>
+				<div class="M_ceo_bottom_box">
+					<p class="M_ceo_bottom_text_top">안녕하십니까? 굿모닝아이텍(주) 대표이사 이주찬입니다.</p>
+		
+					<p class="M_ceo_bottom_text_center">디지털트랜스포메이션과 4차 산업혁명 대응이라는
+						주제가 우리의 화두로 시작된 것도 벌써 한참입니다. 모든 산업 분야가 디지털 비즈니스로 변화하고 전 세계 70억 명의
+						사람들에게 300억 개 장비의 연결 및 제타바이트 단위 데이터 생성의 일반화가 예견되어있던 2022년이 펼쳐졌습니다.
+					</p>
+		
+					<p class="M_ceo_bottom_text_center">저희 굿모닝아이텍(주)은 이와 같은
+						디지털트랜스포메이션과 4차 산업혁명에 따르는 업계의 변화 등을 위한 VMware, 시스코, 넷앱, 퓨어스토리지 등의
+						인프라 솔루션과 레드햇, 클라우데라, 엔비디아 및 아카마이 정보보호 솔루션 등 가까운 미래에 기업 고객들이 필요로 하는
+						제반 IT 솔루션들을 모두 갖추고 다가오는 미래를 맞이하고 있습니다.</p>
+		
+					<p class="M_ceo_bottom_text_center">고객은 물론 임직원들의 행복도 함께 추구하며
+						우수인력의 양성과 함께 지속적인 채용 기회의 발굴을 통해 우리 현 정부가 최우선 경제 과제로 삼고 있는 일자리 창출에도
+						적극 일조하겠습니다.</p>
+		
+					<p class="M_ceo_bottom_text_center">굿모닝아이텍(주)은 앞으로도 변함없이 고객사와
+						함께 파트너사와 함께 그리고 주변의 어려운 이웃들과 함께 손을 잡고 미래로 나아가는 100년 가는 기업이 될 수 있도록
+						끝까지 최선을 다하겠습니다.</p>
+		
+					<p class='M_ceo_bottom_text_center'>
+						<strong>감사합니다.</strong>
+					</p>
+		
+					<p class='company_ceo_bottom_text'>
+						<strong>굿모닝아이텍(주) 대표이사 이주찬</strong>
+					</p>
+					<p class='company_ceo_bottom_img'>
+						<img src="http://www.goodmit.co.kr/wp-content/uploads/2013/06/sign.png" />
+					</p>
+				</div>
+			</div>
+		
+			<!-- 모바일버전 끝 -->
+		</div>
+	</div>
+	
+
+	<!-- footer Start -->
+	<?php include_once '../_inc/footer.html'; ?>
+	<!-- footer End -->
+	
+	<!-- Side Navigator Start -->
+	<?php include_once '../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+</body>
+</html>

@@ -1,0 +1,239 @@
+<?php
+error_reporting(E_ALL); // 모든 에러 표시
+ini_set("display_errors", 1); // 에러 나타내기
+
+	include_once('./_common.php');
+	include_once(MGMT_PATH.'/classes/pagenation.class.php');
+	$category = "contactus";
+
+    $table_name = "gmit_write_inquiry";
+
+    set_session('ss_delete_token', $token = uniqid(time()));
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<?php include_once(MGMT_INC_PATH."/head.html"); ?>
+</head>
+
+<body class="nav-md">
+	<div class="container body">
+		<div class="main_container">
+			<div class="col-md-3 left_col menu_fixed">
+				<div class="left_col scroll-view">
+					<?php include_once(MGMT_INC_PATH."/left_nav.html"); ?>
+				</div>
+			</div>
+			<?php include_once(MGMT_INC_PATH."/top_nav.html"); ?>
+
+			<!-- page content -->
+			<div class="right_col" role="main">
+				<div class="page-title">
+					<div class="title_left">
+						<h5>문의하기</h5>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+
+				<div class="row">
+					<div class="col-md-12 col-sm-12 ">
+						<div class="x_panel">
+							<div class="x_content">
+								<div class="row">
+
+<?php
+$page = $_GET['page'];
+if (!$page) $page = 1;
+
+
+$sql = " select count(*) as cnt from $table_name where wr_is_comment = '0' and ca_name = 'KR' ";
+$row = sql_fetch($sql);
+$total_count = $row['cnt'];
+
+$page_rows = 10;
+$list_page_rows = 5;
+$total_page  = ceil($total_count / $page_rows);  // 전체 페이지 계산
+$from_record = ($page - 1) * $page_rows; // 시작 열을 구함
+
+$sql = " select * from $table_name where wr_is_comment = '0' and ca_name = 'KR' order by wr_num, wr_reply desc limit {$from_record}, $page_rows ";
+$result = sql_query($sql);
+
+$colspan = 10;
+?>
+									<div class="col-sm-12">
+										<div class="card-box table-responsive">
+											<table class="table sto_tableStyle3">
+												<colgroup>
+													<col width="5%">
+													<col width="5%">
+													<col width="5%">
+													<col width="10%">
+													<col width="10%">
+													<col width="10%">
+													<col width="10%">
+													<col width="25%">
+													<col width="10%">
+													<col width="10%">
+												</colgroup>
+												<thead>
+													<tr>
+														<th style="width: 5%">번호</th>
+														<th style="width: 5%">이름</th>
+														<th style="width: 5%">직함</th>
+														<th style="width: 10%">이메일</th>
+														<th style="width: 10%">전화번호</th>
+														<th style="width: 10%">회사명</th>
+														<th style="width: 10%">국가</th>
+														<th style="width: 25%">내용</th>
+														<th style="width: 10%">등록일시</th>
+														<th style="width: 10%">Action</th>
+													</tr>
+												</thead>
+												<tbody>
+									<?php
+                                    $list_num = $total_count - ($page - 1) * $page_rows;
+									for ($i=0; $row = sql_fetch_array($result); $i++) {
+                                        $row['num'] = $list_num - $i;
+
+                                        if ($bbs_id == "gitube") {
+                                            $row['ca_name'] = get_gitube_category($row['ca_name']);
+                                        }
+									?>
+										<tr>
+											<td id="contactus_num"><?php echo $row['num'] ?></td>
+											<td id="contactus_name"><?php echo $row['wr_name'] ?></td>
+											<td id="contactus_subjuec"><?php echo $row['wr_subject'] ?></td>
+											<td id="contactus_email"><?php echo $row['wr_email'] ?></td>
+											<td id="contactus_homepage"><?php echo $row['wr_homepage'] ?></td>
+											<td id="contactus_wr1"><?php echo $row['wr_1'] ?></td>
+											<td id="contactus_wr2"><?php echo $row['wr_2'] ?></td>
+											<td id="contactus_content" class="tb_content"><?php echo nl2br($row['wr_content']) ?></td>
+											<td id="contactus_date"><?php echo substr($row['wr_datetime'], 0, 16) ?></td>
+											<td>
+                                                <a href="javascript:;" onClick="delete_confirm(this, 'inquiry', '<?php echo $row['wr_id'] ?>', '<?php echo $token ?>');">
+                                                    <button class="btn btn-sm btn-primary" >
+                                                        <i class="fa fa-trash-can"></i> 삭제
+                                                    </button>
+                                                </a>
+											</td>
+										</tr>
+									<?php } ?>
+									<?php if ($i == 0) { echo '<tr><td colspan="'.$colspan.'">데이터가 없습니다.</td></tr>'; } ?>
+
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="pagination-wrap">
+										<?php echo get_paging($list_page_rows, $page, $total_page, './list?bbs_id='.$bbs_id.$qstr.'&amp;page='); ?>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<br />
+
+			</div>
+			<!-- /page content -->
+
+		</div>
+	</div>
+	
+	
+	<div class="contactus_popup">
+		<div class="contactus_popup-wrap" style="padding: 10px;">
+			<div class="contactus_popup_box">
+				<div class="contactus_popup_item">
+					<div class="contactus_popup_item_title">이름</div>
+					<div class="contactus_popup_item_content" id="contactus_name2">백수</div>
+				</div>
+				<div class="contactus_popup_item">
+					<div class="contactus_popup_item_title">직함</div>
+					<div class="contactus_popup_item_content" id="contactus_subjuec2">백수</div>
+				</div>
+				<div class="contactus_popup_item">
+					<div class="contactus_popup_item_title">이메일</div>
+					<div class="contactus_popup_item_content" id="contactus_email2">백수컴</div>
+				</div>
+				<div class="contactus_popup_item">
+					<div class="contactus_popup_item_title">전화번호</div>
+					<div class="contactus_popup_item_content" id="contactus_homepage2">백수없어</div>
+				</div>
+				<div class="contactus_popup_item">
+					<div class="contactus_popup_item_title">회사</div>
+					<div class="contactus_popup_item_content" id="contactus_wr1_2">개ㅐㅂㄱ수</div>
+				</div>
+				<div class="contactus_popup_item">
+					<div class="contactus_popup_item_title">국가</div>
+					<div class="contactus_popup_item_content" id="contactus_wr2_2">ㅁㄴㅇ</div>
+				</div>
+				<div class="contactus_popup_item">
+					<div class="contactus_popup_item_title">내용</div>
+					<div class="contactus_popup_item_content" id="contactus_content2">ㅁㄴㅇ</div>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+	<?php include_once(MGMT_INC_PATH."/jshead.html"); ?>
+	
+
+</body>
+<script>
+	function contactus_content(){
+		$(document).mouseup(function(e){
+			if($(e.target).hasClass("contactus_popup")){
+				$(".contactus_popup").css("display","none");
+				$(document.body).css("overflow", "visible");
+			}
+		});
+	}
+
+	function tb_contant(){
+		$(".tb_content").click(function(){
+			$(".contactus_popup").css("display","block");			
+			$("#contactus_name2").text($(this).siblings("#contactus_name").text());
+			$("#contactus_subjuec2").text($(this).siblings("#contactus_subjuec").text());
+			$("#contactus_email2").text($(this).siblings("#contactus_email").text());
+			$("#contactus_homepage2").text($(this).siblings("#contactus_homepage").text());
+			$("#contactus_wr1_2").text($(this).siblings("#contactus_wr1").text());
+			$("#contactus_wr2_2").text($(this).siblings("#contactus_wr2").text());
+			$("#contactus_content2").text($(this).text());
+		})
+	}
+	function delete_confirm(e, bbs_id, wr_id, token) {
+		if (confirm('정말로 삭제하시겠습니까?\n\n삭제후에는 복구가 불가능합니다.')) {
+			var url = "../prcenter/delete.php";
+			$.ajax({
+				url : url,
+				type : 'POST',
+				data : {
+					'bbs_id' : bbs_id,
+					'wr_id' : wr_id,
+					'token' : token
+				},
+				dataType : 'html',
+				success : function(response) {
+					if (response == "OK")
+						$(e).parent().parent().hide();
+					else
+						alert(response);
+				}
+			});
+		}
+	}
+	
+	
+	$(document).ready(function(){
+		tb_contant();
+		contactus_content();
+	});
+	
+</script>
+</html>

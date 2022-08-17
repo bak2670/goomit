@@ -1,0 +1,426 @@
+<!-- PC Ver 카테고리 시작 -->
+<div class='category_container only-pc'>
+	<div class='category_subcontainer'>
+		<!-- Home Button -->
+		<div class="category_home_box" onclick="location.href='<?php echo URL; ?>'">
+			<div class="category_home">
+				<img src="<?php echo URL; ?>/image/common/category_home.png"/>
+			</div>
+		</div>
+		<!-- 1 Category Button -->
+		<div class='big_category_box'>
+			<div class='big_category' onclick="big_category_btn()">
+				<div class='big_category_title'><?php echo $_category1; ?></div>
+				<div class='big_category_arrow'>
+					<img src="<?php echo URL; ?>/image/common/dropdown.png" />
+				</div>
+			</div>
+			<div class='category_item_hide_line'>
+				<div class="big_category_item_box">
+					<a href="<?php echo URL.'/company'; ?>"><span class='category_item'>COMPANY</span></a>
+					<a href="<?php echo URL.'/prcenter'; ?>"><span class='category_item'>PR CENTER</span></a>
+					<a href="<?php echo URL.'/solutions'; ?>"><span class='category_item'>SOLUTIONS</span></a>
+					<a href="<?php echo URL.'/contactus'; ?>"><span class='category_item'>CONTACT US</span></a>
+					<a href="<?php echo URL.'/english'; ?>"><span class='category_item'>ENGLISH</span></a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 2 Category Button -->
+		<?php if($_category2 != ''){ ?>
+		<div class='middle_category_box1'>
+			<div class='middle_category1' onclick="middle_category_btn()">
+				<div class='middle_category_title'><?php echo $_category2; ?></div>
+				<div class='middle_category_arrow'>
+					<img src="<?php echo URL; ?>/image/common/dropdown.png" />
+				</div>
+			</div>
+			<div class='category_item_hide_line'>
+				<div class="middle_category_item_box">
+		<?php if($_category1 == 'COMPANY'){ ?>
+					<a href="<?php echo URL.'/company/ceo'; ?>"><span class="category_item">대표이사 인사말</span></a>
+					<a href="<?php echo URL.'/company/overview'; ?>"><span class="category_item">사업개요</span></a>
+					<a href="<?php echo URL.'/company/history'; ?>"><span class="category_item">연혁</span></a>
+					<a href="<?php echo URL.'/company/ci'; ?>"><span class="category_item">CI</span></a>
+					<a href="<?php echo URL.'/company/misstion'; ?>"><span class="category_item">미션과 비전</span></a>
+					<a href="<?php echo URL.'/company/performance'; ?>"><span class="category_item">수상실적</span></a>
+					<a href="<?php echo URL.'/company/certified'; ?>"><span class="category_item">국가인증 및 파트너인증</span></a>
+					<a href="<?php echo URL.'/company/affiliated'; ?>"><span class="category_item">관계사</span></a>
+					<a href="<?php echo URL.'/company/cooperative'; ?>"><span class="category_item">협력사</span></a>
+					<a href="<?php echo URL.'/company/contribution'; ?>"><span class="category_item">사회공헌활동</span></a>
+		<?php } ?>
+		<?php if($_category1 == 'PR CENTER'){ ?>
+					<a href="<?php echo URL.'/prcenter/list?bbs_id=notice'; ?>"><span class="category_item">공지사항</span></a>
+					<a href="<?php echo URL.'/prcenter/list?bbs_id=news'; ?>"><span class='category_item'>언론보도</span></a>
+					<a href="<?php echo URL.'/prcenter/list?bbs_id=gitube'; ?>"><span class='category_item'>영상</span></a>
+					<a href="<?php echo URL.'/prcenter/list?bbs_id=event'; ?>"><span class='category_item'>이벤트</span></a>
+					<a href="<?php echo URL.'/prcenter/recruit'; ?>"><span class='category_item'>채용</span></a>
+		<?php } ?>
+		<?php if($_category1 == 'SOLUTIONS'){ ?>
+					<a href="<?php echo URL.'/solutions/cloud'; ?>"><span class="category_item">CLOUD / INFRA</span></a>
+					<a href="<?php echo URL.'/solutions/bigdata'; ?>"><span class='category_item'>BIG DATA / AI</span></a>
+					<a href="<?php echo URL.'/solutions/management'; ?>"><span class='category_item'>MANAGEMENT</span></a>
+					<a href="<?php echo URL.'/solutions/security'; ?>"><span class='category_item'>SECURITY</span></a>
+		<?php } ?>
+		<?php if($_category1 == 'CONTACT US'){ ?>
+					<a href="<?php echo URL.'/contactus/directions'; ?>"><span class='category_item'>오시는 길</span></a>
+					<a href="<?php echo URL.'/contactus/inquiry'; ?>"><span class='category_item'>영업·기술·유지보수 문의</span></a>
+		<?php } ?>
+		<?php if($_category1 == 'ENGLISH'){ ?>
+					<a href="<?php echo URL.'/english/eoverview'; ?>"><span class='category_item'>Overview</span></a>
+					<a href="<?php echo URL.'/english/esolutions'; ?>"><span class='category_item'>Solutions</span></a>  
+					<a href="<?php echo URL.'/english/epartner'; ?>"><span class='category_item'>Partner</span></a> 
+					<a href="<?php echo URL.'/english/elocation'; ?>"><span class='category_item'>Locations</span></a> 
+					<a href="<?php echo URL.'/english/emarketing'; ?>"><span class='category_item'>Marketing Activities</span></a> 
+					<a href="<?php echo URL.'/english/eawards'; ?>"><span class='category_item'>Awards and Achievements</span></a>
+					<a href="<?php echo URL.'/english/econtact'; ?>"><span class='category_item'>Contact us</span></a>
+		<?php } ?>
+				</div>
+			</div>
+		</div>
+		<?php } ?>
+		
+		<!-- 3 Category Button -->
+		<?php if($_category3 != ''){ ?>
+		<div class='small_category_box'>
+			<div class='small_category' onclick="small_category_btn()">
+				<div class='small_category_title'><?php echo $_category3; ?></div>
+				<div class='small_category_arrow'>
+					<img src="<?php echo URL; ?>/image/common/dropdown.png" />
+				</div>
+			</div>
+			<div class='category_item_hide_line'>
+				<div class="small_category_item_box">
+		<?php if($_category2 == 'BIG DATA / AI'){ ?>
+					<a href="<?php echo URL.'/solutions/bigdata/cloudera'; ?>"><span class='category_item'>Cloudera</span></a>
+		<?php } ?>
+		<?php if($_category2 == 'CLOUD / INFRA'){ ?>
+					<a href="<?php echo URL.'/solutions/cloud/cisco'; ?>"><span class='category_item'>Cisco</span></a>
+					<a href="<?php echo URL.'/solutions/cloud/alkira'; ?>"><span class='category_item'>Alkira</span></a>
+					<a href="<?php echo URL.'/solutions/cloud/delltechnologies'; ?>"><span class='category_item'>Dell Technologies</span></a>
+					<a href="<?php echo URL.'/solutions/cloud/druva'; ?>"><span class='category_item'>Druva</span></a>
+					<a href="<?php echo URL.'/solutions/cloud/google'; ?>"><span class='category_item'>Google Cloud Platform</span></a>
+					<a href="<?php echo URL.'/solutions/cloud/msazure'; ?>"><span class='category_item'>Microsoft Azure</span></a>
+					<a href="<?php echo URL.'/solutions/cloud/naver'; ?>"><span class='category_item'>Naver Cloud Platform</span></a>
+					<a href="<?php echo URL.'/solutions/cloud/netapp'; ?>"><span class='category_item'>NetApp</span></a>
+					<a href="<?php echo URL.'/solutions/cloud/purestorage'; ?>"><span class='category_item'>Pure Storage</span></a> 
+					<a href="<?php echo URL.'/solutions/cloud/veeam'; ?>"><span class='category_item'>Veeam</span></a>
+					<a href="<?php echo URL.'/solutions/cloud/veritas'; ?>"><span class='category_item'>Veritas</span></a>
+					<a href="<?php echo URL.'/solutions/cloud/vmware'; ?>"><span class='category_item'>VMware</span></a>
+		<?php } ?>
+		<?php if($_category2 == 'MANAGEMENT'){ ?>
+					<a href="<?php echo URL.'/solutions/management/clovircm'; ?>"><span class='category_item'>Clovir CM</span></a>
+					<a href="<?php echo URL.'/solutions/management/clovirdaas'; ?>"><span class='category_item'>Clovir VDI / DaaS</span></a>
+					<a href="<?php echo URL.'/solutions/management/clovirsm'; ?>"><span class='category_item'>Clovir SM</span></a>
+					<a href="<?php echo URL.'/solutions/management/controlup'; ?>"><span class='category_item'>ControlUp</span></a>
+					<a href="<?php echo URL.'/solutions/management/docusign'; ?>"><span class='category_item'>DocuSign</span></a>
+		<?php } ?>
+		<?php if($_category2 == 'SECURITY'){ ?>
+					<a href="<?php echo URL.'/solutions/security/akamai'; ?>"><span class='category_item'>Akamai</span></a>
+					<a href="<?php echo URL.'/solutions/security/appm'; ?>"><span class='category_item'>APPM</span></a>
+					<a href="<?php echo URL.'/solutions/security/grippintower'; ?>"><span class='category_item'>GrippinTower</span></a>
+					<a href="<?php echo URL.'/solutions/security/jtops'; ?>"><span class='category_item'>J-TOPS</span></a>
+					<a href="<?php echo URL.'/solutions/security/menlo'; ?>"><span class='category_item'>Menlo Security</span></a>
+					<a href="<?php echo URL.'/solutions/security/quest'; ?>"><span class='category_item'>Quest</span></a>
+					<a href="<?php echo URL.'/solutions/security/rsa'; ?>"><span class='category_item'>RSA</span></a>
+					<a href="<?php echo URL.'/solutions/security/securegate'; ?>"><span class='category_item'>SecureGate</span></a>
+					<a href="<?php echo URL.'/solutions/security/sentinelone'; ?>"><span class='category_item'>SentinelOne</span></a>
+					<a href="<?php echo URL.'/solutions/security/solidstep'; ?>"><span class='category_item'>SolidStep</span></a>
+					<a href="<?php echo URL.'/solutions/security/sparrow'; ?>"><span class='category_item'>Sparrow</span></a>
+					<a href="<?php echo URL.'/solutions/security/sweeper'; ?>"><span class='category_item'>SWeeper</span></a>
+					<a href="<?php echo URL.'/solutions/security/weedsblackbox'; ?>"><span class='category_item'>WeedsBlackBox</span></a>
+					<a href="<?php echo URL.'/solutions/security/wizm/wizm'; ?>"><span class='category_item'>wizM</span></a>
+		<?php } ?>
+				</div>
+			</div>
+		</div>
+		<?php } ?>
+		
+		<!-- 4 Category Button -->
+		<?php if($_category4 != ''){ ?>
+		<div class='s_small_category_box'>
+			<div class='s_small_category' onclick="s_small_category_btn()">
+				<div class='s_small_category_title'><?php echo $_category4; ?></div>
+				<div class='s_small_category_arrow'>
+					<img src="<?php echo URL; ?>/image/common/dropdown.png" />
+				</div>
+			</div>
+			<div class='category_item_hide_line'>
+				<div class="s_small_category_item_box">
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'Cisco'){ ?>
+						<a href="<?php echo URL.'/solutions/cloud/cisco/aci'; ?>"><span class='category_item'>ACI</span></a> 
+						<a href="<?php echo URL.'/solutions/cloud/cisco/hyper'; ?>"><span class='category_item'>HyperFlex</span></a>
+						<a href="<?php echo URL.'/solutions/cloud/cisco/ucs'; ?>"><span class='category_item'>UCS</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'Alkira'){ ?>
+						<a href="<?php echo URL.'/solutions/cloud/alkira/alkira'; ?>"><span class='category_item'>Alkira</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'Dell Technologies'){ ?>
+						<a href="<?php echo URL.'/solutions/cloud/delltechnologies/poweredge'; ?>"><span class='category_item'>PowerEdge</span></a>
+						<a href="<?php echo URL.'/solutions/cloud/delltechnologies/rail'; ?>"><span class='category_item'>VxRail</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'Druva'){ ?>
+						<a href="<?php echo URL.'/solutions/cloud/druva/druva'; ?>"><span class='category_item'>Druva</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'Google Cloud Platform'){ ?>
+						<a href="<?php echo URL.'/solutions/cloud/google/google'; ?>"><span class='category_item'>Google Cloud Platform</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'Microsoft Azure'){ ?>
+						<a href="<?php echo URL.'/solutions/cloud/msazure/msazure'; ?>"><span class='category_item'>Microsoft Azure</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'Naver Cloud Platform'){ ?>
+						<a href="<?php echo URL.'/solutions/cloud/naver/naver'; ?>"><span class='category_item'>Naver Cloud Platform</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'NetApp'){ ?>
+						<a href="<?php echo URL.'/solutions/cloud/netapp/netapp'; ?>"><span class='category_item'>NetApp</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'Pure Storage'){ ?>
+						<a href="<?php echo URL.'/solutions/cloud/purestorage/purestorage'; ?>"><span class='category_item'>Pure Storage</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'Veeam'){ ?>
+						<a href="<?php echo URL.'/solutions/cloud/veeam/veeam'; ?>"><span class='category_item'>Veeam</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'Veritas'){ ?>
+						<a href="<?php echo URL.'/solutions/cloud/veritas/info'; ?>"><span class='category_item'>InfoScale</span></a> 
+						<a href="<?php echo URL.'/solutions/cloud/veritas/netbackup'; ?>"><span class='category_item'>NetBackup</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'VMware'){ ?>
+						<a href="<?php echo URL.'/solutions/cloud/vmware/horizon'; ?>"><span class='category_item'>Horizon</span></a> 
+						<a href="<?php echo URL.'/solutions/cloud/vmware/nsx'; ?>"><span class='category_item'>NSX</span></a>
+						<a href="<?php echo URL.'/solutions/cloud/vmware/tanzu'; ?>"><span class='category_item'>Tanzu</span></a>
+						<a href="<?php echo URL.'/solutions/cloud/vmware/vsan'; ?>"><span class='category_item'>vSAN</span></a>
+						<a href="<?php echo URL.'/solutions/cloud/vmware/vsphere'; ?>"><span class='category_item'>vSphere</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'Akamai'){ ?>
+						<a href="<?php echo URL.'/solutions/security/akamai/app'; ?>"><span class='category_item'>AAP</span></a> 
+						<a href="<?php echo URL.'/solutions/security/akamai/botmanager'; ?>"><span class='category_item'>Bot Manager</span></a> 
+						<a href="<?php echo URL.'/solutions/security/akamai/eaa'; ?>"><span class='category_item'>EAA</span></a> 
+						<a href="<?php echo URL.'/solutions/security/akamai/edgedns'; ?>"><span class='category_item'>Edge DNS</span></a> 
+						<a href="<?php echo URL.'/solutions/security/akamai/etp'; ?>"><span class='category_item'>SIA</span></a> 
+						<a href="<?php echo URL.'/solutions/security/akamai/nlta'; ?>"><span class='category_item'>CI & NLTA</span></a>
+						<a href="<?php echo URL.'/solutions/security/akamai/guardicore'; ?>"><span class='category_item'>Guardicore Segmentation</span></a>					
+					<?php } ?>
+
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'APPM'){ ?>
+						<a href="<?php echo URL.'/solutions/security/appm/forlogin'; ?>"><span class='category_item'>For Simple Login</span></a> 
+						<a href="<?php echo URL.'/solutions/security/appm/forpassword'; ?>"><span class='category_item'>For Password</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'GrippinTower'){ ?>
+						<a href="<?php echo URL.'/solutions/security/grippintower/grippintower'; ?>"><span class='category_item'>GrippinTower</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'J-TOPS'){ ?>
+						<a href="<?php echo URL.'/solutions/security/jtops/jtops'; ?>"><span class='category_item'>J-TOPS</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'Menlo Security'){ ?>
+						<a href="<?php echo URL.'/solutions/security/menlo/email'; ?>"><span class='category_item'>Email</span></a> 
+						<a href="<?php echo URL.'/solutions/security/menlo/web'; ?>"><span class='category_item'>Web</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'Quest'){ ?>
+						<a href="<?php echo URL.'/solutions/security/quest/changeauditor'; ?>"><span class='category_item'>Change Auditor</span></a> 
+						<a href="<?php echo URL.'/solutions/security/quest/recoverymanager'; ?>"><span class='category_item'>Recovery Manager</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'RSA'){ ?>
+						<a href="<?php echo URL.'/solutions/security/rsa/netwitnessplatform'; ?>"><span class='category_item'>NetWitness XDR</span></a> 
+						<a href="<?php echo URL.'/solutions/security/rsa/securid'; ?>"><span class='category_item'>SecurID</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'SecureGate'){ ?>
+						<a href="<?php echo URL.'/solutions/security/securegate/securegate'; ?>"><span class='category_item'>SecureGate</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'SentinelOne'){ ?>
+						<a href="<?php echo URL.'/solutions/security/sentinelone/sentinelone'; ?>"><span class='category_item'>SentinelOne</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'SolidStep'){ ?>
+						<a href="<?php echo URL.'/solutions/security/solidstep/cce'; ?>"><span class='category_item'>CCE</span></a> 
+						<a href="<?php echo URL.'/solutions/security/solidstep/cve'; ?>"><span class='category_item'>CVE</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'Sparrow'){ ?>
+						<a href="<?php echo URL.'/solutions/security/sparrow/dast'; ?>"><span class='category_item'>DAST</span></a> 
+						<a href="<?php echo URL.'/solutions/security/sparrow/sast'; ?>"><span class='category_item'>SAST</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'SWeeper'){ ?>
+						<a href="<?php echo URL.'/solutions/security/sweeper/sweeper'; ?>"><span class='category_item'>SWeeper</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'WeedsBlackBox'){ ?>
+						<a href="<?php echo URL.'/solutions/security/weedsblackbox/weedsblackbox'; ?>"><span class='category_item'>WeedsBlackBox</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'wizM'){ ?>
+						<a href="<?php echo URL.'/solutions/security/wizm/wizm'; ?>"><span class='category_item'>wizM</span></a>
+					<?php } ?>
+				</div>
+			</div>
+		</div>
+		<?php } ?>
+	</div>
+</div>
+<!-- PC Ver 카페고리 끝 -->
+
+<!-- Mob Ver 카페고리 시작 -->
+<div class='category_container only-mobile'>
+	<div class='category_subcontainer'>
+		<!-- Home Button -->
+		<div class="category_home_box" onclick="location.href='<?php echo URL; ?>'">
+			<div class="category_home">
+				<img src="<?php echo URL; ?>/image/common/category_home.png" />
+			</div>
+		</div>
+		
+		<!-- 모바일 카테고리 -->
+		<div class='M_big_category_box'>
+			<div class='M_big_category' onclick="M_big_category_btn()">
+				<div class='M_big_category_title'>
+				<?php echo ($_category4 == '')? ($_category3 == '')? ($_category2 == '')? $_category1 :$_category2 :$_category3 :$_category4; ?>
+				</div>
+				<div class='M_big_category_arrow'>
+					<img src="<?php echo URL; ?>/image/common/dropdown.png" />
+				</div>
+			</div>
+			<div class='M_category_item_hide_line'>
+				<div class="M_big_category_item_box">
+					<?php if($_category1 == 'COMPANY'){ ?>
+					<a href="<?php echo URL.'/company/ceo'; ?>"><span class="M_category_item">대표이사 인사말</span></a>
+					<a href="<?php echo URL.'/company/overview'; ?>"><span class="M_category_item">사업개요</span></a>
+					<a href="<?php echo URL.'/company/history'; ?>"><span class="M_category_item">연혁</span></a>
+					<a href="<?php echo URL.'/company/ci'; ?>"><span class="M_category_item">CI</span></a>
+					<a href="<?php echo URL.'/company/misstion'; ?>"><span class="M_category_item">미션과 비전</span></a>
+					<a href="<?php echo URL.'/company/performance'; ?>"><span class="M_category_item">수상실적</span></a>
+					<a href="<?php echo URL.'/company/certified'; ?>"><span class="M_category_item">국가인증 및 파트너인증</span></a>
+					<a href="<?php echo URL.'/company/affiliated'; ?>"><span class="M_category_item">관계사</span></a>
+					<a href="<?php echo URL.'/company/cooperative'; ?>"><span class="M_category_item">협력사</span></a>
+					<a href="<?php echo URL.'/company/contribution'; ?>"><span class="M_category_item">사회공헌활동</span></a>
+					<?php } ?>
+					<?php if($_category1 == 'PR CENTER'){ ?>
+					<a href="<?php echo URL.'/prcenter/list?bbs_id=notice'; ?>"><span class="M_category_item">공지사항</span></a>
+					<a href="<?php echo URL.'/prcenter/list?bbs_id=news'; ?>"><span class='M_category_item'>언론보도</span></a>
+					<a href="<?php echo URL.'/prcenter/list?bbs_id=gitube'; ?>"><span class='M_category_item'>영상</span></a>
+					<a href="<?php echo URL.'/prcenter/list?bbs_id=event'; ?>"><span class='M_category_item'>이벤트</span></a>
+					<a href="<?php echo URL.'/prcenter/recruit'; ?>"><span class='M_category_item'>채용</span></a>
+					<?php } ?>
+					<?php if($_category1 == 'CONTACT US'){ ?>
+					<a href="<?php echo URL.'/contactus/directions'; ?>"><span class='M_category_item'>오시는 길</span></a>
+					<a href="<?php echo URL.'/contactus/inquiry'; ?>"><span class='M_category_item'>영업·기술·유지보수 문의</span></a>
+					<?php } ?>
+					<?php if($_category1 == 'ENGLISH'){ ?>
+					<a href="<?php echo URL.'/english/eoverview'; ?>"><span class='M_category_item'>Overview</span></a>
+					<a href="<?php echo URL.'/english/esolutions'; ?>"><span class='M_category_item'>Solutions</span></a>  
+					<a href="<?php echo URL.'/english/epartner'; ?>"><span class='M_category_item'>Partner</span></a> 
+					<a href="<?php echo URL.'/english/elocation'; ?>"><span class='M_category_item'>Locations</span></a> 
+					<a href="<?php echo URL.'/english/emarketing'; ?>"><span class='M_category_item'>Marketing Activities</span></a> 
+					<a href="<?php echo URL.'/english/eawards'; ?>"><span class='M_category_item'>Awards and Achievements</span></a>
+					<a href="<?php echo URL.'/english/econtact'; ?>"><span class='M_category_item'>Contact us</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'BIG DATA / AI'){ ?>
+					<a href="<?php echo URL.'/solutions/bigdata/cloudera'; ?>"><span class='M_category_item'>Cloudera</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'Cisco'){ ?>
+					<a href="<?php echo URL.'/solutions/cloud/cisco/aci'; ?>"><span class='M_category_item'>ACI</span></a> 
+					<a href="<?php echo URL.'/solutions/cloud/cisco/hyper'; ?>"><span class='M_category_item'>HyperFlex</span></a> 
+					<a href="<?php echo URL.'/solutions/cloud/cisco/ucs'; ?>"><span class='M_category_item'>UCS</span></a> 
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'Alkira'){ ?>
+					<a href="<?php echo URL.'/solutions/cloud/alkira/alkira'; ?>"><span class='M_category_item'>Alkira</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'Dell Technologies'){ ?>
+					<a href="<?php echo URL.'/solutions/cloud/delltechnologies/poweredge'; ?>"><span class='M_category_item'>PowerEdge</span></a> 
+					<a href="<?php echo URL.'/solutions/cloud/delltechnologies/rail'; ?>"><span class='M_category_item'>VxRail</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'Druva'){ ?>
+					<a href="<?php echo URL.'/solutions/cloud/druva/druva'; ?>"><span class='M_category_item'>Druva</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'Google Cloud Platform'){ ?>
+					<a href="<?php echo URL.'/solutions/cloud/google/google'; ?>"><span class='M_category_item'>Google Cloud Platform</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'Microsoft Azure'){ ?>
+					<a href="<?php echo URL.'/solutions/cloud/msazure/msazure'; ?>"><span class='M_category_item'>Microsoft Azure</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'Naver Cloud Platform'){ ?>
+					<a href="<?php echo URL.'/solutions/cloud/naver/naver'; ?>"><span class='M_category_item'>Naver Cloud Platform</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'NetApp'){ ?>
+					<a href="<?php echo URL.'/solutions/cloud/netapp/netapp'; ?>"><span class='M_category_item'>NetApp</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'Pure Storage'){ ?>
+					<a href="<?php echo URL.'/solutions/cloud/purestorage/purestorage'; ?>"><span class='M_category_item'>Pure Storage</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'Veeam'){ ?>
+					<a href="<?php echo URL.'/solutions/cloud/veeam/veeam'; ?>"><span class='M_category_item'>Veeam</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'Veritas'){ ?>
+					<a href="<?php echo URL.'/solutions/cloud/veritas/info'; ?>"><span class='M_category_item'>InfoScale</span></a> 
+					<a href="<?php echo URL.'/solutions/cloud/veritas/netbackup'; ?>"><span class='M_category_item'>NetBackup</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'CLOUD / INFRA' && $_category3 == 'VMware'){ ?>
+					<a href="<?php echo URL.'/solutions/cloud/vmware/horizon'; ?>"><span class='M_category_item'>Horizon</span></a> 
+					<a href="<?php echo URL.'/solutions/cloud/vmware/nsx'; ?>"><span class='M_category_item'>NSX</span></a> 
+					<a href="<?php echo URL.'/solutions/cloud/vmware/tanzu'; ?>"><span class='M_category_item'>Tanzu</span></a> 
+					<a href="<?php echo URL.'/solutions/cloud/vmware/vsan'; ?>"><span class='M_category_item'>vSAN</span></a> 
+					<a href="<?php echo URL.'/solutions/cloud/vmware/vsphere'; ?>"><span class='M_category_item'>vSphere</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'MANAGEMENT'){ ?>
+					<a href="<?php echo URL.'/solutions/management/clovircm'; ?>"><span class='M_category_item'>Clovir CM</span></a>
+					<a href="<?php echo URL.'/solutions/management/clovirdaas'; ?>"><span class='M_category_item'>Clovir VDI / DaaS</span></a>
+					<a href="<?php echo URL.'/solutions/management/clovirsm'; ?>"><span class='M_category_item'>Clovir SM</span></a>
+					<a href="<?php echo URL.'/solutions/management/controlup'; ?>"><span class='M_category_item'>ControlUp</span></a>
+					<a href="<?php echo URL.'/solutions/management/docusign'; ?>"><span class='M_category_item'>DocuSign</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'Akamai'){ ?>
+					<a href="<?php echo URL.'/solutions/security/akamai/app'; ?>"><span class='M_category_item'>AAP</span></a> 
+					<a href="<?php echo URL.'/solutions/security/akamai/botmanager'; ?>"><span class='M_category_item'>Bot Manager</span></a> 
+					<a href="<?php echo URL.'/solutions/security/akamai/eaa'; ?>"><span class='M_category_item'>EAA</span></a> 
+					<a href="<?php echo URL.'/solutions/security/akamai/edgedns'; ?>"><span class='M_category_item'>Edge DNS</span></a> 
+					<a href="<?php echo URL.'/solutions/security/akamai/etp'; ?>"><span class='M_category_item'>SIA</span></a> 
+					<a href="<?php echo URL.'/solutions/security/akamai/nlta'; ?>"><span class='M_category_item'>CI & NLTA</span></a>
+					<a href="<?php echo URL.'/solutions/security/akamai/guardicore'; ?>"><span class='M_category_item'>Guardicore Segmentation</span></a>
+					<?php } ?>
+
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'APPM'){ ?>
+					<a href="<?php echo URL.'/solutions/security/appm/forlogin'; ?>"><span class='M_category_item'>For Simple Login</span></a> 
+					<a href="<?php echo URL.'/solutions/security/appm/forpassword'; ?>"><span class='M_category_item'>For Password</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'GrippinTower'){ ?>
+					<a href="<?php echo URL.'/solutions/security/grippintower/grippintower'; ?>"><span class='M_category_item'>GrippinTower</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'J-TOPS'){ ?>
+					<a href="<?php echo URL.'/solutions/security/jtops/jtops'; ?>"><span class='M_category_item'>J-TOPS</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'Menlo Security'){ ?>
+					<a href="<?php echo URL.'/solutions/security/menlo/email'; ?>"><span class='M_category_item'>Email</span></a> 
+					<a href="<?php echo URL.'/solutions/security/menlo/web'; ?>"><span class='M_category_item'>Web</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'Quest'){ ?>
+					<a href="<?php echo URL.'/solutions/security/quest/changeauditor'; ?>"><span class='M_category_item'>Change Auditor</span></a> 
+					<a href="<?php echo URL.'/solutions/security/quest/recoverymanager'; ?>"><span class='M_category_item'>Recovery Manager</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'RSA'){ ?>
+					<a href="<?php echo URL.'/solutions/security/rsa/netwitnessplatform'; ?>"><span class='M_category_item'>NetWitness XDR</span></a> 
+					<a href="<?php echo URL.'/solutions/security/rsa/securid'; ?>"><span class='M_category_item'>SecurID</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'SecureGate'){ ?>
+					<a href="<?php echo URL.'/solutions/security/securegate/securegate'; ?>"><span class='M_category_item'>SecureGate</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'SentinelOne'){ ?>
+					<a href="<?php echo URL.'/solutions/security/sentinelone/sentinelone'; ?>"><span class='M_category_item'>SentinelOne</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'SolidStep'){ ?>
+					<a href="<?php echo URL.'/solutions/security/solidstep/cce'; ?>"><span class='M_category_item'>CCE</span></a> 
+					<a href="<?php echo URL.'/solutions/security/solidstep/cve'; ?>"><span class='M_category_item'>CVE</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'Sparrow'){ ?>
+					<a href="<?php echo URL.'/solutions/security/sparrow/dast'; ?>"><span class='M_category_item'>DAST</span></a> 
+					<a href="<?php echo URL.'/solutions/security/sparrow/sast'; ?>"><span class='M_category_item'>SAST</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'SWeeper'){ ?>
+					<a href="<?php echo URL.'/solutions/security/sweeper/sweeper'; ?>"><span class='M_category_item'>SWeeper</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'WeedsBlackBox'){ ?>
+					<a href="<?php echo URL.'/solutions/security/weedsblackbox/weedsblackbox'; ?>"><span class='M_category_item'>WeedsBlackBox</span></a>
+					<?php } ?>
+					<?php if($_category2 == 'SECURITY' && $_category3 == 'wizM'){ ?>
+					<a href="<?php echo URL.'/solutions/security/wizm/wizm'; ?>"><span class='M_category_item'>wizM</span></a>
+					<?php } ?>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+<!-- Mob Ver 카페고리 끝 -->

@@ -1,0 +1,274 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'SOLUTIONS';
+	$_category2 = 'MANAGEMENT';
+	$_category3 = 'ControlUp';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/solutions.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_solutions.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/solutions.js"></script>
+		
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			M_main_navbar();
+			M_sidenav_accordion();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+
+	<!-- Head Navigator Start -->
+	<?php include_once '../../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background Start -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="background_text1">SOLUTIONS</p>
+			<p class="background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>SOLUTIONS</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/solution.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background End -->
+
+	<!-- Contents Start -->
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+			
+			<!-- pc버전 시작 -->
+			<div class="Solution_container">
+				<div class="Solution_top_box" >
+					<div class="Solution_top_left">
+						<div class="Solution_top_img" data-aos="fade-right"
+							data-aos-duration="1000">
+							<img src="../../image/common/Controlup.png" />
+						</div>
+					</div>
+					<div class="Solution_top_rigth">
+						<p class="Solution_top_title1">VDI 장애 감지 / 조치 솔루션</p>
+						<p class="Solution_top_title2">ControlUp</p>
+					</div>
+				</div>
+
+
+				<div class="color_box" style="background-color:#08a049 ">
+					<div class="color_box_left"></div>
+					<div class="color_box_rigth" data-aos="fade-left"
+						data-aos-duration="1000">
+						<p>ControlUp은 VDI 인프라 및 가상 데스크탑의 이상 감지 / 장애 조치로</p>
+						<p>사전 예방 환경을 제공합니다.</p>
+
+
+						<div class="Solution_down_box">
+							<span class="Solution_down"><a href="<?php echo URL; ?>/pdf/VDI 장애 감지, 조치를 위한 ControlUp 소개_GIT_DBiz_202206_Ver.1.1.pdf" download>자료다운로드</a><span>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white" >ControlUp</div>
+					<div class="Solution_center_black">기대효과</div>
+				</div>
+				
+				<div class="ACI_center_box ACI_img_20">
+					<div class="ACI_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<img src="../../image/common/controlup1.png"/>
+						<p class="ACI_item_title">VDI 실시간 사전 예방 환경 제공</p>
+						<p class="ACI_item_content">실시간 장애 발생 전에 모니터링 되어</p>
+						<p class="ACI_item_content">사전 장애 조치로 사용자 대응</p>
+						<p class="ACI_item_content" style="opacity: 0">사전 장애 조치로 사용자 대응</p>
+
+
+					</div>
+					
+					<div class="ACI_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+					<img src="../../image/common/controlup2.png"/>
+						<p class="ACI_item_title">실시간 경험 최적화</p>
+						<p class="ACI_item_content">EUC환경에 대한 실시간</p>
+						<p class="ACI_item_content">모니터링으로 문제의 원인을 찾아</p>
+						<p class="ACI_item_content">디지털 경험을 개선</p>
+					</div>
+					
+					<div class="ACI_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+					<img src="../../image/common/controlup3.png"/>
+						<p class="ACI_item_title">과거 데이터 분석</p>
+						<p class="ACI_item_content">과거 데이터에 대한 강력한</p>
+						<p class="ACI_item_content">분석을 통해 효율적으로 계획 및</p>
+						<p class="ACI_item_content">리소스 최적화</p>
+
+					</div>
+					
+					<div class="ACI_center_item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+					<img src="../../image/common/controlup4.png"/>
+						<p class="ACI_item_title">투자보호</p>
+						<p class="ACI_item_content">성능 개선과 원인 제거로</p>
+						<p class="ACI_item_content">H/W의 중복 투자 보호</p>
+						<p class="ACI_item_content" style="opacity: 0">사전 장애 조치로 사용자 대응</p>
+
+					</div>
+				</div>
+				
+				
+				<div class="vsphere_bottom_container">
+					<div class="vsphere_bottom_img_box" data-aos="fade-right" data-aos-duration="1000">
+						<p class="vsphere_bottom_img_box_text">ControlUp 특장점</p>
+						<img src="../../image/common/controlup-layer.png" />
+					</div>
+					<div class="vsphere_bottom_text_box" data-aos="fade-left"
+						data-aos-duration="1000">
+						<ul>
+							<li><img src="../../image/common/controlup-checkbox.png"/>몇 번의 클릭만으로 문제의 원인(root cause)을 쉽게 파악</li>
+							<li><img src="../../image/common/controlup-checkbox.png"/>ControlUp의 모니터링 콘솔은 발견된 문제에 대한 즉각적인 조치 및 복구를 지원</li>
+							<li><img src="../../image/common/controlup-checkbox.png"/>Cross Platform 지원과 강력하고 유연한 UI를 제공</li>
+							<li><img src="../../image/common/controlup-checkbox.png"/>모니터링 대상을 매 3초마다 업데이트 해주는 진정한 Real-time Monitoring을 제공</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="Solution_ask_box">
+					<p class="Solution_ask_text1">더 알고 싶으시다면</p>
+					<p class="Solution_ask_text2">지금 바로 문의주세요. 최대한 빠르고 성실하게 답변해
+						드리겠습니다.</p>
+					<div class="Solution_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+
+			</div>
+			<!-- pc버전 끝 -->
+
+			<!-- 모바일 버전 시작 -->
+			<div class="M_Solution_container">
+				<div class="M_Solution_title_box">
+					<p class="M_Solution_title_text1">VDI 장애 감지 / 조치 솔루션</p>
+					<p class="M_Solution_title_text2">ControlUp</p>
+				</div>
+				<div class="M_Solution_title_img_box" data-aos="fade-up"
+					data-aos-duration="1000">
+					<img src="../../image/common/Controlup.png" />
+				</div>
+
+				<div class="M_Solution_black_box" style="background-color:#08a049 ">
+					<p>
+					ControlUp은 VDI 인프라 및 가상 데스크탑의 이상 감지 / 장애 조치로 사전 예방 환경을 제공합니다.
+					<p>
+				</div>
+				
+				
+				
+				
+				
+				<div class="Solution_center_box1">
+					<div class="Solution_center_white" >ControlUp</div>
+					<div class="Solution_center_black">기대효과</div>
+				</div>
+				
+				<div class="ACI_center_box">
+					<div class="ACI_center_item2">
+						<img src="../../image/common/controlup1.png"/>
+						<p class="ACI_item_title">VDI 실시간 사전 예방 환경 제공</p>
+						<p class="ACI_item_content">실시간 장애 발생 전에 모니터링 되어 사전 장애 조치로<br>사용자 대응</p>
+						<p class="ACI_item_content" style="opacity: 0">사전 장애 조치로 사용자 대응</p>
+
+
+					</div>
+					
+					<div class="ACI_center_item2">
+					<img src="../../image/common/controlup2.png"/>
+						<p class="ACI_item_title">실시간 경험 최적화</p>
+						<p class="ACI_item_content">EUC환경에 대한 실시간</p>
+						<p class="ACI_item_content">모니터링으로 문제의 원인을 찾아</p>
+						<p class="ACI_item_content">디지털 경험을 개선</p>
+					</div>
+					
+					<div class="ACI_center_item2">
+					<img src="../../image/common/controlup3.png"/>
+						<p class="ACI_item_title">과거 데이터 분석</p>
+						<p class="ACI_item_content">과거 데이터에 대한 강력한</p>
+						<p class="ACI_item_content">분석을 통해 효율적으로 계획 및</p>
+						<p class="ACI_item_content">리소스 최적화</p>
+
+					</div>
+					
+					<div class="ACI_center_item2">
+					<img src="../../image/common/controlup4.png"/>
+						<p class="ACI_item_title">투자보호</p>
+						<p class="ACI_item_content">성능 개선과 원인 제거로</p>
+						<p class="ACI_item_content">H/W의 중복 투자 보호</p>
+						<p class="ACI_item_content" style="opacity: 0">사전 장애 조치로 사용자 대응</p>
+
+					</div>
+				</div>
+				
+				
+				
+				
+				<div class="vsphere_bottom_img_box">
+					<p class="vsphere_bottom_img_box_text">ControlUp 특장점</p>
+					<img src="../../image/common/controlup-layer.png" />
+					
+
+					<div class="vsphere_bottom_text_box" data-aos="fade-left"
+						data-aos-duration="1000">
+						<ul>
+							<li><img src="../../image/common/controlup-checkbox.png" />몇 번의 클릭만으로 문제의 원인(root cause)을 쉽게 파악</li>
+							<li><img src="../../image/common/controlup-checkbox.png" />ControlUp의 모니터링 콘솔은 발견된 문제에 대한 즉각적인<br>조치 및 복구를 지원</li>
+							<li><img src="../../image/common/controlup-checkbox.png" />Cross Platform 지원과 강력하고 유연한 UI를 제공</li>
+							<li><img src="../../image/common/controlup-checkbox.png" />모니터링 대상을 매 3초마다 업데이트 해주는 진정한 Real-time Monitoring을 제공</li>
+						</ul>
+					</div>
+				</div>
+				
+				
+				<div class="vsphere_ask_box">
+					<p class="vsphere_ask_text1">더 알고 싶으시다면</p>
+					<p class="vsphere_ask_text2">지금 바로 문의주세요.</p>
+					<p class="vsphere_ask_text2">빠르고 성실하게 답변해 드리겠습니다.</p>
+					<div class="vsphere_ask_btn"><a href="<?php echo URL; ?>/contactus/inquiry">문의하기</a></div>
+				</div>
+
+
+
+			</div>
+
+
+			<!-- 모바일 버전 끝 -->
+
+
+		</div>
+	</div>
+
+
+	<!-- Side Navigator Start -->
+	<?php include_once '../../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+
+</body>
+</html>

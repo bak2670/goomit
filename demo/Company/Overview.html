@@ -1,0 +1,173 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'COMPANY';
+	$_category2 = '사업개요';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/company.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_company.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/company.js"></script>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			AOS.init();
+	
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+	<!-- Head Navigator Start -->
+	<?php include_once '../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background 시작 -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="company_background_text1">COMPANY</p>
+			<p class="company_background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>COMPANY</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/company.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background 끝 -->
+
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+
+			<div class='Overview_container'>
+				<p class="Company_top_text">
+					<span>COMPANY</span>
+				</p>
+				<h1 class='overview_title'>
+					<strong>사업개요</strong>
+				</h1>
+				<div class='overview_top_img' data-aos="fade-up"
+					data-aos-duration="1000">
+					<img
+						src="../image/common/overview.png" />
+				</div>
+				<div class='overview_text1_box' data-aos="fade-up"
+					data-aos-duration="1000">
+					<p class='Overview_text1'>
+					굿모닝아이텍(주)은 2004년 창사 이래 최고의 기업용 인프라
+						솔루션 기술과 컨설팅으로 업계 선두를 달리고 있습니다.<br>
+					특히, 서버 가상화 및 데스크톱 가상화의 선두 제품인 VMware
+						솔루션을 지속적으로 공급하고 컨설팅 함으로써, 효율적이고 경제적인 Green IT 실현을 돕고 있습니다.<br>
+					이 밖에도 가상 환경의 백업, HA, 클러스터링, DR솔루션을
+						통합적으로 제공하여 기업 인프라 운영의 효율성과 가용성을 높이는 것은 물론, 위치 독립 컴퓨팅을 위한 애플리케이션 성능
+						보장 플랫폼 제공을 통해, 고객의 비즈니스 성공을 돕는 동반 성장 파트너의 역할을 수행합니다.<br>
+					굿모닝아이텍(주)은 이러한 경험과 높은 기술력을 바탕으로 현재
+						제조, 공공, 금융등 모든 산업군을 통해 500여 고객을 확보해 신뢰도 높고 신속한 토털 솔루션을 제공하고 있습니다.
+					</p>
+				</div>
+
+				<div data-aos="fade-up" data-aos-duration="1000">
+					<div class='overview_table'>
+						<div class='overview_table_1'>
+							<div class='topline'>회사명</div>
+							<div class='centerline'>창립일</div>
+							<div class='bottomline'>매출액</div>
+						</div>
+						<div class='overview_table_2'>
+							<div class='topline'>굿모닝아이텍(주)</div>
+							<div class='centerline'>2004년 8월 2일</div>
+							<div class='bottomline'>1080억 원(2021년)</div>
+						</div>
+						<div class='overview_table_1'>
+							<div class='topline'>대표이사</div>
+							<div class='centerline'>자본금</div>
+							<div class='bottomline'>임직원</div>
+						</div>
+						<div class='overview_table_2'>
+							<div class='topline rightnone'>이주찬</div>
+							<div class='centerline rightnone'>10억 원</div>
+							<div class='bottomline rightnone'>301명(2022년 7월 기준)</div>
+						</div>
+
+					</div>
+
+
+
+					<h1 class='Overview_text2 overview_text_center'>
+						<strong>매출/인원</strong>
+					</h1>
+					<p class='fontsize'>2004년 창립멤버 6명으로 설립 된 굿모닝아이텍은 18년 동안 쉼 없이
+						성장하고 있습니다.
+					</p>
+					<h1 class="overview_text_center">
+						<strong>주요 솔루션</strong>
+					</h1>
+					<p class='fontsize'>굿모닝아이텍은&nbsp;클라우드·빅데이터·AI 및
+						정보보호&nbsp;분야&nbsp;토털 기업용 인프라 구성을 위한 다양한 솔루션을 보유하고 있습니다.</p>
+
+					<h1 class='overview_text3 overview_text_center'>
+						<strong>회사 소개 동영상</strong>
+					</h1>
+					<p class='fontsize'>짧은 영상이지만 고객을 향한 굿모닝아이텍의 노력과 마음이 전해졌으면
+						좋겠습니다.</p>
+				</div>
+
+				<div class='bottom_box' data-aos="fade-up" data-aos-duration="1000">
+					<div class="overview_btn_box">
+						<p class="overview_btn1" onclick="overviewbtn1()">Korean</p>
+						<p class="overview_btn2" onclick="overviewbtn2()">English</p>
+					</div>
+
+					<div class="overview_video_box1">
+						<h1 class="overview_text_center">
+							<strong>국어 나래이션 회사소개 영상</strong>
+						</h1>
+
+						<video class='Overview_video' src="../image/video/git_overview_kor.mp4" controls></video>
+					</div>
+					<div class="overview_video_box2">
+						<h1 class="overview_text_center">
+							<strong>영어 나래이션 회사소개 영상</strong>
+						</h1>
+
+						<video class='Overview_video2' src="../image/video/git_overview_eng.mp4" controls></video>
+					</div>
+
+
+				</div>
+
+
+			</div>
+
+		</div>
+	</div>
+	
+	<!-- footer Start -->
+	<?php include_once '../_inc/footer.html'; ?>
+	<!-- footer End -->
+	
+	<!-- Side Navigator Start -->
+	<?php include_once '../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!-- 모바일 sidenav 메뉴바 시작-->
+
+<div class="M_sidenav_container">
+	<div class="M_sidenav_box">
+		<div class="M_sidenav_top">
+			<div class="M_sidenav_logo">
+				<a href="<?php echo URL; ?>"><img src="<?php echo URL; ?>/image/common/mainlogo_black.png" /></a>
+			</div>
+			<div class="M_sidenav_btn" onclick="M_side_menu_close()">
+				<i class="fa-solid fa-x"></i>
+			</div>
+		</div>
+		<div class="M_sidenav_menu_box">
+			<div class="M_sidenav_menu_item">
+				<div class="M_sidenav_menu_title">
+					<div class="M_sidenav_menu">
+						<a href="javascript:;">COMPANY</a>
+					</div>
+					<div class="M_sidenav_menu">
+						<i class="fa-solid fa-angle-down"></i>
+					</div>
+
+				</div>
+				<div class="M_sidenav_menu_line"></div>
+				<div class="M_sidenav_menu_list_box">
+					<ul>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/company/ceo'; ?>">대표이사 인사말</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/company/overview'; ?>">사업개요</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/company/history'; ?>">연혁</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/company/ci'; ?>">CI</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/company/misstion'; ?>">미션과 비전</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/company/performance'; ?>">수상실적</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/company/certified'; ?>">국가인증 및 파트너인증</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/company/affiliated'; ?>">관계사</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/company/cooperative'; ?>">협력사</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/company/contribution'; ?>">사회공헌 활동</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="M_sidenav_menu_item">
+				<div class="M_sidenav_menu_title">
+					<div class="M_sidenav_menu">
+						<a href="javascript:;">PR CENTER</a>
+					</div>
+					<div class="M_sidenav_menu">
+						<i class="fa-solid fa-angle-down"></i>
+					</div>
+
+				</div>
+				<div class="M_sidenav_menu_line"></div>
+				<div class="M_sidenav_menu_list_box">
+					<ul>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/prcenter/notice'; ?>">공지사항</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/prcenter/news'; ?>">언론보도</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/prcenter/gitube'; ?>">영상</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/prcenter/event'; ?>">이벤트</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/prcenter/recruit'; ?>">채용</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="M_sidenav_menu_item">
+				<div class="M_sidenav_menu_title">
+					<div class="M_sidenav_menu">
+						<a href="javascript:;">SOLUTIONS</a>
+					</div>
+					<div class="M_sidenav_menu">
+						<i class="fa-solid fa-angle-down"></i>
+					</div>
+				</div>
+				<div class="M_sidenav_menu_line"></div>
+				<div class="M_sidenav_menu_list_box">
+					<ul>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/solutions/cloud'; ?>">CLOUD / INFRA</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/solutions/bigdata'; ?>">BIG DATA / AI</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/solutions/management'; ?>">MANAGEMENT</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/solutions/security'; ?>">SECURITY</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="M_sidenav_menu_item">
+				<div class="M_sidenav_menu_title">
+					<div class="M_sidenav_menu">
+						<a href="javascript:;">CONTACT US</a>
+					</div>
+					<div class="M_sidenav_menu">
+						<i class="fa-solid fa-angle-down"></i>
+					</div>
+				</div>
+				<div class="M_sidenav_menu_line"></div>
+				<div class="M_sidenav_menu_list_box">
+					<ul>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/contactus/directions'; ?>">오시는길</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/contactus/inquiry'; ?>">영업·기술·유지보수 문의</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="M_sidenav_menu_item">
+				<div class="M_sidenav_menu_title">
+					<div class="M_sidenav_menu">
+						<a href="javascript:;">ENGLISH</a>
+					</div>
+					<div class="M_sidenav_menu">
+						<i class="fa-solid fa-angle-down"></i>
+					</div>
+				</div>
+				<div class="M_sidenav_menu_line"></div>
+				<div class="M_sidenav_menu_list_box">
+					<ul>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/english/eoverview'; ?>">Overview</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/english/esolutions'; ?>">Solutions</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/english/eawards'; ?>">Awards and Achievements</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/english/epartner'; ?>">Partner</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/english/emarketing'; ?>">Marketing Activites</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/english/elocation'; ?>">Locations</a></li>
+						<li class="M_sidenav_menu_list"><a href="<?php echo URL.'/english/econtact'; ?>">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 모바일 sidenav 메뉴바 끝-->
+<!-- sidenav 시작 -->
+<div class='container_sidenav'>
+	<div class='sidenav_closebtn' onclick="new_sidenav_close()">
+		<!--  <img src="./image/common/sidenavclose.png" />  -->
+		<i class="fa-solid fa-x"></i>
+	</div>
+	<div class="sidenav_box">
+		<div class='sidenav'>
+			<div class='nav_item_box'>
+				<div class='nav_item_title'>
+					<a href="javascript:;">COMPANY</a>
+				</div>
+				<div class='nav_list_box'>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/company/ceo'; ?>">대표이사 인사말</a>
+					</div>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/company/overview'; ?>">사업개요</a>
+					</div>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/company/history'; ?>">연혁</a>
+					</div>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/company/ci'; ?>">CI</a>
+					</div>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/company/misstion'; ?>">미션과 비전</a>
+					</div>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/company/performance'; ?>">수상실적</a>
+					</div>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/company/certified'; ?>">국가인증 및 파트너인증</a>
+					</div>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/company/affiliated'; ?>">관계사</a>
+					</div>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/company/cooperative'; ?>">협력사</a>
+					</div>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/company/contribution'; ?>">사회공헌 활동</a>
+					</div>
+				</div>
+			</div>
+
+			<div class='nav_item_box'>
+				<div class='nav_item_title'>
+					<a href="javascript:;">PR CENTER</a>
+				</div>
+				<div class='nav_list_box'>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/prcenter/notice'; ?>">공지사항</a>
+					</div>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/prcenter/news'; ?>">언론보도</a>
+					</div>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/prcenter/gitube'; ?>">영상</a>
+					</div>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/prcenter/event'; ?>">이벤트</a>
+					</div>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/prcenter/recruit'; ?>">채용</a>
+					</div>
+				</div>
+			</div>
+
+			<div class='nav_item_box'>
+				<div class='nav_item_title'>
+					<a href="javascript:;">SOULTIONS</a>
+				</div>
+				<div id="sidenav_off" class='nav_list_box' >
+					<div class='nav_list_item'>
+						<div id="nav_soultion_title1" class='nav_soultion_title' >
+							<a href="javascript:;">CLOUD / INFRA</a>
+						</div>
+						<div id="nav_solution1" class='nav_soultion_box'>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/cloud/vmware'; ?>">VMware</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/cloud/delltechnologies'; ?>">Dell Technologies</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/cloud/cisco'; ?>">Cisco</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/cloud/netapp'; ?>">NetApp</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/cloud/purestorage'; ?>">Pure Storage</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/cloud/veeam'; ?>">Veeam</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/cloud/veritas'; ?>">Veritas</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/cloud/msazure'; ?>">Microsoft Azure</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/cloud/google'; ?>">Google Cloud Platform</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/cloud/naver'; ?>">Naver Cloud Platform</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/cloud/druva'; ?>">Druva</a>
+							</div>
+							<div id="nav_soultion_list_line" class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/cloud/alkira'; ?>">Alkira</a>
+							</div>
+						</div>
+					</div>
+
+					<div class='nav_list_item'>
+						<div id="nav_soultion_title2" class='nav_soultion_title' >
+							<a href="javascript:;">BIG DATA / AI</a>
+						</div>
+						<div id="nav_solution2" class='nav_soultion_box'>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/bigdata/cloudera'; ?>">Cloudera</a>
+							</div>
+						</div>
+					</div>
+
+					<div class='nav_list_item'>
+						<div id="nav_soultion_title3" class='nav_soultion_title' >
+							<a href="javascript:;">MANAGEMENT</a>
+						</div>
+						<div id="nav_solution3" class='nav_soultion_box'>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/management/clovirdaas'; ?>">Clovir VDI</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/management/clovirsm'; ?>">Clovir SM</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/management/clovircm'; ?>">Clovir CM</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/management/controlup'; ?>">ControlUp</a>
+							</div>
+							<div id="nav_soultion_list_line" class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/management/docusign'; ?>">DocuSign</a>
+							</div>
+						</div>
+					</div>
+
+					<div class='nav_list_item'>
+						<div id="nav_soultion_title4" class='nav_soultion_title' >
+							<a href="javascript:;">SECURITY</a>
+						</div>
+						<div id="nav_solution4" class='nav_soultion_box'>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/security/akamai'; ?>">Akamai</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/security/appm'; ?>">APPM</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/security/grippintower'; ?>">Grippin Tower</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/security/rsa'; ?>">RSA</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/security/menlo'; ?>">Menlo Security</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/security/sweeper'; ?>">Sweeper</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/security/securegate'; ?>">SecureGate</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/security/sentinelone'; ?>">SentinelOne</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/security/solidstep'; ?>">SolidStep</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/security/wizm/wizm'; ?>">wizM</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/security/sparrow'; ?>">Sparrow</a>
+							</div>
+							<div class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/security/quest'; ?>">Quest</a>
+							</div>
+							<div id="nav_soultion_list_line" class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/security/weedsblackbox'; ?>">Weeds BlackBox</a>
+							</div>
+							<div id="nav_soultion_list_line" class='nav_soultion_list'>
+								<a href="<?php echo URL.'/solutions/security/jtops'; ?>">J-TOPS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class='nav_item_box'>
+				<div class='nav_item_title'>
+					<a href="javascript:;">CONTACT US</a>
+				</div>
+				<div class='nav_list_box'>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/contactus/directions'; ?>">오시는길</a>
+					</div>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/contactus/inquiry'; ?>">영업·기술·유지보수 문의</a>
+					</div>
+				</div>
+			</div>
+			<div class='nav_item_box'>
+				<div class='nav_item_title'>
+					<a href="javascript:;">ENGLISH</a>
+				</div>
+				<div class='nav_list_box'>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/english/eoverview'; ?>">Overview</a>
+					</div>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/english/esolutions'; ?>">Solution</a>
+					</div>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/english/eawards'; ?>">Awards and Achievements</a>
+					</div>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/english/epartner'; ?>">Partner</a>
+					</div>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/english/emarketing'; ?>">Marketing Activities</a>
+					</div>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/english/elocation'; ?>">Locations</a>
+					</div>
+					<div class='nav_list_item'>
+						<a href="<?php echo URL.'/english/econtact'; ?>">Contact us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="side_nav_logo_box">
+			<div class="side_nav_logo">
+				<img src="<?php echo URL; ?>/image/common/mainlogo_black" />
+			</div>
+			<div class="side_nav_text">ⓒ 2022 굿모닝아이텍(주) All right reserved</div>
+		</div>
+	</div>
+</div>
+<!-- sidenav 끝 -->
+
+
+<!-- 사이드바 솔루션 리스트 스크립트  -->
+<script>
+$('.nav_soultion_title').on("mouseover",function(){
+	$(this).next().addClass("nav_soultion_box_show");
+})
+
+$(".nav_list_item").on("mouseleave",function(){
+	$(this).children(".nav_soultion_box").removeClass("nav_soultion_box_show");
+})
+
+</script>

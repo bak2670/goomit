@@ -1,0 +1,1337 @@
+<?php
+	include_once("./_common.php");
+	$_category1 = 'COMPANY';
+	$_category2 = '연혁';
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("../_inc/head.html"); ?>
+	<link href="<?php echo URL; ?>/_css/company.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/m_company.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/common.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/detail_page.css" rel="stylesheet" type="text/css">
+	
+	<link href="<?php echo URL; ?>/_css/category.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo URL; ?>/_css/font-face.css" rel="stylesheet" type="text/css">
+	
+	<script src="<?php echo URL; ?>/js/common.js"></script>
+	<script src="<?php echo URL; ?>/js/category.js"></script>
+	<script src="<?php echo URL; ?>/js/company.js"></script>
+	
+	<script>
+		new WOW().init();
+		$(document).ready(function() {
+			top_nav_over();
+			top_nav_out();
+			history_btn();
+			AOS.init();
+		});
+	</script>
+	<title>굿모닝아이텍(주) - 유저페이지[데모]</title>
+</head>
+<body>
+	<!-- Head Navigator Start -->
+	<?php include_once '../_inc/head_nav.html'; ?>
+	<!-- Head Navigator End -->
+
+	<!-- top background 시작 -->
+	<div class="main_top_background">
+		<div class="background_text_box only-pc">
+			<p class="company_background_text1">COMPANY</p>
+			<p class="company_background_text2">우리의 고객 한분,한분이 모두 좋은 아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="M_background_text_box only-mobile">
+			<p>COMPANY</p>
+			<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+			<p>아침을 맞이하기를 기대합니다.</p>
+		</div>
+		<div class="top-background-image-box">
+			<img src="<?php echo URL; ?>/image/common/bbs_background/company.jpg" alt="" />
+		</div>
+	</div>
+	<!-- top background 끝 -->
+
+	<div class="detail-wrap">
+		<div class="container">
+			<!-- Detail Category Start -->
+			<?php include_once '../_inc/category_nav.html'; ?>
+			<!-- Detail Category End -->
+
+			<div class='History_container'>
+				<p class="Company_top_text">
+					<span>COMPANY</span>
+				</p>
+				<h1 class='overview_title'>
+					<strong>연혁</strong>
+				</h1>
+			
+				<div class='history_title'>
+					<div class="history_title_text">업계 1위의 서비스와 최고급 기술로 인정을 받아온 시간입니다.<br>이에 만족하지 않고 더욱 열정을 담아 도약하는<br>기업이 되겠습니다.</div>
+					<div class="history_title_img"><img src="../image/common/history.png" /></div>
+				</div>
+
+				<div class='History_tab'>
+					<div class='tab_btn his_tab1 btn_show'>2022년</div>
+					<div class='tab_btn his_tab1 '>2021년</div>
+					<div class='tab_btn his_tab2'>2020년</div>
+					<div class='tab_btn his_tab3'>2019년</div>
+					<div class='tab_btn his_tab4'>2017~2018년</div>
+					<div class='tab_btn his_tab5'>2016~2014년</div>
+					<div class='tab_btn his_tab6'>2013~2011년</div>
+					<div class='tab_btn his_tab7'>2010~2008년</div>
+					<div class='tab_btn his_tab8'>2007~2004년</div>
+				</div>
+				
+				
+				<div class="his_table tab1 show-table">
+					<table class="history_type" border="0" summary="회사연혁" width="100%" cellspacing="0">
+						<tbody>
+							<tr>
+								<th class="top1" rowspan="11" scope="row" width="20%">2022</th>
+								<th class="top" scope="row" width="10%">7</th>
+								<td class="top">[수상] VMware FY22 최고 실적 파트너(Best Performance) '올해의 파트너상' 수상</td>
+							</tr>
+							<tr>
+								<th scope="row">6</th>
+								<td>[인증취득] VMware 클라우드 네이티브 MSC 획득</td>
+							</tr>
+							<tr>
+								<th scope="row">5</th>
+								<td>굿모닝아이텍, 나주지사 개소
+								[제휴·협약]인포매티카와 파트너십 체결
+								[인증취득] 동반성장위원회 ESG 우수 중소기업 선정</td>
+								</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td>굿모닝아이텍, 영남지사 확장 이전
+									[인증취득] VMware 파트너 프로그램 '이그나이트 Digital Workspace, Modem Apps'완수
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>[제휴·협약] 전자서명 솔루션 도큐사인과의 파트너 계약 체결</td>
+							</tr>
+							<tr>
+								<th scope="row">1</th>
+								<td>[제휴·협약] 투이컨설팅과 전략적 사업 제휴 협약</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="his_table tab1">
+					<table cellspacing="0" class='history_type'>
+						<tbody>
+							<tr>
+								<th class="top1" rowspan="11" scope="row" width="20%">2021</th>
+								<th class="top" scope="row" width="10%">12</th>
+								<td class="top">[수상] NetApp 올해의 파트너상 수상
+									[수상] 2021년 대한민국 신성장경영대장 대통령표창 수상
+									[수상] 2021년 일자리 창출 유공 정부 포상
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">11</th>
+								<td>환경부 주관 '고고챌린지' 캠페인 릴레이 참여</td>
+							</tr>
+							<tr>
+								<th scope="row">10</th>
+								<td>굿모닝아이텍, 수원사무소 확장 이전하여 경기지사 개소</td>
+							</tr>
+							<tr>
+								<th scope="row">7</th>
+								<td>[수상] "제10회 정보보호의 날" 과학기술정보통신부 장관표창 수상</td>
+							</tr>
+							<tr>
+								<th scope="row">6</th>
+								<td>굿모닝아이텍, 중부, 영남 이어 동부 지사 개소
+									[수상] “2021 모범 중소기업인” 산업포장 수상
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">5</th>
+								<td>[사회공헌] 사회공헌활동 – 마포구청, 법무보호복지공단, 용인시청, 중소기업사랑나눔재단으로 사랑의 쌀 나눔 1,000kg, 300만원 기부
+									[수상] 한국법무보호복지공단에서 소외계층의 복지 증진과 범죄예방 활동에 기여한 공로로 감사장 수여
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td>[제휴&amp;협약] 자율형 사이버 보안 솔루션 "SentineOne"정보보안 사업 전개</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>[수상] 2020년 VMware 최고 실적 파트너상 수상
+									[수상] VMware 2021회계년도(FY21) 국내 최고 매출(Partner of the year) 실적 파트너상 수상
+									[인증취득] 클라우데라 골드 파트너로 승격
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+				<div class="his_table tab2" >
+					<table class="history_type" border="0" summary="회사연혁" width="100%"
+						cellspacing="0">
+						<tbody>
+							<tr>
+								<th class="top1" rowspan="11" scope="row" width="20%">2020</th>
+								<th class="top" scope="row" width="10%">12</th>
+								<td class="top">[사회공헌] 사회공헌활동 – 좋은친구들, 마포구청, 한국법무보호복지공단으로
+									사랑의 쌀 나눔 3,800kg 기부</td>
+							</tr>
+							<tr>
+								<th scope="row">8</th>
+								<td>[인증취득] ISO 9001 (품질경영시스템) 인증취득</td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td>[인증취득] VM웨어 파트너 프로그램 ‘이그나이트 HCI’ 완수</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>[제휴·협약] 네이버비즈니스플랫폼(NBP) – 네이버클라우드플랫폼(NCP) 파트너 협약 제휴 체결</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>[사회공헌] 사회공헌활동 – 무료급식소(참좋은친구들) 사랑의 쌀 나눔 500kg 기부</td>
+							</tr>
+							<tr>
+								<th scope="row">1</th>
+								<td>[수상] VMware 2019년 우수파트너 – Top Performer of the year 수상<br />
+									[수상] Veeam – 최고 매출 파트너상 수상
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="his_table tab3" >
+					<table class="history_type" border="0" summary="회사연혁" width="100%"
+						cellspacing="0">
+						<tbody>
+							<tr>
+								<th class="top1" rowspan="11" scope="row" width="20%">2019</th>
+								<th class="top" scope="row" width="10%">12</th>
+								<td class="top">[수상] Red Hat – Top Reference Architecture
+									수상</td>
+							</tr>
+							<tr>
+								<th scope="row">11</th>
+								<td>[수상] 제6회 코리아 빅데이터 어워드 공로자 부문 중소벤처기업부 장관상 수상<br />
+									[제휴·협약] 퀘스트소프트웨어 코리아(이하 Quest)와 파트너 협약 제휴 체결
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">9</th>
+								<td>[수상] 고용친화 모범경영대상 수상<br /> 신한은행 클라우드 네이티브 아키텍처 기반 글로벌
+									대외계 시스템 구축
+								</td>
+							</tr>
+							<tr>
+								<th rowspan="2" scope="row">8</th>
+								<td>멘로시큐리티 원격 브라우저 격리 솔루션 국내 공급</td>
+							</tr>
+							<tr>
+								<td>마이크로소프트(이하 MS)와 CSP 파트너 제휴 협약 체결</td>
+							</tr>
+							<tr>
+								<th scope="row">7</th>
+								<td>Cisco ‘Cisco HX Authorization’인증 취득</td>
+							</tr>
+							<tr>
+								<th scope="row">5</th>
+								<td>스틸리언, 모바일 앱 보호 솔루션 ‘앱수트(AppSuit)’ 정보보안 컨설팅 사업 전개</td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td>[수상] VMware Partner of the Year emerging market상 수상</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>대신증권, 굿모닝아이텍과 VM웨어 기반 VDI 시스템 구축</td>
+							</tr>
+							<tr>
+								<th scope="row">1</th>
+								<td>대전소방본부 119종합상황실, ‘119 긴급구조 표준시스템 지령접수대 가상화시스템’을 구축</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+
+
+
+
+				<div class="his_table tab4">
+					<table class="history_type" border="0" summary="회사연혁" width="100%"
+						cellspacing="0">
+						<tbody>
+							<tr>
+								<th class="top1" rowspan="12" scope="row" width="20%">2018</th>
+								<th class="top" scope="row" width="10%">12</th>
+								<td class="top"><strong>[수상]영우디지탈 Best
+										Partner상(Data Center 부문)</strong><br /> <strong>[수상]Cisco 총판사
+										아이넷뱅크로부터 The Most Promising Partner of the Year상 수상</strong><br /> <strong>[수상]시스코
+										하이퍼플렉스 세일즈 피치 컨테스트 1위</strong><br /> <strong>[수상]2018 대한민국
+										산업대상 수상(경영혁신 부문)</strong><br /> 신한은행, Red Hat(Openshift) 글로벌 대외계 시스템
+									수주<br /> 한국주택금융공사, HF 정보보안 클라우드 환경 수주<br /> 대한상의, ‘일하기 좋은
+									중소기업’ 2년 연속 선정<br /> VMware 마스터 서비스 자격 인증 획득(네트워크 가상화 부문)</td>
+							</tr>
+
+							<tr>
+								<th scope="row">11</th>
+								<td>고려대학교, VMware 서버가상화 공급 아시아나IDT, VMware&nbsp;공급<br />
+									선박해양플랜트연구소, VMware STD 4CPU, vCenter 1copy 서버 가상화 구축<br />
+									르노삼성, VEEAM Digital Factory 구축<br /> 삼성화재, ‘콜, 차세대 VMware 라이선스
+									도입’ 공급<br /> 포스코, Cisco UCS서버 및 가상화SW 공급<br />
+									LG,&nbsp;VMware 솔루션 구성<br /> 법무부, 한싹 망연계, APPM 개인정보보호 및 사이버안전
+									관리체계 강화 4단계 사업
+								</td>
+							</tr>
+
+							<tr>
+								<th scope="row">10</th>
+								<td>현대글로비스, 정보기술 보안수준 향상(VDI 고도화)<br /> 롯데멤버스,
+									NetApp,Cisco VDI 고도화(망연계, 스토리지)<br /> KDB인프라자산운용, 서버가상화 구축<br />
+									에스케이하이닉스, VMware, Clovir VDI 전사 데스크톱 가상화&nbsp;작업<br /> 부산시설공단,
+									교량사업단 계측시스템 고도화 사업 서버 가상화 구축<br /> 롯데멤버스 관련, 스토리지 공급 외 1건<br />
+									동서석유화학, 사내 DATA 보관시스템용 Disk 증설<br /> 삼성바이오로직스, Veeam 제 3공장 인프라
+									구축<br /> 포스코,&nbsp;Cisco, VMware, Veritas 공급 외 3건<br />
+									케이뱅크,&nbsp;Cloudera 빅데이터 hadoop Cluster 고도화 사업
+								</td>
+							</tr>
+
+							<tr>
+								<th scope="row">9</th>
+								<td>한국문화정보원, VMware&nbsp;서버가상화 증설<br /> 에스케이하이닉스,
+									물품대(경기이천)/Cube의 Redis시스템보완<br /> 현대기아자동차, vSphere STD 11copy
+									서버 증설 외 1건<br /> 삼기오토모티브, 삼기오토모티브 서버가상화 교체 도입<br /> 한국석유공사,
+									vSphere STD 6CPU/ VCS 2COPY renewal 가상화 솔루션 업그레이드 공급<br />
+									포스코아이씨티, VMware, Cisco 공급 외 2건<br /> 삼성전자 SDC ADC, S1 DMS
+									Upgrade 1st, Memory 17 DBG 2.0 공급 외 1건<br /> 대법원, 사법업무전산화
+									노후전산장비 교체사업<br /> 삼성전자, VMware 라이선스 件 포스코, Cisco UCS 공급
+								</td>
+							</tr>
+
+							<tr>
+								<th scope="row">8</th>
+								<td>롯데시네마, 플래그십 스토어 스마트 챗봇 개발<br /> SK엠앤서비스, UCS BL3,
+									NetApp 5TB VDI 추가 구축 사업<br /> 삼성화재해상보험,&nbsp;VS STD 48, VC STD
+									2 공급<br /> 유한양행, vSphere 가상화 증설 사업
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">7</th>
+								<td><strong>[수상]동아일보 2018 대한민국 산업대상 ‘경영혁신부문 대상’ 수상</strong><br />
+									에스케이하이닉스, UCS BL 7 공급<br /> KB국민카드, 빅데이터허브 기반 데이타사이언스플랫폼 구축<br />
+									오산시청,Cloudera 빅데이터 하둡관리 소프트웨어 공급<br /> 삼성화재,&nbsp;업무용 VDI 고도화
+									도입 UCS/NSX/Clovir VDI 외 1건<br /> 중구청,&nbsp;네트워크스위치_서버가상화 네트워크
+									스위치 외 1건<br /> 삼성카드, NUTANIX VMware 구성<br /> 국가정보자원관리원,
+									vSphere 공급<br /> 국립암센터, View 300 User 공급</td>
+							</tr>
+							<tr>
+								<th scope="row">6</th>
+								<td>현대글로비스, GLOVIS TURKEY ERP REFRESH(SW)&nbsp;공급<br />
+									전문건설공제조합, 2018년 노후 정보자산 교체 사업<br /> 비스텔, SKCC_Cloud Z
+									Edge(비스텔)구축<br /> 카카오뱅크, Cloudera&nbsp;빅데이터 플랫폼 구축 및 지원<br />
+									문화원연합회, VMware 서버가상화<br /> 대전시청 소방본부,&nbsp;VMware Horizon
+									view, Hyperflex 긴급구조표준시스템 노후장비 교체<br /> 클라우드넷코리아, VMware, HP,
+									Veeam, NetApp 서버 가상화 공급<br /> 대구카톨릭대학교 칠곡병원,&nbsp;vSphere STD
+									2CPU, HZ VIEW 140USER 공급<br />
+									에스케이하이닉스,&nbsp;Cloudera,&nbsp;vSphere ENT +, 44 공급<br />
+									게이트고메코리아, VMware, Veeam 가상화 인프라 구축<br /> 보험개발원, Horizon View
+									가상화 시스템 증설
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">5</th>
+								<td>에스케이하이닉스, VMware Clovir 공급<br /> 한국스탠다드차타드은행, Akamai
+									공급<br /> 삼성에스디에스, VMware 공급<br /> 스마일게이트, Cloudera 공급<br />
+									포스코아이씨티, VMware, Veritas NetBackup, HA 공급 외 1건<br /> 삼성증권,
+									삼성증권 전사 녹취 데이터 텍스트 전환 기반 구축 사업
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td>아모레퍼시픽, Cloudera 공급<br /> 한솔피엔에스, vSphere ENT, VEEAM
+									공급<br /> 에스케이하이닉스, 자동화시스템 구축<br /> 한국품질재단, Veeam Backup 구축<br />
+									포스코아이씨티, 제철소 서버가상화 프로젝트 VMware 공급<br /> 한국주택금융공사, 클라우드기반
+									데스크탑가상화 시스템 구축<br /> 대한유화, 메인서버 교체사업
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>에스케이하이닉스, 서버가상화 기술지원 및 구축&nbsp;외 1건<br /> 현대카드, API
+									플랫폼 구축을 위한 인프라 공급<br /> 신한금융투자, vSphere, vCenter 공급<br />
+									현대모비스, PLM 인프라 구축<br /> 삼성화재해상보험, 빅데이터 플랫폼 구조 개선 SW 공급<br />
+									포스코아이씨티, 오피스봇 서비스 공급<br /> 에스케이하이닉스, 자동화시스템 구축<br />
+									대한유화,&nbsp;메인서버 교체사업
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>에스케이하이닉스, Clean PC VDI,&nbsp;Firmware 개발자 VDI 환경 구축 외
+									1건<br /> 아이티정보기술, 선박해양플랜트연구소 HZ VIEW 100USER 구축<br /> 롯데정보통신,
+									VMware 공급<br /> 이테크시스템, 선박해양플랜트연구소&nbsp;HZ VIEW 100USER 구축<br />
+									경희대학교 국제캠퍼스, VMware, Veeam 공급<br /> 포스코대우, 보안강화용 OS백업 솔루션 공급
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">1</th>
+								<td>서울과학기술대학교, Cisco 정보인프라 고도화<br /> 사업한국국제교류재단, 재해복구시스템
+									구축<br /> 포스코아이씨티, Cisco UCS서버 공급 외 1건<br /> 대한유화, 메인서버 교체사업
+									한국투자캐피탈, 서버가상화 고도화<br /> 우리은행, 인프라취약점 분석 솔루션 공급<br />
+									삼성전기,&nbsp;RPT DW/DM/ETL 운영 외 2건<br /> 에스케이하이닉스, Cisco 실장
+									서버,&nbsp;VMware vSphere 공급 외 16건
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<table class="history_type" border="0" summary="회사연혁" width="100%"
+						cellspacing="0">
+						<tbody>
+							<tr>
+								<th class="top1" rowspan="12" scope="row" width="20%">2017</th>
+								<th class="top" scope="row" width="10%">12</th>
+								<td class="top">공항철도, 서버가상화, VMware vSphere 공급 외 50건<br />
+									한국주택금융공사, 데스크톱가상화 VMware View 공급 외 8건<br /> 충남대학교병원, Cisco UCS
+									공급 외 5건<br /> 뉴스킨코리아, NetApp 스토리지 공급 외 3건<br /> 건강보험심사평가원,
+									Veritas 공급 외 4건<br /> 한국생명공학연구원, 빅데이터 프로젝트 공급 1건<br /> 해군본부,
+									APPM 공급 외 8건
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">11</th>
+								<td>한국인터넷진흥원, 서버가상화 프로젝트 VMware Sphere 공급 외 13건<br />
+									대명홀딩스, 데스크톱가상화 VMware View 공급 1건<br /> NH저축은행, 백업시스템 프로젝트,
+									NetApp 스토리지 공급 외 3건<br /> 포스코, Veritas 공급 외 3건<br /> 대신증권,
+									Cisco UCS 공급 외 1건<br /> 스마일게이트, 빅데이터 프로젝트 공급 외 1건<br />
+									기아자동차, Veeam 공급 1건<br /> 창원경상대학교병원, APPM 공급 외 2건
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">10</th>
+								<td>포항공과대학교, 서버가상화 프로젝트 VMware vSphere 공급 외 11건<br />
+									공무원연금공단, 데스크톱가상화 VMware View 공급 외 3건<br /> 삼성카드, NetApp 스토리지
+									공급 외 1건<br /> 한양대학교, APPM 공급 1건
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">9</th>
+								<td>정보통신정책연구원, 서버가상화, VMware vSphere 공급 외 17건<br /> 현대모비스,
+									데스크톱가상화 VMware View 공급 1건<br /> 한양대학교, Cisco UCS 공급 2건<br />
+									SBI저축은행, APPM 공급 외 1건<br /> 포스텍, 빅데이터 프로젝트 공급 1건
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">8</th>
+								<td>캐논코리아, 서버가상화 프로젝트 VMware Sphere 공급 외 17건<br /> 한화투자증권,
+									백업시스템 프로젝트, Veritas NetBackup 공급 외 1건<br /> 스마트그리드사업단, Cisco
+									UCS 공급 외 2건<br /> 한국라이프생명보험, 빅데이터 프로젝트 공급 외 2건<br /> 더존비즈온,
+									APPM 공급 외 1건<br /> 씨제이올리브네트웍스, OTP 공급 1건
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">7</th>
+								<td>삼성에스디에스, 서버가상화 프로젝트 VMware vSphere 공급 외 10건<br />
+									한국신용정보원, 데스크톱가상화 VMware View 공급 외 2건<br /> 한국시설안전공단, 백업시스템
+									프로젝트, Veritas Infoscale 공급 외 1건<br /> 현대오씨아이 주식회사, Cisco UCS
+									공급 1건<br /> HSBC은행, NetApp 스토리지 공급 1건<br /> 한양대학교, APPM 공급 외
+									1건
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">6</th>
+								<td>대법원, 서버가상화, VMware vSphere 공급 외 17건<br /> 롯데멤버스,
+									데스크톱가상화 VMware View 공급 2건<br /> 하동군청, Cisco UCS 공급 외 1건<br />
+									삼성카드, NetApp 스토리지 공급 외 1건<br /> 효성굿스프링스, 백업시스템 프로젝트, Veritas
+									공급 외 3건<br /> 카카오뱅크, APPM 공급 외 6건
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">5</th>
+								<td>현대캐피탈, 서버가상화 프로젝트 VMware Sphere 공급 외 8건<br />
+									씨제이올리브네트웍스, 데스크톱가상화 VMware View 공급 1건<br /> NH저축은행, 백업시스템
+									프로젝트, Veritas NetBackup 공급 1건<br /> 대통령기록관, Cisco UCS 공급 외 2건<br />
+									삼성바이오로직스, Veeam 공급 1건<br /> 하나카드, APPM 공급 1건
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td>서울과학기술대학교, 서버가상화 프로젝트 VMware vSphere 공급 외 7건<br />
+									신한금융투자, 데스크톱가상화 VMware View 공급 외 3건<br /> 한양대학교, NetApp 스토리지
+									공급 1건<br /> 한국생명공학연구원, 빅데이터 프로젝트 공급 1건
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>국가보안기술연구소, 서버가상화, VMware vSphere 공급 외 6건<br /> 현대다이모스,
+									데스크톱가상화 VMware View 공급 1건<br /> JTBC PLUS, NetApp 스토리지 공급 외 1건<br />
+									SK하이닉스, Cisco UCS 공급 1건<br /> 포스코, 백업시스템 프로젝트, Veritas
+									Infoscale 공급 1건<br /> 한국원자력통제기술원, OTP 공급 1건
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>한국투자공사, 서버가상화 프로젝트 VMwarev Sphere 공급 외 3건<br />
+									에너지경제연구원, 데스크톱가상화 VMware View 공급 외 3건<br /> 국립한글박물관, 백업시스템
+									프로젝트, Veritas NetBackup 공급 1건<br /> 한국투자공사, Cisco UCS 공급 외 1건
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">1</th>
+								<td><strong>[수상] VMware 최고 매출 파트너상 수상</strong><br />
+									에릭슨엘지, 서버가상화 프로젝트 VMware vSphere 공급 외 3건<br /> 포스코, Cisco UCS
+									공급 1건 국방과학연구소, APPM 공급 1건<br /> 부산시청, 빅데이터 프로젝트 Parstream 공급
+									1건</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+				<div class="his_table tab5">
+					<table class="history_type" border="0" summary="회사연혁" width="100%"
+						cellspacing="0">
+						<tbody>
+							<tr>
+								<th class="top1" rowspan="10" scope="row" width="20%">2016</th>
+								<th class="top" scope="row" width="10%">12</th>
+								<td class="top"><strong>[수상] 공공솔루션마켓 2016
+										‘정부정보화협의회장 공로상’ 수상</strong><br /> <strong>[수상] Cisco 2016
+										Partner Award ‘Data Center Sales of the Year’ 수상</strong></td>
+							</tr>
+							<tr>
+								<th scope="row">10</th>
+								<td><strong>[수상] 일자리창출 유공 ‘장관상’ 표창<br /> [수상]
+										Cisco FY17 ‘Best Data Center Reseller’ 수상
+								</strong></td>
+							</tr>
+							<tr>
+								<th scope="row">8</th>
+								<td>유한양행, 서버가상화 프로젝트 vSphere 공급 외 10건<br /> 현대케미칼, 데스크탑가상화
+									프로젝트 VMware View 공급 외 1건<br /> 하이트진로, 백업시스템 프로젝트 NetBackup 공급<br />
+									코리안리재보험, 스토리지 증설 프로젝트 NetApp 공급 외 2건<br /> SK하이닉스, Cisco UCS
+									공급 외 1건<br /> 김해시청, 망연계 시스템 CrossNet 공급 외 3건<br /> 현대중공업, MS
+									OS라이선스 및 OTP 도입
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">7</th>
+								<td>경찰병원, 서버가상화 프로젝트 vSphere 공급 외 13건<br /> 현대오일뱅크,
+									데스크탑가상화 프로젝트 VMware View 공급외 1건<br /> 라이나생명보험, 백업시스템 프로젝트
+									NetBackup 공급 외 2건<br /> 삼성카드㈜, 스토리지 증설 프로젝트 NetApp 공급 외 3건<br />
+									대신증권㈜, Cisco UCS 공급 외 4건<br /> 국방과학연구소, 빅데이터 프로젝트 관련 Dell
+									Sever 공급<br /> ING생명보험, 망연계 시스템 CrossNet 공급 외 1건
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">6</th>
+								<td>국가보안기술연구소, 서버가상화 프로젝트 vSphere 공급 외 15건<br /> 코리안리재보험,
+									데스크탑가상화 프로젝트 VMware View 공급 외 2건<br /> 국토교통과학기술진흥원, 백업시스템 프로젝트
+									NetBackup 공급<br /> SK가스, 스토리지 증설 프로젝트 NetApp 공급 외 6건<br />
+									오산시청, Cisco UCS 공급 외 4건<br /> 하나자산신탁, 망연계 시스템 CrossNet 공급 외 1건<br />
+									축산물품질평가원, 망연계 시스템 CrossNet 공급 대신증권, OTP 도입
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">5</th>
+								<td><strong>[수상] 2016 글로벌 상용 SW 명품대전 ‘미래창조과학부장관상’
+										수상</strong><br /> 근로복지공단, 서버가상화 프로젝트 vSphere 공급 외 11건<br /> 대신증권㈜,
+									데스크탑가상화 프로젝트 VMware View 공급 외 3건<br /> 한국몰렉스, 백업시스템 프로젝트
+									NetBackup 공급<br /> 삼성증권, 스토리지 증설 프로젝트 NetApp 공급 외 1건<br />
+									공무원연금공단, Cisco UCS 공급 외 5건</td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td>에스원, 서버가상화 프로젝트 vSphere 공급 외 9건<br /> 전국은행연합회, 데스크탑가상화
+									프로젝트 VMware View 공급<br /> 서울과학기술대학교, 백업시스템 프로젝트 NetBackup 공급 외
+									3건<br /> 바르질라마린시스템즈코리아, riverbed WAN가속기 공급
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>두산정보통신, 서버가상화 프로젝트 vSphere 공급 외 9건<br /> 대구은행, 데스크탑가상화
+									프로젝트 VMware View 공급 외 3건<br /> 인천시 수운영센터, 백업시스템 프로젝트 NetBackup
+									공급 외 2건<br /> 한국정보화진흥원, 스토리지 증설 프로젝트 NetApp 공급 외 4건<br />
+									동국대학교, Cisco UCS 공급<br /> 축산물품질평가원, 망연계 시스템 CrossNet 공급<br />
+									동서석유화학, MS OS라이선스 및 OTP 도입
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>한국수력원자력, 서버가상화 프로젝트 vSphere 공급 외 3건<br /> 동서석유화학,
+									데스크탑가상화 프로젝트 VMware View 공급 외 1건<br /> 신한금융투자, 백업시스템 프로젝트
+									NetBackup 공급 외 3건
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">1</th>
+								<td><strong>[수상] 제10회 CIOCISO AWARDS 2015 베스트 파트너
+										대상 수상</strong><br /> 서울대학교, 서버가상화 프로젝트 vSphere 공급 외 1건<br /> 국립암센터,
+									데스크탑가상화 프로젝트 VMware View 공급 외 1건<br /> 포스코아이씨티, 백업시스템 프로젝트
+									NetBackup 공급 외 2건<br /> 하나카드, 망연계 프로젝트 공급 1건<br /> 의약품안전연구원,
+									파스트림 프로젝트 공급 1건</td>
+							</tr>
+							<tr>
+								<th class="top1" rowspan="12" scope="row" width="20%">2015</th>
+								<th class="top" scope="row" width="10%">12</th>
+								<td class="top">국립국악원, 서버가상화 프로젝트 vSphere 공급 외 53건<br />
+									울산과학기술원, 데스크탑가상화 프로젝트 VMware View 공급 외 14건<br /> 비씨카드, 백업시스템
+									프로젝트 NetBackup 공급 외 8건<br /> 삼성증권, 스토리지 증설 프로젝트 NetApp 공급 외 7건<br />
+									하나펀드서비스, Cisco UCS 공급 외 16건
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">11</th>
+								<td><strong>[수상] 2015 대한민국 고객만족 서비스 경영대상_기업부문 인증 및
+										수상</strong><br /> [수상] VMware 최고 매출 파트너상(국내)(The Greatest Revenue
+									partner of the year)<br /> [수상] VMware 베스트 파트너 세일즈상(국내)(VMware
+									Best Partner Sales Rep of the Year)<br /> [수상] 브레인네트워크포럼 Best
+									Charity Award 수상<br /> [수상]ICT플랫폼학회 공로상 수상<br /> [수상] Cisco
+									APJ Partner Connection 2015, ‘Cisco UCS서버 코리아 판매 1위’상 수상<br />
+									한국생산성본부, 서버가상화 프로젝트 vSphere 공급 외 22건<br /> 청주시청(청원구청), 데스크탑가상화
+									프로젝트 VMware View 공급 외 3건<br /> 삼성SDI, 백업시스템 프로젝트 NetBackup 공급
+									외 3건<br /> LG전자, riverbed WAN가속기 공급 외 1건</td>
+							</tr>
+							<tr>
+								<th scope="row">10</th>
+								<td>현대모비스, 서버가상화 프로젝트 vSphere 공급 외 15건<br /> 현대오일뱅크,
+									데스크탑가상화 프로젝트 VMware View 공급 외 1건<br /> 롯데하이마트, 스토리지 증설 프로젝트
+									NetApp 공급 외 1건<br /> SK하이닉스, Cisco UCS 공급 외 1건<br /> 산은캐피탈,
+									백업시스템 프로젝트 NetBackup 공급 외 3건<br /> 하나자산신탁, 망연계 시스템 CrossNet 공급
+									외 1건<br /> 포스코ICT, riverbed WAN가속기 공급
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">9</th>
+								<td>한국전통문화대학교, 서버가상화 프로젝트 vSphere 공급 외 12건<br />
+									창원경상대학교병원, 데스크탑가상화 프로젝트 VMware View 공급 외 1건<br /> 롯데멤버스, 스토리지
+									증설 프로젝트 NetApp 공급 외 2건<br /> 한국과학기술고등과학원, Cisco UCS 공급 외 1건<br />
+									신한금융투자㈜, 백업시스템 프로젝트 NetBackup 공급 외 2건<br /> 비씨카드, 망연계 시스템
+									CrossNet 공급 외 1건
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">8</th>
+								<td><strong>[수상] 2015 대한민국 미래성장동력대상 ‘빅데이터부문’ 수상 </strong><br />
+									한국문화정보원, 서버가상화 프로젝트 vSphere 공급 외 13건<br /> 국방과학연구소, 데스크탑가상화
+									프로젝트 VMware View 공급 외 3건<br /> 동국대학교, Cisco UCS 공급<br />
+									비씨카드, 백업시스템 프로젝트 NetBackup 공급 외 1건<br /> LG전자, riverbed WAN가속기
+									공급</td>
+							</tr>
+							<tr>
+								<th scope="row">7</th>
+								<td>동희산업, 서버가상화 프로젝트 vSphere 공급 외 10건<br /> 창원경상대학교병원,
+									데스크탑가상화 프로젝트 VMware View 공급 외 1건<br /> 국가보안기술연구소, 스토리지 증설 프로젝트
+									NetApp 공급<br /> SK하이닉스, Cisco UCS 공급 외 1건<br /> 포스코아이씨티,
+									백업시스템 프로젝트 NetBackup 공급<br /> LG전자, riverbed WAN가속기 공급
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">6</th>
+								<td><strong>[수상] 제2회 코리아빅데이터어워드 경영자부문 최우우상 ‘통계청장상’
+										수상</strong><br /> SK하이닉스, 서버가상화 프로젝트 vSphere 공급 외 16건<br /> 합동참모본부,
+									데스크탑가상화 프로젝트 VMware View 공급 외 1건<br /> 삼성증권, 스토리지 증설 프로젝트
+									NetApp 공급 외 4건<br /> 국립암센터, Cisco UCS 공급 외 1건<br /> 한국전력공사,
+									백업시스템 프로젝트 NetBackup 공급<br /> ING생명보험, 망연계 시스템 CrossNet 공급<br />
+									LG전자, riverbed WAN가속기 공급 외 2건</td>
+							</tr>
+							<tr>
+								<th scope="row">5</th>
+								<td>삼성화재보험, 서버가상화 프로젝트 vSphere 공급 외 6건<br /> 울산과학기술대학교,
+									데스크탑가상화 프로젝트 VMware View 공급<br /> 롯데정보통신, 스토리지 증설 프로젝트 NetApp
+									공급 외 1건<br /> 산은캐피탈, 백업시스템 프로젝트 NetBackup 공급 외 2건<br /> 코나아이,
+									Cisco UCS 공급<br /> 롯데캐피탈, 망연계 시스템 CrossNet 공급
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td>삼성에스디에스, 서버가상화 프로젝트 vSphere 공급 외 13건<br /> 신한금융투자,
+									데스크탑가상화 프로젝트 VMware View 공급<br /> 삼성카드, 스토리지 증설 프로젝트 NetApp 공급
+									외 3건<br /> SK텔레콤, Cisco UCS 공급<br /> CJ, riverbed WAN가속기 공급
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>근로복지공단본부, 서버가상화 프로젝트 vSphere 공급 외 12건<br /> 현대오토에버,
+									데스크탑가상화 프로젝트 VMware View 공급<br /> 대우증권, 스토리지 증설 프로젝트 NetApp 공급<br />
+									한화투자증권, 백업시스템 프로젝트 NetBackup 공급 외 2건<br /> 대우증권, Cisco UCS 공급
+									망연계 시스템 CrossNet 공급 외 1건
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>서울대학교, 서버가상화 프로젝트 vSphere 공급 외 4건<br /> 국립암센터, 데스크탑가상화
+									프로젝트 VMware View 공급 외 2건<br /> SK하이닉스, Cisco UCS 공급<br />
+									한국농촌경제연구원, 백업시스템 프로젝트 NetBackup 공급 외 2건
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">1</th>
+								<td>현대(카드,커머셜,캐피탈), 서버가상화 프로젝트 vSphere 공급 외 4건<br /> 안산시청,
+									데스크탑가상화 프로젝트 VMware View 공급 외 2건<br /> 삼성카드, 스토리지 증설 프로젝트
+									NetApp 공급 외 1건<br /> 한국전자통신연구원(ETRI), Cisco UCS 공급 외 1건
+								</td>
+							</tr>
+							<tr>
+								<th class="top1" rowspan="12" scope="row" width="20%">2014</th>
+								<th class="top" scope="row" width="10%">12</th>
+								<td class="top"><strong>[수상] 이주찬 대표, ‘ROTC 리더스월드’
+										ICT부문 수상</strong><br /> 건강보험심사평가원, 서버가상화 프로젝트 vSphere 공급 외 37건<br />
+									국세청, 데스크탑가상화 프로젝트 VMware View 공급 외 12건<br /> 삼성증권, 스토리지 증설
+									프로젝트 NetApp 공급 외 2건<br /> 에너지관리공단, 백업시스템 프로젝트 NetBackup 공급 외
+									8건<br /> SK텔레콤㈜본점, 망연계 프로젝트 CrossNet 공급</td>
+							</tr>
+							<tr>
+								<th scope="row">11</th>
+								<td>국립중앙도서관, 서버가상화 프로젝트 vSphere 공급 외 10건<br /> 대법원,
+									데스크탑가상화 프로젝트 VMware View 공급 외 3건<br /> 삼성카드, 스토리지 증설 프로젝트
+									NetApp 공급 외 1건<br /> 현대해상화재보험㈜, 망연계 프로젝트 CrossNet 공급<br />
+									오비맥주㈜, WAN가속기(Steelhead) 구축
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">10</th>
+								<td>비씨카드, 서버가상화 프로젝트 vSphere 공급 외 10건<br /> 한국투자공사,
+									데스크탑가상화 프로젝트 VMware View 공급 외 4건<br /> 유진기업, 백업시스템 프로젝트
+									NetBackup 공급
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">9</th>
+								<td>에어키, 기상기술개발원 서버/스토리지 도입 Cisco UCS 도입<br /> 교통안전공단,
+									서버가상화 프로젝트 vSphere 공급 외 12건<br /> 국가보안기술연구소, 데스크탑가상화 프로젝트
+									VMware View 공급 외 1건<br /> 기상기술개발원, 스토리지 증설 프로젝트 NetApp 공급 외 3건<br />
+									신한금융투자, 백업시스템 프로젝트 NetBackup 공급
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">8</th>
+								<td>국립한글박물관, 서버가상화 프로젝트 vSphere 공급 외 6건<br /> 대구카톨릭대학병원,
+									데스크탑가상화 프로젝트 VMware View 공급 외 5건<br /> SK텔레콤, 스토리지 증설 프로젝트
+									NetApp 공급<br /> 노틸러스효성, 백업시스템 프로젝트 NetBackup 공급<br /> 우리투자증권,
+									망연계 프로젝트 CrossNet 공급
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">7</th>
+								<td><strong>[수상] 이주찬 대표이사, 2014 서울중소기업인대회 중소기업 유공자
+										선정</strong><br /> ㈜엑스퍼넷과 비즈니스 파트너 계약체결 – 위치 독립 컴퓨팅 Riverbed<br />
+									롯데닷컴, 서버가상화 프로젝트 vSphere 공급 외 9건<br /> 현대종합상사, 데스크탑가상화 프로젝트
+									VMware View 공급 외 2건<br /> SK텔레콤, 스토리지 증설 프로젝트 NetApp 공급<br />
+									신한금융투자, 백업시스템 프로젝트 NetBackup 공급<br /> 신한금융투자, 망연계 프로젝트
+									CrossNet 공급<br /> 포스코그린가스텍, 서버이중화 프로젝트 SFHA 공급</td>
+							</tr>
+							<tr>
+								<th scope="row">6</th>
+								<td>SK텔레콤㈜본점, 데스크탑 가상화 통합 블레이드 서버 도입<br /> 조인어스비즈(에코마케팅),
+									Cisco UCS U240 도입<br /> 서버가상화 프로젝트 vSphere 공급 교통안전공단 외 10건<br />
+									데스크탑가상화 프로젝트 VMware View 공급 외 4건<br /> 스토리지 증설 프로젝트 NetApp 공급<br />
+									한국문화정보센터 백업시스템 프로젝트 NetBackup 공급<br /> ㈜포스코경영연구소 제로클라이언트 납품
+									㈜퓨처시스템 외 1건
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">5</th>
+								<td><strong>[수상] 제1회 코리아빅데이터어워드 기술분야
+										우수상(한국정보화진흥원장상)</strong><br /> 한국전력공사, KEPCO-EP 성능개선 Cisco UCS 서버 도입<br />
+									서버가상화 프로젝트 vSphere 공급 한국전력공사 외 4건<br /> 데스크탑가상화 프로젝트 VMware
+									View 공급<br /> 한화손해보험 스토리지 증설 프로젝트<br /> NetApp 공급 롯데정보통신㈜</td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td><strong> [수상] VMware Partner Exchange 최고
+										파트너상(국내)(Top Performer of the Year)</strong><br /> <strong>
+										[수상] Mware Partner Exchange 베스트 파트너 세일즈상(국내)(Best Partner
+										Sales Rep of the Year)</strong><br /> 서버가상화 프로젝트 vSphere 공급 한라비스테온공조 외
+									2건<br /> 데스크탑가상화 프로젝트 VMware View 공급 국립암센터 외 2건<br /> 망연계솔루션
+									프로젝트 CrossNet 공급 신한금융투자㈜</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>금융감독원, 네트워크 장비 증설 Cisco 3750X 도입<br /> 뉴스킨코리아, SAN
+									Switch 증설<br /> 서버가상화 프로젝트 vSphere 공급: 삼화제지 외 5건<br />
+									데스크톱가상화 프로젝트 VMware View 공급: 국립암센터 외 2건<br /> 백업시스템 프로젝트
+									NetBackup 공급: 포스코엔지니어링
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>서버가상화 프로젝트 vSphere 공급: 삼성SDS 외 6건<br /> 데스크톱가상화 프로젝트
+									VMware View 공급: 현대오토에버
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">1</th>
+								<td>서버가상화 프로젝트 vSphere 공급: 근로복지공단 외 3건<br /> 데스크톱가상화 프로젝트
+									VMware View 공급: 청담정보기술<br /> 스토리지 증설 프로젝트 NetApp 공급: HSBC은행 외
+									2건<br /> 백업시스템 프로젝트 NetBackup 공급: 신한금융투자
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="his_table tab6" >
+					<table class="history_type" border="0" summary="회사연혁" width="100%"
+						cellspacing="0">
+						<tbody>
+							<tr>
+								<th class="top1" rowspan="12" scope="row" width="20%">2013</th>
+								<th class="top" scope="row" width="10%">12</th>
+								<td class="top">서버가상화 프로젝트 vSphere 공급: 건강보험심사평가원 외 10건<br />
+									데스크톱가상화 프로젝트 VMware View 공급: 금융감독원 외 4건<br /> 스토리지 증설 프로젝트
+									NetApp 공급: 롯데정보통신<br /> 망분리(H/W) 프로젝트 HP 공급: 시스코시스템즈캐피탈코리아(유)<br />
+									서버이중화 프로젝트 SFHA 공급: ㈜포스코아이씨티
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">11</th>
+								<td>서버가상화 프로젝트 vSphere 공급: ㈜한국무역정보통신 외 12건<br /> 데스크톱가상화
+									프로젝트 VMware View 공급: SK하이닉스<br /> 백업시스템 프로젝트 NetBackup 공급:
+									㈜바오밥테크놀로지 외 1건<br /> 서버이중화 프로젝트 SFHA 공급: ㈜아이티센시스템즈
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">10</th>
+								<td>서버가상화 프로젝트 vSphere 공급: SK하이닉스 외 10건<br /> 데스크톱가상화 프로젝트
+									VMware View 공급: 현대오토에버 외 4건<br /> 스토리지 증설 프로젝트 NetApp 공급:
+									노틸러스효성<br /> 백업시스템 프로젝트 NetBackup 공급: ㈜투비씨엔아이<br /> 서버가상화 +
+									데스크톱가상화 프로젝트 vSphere + view 공급: 한국투자공사<br /> 서버이중화 프로젝트 SFHA
+									공급: ㈜포스코아이씨티
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">09</th>
+								<td>데스크톱 가상화 프로젝트 VMware View 공급: 현대중공업 외 2건<br /> 데스크톱
+									가상화 2차 증설건 Dell서버, 스토리지, 스위치, MS CAL 공급: 대우증권㈜<br /> 스토리지 증설
+									프로젝트 NetApp 공급: 롯데하이마트<br /> 망분리(H/W) 프로젝트 HP 공급: 신한금융투자<br />
+									백업시스템 프로젝트 NetBackup 공급: 현대엔지니어링<br /> 서버 가상화 프로젝트 vSphere 공급:
+									삼성생명 외 17건
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">08</th>
+								<td>데스크톱 가상화 프로젝트 VMware View 공급: LG경제연구원 외 1건<br /> 서버
+									가상화 프로젝트 vSphere 공급: 현대 계열사(카드, 커머셜, 캐피탈) 외 12건<br /> 백업시스템
+									프로젝트 NetBackup 공급: 신한금융투자
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">07</th>
+								<td>서버 가상화 프로젝트 외 vSphere, VCCS 공급: 한국소방산업기술원<br /> 서버 가상화
+									프로젝트 vSphere 공급: 한국투자공사 외 13건<br /> 서버 가상화 + 데스크톱 가상화 프로젝트
+									vSphere + view 공급: 삼성메디슨<br /> 데스크톱 가상화 프로젝트 VMware View 공급:
+									뉴스킨코리아 외 1건<br /> 이중화, 가상화 프로젝트 NBU Appliance, SFHA + vSphere
+									공급: 포스코ICT
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">06</th>
+								<td>MirageWorks 공급: 두산인프라코어㈜<br /> 이중화, 가상화 프로젝트 SFHA +
+									vSphere 공급: 포스코(인도네시아)<br /> 스토리지 증설 프로젝트 NetApp 공급: 대통령기록관<br />
+									서버 가상화 + 데스크톱 가상화 프로젝트 vSphere + view 공급: 전파진흥원<br /> 서버 가상화
+									프로젝트 vSphere 공급 외: 롯데정보통신 6건<br /> 데스크톱 가상화 프로젝트 VMware View
+									공급: 국립암센터 외 3건
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">05</th>
+								<td>스토리지 증설 프로젝트 NetApp 공급: 방위사업청 외 1건<br /> 데스크톱 가상화 프로젝트
+									VMware View 공급: 한국수자원공사 외 2건<br /> 서버 가상화 및 서버이중화 프로젝트
+									vSphere, Veritas 공급: SK하이닉스<br /> 서버 가상화 프로젝트 vSphere 공급: 포스코
+									외 6건<br /> NFS 라이선스 공급: 한국농촌경제연구원
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">04</th>
+								<td><strong>[수상] Symantec FY13 Best Partner Award
+										우수 파트너상 (국내) (NetBackUp Appliance)</strong><br /> <strong>
+										[수상] Partner Exchange 최우수 파트너상 (국내) (VMware Partner of the
+										Year)</strong><br /> 서버 가상화 프로젝트 vSphere 공급: SK하이닉스 외 4건<br />
+									ZeroClient 구축 프로젝트 ZeroClient 공급: ㈜LG<br /> 데스크톱 가상화 프로젝트
+									VMware View 공급: 올림푸스</td>
+							</tr>
+							<tr>
+								<th scope="row">03</th>
+								<td>서버 가상화 프로젝트 vSphere 공급: 삼성SDS(ECC서비스그룹) 외 14건<br />
+									데스크톱 가상화 프로젝트 VMware View 공급: 현대중공업 외 3건<br /> Workstation 구축
+									프로젝트 Workstation 공급: 건국대학교(충주)<br /> LG ZeroClient 구축 프로젝트
+									ZeroClient 공급: 뉴스킨코리아㈜<br /> 넷백업고도화 프로젝트 NetBackup 공급: 한국몰렉스
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">02</th>
+								<td><strong>[수상] VMware Partner Exchange APJ(APJ
+										Desktop Competency)</strong><br /> 서버 가상화 프로젝트 vSphere 공급: 대통령기록관 외 6건<br />
+									데스크톱 가상화 프로젝트 VMware View 공급: 뉴스킨코리아㈜ 외 2건<br /> 넷백업고도화 프로젝트
+									NetBackup 공급: 뉴스킨코리아㈜ 외 1건<br /> Workstation 구축 프로젝트
+									Workstation 공급: 캐논코리아비즈니스솔루션</td>
+							</tr>
+							<tr>
+								<th scope="row">01</th>
+								<td>서버 가상화 프로젝트 vSphere 공급: 국립공원관리공단 외 7건<br /> 데스크톱 가상화
+									프로젝트 VMware View 공급: 국립암센터<br /> Veritas Cluster 공급: 국방부
+									합동참모본부구축용 OS<br /> 백업시스템 프로젝트 NetBackup 공급: 포스코<br />
+									Workstation 구축 프로젝트 Workstation 공급: 인천폴리텍대학
+								</td>
+							</tr>
+							<tr>
+								<th class="none" rowspan="12" scope="row" width="10%">2012</th>
+								<th scope="row">12</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급 : SKBB 미디어 외 18 개 社<br />
+									데스크톱 가상화 프로젝트 VMware View 공급 : 경찰청 콜센터 외 6 개 社<br /> 스토리지 구축
+									프로젝트 NetApp 공급 : 한국문화정보센터 외 1 개 社
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">11</th>
+								<td><strong>[수상] CIO Awards 2012 IT 마케팅 대상 수상</strong><br />
+									서버 가상화 프로젝트 VMware vSphere 공급 : 펜타시큐리티시스템 외 2 개 社<br /> 데스크톱
+									가상화 프로젝트 VMware View 공급 : 현대중공업<br /> 스토리지 구축 프로젝트 NetApp 공급 :
+									비씨카드</td>
+							</tr>
+							<tr>
+								<th scope="row">10</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급 : 롯데닷컴 외 3 개 社<br />
+									데스크톱 가상화 프로젝트 VMware View 공급 : 현대중공업 외 1 개 社<br /> 스토리지 구축
+									프로젝트 NetApp 공급 : 경찰청<br /> 망분리 프로젝트 Mirageworks 공급 : 삼성화재해상보험
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">09</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급 : 서강대학교 , 부산시청 외 2 개 社<br />
+									데스크톱 가상화 프로젝트 VMware View 공급 : ㈜LG<br /> 스토리지 구축 프로젝트 NetApp
+									공급 : 현대 C&amp;I 외 2 개 社
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">08</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급 : SK 하이닉스 외 3 개 社<br />
+									데스크톱 가상화 프로젝트 VMware View 공급 : 동부화재 외 1 개 社<br /> 스토리지 구축 프로젝트
+									NetApp 공급 : 한국몰렉스 외 1 개 社
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">07</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급 : CJ Internet Japan 외 4 개
+									社<br /> 데스크톱 가상화 프로젝트 VMware View 공급 : ㈜LG<br /> 스토리지 구축 프로젝트
+									NetApp 공급 : 현대건설
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">06</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급 : 동부하이텍 외 2 개 社<br />
+									데스크톱 가상화 프로젝트 VMware View 공급 : 대검찰청 외 2 개 社<br /> 스토리지 구축 프로젝트
+									NetApp 공급 : 현대엔지니어링㈜ 외 1 개 社
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">05</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급 : 도봉구청 외 1 개 社<br />
+									데스크톱 가상화 프로젝트 VMware View 공급 : 동부화재 외 2 개 社<br /> 스토리지 구축 프로젝트
+									NetApp 공급 : 롯데삼강 회 1 개 社
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">04</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급 : ㈜SPC 네트웍스 외 2 개 社<br />
+									데스크톱 가상화 프로젝트 VMware View 공급 : 동부화재 외 2 개 社<br /> 스토리지 구축 프로젝트
+									NetApp 공급 : 한국원자력연구원
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">03</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급 : 평택대학교 , 강원대학교 외 7 개 社<br />
+									데스크톱 가상화 프로젝트 VMware View 공급 : 현대중공업
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">02</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급 : 청주시청 외 8 개 社<br />
+									스토리지 구축 프로젝트 NetApp 공급 : 유니클로
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">01</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급 : 현대자동차<br /> 데스크톱 가상화
+									프로젝트 VMware View 공급 : KT㈜
+								</td>
+							</tr>
+							<tr>
+								<th class="top1" rowspan="12" scope="row" width="20%">2011</th>
+								<th class="top" scope="row" width="10%">12</th>
+								<td class="top">서버 가상화 프로젝트 VMware vSphere 공급 : Jtbc 외 20 개
+									社<br /> 데스크톱 가상화 프로젝트 VMware View 공급 : 국민건강보험공단 외 2 개 社
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="his_table tab7" >
+					<table class="history_type" border="0" summary="회사연혁" width="100%"
+						cellspacing="0">
+						<tbody>
+							<tr>
+								<th class="top1" rowspan="12" scope="row" width="20%">2010</th>
+								<th class="top" scope="row" width="10%">12</th>
+								<td class="top">서버 가상화 프로젝트 VMware vSphere 공급 : 국방부 ,
+									교통안전공단 외 6 개 社<br /> 데스크톱 가상화 프로젝트 VMware View 공급 : 삼성전자<br />
+									종합기술원 스토리지 구축 프로젝트 NetApp 공급 : 현대엔지니어링
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">11</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급 : 한국문화정보센터 외 4 개 社<br />
+									스토리지 구축 프로젝트 NetApp 공급 : 녹십자생명보험
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">10</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급 : 헌법재판소 외 3 개 社<br />
+									스토리지 구축 프로젝트 NetApp 공급 : 대법원 외 1 개 社
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">09</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급 : 현대 . 기아자동차, 동국제강 외 4 개
+									社</td>
+							</tr>
+							<tr>
+								<th scope="row">08</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급 : 한국석유공사 외 6 개 社<br />
+									고가용성 프로젝트 Symantec Storage Foundation 공급 : 신분당선 운영시스템 구축
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">07</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급 : 한화 S&amp;C 외 2 개 社</td>
+							</tr>
+							<tr>
+								<th scope="row">06</th>
+								<td><strong>[수상] Partner Exchange 최우수 파트너상 (국내)
+										(Best Partner / Competency Award)</strong><br /> 서버 가상화 프로젝트 VMware
+									vSphere 공급 : 동부 CNI/ 동부건설 외 4 개 社</td>
+							</tr>
+							<tr>
+								<th scope="row">05</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급 : 교통안전공단 외 6 개 社<br />
+									서버 가상화 프로젝트 VMware VI3 공급 : 비씨카드 ㈜ 외 3 개 社<br /> 데스크톱 가상화 프로젝트
+									VMware View 공급 : 근로복지공단
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">04</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급 : 영남대학교병원 외 2 개 社<br />
+									가상화 서버 백업 프로젝트 vRanger 공급 : 동부생명
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">03</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급 : AIS 테크놀러지 외 1 개 社<br />
+									서버 가상화 프로젝트 VMware VI3 공급 : 동화홀딩스
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">02</th>
+								<td><strong>[수상] Partner Network Award 수상
+										(Solution Provider of the Year,2010)</strong><br /> 서버 가상화 프로젝트 VMware
+									vSphere 공급 : 하이닉스반도체 외 3 개 社</td>
+							</tr>
+							<tr>
+								<th scope="row">01</th>
+								<td>서버 가상화 프로젝트 VMware VI3 공급 : 포스코</td>
+							</tr>
+							<tr>
+								<th class="none" rowspan="12" scope="row" width="10%">2009</th>
+								<th scope="row">12</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급: 한국산업은행, 공무원연금관리공단 외 10개
+									社<br /> 데스크톱 가상화 프로젝트 VMware View 공급: 근로복지공단데이터<br /> 백업 프로젝트
+									Symantec Netbackup 공급: 대법원
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">11</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급: CJ제일제당 외 3개 社</td>
+							</tr>
+							<tr>
+								<th scope="row">10</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급: 삼성화재 외 3개 社<br /> 데이터
+									백업 프로젝트 Symantec Netbackup 공급: 충남테크노파크, 외 1개 社
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">09</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급: 롯데닷컴 외 3개 社</td>
+							</tr>
+							<tr>
+								<th scope="row">08</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급: 한국철도공사 외 2개 社<br /> 데이터
+									백업 프로젝트 Symantec Netbackup 공급: 효성에바라<br /> 데이터 백업 프로젝트
+									Symantec SFHA for Oracle RAC 공급: 신영증권
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">07</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급: 예스이십사(Yes24) 외 1개 社</td>
+							</tr>
+							<tr>
+								<th scope="row">06</th>
+								<td><strong>[수상] Partner Exchange 최우수 파트너상(국내)
+										(Best Partner / Competency Award)</strong><br /> 서버 가상화 프로젝트 VMware
+									vSphere 공급: 한국수력원자력㈜ 외 1개 社</td>
+							</tr>
+							<tr>
+								<th scope="row">05</th>
+								<td>서버 가상화 프로젝트 VMware VI3 공급: 동부CNI㈜/동부제철㈜ 외 1개 社<br />
+									스토리지 구축 프로젝트 NetApp 공급: ㈜하이마트
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">04</th>
+								<td>서버 가상화 프로젝트 VMware VI3 공급: 오토에버시스템즈/현대자동차㈜ 외 1개 社</td>
+							</tr>
+							<tr>
+								<th scope="row">03</th>
+								<td>데이터 백업 프로젝트 Symantec Netbackup 공급: 삼성네트웍스㈜ AK몰</td>
+							</tr>
+							<tr>
+								<th scope="row">02</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급: ㈜한국무역정보통신 국가기록원 외 1개 社</td>
+							</tr>
+							<tr>
+								<th scope="row">01</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급: 우리투자증권㈜<br />
+									한국산업기술진흥협회 기업부설연구소 인정
+								</td>
+							</tr>
+							<tr>
+								<th class="none" rowspan="11" scope="row" width="20%">2008</th>
+								<th scope="row">12</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급: 한국방송공사(KBS)<br /> 서버
+									가상화 프로젝트 VMware VI3 공급: 대검찰청<br /> 서울지방 중소기업청 지정, ‘경영혁신형 중소기업’
+									선정
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">11</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급: AIG생명보험 외 2개 社<br />
+									데이터 백업 프로젝트 Symantec Netbackup VTL 공급: 삼성카드㈜
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">10</th>
+								<td><strong>[수상] Virtualization Forum 최우수 파트너상(국내)
+										(Regional Partner Of The Year)</strong><br /> 데이터 백업 프로젝트 Symantec
+									Netbackup VTL 공급: 비씨카드㈜ 외 1개 社</td>
+							</tr>
+							<tr>
+								<th scope="row">09</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급: HP/CJ(주) 제일제당 외 1개 社<br />
+									<strong>벤처기업육성 특별 ‘벤처기업 인증’</strong>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">08</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급: 호남석유화학 외 1개 社</td>
+							</tr>
+							<tr>
+								<th scope="row">07</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급: 한국신용평가정보㈜ 외 1개 社</td>
+							</tr>
+							<tr>
+								<th scope="row">05</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급: 캐논코리아 비지니스솔루션㈜ 외 1개 社</td>
+							</tr>
+							<tr>
+								<th scope="row">04</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급: 비씨카드㈜ 외 2개 社</td>
+							</tr>
+							<tr>
+								<th scope="row">03</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급: 한국 야쿠르트 외 3개 社<br />
+									데이터 백업 프로젝트 Symantec Netbackup 공급: 노틸러스효성 ERP시스템
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">02</th>
+								<td>트래픽 분석솔루션 PacketLogic 공급: 볼보건설기계코리아</td>
+							</tr>
+							<tr>
+								<th scope="row">01</th>
+								<td>데이터 백업 프로젝트 Symantec SFHA for Oracle RAC 공급: 신영증권</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+				<div class="his_table tab8" >
+					<table class="history_type" border="0" summary="회사연혁" width="100%"
+						cellspacing="0">
+						<tbody>
+							<tr>
+								<th class="top1" rowspan="10" scope="row" width="20%">2007</th>
+								<th class="top" width="10%">12</th>
+								<td class="top" scope="row">삼성전자(주)/삼성네트웍스(주)Steelhead
+									2007년도 누적 총74대 공급<br /> 서버 가상화 프로젝트 VMware vSphere 공급:
+									삼성화재해상보험㈜ 외 7개 社<br /> 웹화면 인쇄 솔루션 Printmade 공급: ㈜포스코<br />
+									Symantec Volume Manager 공급: 한화증권
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">11</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급: 한국교육학술정보원</td>
+							</tr>
+							<tr>
+								<th scope="row">10</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급: 삼성생명㈜ 외 1개 社<br /> 데이터
+									백업 프로젝트 Symantec Netbackup 공급: 조달청<br /> 웹화면 인쇄 솔루션 Printmade
+									공급: 서울증권㈜
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">09</th>
+								<td><strong>[수상] VMware Rising Star APAC 2007 아시아
+										태평양 최우수 협력사</strong><br /> 서버 가상화 프로젝트 VMware vSphere 공급: 삼성종합기술원㈜ 외
+									1개 社</td>
+							</tr>
+							<tr>
+								<th scope="row">08</th>
+								<td>데이터 백업 프로젝트 Symantec Netbackup 공급: 녹십자생명보험㈜<br /> 서버
+									가상화 프로젝트 VMware vSphere 공급: 현대기아자동차㈜ 외 1개 社
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">07</th>
+								<td>데이터 백업 프로젝트 Symantec Netbackup 공급: 현대건설㈜ 외 1개 社<br />
+									서버 가상화 프로젝트 VMware vSphere 공급: 서울증권㈜ 외 1개 社
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">06</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급: 중앙일보씨앤씨</td>
+							</tr>
+							<tr>
+								<th scope="row">05</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급: 중앙일보씨앤씨</td>
+							</tr>
+							<tr>
+								<th scope="row">04</th>
+								<td>서버 가상화 프로젝트 VMware vSphere 공급: 동부제철㈜</td>
+							</tr>
+							<tr>
+								<th scope="row">03</th>
+								<td>데이터 백업 프로젝트 Symantec Netbackup 공급: 녹십자생명보험㈜</td>
+							</tr>
+							<tr>
+								<th class="none" rowspan="9" scope="row" width="20%">2006</th>
+								<th scope="row">12</th>
+								<td>삼성전자 (주)/ 삼성네트웍스 (주) Steelhead 2006 년도 총 61 대 공급<br />
+									서버 가상화 프로젝트 VMware vSphere 공급 : CJ GLS㈜ 외 1 개 社
+								</td>
+							</tr>
+							<tr>
+								<th>11</th>
+								<td scope="row">서버 가상화 프로젝트 VMware vSphere 공급 : 삼성전자㈜ 외 2 개
+									社</td>
+							</tr>
+							<tr>
+								<th>09</th>
+								<td scope="row">트래픽 분석 및 통제시스템 Packetlogic 공급 : ㈜ 한진중공업<br />
+									Flexlm 라이센스서버통합 , Flexnet Manager 공급 : GM 대우오토앤테크놀러지 ㈜
+								</td>
+							</tr>
+							<tr>
+								<th>08</th>
+								<td scope="row">서버 가상화 프로젝트 VMware vSphere 공급 : ㈜ 한진해운 외 1
+									개 社</td>
+							</tr>
+							<tr>
+								<th>07</th>
+								<td scope="row">트레이딩시스템 Symantec Cluster 공급 : 조달청</td>
+							</tr>
+							<tr>
+								<th>06</th>
+								<td scope="row">데이터 백업 프로젝트 Symantec Netbackup 공급 : 효성중공업㈜<br />
+									트레이딩시스템 Symantec Cluster 공급 : 포스코 SSO 시스템
+								</td>
+							</tr>
+							<tr>
+								<th>04</th>
+								<td scope="row">트레이딩시스템 Symantec Cluster, VVR 솔루션 공급 : 삼성
+									SDI㈜</td>
+							</tr>
+							<tr>
+								<th>02</th>
+								<td scope="row">DB 암호화 솔루션 D’Amo 공급 : 대한전문건설협회<br /> 웹화면인쇄
+									솔루션 Printmade 공급 : 현대삼호중공업㈜<br /> 트레이딩시스템 Symantec Cluster 공급
+									: 교보증권㈜
+								</td>
+							</tr>
+							<tr>
+								<th>01</th>
+								<td scope="row">홈페이지 재구축 솔루션 WebLogic 공급 : SBSi<br />
+									다우기술㈜과 비즈니스 파트너 계약체결 – 서버가상화 솔루션
+								</td>
+							</tr>
+							<tr>
+								<th class="none" rowspan="5" scope="row">2005</th>
+								<th>12</th>
+								<td scope="row">자동패치관리 솔루션 PMS 공급: 삼성물산㈜ 삼성몰<br /> 웹화면 인쇄
+									솔루션 Printmade 공급 : 굿모닝신한증권 ㈜
+								</td>
+							</tr>
+							<tr>
+								<th>11</th>
+								<td scope="row">데이터 백업 프로젝트 Symantec Netbackup 공급 : (유)
+									한솔텔레콤 / 한솔제지 ㈜</td>
+							</tr>
+							<tr>
+								<th>09</th>
+								<td scope="row">DB 암호화 솔루션 D’Amo 공급 : 산림청<br /> 메크로비젼 비즈니스
+									파트너 계약체결 – 라이선스서버 통합운용 솔루션
+								</td>
+							</tr>
+							<tr>
+								<th>08</th>
+								<td scope="row">트레이딩시스템 Symantec Cluster 공급 : 교보증권㈜</td>
+							</tr>
+							<tr>
+								<th>06</th>
+								<td scope="row">DB 암호화 솔루션 D’Amo 공급 : ㈜우리홈쇼핑</td>
+							</tr>
+							<tr>
+								<th class="none" rowspan="13" scope="row">2004</th>
+								<th>11</th>
+								<td scope="row">펜타시큐리티시스템㈜ 비즈니스 파트너 계약체결 – DB 암호화 솔루션 D’Amo</td>
+							</tr>
+							<tr>
+								<th>08</th>
+								<td scope="row">아이티플러스㈜에서 Veritas 유지보수(20개 社) 사업 이전 받아 법인
+									설립<strong><br /> 굿모닝아이텍㈜ 설립- 자본금 1억 원 / 인원 5명</strong>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- footer Start -->
+	<?php include_once '../_inc/footer.html'; ?>
+	<!-- footer End -->
+	
+	<!-- Side Navigator Start -->
+	<?php include_once '../_inc/side_nav.html'; ?>
+	<!-- Side Navigator End -->
+</body>
+</html>

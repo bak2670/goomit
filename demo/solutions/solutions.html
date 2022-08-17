@@ -1,0 +1,1094 @@
+<?php
+	include_once("./_common.php");
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php include_once("../_inc/head.html"); ?>
+<link href="../_css/solutions.css" rel="stylesheet" type="text/css">
+<link href="../_css/m_solutions.css" rel="stylesheet" type="text/css">
+<link href="../_css/category.css" rel="stylesheet" type="text/css">
+<link href="../_css/font-face.css" rel="stylesheet" type="text/css">
+<script src="../js/category.js"></script>
+<script src="../js/solutions.js"></script>
+
+<script>
+	new WOW().init();
+	$(document).ready(function() {
+		top_nav_over();
+		top_nav_out();
+		M_main_navbar();
+		M_sidenav_accordion();
+		AOS.init();
+	});
+</script>
+</head>
+<body>
+
+
+	<!-- 모바일 sidenav 메뉴바 시작-->
+	<div class="M_sidenav_container">
+		<div class="M_sidenav_box">
+			<div class="M_sidenav_top">
+				<div class="M_sidenav_logo">
+					<a href="http://partner.start1.co.kr/goodmit/demo/"><img
+						src="../image/common/mainlogo_black.png" /></a>
+				</div>
+				<div class="M_sidenav_btn" onclick="M_side_menu_close()">
+					<i class="fa-solid fa-x"></i>
+				</div>
+			</div>
+			<div class="M_sidenav_menu_box">
+
+				<div class="M_sidenav_menu_item">
+					<div class="M_sidenav_menu_title">
+						<div class="M_sidenav_menu">
+							<a href="javascript:;">COMPANY<a />
+						</div>
+						<div class="M_sidenav_menu">
+							<i class="fa-solid fa-angle-down"></i>
+						</div>
+
+					</div>
+					<div class="M_sidenav_menu_line"></div>
+					<div class="M_sidenav_menu_list_box">
+						<ul>
+							<li class="M_sidenav_menu_list"><a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Ceo.html">대표이사
+									인사말</a></li>
+							<li class="M_sidenav_menu_list"><a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Overview.html">사업개요</a></li>
+							<li class="M_sidenav_menu_list"><a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/History.html">연혁</a></li>
+							<li class="M_sidenav_menu_list"><a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/CI.html">CI</a></li>
+							<li class="M_sidenav_menu_list"><a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Misstion.html">미션과
+									비전</a></li>
+							<li class="M_sidenav_menu_list"><a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Performance.html">수상실적</a></li>
+							<li class="M_sidenav_menu_list"><a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Certified.html">국가인증
+									및 파트너인증</a></li>
+							<li class="M_sidenav_menu_list"><a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Affiliated.html">관계사</a></li>
+							<li class="M_sidenav_menu_list"><a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Cooperative.html">협력사</a></li>
+							<li class="M_sidenav_menu_list"><a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Contribution.html">사회공헌
+									활동</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="M_sidenav_menu_item">
+					<div class="M_sidenav_menu_title">
+						<div class="M_sidenav_menu">
+							<a href="javascript:;">PR CENTER</a>
+						</div>
+						<div class="M_sidenav_menu">
+							<i class="fa-solid fa-angle-down"></i>
+						</div>
+
+					</div>
+					<div class="M_sidenav_menu_line"></div>
+					<div class="M_sidenav_menu_list_box">
+						<ul>
+							<li class="M_sidenav_menu_list">공지사항</li>
+							<li class="M_sidenav_menu_list">언론보도</li>
+							<li class="M_sidenav_menu_list">영상</li>
+
+						</ul>
+					</div>
+				</div>
+
+				<div class="M_sidenav_menu_item">
+					<div class="M_sidenav_menu_title">
+						<div class="M_sidenav_menu">
+							<a href="javascript:;">SOLUTIONS</a>
+						</div>
+						<div class="M_sidenav_menu">
+							<i class="fa-solid fa-angle-down"></i>
+						</div>
+
+					</div>
+					<div class="M_sidenav_menu_line"></div>
+					<div class="M_sidenav_menu_list_box">
+						<ul>
+							<li class="M_sidenav_menu_list"><a
+								href="http://partner.start1.co.kr/goodmit/demo/Solutions/solutions.html">CLOUD
+									/ INFRA</a></li>
+							<li class="M_sidenav_menu_list">BIG DATA / AI</li>
+							<li class="M_sidenav_menu_list">MANAGEMENT</li>
+							<li class="M_sidenav_menu_list">SECURITY</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="M_sidenav_menu_item">
+					<div class="M_sidenav_menu_title">
+						<div class="M_sidenav_menu">
+							<a href="javascript:;">CONTACT US</a>
+						</div>
+						<div class="M_sidenav_menu">
+							<i class="fa-solid fa-angle-down"></i>
+						</div>
+
+					</div>
+					<div class="M_sidenav_menu_line"></div>
+					<div class="M_sidenav_menu_list_box">
+						<ul>
+							<li class="M_sidenav_menu_list"><a
+								href="http://partner.start1.co.kr/goodmit/demo/ContactUs/directions.html">오시는길</a></li>
+							<li class="M_sidenav_menu_list"><a
+								href="http://partner.start1.co.kr/goodmit/demo/ContactUs/Inquiry.html">영업·기술·유지보수
+									문의</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="M_sidenav_menu_item">
+					<div class="M_sidenav_menu_title">
+						<div class="M_sidenav_menu">
+							<a href="javascript:;">ENGLISH</a>
+						</div>
+						<div class="M_sidenav_menu">
+							<i class="fa-solid fa-angle-down"></i>
+						</div>
+
+					</div>
+					<div class="M_sidenav_menu_line"></div>
+					<div class="M_sidenav_menu_list_box">
+						<ul>
+							<li class="M_sidenav_menu_list"><a
+								href="http://partner.start1.co.kr/goodmit/demo/English/EOverview.html">Overview</a></li>
+							<li class="M_sidenav_menu_list"><a
+								href="http://partner.start1.co.kr/goodmit/demo/English/ESolutions.html">Solutions</a></li>
+							<li class="M_sidenav_menu_list"><a
+								href="http://partner.start1.co.kr/goodmit/demo/English/EAwards.html">Awards
+									and Achievements</a></li>
+							<li class="M_sidenav_menu_list"><a
+								href="http://partner.start1.co.kr/goodmit/demo/English/EPartner.html">Partner</a></li>
+							<li class="M_sidenav_menu_list"><a
+								href="http://partner.start1.co.kr/goodmit/demo/English/EMarketing.html">Marketing
+									Activites</a></li>
+							<li class="M_sidenav_menu_list"><a
+								href="http://partner.start1.co.kr/goodmit/demo/English/ELocation.html">Locations</a></li>
+							<li class="M_sidenav_menu_list"><a
+								href="http://partner.start1.co.kr/goodmit/demo/English/EContact.html">Contact
+									us</a></li>
+
+						</ul>
+					</div>
+				</div>
+
+
+
+
+
+
+
+			</div>
+
+
+		</div>
+	</div>
+	<!-- 모바일 sidenav 메뉴바 끝-->
+
+
+	<!-- 모바일nav파 시작 -->
+
+	<div class="M_main_top_position">
+		<div class="M_main_top">
+			<div class="M_main_top_img_box">
+				<a href="http://partner.start1.co.kr/goodmit/demo/"><img
+					src="../image/common/mainlogo_white.png" /></a>
+			</div>
+			<div class="M_main_top_menu" onclick="M_side_menu_open()">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</div>
+	</div>
+
+	<!-- 모바일nav파 끝 -->
+
+	<!-- sidenav 시작 -->
+
+	<div class='container_sidenav'>
+		<div class='sidenav_closebtn' onclick="sidenav_close()">
+			<!--  <img src="./image/common/sidenavclose.png" />  -->
+			<i class="fa-solid fa-x"></i>
+		</div>
+		<div class="sidenav_box">
+			<div class='sidenav'>
+
+				<div class='nav_item_box'>
+					<div class='nav_item_title'>
+						<a
+							href="http://partner.start1.co.kr/goodmit/demo/Company/Ceo.html">COMPANY</a>
+					</div>
+					<div class='nav_list_box'>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Ceo.html">대표이사
+								인사말</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Overview.html">사업개요</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/History.html">연혁</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/CI.html">CI</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Misstion.html">미션과
+								비전</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Performance.html">수상실적</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Certified.html">국가인증
+								및 파트너인증</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Affiliated.html">관계사</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Cooperative.html">협력사</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/Company/Contribution.html">사회공헌
+								활동</a>
+						</div>
+					</div>
+				</div>
+
+				<div class='nav_item_box'>
+					<div class='nav_item_title'>
+						<a href="javascript:;">PR CENTER</a>
+					</div>
+					<div class='nav_list_box'>
+						<div class='nav_list_item'>
+							<a href="javascript:;">공지사항</a>
+						</div>
+						<div class='nav_list_item'>
+							<a href="javascript:;">언론보도</a>
+						</div>
+						<div class='nav_list_item'>
+							<a href="javascript:;">영상</a>
+						</div>
+					</div>
+				</div>
+
+				<div class='nav_item_box'>
+					<div class='nav_item_title'>
+						<a
+							href="http://partner.start1.co.kr/goodmit/demo/Solutions/solutions.html">SOULTIONS</a>
+					</div>
+					<div id="sidenav_off" class='nav_list_box'
+						onmouseleave="sidenav_underline_out()">
+						<div class='nav_list_item'>
+							<div id="nav_soultion_title1" class='nav_soultion_title'
+								onmouseover="sidenav1()">
+								<a
+									href="http://partner.start1.co.kr/goodmit/demo/Solutions/solutions.html">CLOUD
+									/ INFRA</a>
+							</div>
+							<div id="nav_solution1" class='nav_soultion_box'>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">VMware</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Dell Technologies</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Clsco</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">NetaAPP</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">PURESTORAGE</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Veeam</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">VERITAS</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Red Hat</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">MS Azure</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Zero Client</a>
+								</div>
+								<div id="nav_soultion_list_line" class='nav_soultion_list '>
+									<a href="javascript:;">KT Cloud</a>
+								</div>
+							</div>
+						</div>
+
+						<div class='nav_list_item'>
+							<div id="nav_soultion_title2" class='nav_soultion_title'
+								onmouseover="sidenav2()">
+								<a href="javascript:;">BIG DATA / AI</a>
+							</div>
+							<div id="nav_solution2" class='nav_soultion_box'>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Cloudera</a>
+								</div>
+								<div id="nav_soultion_list_line" class='nav_soultion_list'>
+									<a href="javascript:;">NVIDIA</a>
+								</div>
+							</div>
+						</div>
+
+						<div class='nav_list_item'>
+							<div id="nav_soultion_title3" class='nav_soultion_title'
+								onmouseover="sidenav3()">
+								<a href="javascript:;">MANAGEMENT</a>
+							</div>
+							<div id="nav_solution3" class='nav_soultion_box'>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">VMware Tanzu</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Druva</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">ControlUp</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Clovir VDI</a>
+								</div>
+								<div id="nav_soultion_list_line" class='nav_soultion_list'>
+									<a href="javascript:;">Clovir SM</a>
+								</div>
+							</div>
+						</div>
+
+						<div class='nav_list_item'>
+							<div id="nav_soultion_title4" class='nav_soultion_title'
+								onmouseover="sidenav4()">
+								<a href="javascript:;">SECURITY</a>
+							</div>
+							<div id="nav_solution4" class='nav_soultion_box'>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Akamai</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">AKAMAI KSD</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Akamai WAP</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Akamai Edge DNS</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Akamai ETP</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Akamai EAA</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">APPM</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">RSA NetWitness Platform</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">OTP</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">MENLO WEB:EMAIL ISOLATION</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">SPARROW SCE</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">SolidStep</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Sweeper(스위퍼) 서비스</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">Secure Gate V3.5</a>
+								</div>
+								<div class='nav_soultion_list'>
+									<a href="javascript:;">J-TOPS</a>
+								</div>
+								<div id="nav_soultion_list_line" class='nav_soultion_list'>
+									<a href="javascript:;">Weeds BlackBox Suite</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class='nav_item_box'>
+					<div class='nav_item_title'>
+						<a
+							href="http://partner.start1.co.kr/goodmit/demo/ContactUs/directions.html">CONTACT
+							US</a>
+					</div>
+					<div class='nav_list_box'>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/ContactUs/directions.html">오시는길</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/ContactUs/Inquiry.html">영업·기술·유지보수
+								문의</a>
+						</div>
+
+					</div>
+				</div>
+				<div class='nav_item_box'>
+					<div class='nav_item_title'>
+						<a
+							href="http://partner.start1.co.kr/goodmit/demo/English/EOverview.html">ENGLISH</a>
+					</div>
+					<div class='nav_list_box'>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/English/EOverview.html">Overview</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/English/ESolutions.html">Solution</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/English/EAwards.html">Awards
+								and Achievements</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/English/EPartner.html">Partner</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/English/EMarketing.html">Marketing
+								Activities</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/English/ELocation.html">Locations</a>
+						</div>
+						<div class='nav_list_item'>
+							<a
+								href="http://partner.start1.co.kr/goodmit/demo/English/EContact.html">Contact
+								us</a>
+						</div>
+					</div>
+
+				</div>
+
+
+
+			</div>
+
+			<div class="side_nav_logo_box">
+				<div class="side_nav_logo">
+					<img src="../image/common/mainlogo_black" />
+				</div>
+				<div class="side_nav_text">ⓒ 2022 굿모닝아이텍(주) All right reserved</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- sidenav 끝 -->
+
+	<div class="Company_position">
+		<div class="Company_container">
+
+			<!-- nav바 시작 -->
+
+			<div class='top_container_over'>
+
+
+				<div class='navbar_position_over'>
+
+					<div class='nav_container_over'>
+						<div class='nav_left'>
+							<a href="http://partner.start1.co.kr/goodmit/demo"><img
+								id="mainlogo" src="../image/common/mainlogo_black.png" /></a>
+						</div>
+						<div class='nav_center'>
+							<div class='nav_center_menu'>
+								<div class='nav_item_over nav_item_hover1'
+									onmouseover="nav_change1()">
+									<a
+										href="http://partner.start1.co.kr/goodmit/demo/Company/Ceo.html">COMPANY</a>
+								</div>
+								<div class='nav_item_over nav_item_hover2'
+									onmouseover="nav_change2()">
+									<a href="javascript:;">PR CENTER</a>
+								</div>
+								<div class='nav_item_over nav_item_hover3'
+									onmouseover="nav_change3()">
+									<a
+										href="http://partner.start1.co.kr/goodmit/demo/Solutions/solutions.html">SOLUTIONS</a>
+								</div>
+								<div class='nav_item_over nav_item_hover4'
+									onmouseover="nav_change4()">
+									<a
+										href="http://partner.start1.co.kr/goodmit/demo/ContactUs/directions.html">CONTACT
+										US</a>
+								</div>
+								<div class='nav_item_over nav_item_hover5'
+									onmouseover="nav_change5()">
+									<a
+										href="http://partner.start1.co.kr/goodmit/demo/English/EOverview.html">ENGLISH</a>
+
+								</div>
+							</div>
+						</div>
+
+						<div class='nav_rigth' style="color: black"
+							onclick="sidenav_open()">
+							<i class="fa-solid fa-bars"></i>
+						</div>
+					</div>
+					<div class="nav_item_detail_hidden">
+						<div class='nav_item_detail'>
+
+							<div class='nav_detail_1 nav_detail_view1'>
+								<div class='nav_detail_text_1'>
+									<div class="nav_detail_item">
+										<a
+											href="http://partner.start1.co.kr/goodmit/demo/Company/Ceo.html">대표이사
+											인사말</a>
+									</div>
+									<div class="nav_detail_item">
+										<a
+											href="http://partner.start1.co.kr/goodmit/demo/Company/Overview.html">사업개요</a>
+									</div>
+									<div class="nav_detail_item">
+										<a
+											href="http://partner.start1.co.kr/goodmit/demo/Company/History.html">연혁</a>
+									</div>
+									<div class="nav_detail_item">
+										<a
+											href="http://partner.start1.co.kr/goodmit/demo/Company/CI.html">CI</a>
+									</div>
+									<div class="nav_detail_item">
+										<a
+											href="http://partner.start1.co.kr/goodmit/demo/Company/Misstion.html">미션과
+											비전</a>
+									</div>
+									<div class="nav_detail_item">
+										<a
+											href="http://partner.start1.co.kr/goodmit/demo/Company/Performance.html">수상실적</a>
+									</div>
+									<div class="nav_detail_item">
+										<a
+											href="http://partner.start1.co.kr/goodmit/demo/Company/Certified.html">국가인증
+											및 파트너인증</a>
+									</div>
+									<div class="nav_detail_item">
+										<a
+											href="http://partner.start1.co.kr/goodmit/demo/Company/Affiliated.html">관계사</a>
+									</div>
+									<div class="nav_detail_item">
+										<a
+											href="http://partner.start1.co.kr/goodmit/demo/Company/Cooperative.html">협력사</a>
+									</div>
+									<div class="nav_detail_item">
+										<a
+											href="partner.start1.co.kr/goodmit/demo/Company/Contribution.html">사회공헌
+											활동</a>
+									</div>
+								</div>
+							</div>
+							<div class='nav_detail_1 nav_detail_view2'>
+								<div class='nav_item_detail_box nav_detail_2'>
+									<div class="nav_detail_item">
+										<a href="javascript:;">공지사항</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="javascript:;">언론보도</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="javascript:;">영상</a>
+									</div>
+								</div>
+							</div>
+							<div class='nav_detail_1 nav_detail_view3'>
+								<div class='nav_item_detail_box nav_detail_3'>
+									<div class="nav_detail_item">
+										<a href="javascript:;">CLOUD/INFRA</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="javascript:;">BIGDATA/AI</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="javascript:;">MANAGEMENT</a>
+									</div>
+									<div class="nav_detail_item">
+										<a href="javascript:;">SECURITY</a>
+									</div>
+								</div>
+							</div>
+							<div class='nav_detail_1 nav_detail_view4'>
+								<div class='nav_item_detail_box nav_detail_4'>
+									<div class="nav_detail_item">
+										<a
+											href="http://partner.start1.co.kr/goodmit/demo/ContactUs/directions.html">[서울본사]
+											오시는 길</a>
+									</div>
+
+									<div class="nav_detail_item">
+										<a
+											href="http://partner.start1.co.kr/goodmit/demo/ContactUs/Inquiry.html">영업·기술·유지보수
+											문의</a>
+									</div>
+								</div>
+							</div>
+
+							<div class='nav_detail_1 nav_detail_view5'>
+								<div class='nav_detail_text_1'>
+									<div class="nav_detail_item">
+										<a
+											href="http://partner.start1.co.kr/goodmit/demo/English/EOverview.html">Overview</a>
+									</div>
+									<div class="nav_detail_item">
+										<a
+											href="http://partner.start1.co.kr/goodmit/demo/English/ESolutions.html">Solutions</a>
+									</div>
+									<div class="nav_detail_item">
+										<a
+											href="http://partner.start1.co.kr/goodmit/demo/English/EPartner.html">Partner</a>
+									</div>
+									<div class="nav_detail_item">
+										<a
+											href="http://partner.start1.co.kr/goodmit/demo/English/ELocation.html">Locations</a>
+									</div>
+									<div class="nav_detail_item">
+										<a
+											href="http://partner.start1.co.kr/goodmit/demo/English/EMarketing.html">Maketing
+											Activities</a>
+									</div>
+									<div class="nav_detail_item">
+										<a
+											href="http://partner.start1.co.kr/goodmit/demo/English/EAwards.html">Awards
+											and Achievements</a>
+									</div>
+									<div class="nav_detail_item">
+										<a
+											href="http://partner.start1.co.kr/goodmit/demo/English/EContact.html">Contact
+											us</a>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<!-- nav바 끝 -->
+
+			<!-- top background 시작 -->
+			<div class="main_top_background">
+				<div class="background_text_box">
+					<p class="company_background_text1">SOLUTIONS</p>
+					<p class="company_background_text2">우리의 고객 한분,한분이 모두 좋은 아침을
+						맞이하기를 기대합니다.</p>
+				</div>
+
+				<div class="M_background_text_box">
+					<p>SOLUTIONS</p>
+					<p>우리의 고객 한 분, 한 분이 모두 좋은</p>
+					<p>아침을 맞이하기를 기대합니다.</p>
+				</div>
+			</div>
+			<!-- top background 끝 -->
+
+			<!-- 카테고리 시작 -->
+			<div class='category_container'>
+				<div class='category_subcontainer'>
+					<div class="category_home_box">
+						<div class="category_home">
+							<img src="../image/common/category_home.png" />
+						</div>
+
+					</div>
+					<div class='big_category_box'>
+						<div class='big_category' onclick="big_category_btn()">
+							<div class='big_category_title'>SOLUTIONS</div>
+							<div class='big_category_arrow'>
+								<img src="../image/common/dropdown.png" />
+							</div>
+						</div>
+						<div class='category_item_hide_line'>
+							<div class="big_category_item_box">
+								<a
+									href="http://partner.start1.co.kr/goodmit/demo/Company/Ceo.html"><div
+										class='category_item'>COMPANY</div></a> <a href="javascrips:;"><div
+										class='category_item'>PR CENTER</div></a> <a
+									href="http://partner.start1.co.kr/goodmit/demo/ContactUs/directions.html"><div
+										class='category_item'>CONTACT US</div></a> <a
+									href="http://partner.start1.co.kr/goodmit/demo/English/EOverview.html"><div
+										class='category_item'>ENGLISH</div></a>
+							</div>
+						</div>
+					</div>
+
+					<div class='middle_category_box1'>
+						<div class='middle_category1' onclick="middle_category_btn()">
+							<div class='middle_category_title'>CLOUD / INFRA</div>
+							<div class='middle_category_arrow'>
+								<img src="../image/common/dropdown.png" />
+							</div>
+						</div>
+						<div class='category_item_hide_line'>
+							<div class="middle_category_item_box">
+
+								<a href="javascrips:;"><div class='category_item'>BIG
+										DATA / AI</div></a> <a href="javascrips:;"><div
+										class='category_item'>MANAGEMENT</div></a> <a href="javascrips:;"><div
+										class='category_item'>SECURETY</div></a>
+
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+					<div class='small_category_box'>
+						<div class='small_category' onclick="small_category_btn()">
+							<div class='small_category_title'>VMwere</div>
+							<div class='small_category_arrow'>
+								<img src="../image/common/dropdown.png" />
+							</div>
+						</div>
+						<div class='category_item_hide_line'>
+							<div class="small_category_item_box">
+
+								<a href="javascrips:;"><div class='category_item'>Cisco</div></a>
+								<a href="javascrips:;"><div class='category_item'>Dell
+										Technologies</div></a> <a href="javascrips:;"><div
+										class='category_item'>druva</div></a> <a href="javascrips:;"><div
+										class='category_item'>Google Platfrom</div></a> <a
+									href="javascrips:;"><div class='category_item'>MS
+										AZURE</div></a> <a href="javascrips:;"><div class='category_item'>Naver
+										Platform</div></a> <a href="javascrips:;"><div class='category_item'>NetApp</div></a>
+								<a href="javascrips:;"><div class='category_item'>Pure
+										Storage</div></a> <a href="javascrips:;"><div class='category_item'>Veeam</div></a>
+								<a href="javascrips:;"><div class='category_item'>Veritas</div></a>
+
+
+
+
+							</div>
+						</div>
+					</div>
+
+
+					<div class='s_small_category_box'>
+						<div class='s_small_category' onclick="s_small_category_btn()">
+							<div class='s_small_category_title'>vSphere</div>
+							<div class='s_small_category_arrow'>
+								<img src="../image/common/dropdown.png" />
+							</div>
+						</div>
+						<div class='category_item_hide_line'>
+							<div class="s_small_category_item_box">
+
+								<a href="javascrips:;"><div class='category_item'>Horizon</div></a>
+								<a href="javascrips:;"><div class='category_item'>vSAN</div></a>
+								<a href="javascrips:;"><div class='category_item'>NSX</div></a>
+								<a href="javascrips:;"><div class='category_item'>Tanzu</div></a>
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class='M_big_category_box'>
+						<div class='M_big_category' onclick="M_big_category_btn()">
+							<div class='M_big_category_title'>vSphere</div>
+							<div class='M_big_category_arrow'>
+								<img src="../image/common/dropdown.png" />
+							</div>
+						</div>
+						<div class='M_category_item_hide_line'>
+							<div class="M_big_category_item_box">
+
+								<a href="javascrips:;"><div class='M_category_item'>Horizon</div></a>
+								<a href="javascrips:;"><div class='M_category_item'>vSAN</div></a>
+								<a href="javascrips:;"><div class='M_category_item'>NSX</div></a>
+								<a href="javascrips:;"><div class='M_category_item'>Tanzu</div></a>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+				</div>
+			</div>
+			<!-- 카페고리 끝 -->
+			<!-- pc버전 시작 -->
+			<div class="vsphere_container">
+				<div class="vsphere_top_box">
+					<div class="vsphere_top_left">
+						<div class="vsphere_top_img" data-aos="fade-right"
+							data-aos-duration="1000">
+							<img src="../image/common/vsimg1" />
+						</div>
+					</div>
+					<div class="vsphere_top_rigth">
+						<p class="vsphere_top_title1">서버가상화 인프라 솔루션</p>
+						<p class="vsphere_top_title2">VMwere vSphere</p>
+					</div>
+				</div>
+
+
+				<div class="black_box">
+					<div class="black_box_left"></div>
+					<div class="black_box_rigth" data-aos="fade-left"
+						data-aos-duration="1000">
+						<p>vSphere는 기존에 운영하던 물리적인 인프라를 가상화 솔루션으로 통합하여</p>
+						<p>유연하고 안정적인 IT 서비스를 제공합니다.</p>
+						<div class="vsphere_down_box">
+							<span class="vsphere_down">자료다운로드<span>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="vsphere_center_box1">
+					<div class="vsphere_center_white">VMwere vSphere</div>
+					<div class="vsphere_center_black">기대효과</div>
+				</div>
+
+				<div class="vsphere_center_img_box">
+					<div class="vsphere_center_item" data-aos="fade-up"
+						data-aos-delay="300" data-aos-duration="1000">
+						<div class="vsphere_center_img">
+							<img src="../image/common/vsimg2" />
+						</div>
+						<p class="vsphere_center_text1">복잡성 감소</p>
+						<p class="vsphere_center_text2">운영관리 및</p>
+						<p class="vsphere_center_text2">유지보수에 대한 인프라</p>
+					</div>
+
+					<div class="vsphere_center_item" data-aos="fade-up"
+						data-aos-delay="600" data-aos-duration="1000">
+						<div class="vsphere_center_img">
+							<img src="../image/common/vsimg3" />
+						</div>
+						<p class="vsphere_center_text1">복잡성 감소</p>
+						<p class="vsphere_center_text2">운영관리 및</p>
+						<p class="vsphere_center_text2">유지보수에 대한 인프라</p>
+					</div>
+
+					<div class="vsphere_center_item" data-aos="fade-up"
+						data-aos-delay="900" data-aos-duration="1000">
+						<div class="vsphere_center_img">
+							<img src="../image/common/vsimg4" />
+						</div>
+						<p class="vsphere_center_text1">복잡성 감소</p>
+						<p class="vsphere_center_text2">운영관리 및</p>
+						<p class="vsphere_center_text2">유지보수에 대한 인프라</p>
+					</div>
+				</div>
+
+
+				<div class="vsphere_center_box2">기존에 올린 인프라를 가상화로 전환하여 운영 가능</div>
+
+				<div class="vsphere_center_img_box2" data-aos="fade-up"
+					data-aos-duration="1000">
+					<div class="vsphere_center_img2">
+						<img src="../image/common/vsimg5" />
+					</div>
+				</div>
+
+				<div class="vsphere_bottom_container">
+
+					<div class="vsphere_bottom_img_box">
+						<p class="vsphere_bottom_img_box_text">서버 가상화 기술의 특징</p>
+						<img src="../image/common/vsimg6" />
+					</div>
+					<div class="vsphere_bottom_text_box" data-aos="fade-left"
+						data-aos-duration="1000">
+						<ul>
+							<li><img src="../image/common/vsimg7" /> VMwere ha를 통한 고가용성
+								제공</li>
+							<li><img src="../image/common/vsimg7" /> 가상머신 asdasd중에 다른
+								sadsad로 마이그레이션 기능 제공</li>
+							<li><img src="../image/common/vsimg7" /> 가상머신 asdsad중에
+								asdsad sadsad로 마이그레이션 기능 제공</li>
+							<li><img src="../image/common/vsimg7" /> 가상머신성능 데이터 관리 기능
+								제공</li>
+							<li><img src="../image/common/vsimg7" /> 직관적인 UI기능 제공</li>
+							<li><img src="../image/common/vsimg7" /> 통합서버, 네트워크, 스토리지,
+								가상머신 관리기능 게공</li>
+							<li><img src="../image/common/vsimg7" /> 온라인 중에 가상머신의 asd,
+								asdsad card 추가기능 제공</li>
+							<li><img src="../image/common/vsimg7" /> 가성머신에 암호화 기능 제공</li>
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="vsphere_ask_box">
+					<p class="vsphere_ask_text1">더 알고 싶으시다면</p>
+					<p class="vsphere_ask_text2">지금 바로 문의주세요. 최대한 빠르고 성실하게 답변해
+						드리겠습니다.</p>
+					<div class="vsphere_ask_btn">문의하기</div>
+				</div>
+
+			</div>
+			<!-- pc버전 끝 -->
+
+			<!-- 모바일 버전 시작 -->
+			<div class="M_vsphere_container">
+
+				<div class="M_vsphere_title_box">
+					<p class="M_vsphere_title_text1">서버가상화 인프라 솔루션</p>
+					<p class="M_vsphere_title_text2">VMwere vSphere</p>
+				</div>
+				<div class="M_vsphere_title_img_box" data-aos="fade-up"
+					data-aos-duration="1000">
+					<img src="../image/common/vsimg1" />
+				</div>
+
+				<div class="M_vsphere_black_box">
+					<p>vSphere는 기존에 운영하던 물리적인 인프라를 가상화 솔루션으로 통합하여 유연하고 안정적인 IT서비스를
+						제공합니다.
+					<p>
+				</div>
+
+				<div class="vsphere_center_box1">
+					<div class="vsphere_center_white">VMwere vSphere</div>
+					<div class="vsphere_center_black">기대효과</div>
+				</div>
+
+
+				<div class="vsphere_center_img_box">
+					<div class="vsphere_center_item" data-aos="fade-up"
+						data-aos-duration="1000">
+						<div class="vsphere_center_img">
+							<img src="../image/common/vsimg2" />
+						</div>
+						<p class="vsphere_center_text1">복잡성 감소</p>
+						<p class="vsphere_center_text2">운영관리 및</p>
+						<p class="vsphere_center_text2">유지보수에 대한 인프라</p>
+					</div>
+
+					<div class="vsphere_center_item" data-aos="fade-up"
+						data-aos-duration="1000">
+						<div class="vsphere_center_img">
+							<img src="../image/common/vsimg3" />
+						</div>
+						<p class="vsphere_center_text1">복잡성 감소</p>
+						<p class="vsphere_center_text2">운영관리 및</p>
+						<p class="vsphere_center_text2">유지보수에 대한 인프라</p>
+					</div>
+
+					<div class="vsphere_center_item" data-aos="fade-up"
+						data-aos-duration="1000">
+						<div class="vsphere_center_img">
+							<img src="../image/common/vsimg4" />
+						</div>
+						<p class="vsphere_center_text1">복잡성 감소</p>
+						<p class="vsphere_center_text2">운영관리 및</p>
+						<p class="vsphere_center_text2">유지보수에 대한 인프라</p>
+					</div>
+				</div>
+
+
+
+				<div class="vsphere_center_box2" data-aos="fade-up"
+					data-aos-duration="1000">기존에 올린 인프라를 가상화로 전환하여 운영 가능</div>
+
+				<div class="vsphere_center_img_box2" data-aos="fade-up"
+					data-aos-duration="1000">
+					<div class="vsphere_center_img2">
+						<img src="../image/common/vsimg5" />
+					</div>
+				</div>
+
+				<div class="vsphere_bottom_img_box">
+					<p class="vsphere_bottom_img_box_text">서버 가상화 기술의 특징</p>
+					<img src="../image/common/vsimg6" />
+
+
+					<div class="vsphere_bottom_text_box" data-aos="fade-left"
+						data-aos-duration="1000">
+						<ul>
+							<li><img src="../image/common/vsimg7" /> VMwere ha를 통한 고가용성
+								제공</li>
+							<li><img src="../image/common/vsimg7" /> 가상머신 asdasd중에 다른
+								sadsad로 마이그레이션 기능 제공</li>
+							<li><img src="../image/common/vsimg7" /> 가상머신 asdsad중에
+								asdsad sadsad로 마이그레이션 기능 제공</li>
+							<li><img src="../image/common/vsimg7" /> 가상머신성능 데이터 관리 기능
+								제공</li>
+							<li><img src="../image/common/vsimg7" /> 직관적인 UI기능 제공</li>
+							<li><img src="../image/common/vsimg7" /> 통합서버, 네트워크, 스토리지,
+								가상머신 관리기능 게공</li>
+							<li><img src="../image/common/vsimg7" /> 온라인 중에 가상머신의 asd,
+								asdsad card 추가기능 제공</li>
+							<li><img src="../image/common/vsimg7" /> 가성머신에 암호화 기능 제공</li>
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="vsphere_ask_box">
+					<p class="vsphere_ask_text1">더 알고 싶으시다면</p>
+					<p class="vsphere_ask_text2">지금 바로 문의주세요.</p>
+					<p class="vsphere_ask_text2">빠르고 성실하게 답변해 드리겠습니다.</p>
+					<div class="vsphere_ask_btn">문의하기</div>
+				</div>
+
+
+
+
+
+
+			</div>
+
+
+			<!-- 모바일 버전 끝 -->
+
+
+		</div>
+	</div>
+
+
+
+
+</body>
+</html>
