@@ -5,6 +5,7 @@
 .board-card-item {
 	border-bottom: 0.4px solid #ccc;
 	width: 100%;
+	/*  */
 }
 
 .board-card-item:first-child {
